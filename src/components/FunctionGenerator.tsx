@@ -126,7 +126,7 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
               value={input}
               onChange={(e) => handleInputChange(e.target.value)}
               rows={3}
-              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none"
+              className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none text-gray-900 placeholder-gray-500"
               placeholder="例: 日付から年を抽出したい、2つのセルの値を結合したい..."
             />
           </div>

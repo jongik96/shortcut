@@ -62,7 +62,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b">
+      <header className="bg-white shadow-sm border-b sticky top-0 z-40">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-3 min-w-0">
@@ -140,7 +140,7 @@ export default function Home() {
       </header>
 
       {/* Main Layout */}
-      <div className="flex">
+      <div className="flex min-h-screen">
         {/* Sidebar */}
         {sidebarOpen && (
           <Sidebar
@@ -186,14 +186,16 @@ export default function Home() {
                   </div>
                 )}
 
-                {/* 検索 */}
-                <div className="w-full">
-                  <SearchBar
-                    value={searchQuery}
-                    onChange={setSearchQuery}
-                    placeholder="ショートカットを検索... (例: セル結合、太字)"
-                  />
-                </div>
+                {/* 検索 - 関数ジェネレータータブの時は非表示 */}
+                {!(software === 'excel' && excelTab === 'function-generator') && (
+                  <div className="w-full">
+                    <SearchBar
+                      value={searchQuery}
+                      onChange={setSearchQuery}
+                      placeholder="ショートカットを検索... (例: セル結合、太字)"
+                    />
+                  </div>
+                )}
 
                 {/* Excel用のコンテンツ */}
                 {software === 'excel' ? (
@@ -314,18 +316,18 @@ export default function Home() {
               </div>
             )}
           </main>
-
-          {/* フッター */}
-          <footer className="bg-white border-t mt-16">
-            <div className="px-4 sm:px-6 lg:px-8 py-8">
-              <div className="text-center text-gray-600">
-                  <p>© 2025 LearnShortcuts.dev。全著作権所有。</p>
-                  <p className="text-sm mt-2">より効率的な作業のためのショートカット学習サイト</p>
-              </div>
-            </div>
-          </footer>
         </div>
       </div>
+
+      {/* フッター - 全幅でサイドバーの上にオーバーレイ */}
+      <footer className="bg-white border-t w-full">
+        <div className="px-4 sm:px-6 lg:px-8 py-8">
+          <div className="text-center text-gray-600">
+              <p>© 2025 LearnShortcuts.dev。全著作権所有。</p>
+              <p className="text-sm mt-2">より効率的な作業のためのショートカット学習サイト</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
