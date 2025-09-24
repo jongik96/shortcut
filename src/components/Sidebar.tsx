@@ -55,8 +55,8 @@ const Sidebar = ({ platform, software, onPlatformChange, onSoftwareChange, onClo
       const [os, softwareType] = itemId.split('-');
       onPlatformChange(os as Platform);
       onSoftwareChange(softwareType as Software);
-      // 모바일에서 메뉴 선택 시 사이드바 닫기
-      if (onClose) {
+      // 모바일에서만 메뉴 선택 시 사이드바 닫기
+      if (onClose && window.innerWidth < 1024) {
         onClose();
       }
     }
