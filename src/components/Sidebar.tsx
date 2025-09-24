@@ -86,7 +86,7 @@ const Sidebar = ({ platform, software, onPlatformChange, onSoftwareChange, onClo
     <div className={cn('w-64 bg-white border-r border-gray-200 h-full overflow-y-auto', className)}>
       <div className="p-4">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="text-lg font-semibold text-gray-900">ショートカットガイド</h2>
+          <h2 className="text-lg font-semibold text-gray-900">LearnShortcuts.dev</h2>
           {onClose && (
             <button
               onClick={onClose}

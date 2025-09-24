@@ -75,7 +75,7 @@ export default function Home() {
               <div className="bg-blue-600 p-2 rounded-lg flex-shrink-0">
                 <Keyboard className="h-6 w-6 text-white" />
               </div>
-              <h1 className="text-lg sm:text-xl font-bold text-gray-900 truncate">ショートカットガイド</h1>
+                <h1 className="text-lg sm:text-xl font-bold text-gray-900 truncate">LearnShortcuts.dev</h1>
             </div>
             
             <nav className="flex items-center gap-2 sm:gap-4">
@@ -319,8 +319,8 @@ export default function Home() {
           <footer className="bg-white border-t mt-16">
             <div className="px-4 sm:px-6 lg:px-8 py-8">
               <div className="text-center text-gray-600">
-                <p>© 2025 ショートカットガイド。全著作権所有。</p>
-                <p className="text-sm mt-2">より効率的な作業のためのショートカットガイド</p>
+                  <p>© 2025 LearnShortcuts.dev。全著作権所有。</p>
+                  <p className="text-sm mt-2">より効率的な作業のためのショートカット学習サイト</p>
               </div>
             </div>
           </footer>
