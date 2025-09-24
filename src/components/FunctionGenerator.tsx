@@ -172,7 +172,7 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
                         </span>
                       </div>
                       <p className="text-sm text-gray-600 mb-2">{suggestion.description}</p>
-                      <div className="bg-gray-100 p-2 rounded font-mono text-sm">
+                      <div className="bg-gray-100 p-2 rounded font-mono text-sm text-gray-900">
                         {suggestion.formula}
                       </div>
                     </div>
