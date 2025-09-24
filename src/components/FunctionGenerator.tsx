@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { FunctionSquare, Copy, Lightbulb, ArrowRight } from 'lucide-react';
 import { functionMappings } from '@/data/functionMappings';
 import { FunctionSuggestion } from '@/types/shortcuts';
@@ -161,7 +161,7 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
           
           <div className="p-4 space-y-4">
             {suggestions.length > 0 ? (
-              suggestions.map((suggestion, index) => (
+              suggestions.map((suggestion) => (
                 <div key={suggestion.id} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex-1">

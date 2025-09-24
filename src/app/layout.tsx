@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { structuredData } from "./structured-data";
@@ -43,7 +43,6 @@ export const metadata: Metadata = {
   authors: [{ name: "LearnShortcuts.dev" }],
   creator: "LearnShortcuts.dev",
   publisher: "LearnShortcuts.dev",
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   metadataBase: new URL("https://learnshortcuts.dev"),
   alternates: {
@@ -71,6 +70,11 @@ export const metadata: Metadata = {
     description: "Windows・Mac の Excel・Word・PowerPoint ショートカットを完全網羅！検索機能で瞬時に見つける。",
     images: ["/og-image.jpg"],
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
