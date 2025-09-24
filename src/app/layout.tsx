@@ -17,6 +17,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "LearnShortcuts.dev - Windows・Mac Excel・Word・PowerPoint ショートカット完全ガイド",
   description: "Windows・Mac の Excel・Word・PowerPoint ショートカットを完全網羅！検索機能で瞬時に見つける。効率的な作業のためのショートカット学習サイト。",
+  icons: {
+    icon: "/shortcut.png",
+    shortcut: "/shortcut.png",
+    apple: "/shortcut.png",
+  },
   keywords: [
     "Windows ショートカット",
     "Mac ショートカット", 
@@ -58,7 +63,7 @@ export const metadata: Metadata = {
     locale: "ja_JP",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/shortcut.png",
         width: 1200,
         height: 630,
         alt: "LearnShortcuts.dev - ショートカット完全ガイド",
@@ -69,7 +74,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LearnShortcuts.dev - Windows・Mac Excel・Word・PowerPoint ショートカット完全ガイド",
     description: "Windows・Mac の Excel・Word・PowerPoint ショートカットを完全網羅！検索機能で瞬時に見つける。",
-    images: ["/og-image.jpg"],
+    images: ["/shortcut.png"],
   },
 };
 
