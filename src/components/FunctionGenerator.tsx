@@ -9,75 +9,13 @@ import { cn } from '@/lib/utils';
 
 interface FunctionGeneratorProps {
   className?: string;
-  category?: 'excel' | 'word' | 'powerpoint' | 'system';
 }
 
-const FunctionGenerator = ({ className, category = 'excel' }: FunctionGeneratorProps) => {
+const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
   const [input, setInput] = useState('');
   const [suggestions, setSuggestions] = useState<FunctionSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
-  // 카테고리별 placeholder
-  const getPlaceholder = (category: string) => {
-    switch (category) {
-      case 'excel':
-        return '例: 日付から年を抽出したい、2つのセルの値を結合したい...';
-      case 'word':
-        return '例: テキストを太字にしたい、段落を中央揃えにしたい...';
-      case 'powerpoint':
-        return '例: スライドを複製したい、プレゼンテーションを開始したい...';
-      case 'system':
-        return '例: ファイルをコピーしたい、アプリを切り替えたい...';
-      default:
-        return '例: 日付から年を抽出したい、2つのセルの値を結合したい...';
-    }
-  };
-
-  // 카테고리별 예시 입력
-  const getExampleInputs = (category: string) => {
-    switch (category) {
-      case 'excel':
-        return [
-          '日付から年だけ抽出したい',
-          '2つのセルの値を結合したい',
-          '空のセルを数えたい',
-          'テキストを大文字に変換したい',
-          '条件に応じて異なる値を表示したい'
-        ];
-      case 'word':
-        return [
-          'テキストを太字にしたい',
-          '段落を中央揃えにしたい',
-          '文字数をカウントしたい',
-          'スペルチェックを実行したい',
-          '表を挿入したい'
-        ];
-      case 'powerpoint':
-        return [
-          'スライドを複製したい',
-          'プレゼンテーションを開始したい',
-          'オブジェクトをグループ化したい',
-          '書式をコピーしたい',
-          '新しいスライドを挿入したい'
-        ];
-      case 'system':
-        return [
-          'ファイルをコピーしたい',
-          'アプリを切り替えたい',
-          'スクリーンショットを撮りたい',
-          'ウィンドウを最小化したい',
-          'タスクマネージャーを開きたい'
-        ];
-      default:
-        return [
-          '日付から年だけ抽出したい',
-          '2つのセルの値を結合したい',
-          '空のセルを数えたい',
-          'テキストを大文字に変換したい',
-          '条件に応じて異なる値を表示したい'
-        ];
-    }
-  };
 
   // 카테고리 아이콘 매핑
   const getCategoryIcon = (category: string) => {
@@ -207,7 +145,13 @@ const FunctionGenerator = ({ className, category = 'excel' }: FunctionGeneratorP
     );
   };
 
-  const exampleInputs = getExampleInputs(category);
+  const exampleInputs = [
+    '日付から年だけ抽出したい',
+    '2つのセルの値を結合したい',
+    '空のセルを数えたい',
+    'テキストを大文字に変換したい',
+    '条件に応じて異なる値を表示したい'
+  ];
 
   return (
     <div className={cn('space-y-6', className)}>
@@ -234,7 +178,7 @@ const FunctionGenerator = ({ className, category = 'excel' }: FunctionGeneratorP
               onChange={(e) => handleInputChange(e.target.value)}
               rows={3}
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none text-gray-900 placeholder-gray-500"
-              placeholder={getPlaceholder(category)}
+              placeholder="例: 日付から年を抽出したい、2つのセルの値を結合したい..."
             />
           </div>
 

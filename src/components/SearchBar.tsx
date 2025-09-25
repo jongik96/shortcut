@@ -8,9 +8,28 @@ interface SearchBarProps {
   onChange: (value: string) => void;
   placeholder?: string;
   className?: string;
+  category?: 'excel' | 'word' | 'powerpoint' | 'system';
 }
 
-const SearchBar = ({ value, onChange, placeholder = '検索...', className }: SearchBarProps) => {
+const SearchBar = ({ value, onChange, placeholder, className, category = 'excel' }: SearchBarProps) => {
+  // 카테고리별 placeholder
+  const getPlaceholder = (category: string) => {
+    switch (category) {
+      case 'excel':
+        return '例: コピー, 貼り付け, 太字, セル結合...';
+      case 'word':
+        return '例: コピー, 貼り付け, 太字, 中央揃え...';
+      case 'powerpoint':
+        return '例: コピー, 貼り付け, 太字, スライド複製...';
+      case 'system':
+        return '例: コピー, 貼り付け, 切り取り, アプリ切り替え...';
+      default:
+        return '例: コピー, 貼り付け, 太字, セル結合...';
+    }
+  };
+
+  const finalPlaceholder = placeholder || getPlaceholder(category);
+
   const handleClear = () => {
     onChange('');
   };
@@ -24,7 +43,7 @@ const SearchBar = ({ value, onChange, placeholder = '検索...', className }: Se
         type="text"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        placeholder={placeholder}
+        placeholder={finalPlaceholder}
         className="w-full pl-10 pr-10 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-200 text-gray-900 placeholder-gray-500"
       />
       {value && (

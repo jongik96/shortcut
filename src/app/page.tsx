@@ -192,7 +192,7 @@ export default function Home() {
                     <SearchBar
                       value={searchQuery}
                       onChange={setSearchQuery}
-                      placeholder="ショートカットを検索... (例: セル結合、太字)"
+                      category={software}
                     />
                   </div>
                 )}
@@ -236,7 +236,7 @@ export default function Home() {
                       )}
                     </>
                   ) : (
-                    <FunctionGenerator category={software} />
+                    <FunctionGenerator />
                   )
                 ) : (
                   <>
