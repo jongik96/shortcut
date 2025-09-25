@@ -131,7 +131,7 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
   };
 
   // 시각적 셀 컴포넌트
-  const VisualCell = ({ cell, value, isOutput = false }: { cell: string, value: string | number, isOutput?: boolean }) => {
+  const VisualCell = ({ cell, value, isOutput = false }: { cell: string, value: string | number | boolean, isOutput?: boolean }) => {
     const cellClass = isOutput 
       ? 'bg-blue-50 border-blue-200 text-blue-900 font-semibold' 
       : 'bg-gray-50 border-gray-200 text-gray-900';
@@ -139,7 +139,7 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
     return (
       <div className={`border-2 rounded-lg p-2 min-w-[80px] text-center ${cellClass}`}>
         <div className="text-xs font-mono text-gray-500 mb-1">{cell}</div>
-        <div className="text-sm">{value}</div>
+        <div className="text-sm">{String(value)}</div>
       </div>
     );
   };
