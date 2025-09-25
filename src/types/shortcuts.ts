@@ -17,6 +17,13 @@ export interface FunctionSuggestion {
   example: string;
   result: string;
   alternatives?: string[];
+  visualExample?: {
+    inputCells: Array<{cell: string, value: string | number}>;
+    outputCell: {cell: string, value: string | number};
+    description: string;
+  };
+  category: 'math' | 'text' | 'date' | 'logical' | 'lookup' | 'statistical' | 'financial' | 'engineering' | 'database' | 'information';
+  difficulty: 'beginner' | 'intermediate' | 'advanced';
 }
 
 export interface FavoriteShortcut {

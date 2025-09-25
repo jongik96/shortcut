@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { FunctionSquare, Copy, Lightbulb, ArrowRight } from 'lucide-react';
+import { FunctionSquare, Copy, Lightbulb, ArrowRight, Calculator, Calendar, Type, Brain, BarChart3, DollarSign, Settings, Database, Info } from 'lucide-react';
 import { functionMappings } from '@/data/functionMappings';
 import { FunctionSuggestion } from '@/types/shortcuts';
 import { copyToClipboard } from '@/lib/utils';
@@ -15,6 +15,42 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
   const [input, setInput] = useState('');
   const [suggestions, setSuggestions] = useState<FunctionSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
+
+  // 카테고리 아이콘 매핑
+  const getCategoryIcon = (category: string) => {
+    switch (category) {
+      case 'math': return Calculator;
+      case 'date': return Calendar;
+      case 'text': return Type;
+      case 'logical': return Brain;
+      case 'statistical': return BarChart3;
+      case 'financial': return DollarSign;
+      case 'engineering': return Settings;
+      case 'database': return Database;
+      case 'information': return Info;
+      default: return FunctionSquare;
+    }
+  };
+
+  // 난이도 색상 매핑
+  const getDifficultyColor = (difficulty: string) => {
+    switch (difficulty) {
+      case 'beginner': return 'bg-green-100 text-green-800';
+      case 'intermediate': return 'bg-yellow-100 text-yellow-800';
+      case 'advanced': return 'bg-red-100 text-red-800';
+      default: return 'bg-gray-100 text-gray-800';
+    }
+  };
+
+  // 난이도 텍스트 매핑
+  const getDifficultyText = (difficulty: string) => {
+    switch (difficulty) {
+      case 'beginner': return '初級';
+      case 'intermediate': return '中級';
+      case 'advanced': return '上級';
+      default: return '不明';
+    }
+  };
 
   // 자연어 처리 및 함수 매핑
   const processInput = (text: string) => {
@@ -94,6 +130,20 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
     // TODO: 토스트 알림 추가
   };
 
+  // 시각적 셀 컴포넌트
+  const VisualCell = ({ cell, value, isOutput = false }: { cell: string, value: string | number, isOutput?: boolean }) => {
+    const cellClass = isOutput 
+      ? 'bg-blue-50 border-blue-200 text-blue-900 font-semibold' 
+      : 'bg-gray-50 border-gray-200 text-gray-900';
+    
+    return (
+      <div className={`border-2 rounded-lg p-2 min-w-[80px] text-center ${cellClass}`}>
+        <div className="text-xs font-mono text-gray-500 mb-1">{cell}</div>
+        <div className="text-sm">{value}</div>
+      </div>
+    );
+  };
+
   const exampleInputs = [
     '日付から年だけ抽出したい',
     '2つのセルの値を結合したい',
@@ -161,58 +211,80 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
           
           <div className="p-4 space-y-4">
             {suggestions.length > 0 ? (
-              suggestions.map((suggestion) => (
-                <div key={suggestion.id} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                  <div className="flex items-start justify-between mb-3">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2 mb-1">
-                        <h4 className="font-semibold text-gray-900">{suggestion.name}</h4>
-                        <span className="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">
-                          関数
-                        </span>
-                      </div>
-                      <p className="text-sm text-gray-600 mb-2">{suggestion.description}</p>
-                      <div className="bg-gray-100 p-2 rounded font-mono text-sm text-gray-900">
-                        {suggestion.formula}
-                      </div>
-                    </div>
-                    <button
-                      onClick={() => handleCopy(suggestion.formula)}
-                      className="p-2 text-gray-400 hover:text-gray-600 transition-colors ml-2"
-                      title="関数をコピー"
-                    >
-                      <Copy size={16} />
-                    </button>
-                  </div>
-
-                  <div className="grid md:grid-cols-2 gap-4 text-sm">
-                    <div>
-                      <p className="font-medium text-gray-700 mb-1">例:</p>
-                      <p className="text-gray-600">{suggestion.example}</p>
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-700 mb-1">結果:</p>
-                      <p className="text-gray-600 font-mono">{suggestion.result}</p>
-                    </div>
-                  </div>
-
-                  {suggestion.alternatives && suggestion.alternatives.length > 0 && (
-                    <div className="mt-3 pt-3 border-t">
-                      <p className="text-sm font-medium text-gray-700 mb-2">代替関数:</p>
-                      <div className="flex flex-wrap gap-1">
-                        {suggestion.alternatives.map((alt, altIndex) => (
-                          <span
-                            key={altIndex}
-                            className="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded"
-                          >
-                            {alt}
+              suggestions.map((suggestion) => {
+                const CategoryIcon = getCategoryIcon(suggestion.category);
+                return (
+                  <div key={suggestion.id} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
+                    <div className="flex items-start justify-between mb-3">
+                      <div className="flex-1">
+                        <div className="flex items-center gap-2 mb-2">
+                          <CategoryIcon className="h-5 w-5 text-blue-600" />
+                          <h4 className="font-semibold text-gray-900">{suggestion.name}</h4>
+                          <span className="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">
+                            関数
                           </span>
-                        ))}
+                          <span className={`px-2 py-1 text-xs rounded-full ${getDifficultyColor(suggestion.difficulty)}`}>
+                            {getDifficultyText(suggestion.difficulty)}
+                          </span>
+                        </div>
+                        <p className="text-sm text-gray-600 mb-3">{suggestion.description}</p>
+                        <div className="bg-gray-100 p-3 rounded font-mono text-sm text-gray-900 mb-3">
+                          {suggestion.formula}
+                        </div>
+                      </div>
+                      <button
+                        onClick={() => handleCopy(suggestion.formula)}
+                        className="p-2 text-gray-400 hover:text-gray-600 transition-colors ml-2"
+                        title="関数をコピー"
+                      >
+                        <Copy size={16} />
+                      </button>
+                    </div>
+
+                    {/* 시각적 표현 */}
+                    {suggestion.visualExample && (
+                      <div className="mb-4 p-3 bg-blue-50 rounded-lg">
+                        <h5 className="text-sm font-medium text-blue-900 mb-2">視覚的例:</h5>
+                        <p className="text-xs text-blue-700 mb-3">{suggestion.visualExample.description}</p>
+                        <div className="flex items-center gap-3 flex-wrap">
+                          {suggestion.visualExample.inputCells.map((inputCell, index) => (
+                            <VisualCell key={index} cell={inputCell.cell} value={inputCell.value} />
+                          ))}
+                          <ArrowRight className="h-4 w-4 text-blue-600" />
+                          <VisualCell cell={suggestion.visualExample.outputCell.cell} value={suggestion.visualExample.outputCell.value} isOutput />
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="grid md:grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <p className="font-medium text-gray-700 mb-1">例:</p>
+                        <p className="text-gray-600">{suggestion.example}</p>
+                      </div>
+                      <div>
+                        <p className="font-medium text-gray-700 mb-1">結果:</p>
+                        <p className="text-gray-600 font-mono">{suggestion.result}</p>
                       </div>
                     </div>
-                  )}
-                </div>
-              ))
+
+                    {suggestion.alternatives && suggestion.alternatives.length > 0 && (
+                      <div className="mt-3 pt-3 border-t">
+                        <p className="text-sm font-medium text-gray-700 mb-2">代替関数:</p>
+                        <div className="flex flex-wrap gap-1">
+                          {suggestion.alternatives.map((alt, altIndex) => (
+                            <span
+                              key={altIndex}
+                              className="px-2 py-1 text-xs bg-gray-100 text-gray-700 rounded"
+                            >
+                              {alt}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                );
+              })
             ) : (
               <div className="text-center py-8">
                 <FunctionSquare className="h-12 w-12 text-gray-400 mx-auto mb-4" />
