@@ -2,17 +2,12 @@
 
 import { Keyboard } from 'lucide-react';
 import Link from 'next/link';
-import HomePage from '@/components/HomePage';
+import AboutPage from '@/components/AboutPage';
 
-export default function Home() {
-  const handleGetStarted = () => {
-    // /list 페이지로 리다이렉트
-    window.location.href = '/list';
-  };
-
+export default function About() {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header - 간단한 헤더 */}
+      {/* Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-40">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -37,7 +32,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="px-4 sm:px-6 lg:px-8 py-8">
-        <HomePage onGetStarted={handleGetStarted} />
+        <AboutPage />
       </main>
 
       {/* Footer */}

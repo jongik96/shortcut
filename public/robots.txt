@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://learnshortcuts.dev/sitemap.xml
+
+# Google AdSense를 위한 설정
+User-agent: Googlebot
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
