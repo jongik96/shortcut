@@ -18,8 +18,8 @@ export interface FunctionSuggestion {
   result: string;
   alternatives?: string[];
   visualExample?: {
-    inputCells: Array<{cell: string, value: string | number}>;
-    outputCell: {cell: string, value: string | number};
+    inputCells: Array<{cell: string, value: string | number | boolean}>;
+    outputCell: {cell: string, value: string | number | boolean};
     description: string;
   };
   category: 'math' | 'text' | 'date' | 'logical' | 'lookup' | 'statistical' | 'financial' | 'engineering' | 'database' | 'information';
