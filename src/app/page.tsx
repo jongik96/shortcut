@@ -8,6 +8,7 @@ import ShortcutCard from '@/components/ShortcutCard';
 import SearchBar from '@/components/SearchBar';
 import Sidebar from '@/components/Sidebar';
 import FunctionGenerator from '@/components/FunctionGenerator';
+import CategoryFilter, { getCategoryName } from '@/components/CategoryFilter';
 import { useFavorites } from '@/hooks/useFavorites';
 import { copyToClipboard } from '@/lib/utils';
 
@@ -18,6 +19,7 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState<'shortcuts' | 'favorites'>('shortcuts');
   const [excelTab, setExcelTab] = useState<'shortcuts' | 'function-generator'>('shortcuts');
   const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState('all');
   const { favorites, toggleFavorite, isFavorite } = useFavorites();
 
   // 検索フィルタリング
@@ -25,6 +27,13 @@ export default function Home() {
     let filtered = shortcuts.filter(shortcut => 
       shortcut.software === software
     );
+    
+    // カテゴリフィルタリング
+    if (selectedCategory !== 'all') {
+      filtered = filtered.filter(shortcut => 
+        shortcut.category === selectedCategory
+      );
+    }
     
     if (searchQuery) {
       filtered = filtered.filter(shortcut => 
@@ -37,7 +46,7 @@ export default function Home() {
     }
     
     return filtered;
-  }, [searchQuery, software]);
+  }, [searchQuery, software, selectedCategory]);
 
   // お気に入りフィルタリング
   const favoriteShortcuts = useMemo(() => {
@@ -52,6 +61,8 @@ export default function Home() {
   // ソフトウェアが変更されたときにExcelタブをリセット
   const handleSoftwareChange = (newSoftware: Software) => {
     setSoftware(newSoftware);
+    setSearchQuery('');
+    setSelectedCategory('all');
     if (newSoftware !== 'excel') {
       setExcelTab('shortcuts');
     }
@@ -186,6 +197,17 @@ export default function Home() {
                   </div>
                 )}
 
+                {/* カテゴリフィルタ - 関数ジェネレータータブの時は非表示 */}
+                {!(software === 'excel' && excelTab === 'function-generator') && (
+                  <div className="w-full mb-4">
+                    <CategoryFilter
+                      selectedCategory={selectedCategory}
+                      onCategoryChange={setSelectedCategory}
+                      software={software}
+                    />
+                  </div>
+                )}
+
                 {/* 検索 - 関数ジェネレータータブの時は非表示 */}
                 {!(software === 'excel' && excelTab === 'function-generator') && (
                   <div className="w-full">
@@ -205,7 +227,9 @@ export default function Home() {
                       <div className="text-sm text-gray-600">
                         {searchQuery 
                           ? `検索結果: "${searchQuery}" - ${filteredShortcuts.length}件`
-                          : `Excel ショートカット: ${filteredShortcuts.length}件`
+                          : selectedCategory !== 'all'
+                            ? `${software === 'excel' ? 'Excel' : software === 'word' ? 'Word' : software === 'powerpoint' ? 'PowerPoint' : 'System'} ${getCategoryName(selectedCategory)} ショートカット: ${filteredShortcuts.length}件`
+                            : `${software === 'excel' ? 'Excel' : software === 'word' ? 'Word' : software === 'powerpoint' ? 'PowerPoint' : 'System'} ショートカット: ${filteredShortcuts.length}件`
                         }
                       </div>
 
@@ -244,7 +268,9 @@ export default function Home() {
                     <div className="text-sm text-gray-600">
                       {searchQuery 
                         ? `検索結果: "${searchQuery}" - ${filteredShortcuts.length}件`
-                        : `${software === 'word' ? 'Word' : software === 'powerpoint' ? 'PowerPoint' : 'システム'} ショートカット: ${filteredShortcuts.length}件`
+                        : selectedCategory !== 'all'
+                          ? `${software === 'word' ? 'Word' : software === 'powerpoint' ? 'PowerPoint' : 'システム'} ${getCategoryName(selectedCategory)} ショートカット: ${filteredShortcuts.length}件`
+                          : `${software === 'word' ? 'Word' : software === 'powerpoint' ? 'PowerPoint' : 'システム'} ショートカット: ${filteredShortcuts.length}件`
                       }
                     </div>
 
