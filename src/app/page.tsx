@@ -236,7 +236,7 @@ export default function Home() {
                       )}
                     </>
                   ) : (
-                    <FunctionGenerator />
+                    <FunctionGenerator category={software} />
                   )
                 ) : (
                   <>
