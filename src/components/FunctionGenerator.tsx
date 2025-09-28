@@ -68,6 +68,16 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
     functionMappings.forEach(func => {
       let score = 0;
       
+      // 영어 함수명 직접 매칭 (높은 우선순위)
+      if (lowerText.includes(func.name.toLowerCase())) {
+        score += 3;
+      }
+      
+      // 함수 설명에서 키워드 매칭
+      if (func.description.toLowerCase().includes(lowerText)) {
+        score += 2;
+      }
+      
       // 日本語キーワードマッチング
       const keywords = [
         // 日付関連
@@ -112,10 +122,10 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
       }
     });
 
-    // 점수순으로 정렬하고 상위 3개만 표시
+    // 점수순으로 정렬하고 상위 5개만 표시
     const sortedSuggestions = matchedSuggestions
       .sort((a, b) => (b.score || 0) - (a.score || 0))
-      .slice(0, 3);
+      .slice(0, 5);
 
     setSuggestions(sortedSuggestions as FunctionSuggestion[]);
     setShowSuggestions(true);
@@ -150,7 +160,12 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
     '2つのセルの値を結合したい',
     '空のセルを数えたい',
     'テキストを大文字に変換したい',
-    '条件に応じて異なる値を表示したい'
+    '条件に応じて異なる値を表示したい',
+    'SUM',
+    'VLOOKUP',
+    'IF',
+    'COUNTIF',
+    'CONCATENATE'
   ];
 
   return (

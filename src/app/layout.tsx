@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { structuredData } from "./structured-data";
 import { Analytics } from "@vercel/analytics/next";
+import { FavoritesProvider } from "@/contexts/FavoritesContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LearnShortcuts.dev - Windows・Mac Excel・Word・PowerPoint ショートカット完全ガイド",
-  description: "Windows・Mac の Excel・Word・PowerPoint ショートカットを完全網羅！検索機能で瞬時に見つける。効率的な作業のためのショートカット学習サイト。",
+  title: "LearnShortcuts.dev - OS・Office・Google・Browser・Adobe ショートカット完全ガイド",
+  description: "OS・Microsoft Office・Google Workspace・Browser・Adobe・その他ソフトウェアのショートカットを完全網羅！検索機能で瞬時に見つける。効率的な作業のためのショートカット学習サイト。",
   icons: {
     icon: "/shortcut.png",
     shortcut: "/shortcut.png",
@@ -28,6 +29,16 @@ export const metadata: Metadata = {
     "Excel ショートカット",
     "Word ショートカット",
     "PowerPoint ショートカット",
+    "Google Docs ショートカット",
+    "Google Sheets ショートカット",
+    "Google Slides ショートカット",
+    "Chrome ショートカット",
+    "Safari ショートカット",
+    "Edge ショートカット",
+    "Photoshop ショートカット",
+    "Illustrator ショートカット",
+    "Slack ショートカット",
+    "Discord ショートカット",
     "キーボードショートカット",
     "ショートカット 一覧",
     "ショートカット 覚え方",
@@ -35,12 +46,12 @@ export const metadata: Metadata = {
     "Windows 基本ショートカット",
     "Mac 基本ショートカット",
     "Excel 関数",
-    "Word ショートカット 一覧",
-    "PowerPoint ショートカット 一覧",
     "効率化",
     "生産性向上",
     "オフィスソフト",
     "Microsoft Office",
+    "Google Workspace",
+    "Adobe Creative Suite",
     "ショートカット 学習",
     "ショートカット ガイド",
     "learnshortcuts",
@@ -55,8 +66,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "LearnShortcuts.dev - Windows・Mac Excel・Word・PowerPoint ショートカット完全ガイド",
-    description: "Windows・Mac の Excel・Word・PowerPoint ショートカットを完全網羅！検索機能で瞬時に見つける。効率的な作業のためのショートカット学習サイト。",
+    title: "LearnShortcuts.dev - OS・Office・Google・Browser・Adobe ショートカット完全ガイド",
+    description: "OS・Microsoft Office・Google Workspace・Browser・Adobe・その他ソフトウェアのショートカットを完全網羅！検索機能で瞬時に見つける。効率的な作業のためのショートカット学習サイト。",
     url: "https://learnshortcuts.dev",
     siteName: "LearnShortcuts.dev",
     type: "website",
@@ -72,8 +83,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LearnShortcuts.dev - Windows・Mac Excel・Word・PowerPoint ショートカット完全ガイド",
-    description: "Windows・Mac の Excel・Word・PowerPoint ショートカットを完全網羅！検索機能で瞬時に見つける。",
+    title: "LearnShortcuts.dev - OS・Office・Google・Browser・Adobe ショートカット完全ガイド",
+    description: "OS・Microsoft Office・Google Workspace・Browser・Adobe・その他ソフトウェアのショートカットを完全網羅！検索機能で瞬時に見つける。",
     images: ["/shortcut.png"],
   },
 };
@@ -106,7 +117,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <FavoritesProvider>
+          {children}
+        </FavoritesProvider>
         <Analytics />
       </body>
     </html>

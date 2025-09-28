@@ -2,6 +2,7 @@
 
 import { Keyboard, Zap, BookOpen, Users, Star, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { WindowsIcon, MacIcon, OfficeIcon, GoogleIcon, ChromeIcon, AdobeIcon, SlackIcon, DiscordIcon } from '@/components/icons/BrandIcons';
 
 interface HomePageProps {
   onGetStarted: () => void;
@@ -34,8 +35,8 @@ const HomePage = ({ onGetStarted, className }: HomePageProps) => {
 
   const stats = [
     { number: '500+', label: 'ショートカット数' },
-    { number: '4', label: '対応ソフトウェア' },
-    { number: '10+', label: 'カテゴリ' },
+    { number: '6', label: 'メインカテゴリ' },
+    { number: '15+', label: 'サブカテゴリ' },
     { number: '100%', label: '無料' }
   ];
 
@@ -125,22 +126,26 @@ const HomePage = ({ onGetStarted, className }: HomePageProps) => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { name: 'Microsoft Excel', icon: '📊', description: 'データ分析と表計算のショートカット' },
-            { name: 'Microsoft Word', icon: '📝', description: '文書作成と編集のショートカット' },
-            { name: 'Microsoft PowerPoint', icon: '📈', description: 'プレゼンテーション作成のショートカット' },
-            { name: 'Windows/Mac', icon: '💻', description: 'システム操作のショートカット' }
+            { name: 'OS', icon: WindowsIcon, description: 'Windows/Mac基本ショートカット', link: '/os' },
+            { name: 'Office', icon: OfficeIcon, description: 'Word, Excel, PowerPointショートカット', link: '/office' },
+            { name: 'Google', icon: GoogleIcon, description: 'Docs, Sheets, Slidesショートカット', link: '/google' },
+            { name: 'Browser', icon: ChromeIcon, description: 'Chrome, Safari, Edgeショートカット', link: '/browser' },
+            { name: 'Adobe', icon: AdobeIcon, description: 'Photoshop, Illustratorショートカット', link: '/adobe' },
+            { name: 'Others', icon: SlackIcon, description: 'Slack, Discordなどその他のソフトウェア', link: '/others' }
           ].map((software, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-sm border text-center">
-              <div className="text-4xl mb-4">{software.icon}</div>
+            <a key={index} href={software.link} className="bg-white p-6 rounded-xl shadow-sm border text-center hover:shadow-md transition-shadow block">
+              <div className="flex justify-center mb-4">
+                <software.icon className="w-12 h-12" />
+              </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {software.name}
               </h3>
               <p className="text-gray-600 text-sm">
                 {software.description}
               </p>
-            </div>
+            </a>
           ))}
         </div>
       </section>

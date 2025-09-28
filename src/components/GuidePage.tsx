@@ -1,7 +1,8 @@
 'use client';
 
-import { Search, Filter, Star, BookOpen, MousePointer, Keyboard, Zap } from 'lucide-react';
+import { Search, Filter, Star, BookOpen, MousePointer, Keyboard, Zap, ExternalLink, Play, Eye } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
 
 interface GuidePageProps {
   className?: string;
@@ -11,70 +12,86 @@ const GuidePage = ({ className }: GuidePageProps) => {
   const steps = [
     {
       icon: Search,
-      title: 'ショートカットを検索',
-      description: '検索バーにキーワードを入力して、目的のショートカットを見つけましょう',
+      title: 'カテゴリを選択',
+      description: 'OS, Office, Google, Browser, Adobe, Othersの中から目的に合ったカテゴリを選択',
       details: [
-        '例: "コピー"、"貼り付け"、"太字"など',
-        '部分的なキーワードでも検索可能',
-        '説明文やキーワードからも検索されます'
+        'ヘッダーメニューからメインカテゴリを選択',
+        'OS: Windows/Mac基本ショートカット',
+        'Office: Word, Excel, PowerPointショートカット',
+        'Google: Docs, Sheets, Slidesショートカット',
+        'Browser: Chrome, Safari, Edgeショートカット',
+        'Adobe: Photoshop, Illustratorショートカット',
+        'Others: Slack, Discordなどその他のソフトウェア'
       ]
     },
     {
       icon: Filter,
-      title: 'カテゴリで絞り込み',
-      description: 'カテゴリボタンを使って、特定の種類のショートカットだけを表示',
+      title: 'サブカテゴリ選択',
+      description: 'サイドバーからサブカテゴリを選択して特定ソフトウェアのショートカットを確認',
       details: [
-        'フォーマット、編集、表示など',
-        'ソフトウェアごとに異なるカテゴリ',
-        '「すべて」で全カテゴリを表示'
+        'Office: Word, Excel, PowerPoint',
+        'Google: Docs, Sheets, Slides',
+        'Browser: Chrome, Safari, Edge',
+        'Adobe: Photoshop, Illustrator',
+        'Others: Slack, Discord',
+        '各サブカテゴリでWindows/Macタブでプラットフォーム切り替え'
       ]
     },
     {
-      icon: Star,
-      title: 'お気に入りに保存',
-      description: 'よく使うショートカットを星マークでお気に入りに保存',
+      icon: ExternalLink,
+      title: 'ショートカット詳細ページ',
+      description: 'ショートカットカードをクリックして詳細ページで学習',
       details: [
-        'ショートカットカードの星マークをクリック',
-        'お気に入りタブで保存されたショートカットを確認',
-        '効率的なアクセスが可能'
+        'インタラクティブキーボードでキー位置確認',
+        'アニメーションで押し方を視覚的に学習',
+        'プラットフォーム別の使用コツを確認',
+        '関連ショートカットも発見可能'
       ]
     },
     {
       icon: BookOpen,
-      title: '詳細情報を確認',
-      description: '各ショートカットの詳細な説明と使用例を確認',
+      title: '実践的な学習',
+      description: '視覚的・インタラクティブな機能で効率的に学習',
       details: [
-        'WindowsとMacの両方のキーを表示',
-        '具体的な使用場面の説明',
-        'コピーボタンで簡単にコピー可能'
+        'キーボードマップでキーをクリックして説明確認',
+        'アニメーション再生で押し方を確認',
+        'ステップバイステップの説明',
+        'プラットフォーム別の実践的なコツ'
       ]
     }
   ];
 
   const features = [
     {
-      icon: MousePointer,
-      title: '直感的な操作',
-      description: 'クリック一つで簡単に操作できる直感的なインターフェース'
+      icon: Keyboard,
+      title: 'インタラクティブキーボード',
+      description: '仮想キーボードでショートカットキーを視覚的に確認し、キーをクリックして詳細説明を表示'
     },
     {
-      icon: Keyboard,
-      title: 'キーボード対応',
-      description: 'キーボードショートカットで素早くナビゲーション'
+      icon: Play,
+      title: 'アニメーション学習',
+      description: 'ショートカットキーの押し方をアニメーションで視覚的に学習し、ステップバイステップで確認'
+    },
+    {
+      icon: Eye,
+      title: '詳細ページ',
+      description: '各ショートカットの詳細情報、関連ショートカット、プラットフォーム別の使用コツを提供'
     },
     {
       icon: Zap,
       title: '高速検索',
-      description: 'リアルタイム検索で瞬時に結果を表示'
+      description: 'リアルタイム検索で瞬時に結果を表示し、カテゴリフィルターで効率的に絞り込み'
     }
   ];
 
   const tips = [
-    '検索時は具体的なキーワードを使うとより正確な結果が得られます',
-    'カテゴリと検索を組み合わせて使うと効率的です',
-    'お気に入り機能を活用してよく使うショートカットを整理しましょう',
-    'プラットフォーム（Windows/Mac）を切り替えて確認できます',
-    'Excelの関数ジェネレーターで数式を自動生成できます'
+    'ショートカットカードをクリックして詳細ページでインタラクティブに学習しましょう',
+    'インタラクティブキーボードで各キーをクリックして詳細説明を確認できます',
+    'アニメーション機能で実際の押し方を視覚的に学習できます',
+    'Windows/Macタブを切り替えてプラットフォーム別のキーを確認しましょう',
+    'Excelページでは関数ジェネレーターで数式を自動生成できます',
+    '関連ショートカットから類似の機能を発見できます',
+    'プラットフォーム別の実践的なコツを参考に効率的に学習しましょう'
   ];
 
   return (
@@ -142,7 +159,7 @@ const GuidePage = ({ className }: GuidePageProps) => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="bg-white p-6 rounded-xl shadow-sm text-center">
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -159,8 +176,54 @@ const GuidePage = ({ className }: GuidePageProps) => {
         </div>
       </section>
 
-      {/* 使用のコツ */}
+      {/* 新機能紹介 */}
       <section className="py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">新機能: インタラクティブ学習</h2>
+          <p className="text-xl text-gray-600">
+            視覚的でインタラクティブな学習体験を提供
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-8">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                <Keyboard className="h-6 w-6 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900">インタラクティブキーボード</h3>
+            </div>
+            <p className="text-gray-700 mb-4">
+              仮想キーボードでショートカットキーを視覚的に確認できます。各キーをクリックすると詳細な説明が表示され、キーの役割を理解できます。
+            </p>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li>• キーの位置と役割を視覚的に学習</li>
+              <li>• クリックで詳細説明を確認</li>
+              <li>• プラットフォーム別の使用コツ</li>
+            </ul>
+          </div>
+          
+          <div className="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-8">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <Play className="h-6 w-6 text-green-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900">アニメーション学習</h3>
+            </div>
+            <p className="text-gray-700 mb-4">
+              ショートカットキーの押し方をアニメーションで視覚的に学習できます。実際の操作手順をステップバイステップで確認できます。
+            </p>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li>• 押し方のアニメーション再生</li>
+              <li>• ステップバイステップの説明</li>
+              <li>• 実践的な使用コツ</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* 使用のコツ */}
+      <section className="py-16 bg-gray-50 rounded-2xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">使用のコツ</h2>
           <p className="text-xl text-gray-600">
@@ -168,7 +231,7 @@ const GuidePage = ({ className }: GuidePageProps) => {
           </p>
         </div>
         
-        <div className="bg-blue-50 rounded-xl p-8">
+        <div className="bg-white rounded-xl p-8">
           <ul className="space-y-4">
             {tips.map((tip, index) => (
               <li key={index} className="flex items-start gap-3">
@@ -191,12 +254,14 @@ const GuidePage = ({ className }: GuidePageProps) => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { name: 'Microsoft Excel', icon: '📊', description: 'データ分析と表計算のショートカット', shortcuts: '150+ ショートカット' },
-            { name: 'Microsoft Word', icon: '📝', description: '文書作成と編集のショートカット', shortcuts: '120+ ショートカット' },
-            { name: 'Microsoft PowerPoint', icon: '📈', description: 'プレゼンテーション作成のショートカット', shortcuts: '100+ ショートカット' },
-            { name: 'Windows/Mac', icon: '💻', description: 'システム操作のショートカット', shortcuts: '130+ ショートカット' }
+            { name: 'OS', icon: '🖥️', description: 'Windows/Mac基本ショートカット', shortcuts: '130+ショートカット' },
+            { name: 'Office', icon: '📊', description: 'Word, Excel, PowerPointショートカット', shortcuts: '370+ショートカット' },
+            { name: 'Google', icon: '🔍', description: 'Docs, Sheets, Slidesショートカット', shortcuts: '200+ショートカット' },
+            { name: 'Browser', icon: '🌐', description: 'Chrome, Safari, Edgeショートカット', shortcuts: '150+ショートカット' },
+            { name: 'Adobe', icon: '🎨', description: 'Photoshop, Illustratorショートカット', shortcuts: '100+ショートカット' },
+            { name: 'Others', icon: '💬', description: 'Slack, Discordなどその他のソフトウェア', shortcuts: '80+ショートカット' }
           ].map((software, index) => (
             <div key={index} className="bg-white p-6 rounded-xl shadow-sm text-center">
               <div className="text-4xl mb-4">{software.icon}</div>
@@ -223,12 +288,20 @@ const GuidePage = ({ className }: GuidePageProps) => {
           <p className="text-xl mb-8 opacity-90">
             使い方をマスターしたら、実際にショートカット一覧で検索してみてください
           </p>
-          <button
-            onClick={() => window.location.href = '/list'}
-            className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
-          >
-            ショートカット一覧を見る
-          </button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="/os"
+              className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+            >
+              OSショートカットを見る
+            </Link>
+            <Link
+              href="/office"
+              className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors"
+            >
+              Officeショートカットを見る
+            </Link>
+          </div>
         </div>
       </section>
     </div>

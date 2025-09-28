@@ -1098,5 +1098,522 @@ export const functionMappings: FunctionSuggestion[] = [
     },
     category: 'date',
     difficulty: 'intermediate'
+  },
+  // 추가 함수들 - 수학/통계 함수
+  {
+    id: 'round-function',
+    name: 'ROUND',
+    formula: '=ROUND(数値, 桁数)',
+    description: '数値を指定した桁数に四捨五入します',
+    example: '=ROUND(3.14159, 2)',
+    result: '3.14',
+    alternatives: ['ROUNDUP', 'ROUNDDOWN'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 3.14159}],
+      outputCell: {cell: 'B1', value: 3.14},
+      description: 'A1の値を小数点以下2桁に四捨五入'
+    },
+    category: 'math',
+    difficulty: 'beginner'
+  },
+  {
+    id: 'roundup-function',
+    name: 'ROUNDUP',
+    formula: '=ROUNDUP(数値, 桁数)',
+    description: '数値を指定した桁数に切り上げます',
+    example: '=ROUNDUP(3.14159, 2)',
+    result: '3.15',
+    alternatives: ['ROUND', 'ROUNDDOWN'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 3.14159}],
+      outputCell: {cell: 'B1', value: 3.15},
+      description: 'A1の値を小数点以下2桁に切り上げ'
+    },
+    category: 'math',
+    difficulty: 'beginner'
+  },
+  {
+    id: 'rounddown-function',
+    name: 'ROUNDDOWN',
+    formula: '=ROUNDDOWN(数値, 桁数)',
+    description: '数値を指定した桁数に切り捨てます',
+    example: '=ROUNDDOWN(3.14159, 2)',
+    result: '3.14',
+    alternatives: ['ROUND', 'ROUNDUP'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 3.14159}],
+      outputCell: {cell: 'B1', value: 3.14},
+      description: 'A1の値を小数点以下2桁に切り捨て'
+    },
+    category: 'math',
+    difficulty: 'beginner'
+  },
+  {
+    id: 'abs-function',
+    name: 'ABS',
+    formula: '=ABS(数値)',
+    description: '数値の絶対値を返します',
+    example: '=ABS(-5)',
+    result: '5',
+    alternatives: [],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: -5}],
+      outputCell: {cell: 'B1', value: 5},
+      description: 'A1の絶対値を計算'
+    },
+    category: 'math',
+    difficulty: 'beginner'
+  },
+  {
+    id: 'sqrt-function',
+    name: 'SQRT',
+    formula: '=SQRT(数値)',
+    description: '数値の平方根を返します',
+    example: '=SQRT(16)',
+    result: '4',
+    alternatives: ['POWER'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 16}],
+      outputCell: {cell: 'B1', value: 4},
+      description: 'A1の平方根を計算'
+    },
+    category: 'math',
+    difficulty: 'beginner'
+  },
+  // 텍스트 함수들
+  {
+    id: 'trim-function',
+    name: 'TRIM',
+    formula: '=TRIM(テキスト)',
+    description: 'テキストから前後の空白を削除します',
+    example: '=TRIM("  Hello  ")',
+    result: 'Hello',
+    alternatives: ['CLEAN'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: '  Hello  '}],
+      outputCell: {cell: 'B1', value: 'Hello'},
+      description: 'A1の前後の空白を削除'
+    },
+    category: 'text',
+    difficulty: 'beginner'
+  },
+  {
+    id: 'clean-function',
+    name: 'CLEAN',
+    formula: '=CLEAN(テキスト)',
+    description: 'テキストから印刷できない文字を削除します',
+    example: '=CLEAN("Hello"&CHAR(10)&"World")',
+    result: 'HelloWorld',
+    alternatives: ['TRIM'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 'Hello\nWorld'}],
+      outputCell: {cell: 'B1', value: 'HelloWorld'},
+      description: 'A1の改行文字を削除'
+    },
+    category: 'text',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'substitute-function',
+    name: 'SUBSTITUTE',
+    formula: '=SUBSTITUTE(テキスト, 古いテキスト, 新しいテキスト, [置換回数])',
+    description: 'テキスト内の指定した文字列を置換します',
+    example: '=SUBSTITUTE("Hello World", "World", "Excel")',
+    result: 'Hello Excel',
+    alternatives: ['REPLACE'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 'Hello World'}],
+      outputCell: {cell: 'B1', value: 'Hello Excel'},
+      description: 'A1の"World"を"Excel"に置換'
+    },
+    category: 'text',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'replace-function',
+    name: 'REPLACE',
+    formula: '=REPLACE(テキスト, 開始位置, 文字数, 新しいテキスト)',
+    description: 'テキストの指定した位置から指定した文字数を置換します',
+    example: '=REPLACE("Hello World", 7, 5, "Excel")',
+    result: 'Hello Excel',
+    alternatives: ['SUBSTITUTE'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 'Hello World'}],
+      outputCell: {cell: 'B1', value: 'Hello Excel'},
+      description: 'A1の7文字目から5文字を"Excel"に置換'
+    },
+    category: 'text',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'exact-function',
+    name: 'EXACT',
+    formula: '=EXACT(テキスト1, テキスト2)',
+    description: '2つのテキストが完全に一致するかチェックします',
+    example: '=EXACT("Hello", "hello")',
+    result: 'FALSE',
+    alternatives: [],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 'Hello'}, {cell: 'B1', value: 'hello'}],
+      outputCell: {cell: 'C1', value: false},
+      description: 'A1とB1が完全に一致するかチェック'
+    },
+    category: 'text',
+    difficulty: 'intermediate'
+  },
+  // 날짜 함수들
+  {
+    id: 'weekday-function',
+    name: 'WEEKDAY',
+    formula: '=WEEKDAY(日付, [戻り値の種類])',
+    description: '日付の曜日を数値で返します',
+    example: '=WEEKDAY("2024-01-15")',
+    result: '2',
+    alternatives: ['TEXT'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: '2024-01-15'}],
+      outputCell: {cell: 'B1', value: 2},
+      description: 'A1の日付の曜日を数値で取得（月曜日=2）'
+    },
+    category: 'date',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'weeknum-function',
+    name: 'WEEKNUM',
+    formula: '=WEEKNUM(日付, [戻り値の種類])',
+    description: '日付の週番号を返します',
+    example: '=WEEKNUM("2024-01-15")',
+    result: '3',
+    alternatives: [],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: '2024-01-15'}],
+      outputCell: {cell: 'B1', value: 3},
+      description: 'A1の日付の週番号を取得'
+    },
+    category: 'date',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'datedif-function',
+    name: 'DATEDIF',
+    formula: '=DATEDIF(開始日, 終了日, 単位)',
+    description: '2つの日付間の差を計算します',
+    example: '=DATEDIF("2024-01-01", "2024-12-31", "D")',
+    result: '365',
+    alternatives: [],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: '2024-01-01'}, {cell: 'B1', value: '2024-12-31'}],
+      outputCell: {cell: 'C1', value: 365},
+      description: 'A1とB1の日付間の日数を計算'
+    },
+    category: 'date',
+    difficulty: 'advanced'
+  },
+  {
+    id: 'networkdays-function',
+    name: 'NETWORKDAYS',
+    formula: '=NETWORKDAYS(開始日, 終了日, [祝日])',
+    description: '2つの日付間の営業日数を計算します',
+    example: '=NETWORKDAYS("2024-01-01", "2024-01-31")',
+    result: '23',
+    alternatives: ['WORKDAY'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: '2024-01-01'}, {cell: 'B1', value: '2024-01-31'}],
+      outputCell: {cell: 'C1', value: 23},
+      description: 'A1とB1の間の営業日数を計算'
+    },
+    category: 'date',
+    difficulty: 'advanced'
+  },
+  {
+    id: 'workday-function',
+    name: 'WORKDAY',
+    formula: '=WORKDAY(開始日, 日数, [祝日])',
+    description: '指定した営業日数後の日付を返します',
+    example: '=WORKDAY("2024-01-01", 10)',
+    result: '2024-01-15',
+    alternatives: ['NETWORKDAYS'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: '2024-01-01'}],
+      outputCell: {cell: 'B1', value: '2024-01-15'},
+      description: 'A1から10営業日後の日付を計算'
+    },
+    category: 'date',
+    difficulty: 'advanced'
+  },
+  // 논리 함수들
+  {
+    id: 'and-function',
+    name: 'AND',
+    formula: '=AND(論理値1, 論理値2, ...)',
+    description: 'すべての引数がTRUEの場合にTRUEを返します',
+    example: '=AND(TRUE, TRUE, FALSE)',
+    result: 'FALSE',
+    alternatives: ['OR', 'NOT'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: true}, {cell: 'B1', value: true}, {cell: 'C1', value: false}],
+      outputCell: {cell: 'D1', value: false},
+      description: 'A1, B1, C1がすべてTRUEかチェック'
+    },
+    category: 'logical',
+    difficulty: 'beginner'
+  },
+  {
+    id: 'or-function',
+    name: 'OR',
+    formula: '=OR(論理値1, 論理値2, ...)',
+    description: 'いずれかの引数がTRUEの場合にTRUEを返します',
+    example: '=OR(TRUE, FALSE, FALSE)',
+    result: 'TRUE',
+    alternatives: ['AND', 'NOT'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: true}, {cell: 'B1', value: false}, {cell: 'C1', value: false}],
+      outputCell: {cell: 'D1', value: true},
+      description: 'A1, B1, C1のいずれかがTRUEかチェック'
+    },
+    category: 'logical',
+    difficulty: 'beginner'
+  },
+  {
+    id: 'not-function',
+    name: 'NOT',
+    formula: '=NOT(論理値)',
+    description: '論理値の反対を返します',
+    example: '=NOT(TRUE)',
+    result: 'FALSE',
+    alternatives: ['AND', 'OR'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: true}],
+      outputCell: {cell: 'B1', value: false},
+      description: 'A1の論理値を反転'
+    },
+    category: 'logical',
+    difficulty: 'beginner'
+  },
+  {
+    id: 'xor-function',
+    name: 'XOR',
+    formula: '=XOR(論理値1, 論理値2, ...)',
+    description: '奇数個の引数がTRUEの場合にTRUEを返します',
+    example: '=XOR(TRUE, TRUE, FALSE)',
+    result: 'FALSE',
+    alternatives: ['AND', 'OR'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: true}, {cell: 'B1', value: true}, {cell: 'C1', value: false}],
+      outputCell: {cell: 'D1', value: false},
+      description: 'A1, B1, C1の奇数個がTRUEかチェック'
+    },
+    category: 'logical',
+    difficulty: 'advanced'
+  },
+  {
+    id: 'iferror-function',
+    name: 'IFERROR',
+    formula: '=IFERROR(値, エラー時の値)',
+    description: 'エラーが発生した場合に指定した値を返します',
+    example: '=IFERROR(1/0, "エラー")',
+    result: 'エラー',
+    alternatives: ['IF', 'ISERROR'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 1}, {cell: 'B1', value: 0}],
+      outputCell: {cell: 'C1', value: 'エラー'},
+      description: 'A1/B1でエラーが発生した場合に"エラー"を表示'
+    },
+    category: 'logical',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'ifna-function',
+    name: 'IFNA',
+    formula: '=IFNA(値, NAエラー時の値)',
+    description: 'NAエラーが発生した場合に指定した値を返します',
+    example: '=IFNA(VLOOKUP("存在しない", A1:B10, 2, FALSE), "見つかりません")',
+    result: '見つかりません',
+    alternatives: ['IFERROR', 'VLOOKUP'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: '存在しない'}],
+      outputCell: {cell: 'B1', value: '見つかりません'},
+      description: 'VLOOKUPでNAエラーが発生した場合に"見つかりません"を表示'
+    },
+    category: 'logical',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'iserror-function',
+    name: 'ISERROR',
+    formula: '=ISERROR(値)',
+    description: '値がエラーかどうかをチェックします',
+    example: '=ISERROR(1/0)',
+    result: 'TRUE',
+    alternatives: ['IFERROR', 'ISNA'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: '=1/0'}],
+      outputCell: {cell: 'B1', value: true},
+      description: 'A1がエラーかどうかをチェック'
+    },
+    category: 'logical',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'isna-function',
+    name: 'ISNA',
+    formula: '=ISNA(値)',
+    description: '値がNAエラーかどうかをチェックします',
+    example: '=ISNA(NA())',
+    result: 'TRUE',
+    alternatives: ['ISERROR', 'IFNA'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 'NA()'}],
+      outputCell: {cell: 'B1', value: true},
+      description: 'A1がNAエラーかどうかをチェック'
+    },
+    category: 'logical',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'isblank-function',
+    name: 'ISBLANK',
+    formula: '=ISBLANK(値)',
+    description: '値が空白かどうかをチェックします',
+    example: '=ISBLANK(A1)',
+    result: 'TRUE',
+    alternatives: ['IF', 'COUNTBLANK'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: ''}],
+      outputCell: {cell: 'B1', value: true},
+      description: 'A1が空白かどうかをチェック'
+    },
+    category: 'logical',
+    difficulty: 'beginner'
+  },
+  {
+    id: 'isnumber-function',
+    name: 'ISNUMBER',
+    formula: '=ISNUMBER(値)',
+    description: '値が数値かどうかをチェックします',
+    example: '=ISNUMBER(123)',
+    result: 'TRUE',
+    alternatives: ['ISTEXT', 'ISLOGICAL'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 123}],
+      outputCell: {cell: 'B1', value: true},
+      description: 'A1が数値かどうかをチェック'
+    },
+    category: 'logical',
+    difficulty: 'beginner'
+  },
+  // 통계 함수들
+  {
+    id: 'median-function',
+    name: 'MEDIAN',
+    formula: '=MEDIAN(数値1, 数値2, ...)',
+    description: '数値の中央値を返します',
+    example: '=MEDIAN(1, 2, 3, 4, 5)',
+    result: '3',
+    alternatives: ['AVERAGE', 'MODE'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 1}, {cell: 'B1', value: 2}, {cell: 'C1', value: 3}, {cell: 'D1', value: 4}, {cell: 'E1', value: 5}],
+      outputCell: {cell: 'F1', value: 3},
+      description: 'A1:E1の中央値を計算'
+    },
+    category: 'statistical',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'mode-function',
+    name: 'MODE',
+    formula: '=MODE(数値1, 数値2, ...)',
+    description: '最も頻繁に出現する数値を返します',
+    example: '=MODE(1, 2, 2, 3, 2)',
+    result: '2',
+    alternatives: ['MEDIAN', 'AVERAGE'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 1}, {cell: 'B1', value: 2}, {cell: 'C1', value: 2}, {cell: 'D1', value: 3}, {cell: 'E1', value: 2}],
+      outputCell: {cell: 'F1', value: 2},
+      description: 'A1:E1の最頻値を計算'
+    },
+    category: 'statistical',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'stdev-function',
+    name: 'STDEV',
+    formula: '=STDEV(数値1, 数値2, ...)',
+    description: '標本の標準偏差を計算します',
+    example: '=STDEV(1, 2, 3, 4, 5)',
+    result: '1.58',
+    alternatives: ['STDEVP', 'VAR'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 1}, {cell: 'B1', value: 2}, {cell: 'C1', value: 3}, {cell: 'D1', value: 4}, {cell: 'E1', value: 5}],
+      outputCell: {cell: 'F1', value: 1.58},
+      description: 'A1:E1の標本標準偏差を計算'
+    },
+    category: 'statistical',
+    difficulty: 'advanced'
+  },
+  {
+    id: 'var-function',
+    name: 'VAR',
+    formula: '=VAR(数値1, 数値2, ...)',
+    description: '標本の分散を計算します',
+    example: '=VAR(1, 2, 3, 4, 5)',
+    result: '2.5',
+    alternatives: ['VARP', 'STDEV'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 1}, {cell: 'B1', value: 2}, {cell: 'C1', value: 3}, {cell: 'D1', value: 4}, {cell: 'E1', value: 5}],
+      outputCell: {cell: 'F1', value: 2.5},
+      description: 'A1:E1の標本分散を計算'
+    },
+    category: 'statistical',
+    difficulty: 'advanced'
+  },
+  {
+    id: 'rank-function',
+    name: 'RANK',
+    formula: '=RANK(数値, 配列, [順序])',
+    description: '数値の順位を返します',
+    example: '=RANK(85, {70, 85, 90, 85}, 0)',
+    result: '2',
+    alternatives: ['RANK.EQ', 'RANK.AVG'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 85}, {cell: 'B1', value: 70}, {cell: 'C1', value: 90}, {cell: 'D1', value: 85}],
+      outputCell: {cell: 'E1', value: 2},
+      description: 'A1の値のB1:D1内での順位を計算'
+    },
+    category: 'statistical',
+    difficulty: 'intermediate'
+  },
+  {
+    id: 'percentile-function',
+    name: 'PERCENTILE',
+    formula: '=PERCENTILE(配列, 百分位)',
+    description: '配列の指定した百分位の値を返します',
+    example: '=PERCENTILE({1,2,3,4,5}, 0.5)',
+    result: '3',
+    alternatives: ['PERCENTILE.INC', 'QUARTILE'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 1}, {cell: 'B1', value: 2}, {cell: 'C1', value: 3}, {cell: 'D1', value: 4}, {cell: 'E1', value: 5}],
+      outputCell: {cell: 'F1', value: 3},
+      description: 'A1:E1の50パーセンタイル値を計算'
+    },
+    category: 'statistical',
+    difficulty: 'advanced'
+  },
+  {
+    id: 'quartile-function',
+    name: 'QUARTILE',
+    formula: '=QUARTILE(配列, 四分位)',
+    description: '配列の指定した四分位の値を返します',
+    example: '=QUARTILE({1,2,3,4,5}, 1)',
+    result: '2',
+    alternatives: ['PERCENTILE', 'QUARTILE.INC'],
+    visualExample: {
+      inputCells: [{cell: 'A1', value: 1}, {cell: 'B1', value: 2}, {cell: 'C1', value: 3}, {cell: 'D1', value: 4}, {cell: 'E1', value: 5}],
+      outputCell: {cell: 'F1', value: 2},
+      description: 'A1:E1の第1四分位値を計算'
+    },
+    category: 'statistical',
+    difficulty: 'advanced'
   }
 ];

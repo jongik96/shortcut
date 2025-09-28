@@ -18,12 +18,42 @@ export default function Guide() {
               <h1 className="text-lg sm:text-xl font-bold text-gray-900">LearnShortcuts.dev</h1>
             </Link>
             
-            <nav className="flex items-center gap-4">
+            <nav className="flex items-center gap-2">
               <Link 
-                href="/list"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
+                href="/os"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-lg font-medium transition-colors"
               >
-                ショートカット一覧
+                OS
+              </Link>
+              <Link 
+                href="/office"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-lg font-medium transition-colors"
+              >
+                Office
+              </Link>
+              <Link 
+                href="/google"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-lg font-medium transition-colors"
+              >
+                Google
+              </Link>
+              <Link 
+                href="/browser"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-lg font-medium transition-colors"
+              >
+                Browser
+              </Link>
+              <Link 
+                href="/adobe"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-lg font-medium transition-colors"
+              >
+                Adobe
+              </Link>
+              <Link 
+                href="/others"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-lg font-medium transition-colors"
+              >
+                Others
               </Link>
             </nav>
           </div>

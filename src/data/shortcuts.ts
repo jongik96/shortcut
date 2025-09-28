@@ -2219,5 +2219,2755 @@ export const shortcuts: Shortcut[] = [
     windows: 'Alt + V + N',
     mac: '⌘ + Option + N',
     keywords: ['ノート', 'マスター', 'テンプレート']
+  },
+
+  // === Google Docs 단축키 ===
+  {
+    id: 'docs-bold',
+    name: '太字',
+    description: '選択したテキストを太字にします',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + B',
+    mac: '⌘ + B',
+    keywords: ['太字', 'ボールド', 'フォント']
+  },
+  {
+    id: 'docs-italic',
+    name: '斜体',
+    description: '選択したテキストを斜体にします',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + I',
+    mac: '⌘ + I',
+    keywords: ['斜体', 'イタリック', 'フォント']
+  },
+  {
+    id: 'docs-underline',
+    name: '下線',
+    description: '選択したテキストに下線を引きます',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + U',
+    mac: '⌘ + U',
+    keywords: ['下線', 'アンダーライン', 'フォント']
+  },
+  {
+    id: 'docs-copy',
+    name: 'コピー',
+    description: '選択したテキストをコピーします',
+    category: 'edit',
+    software: 'docs',
+    windows: 'Ctrl + C',
+    mac: '⌘ + C',
+    keywords: ['コピー', '複製', 'コピー']
+  },
+  {
+    id: 'docs-paste',
+    name: '貼り付け',
+    description: 'コピーしたテキストを貼り付けます',
+    category: 'edit',
+    software: 'docs',
+    windows: 'Ctrl + V',
+    mac: '⌘ + V',
+    keywords: ['貼り付け', 'ペースト', '挿入']
+  },
+  {
+    id: 'docs-cut',
+    name: '切り取り',
+    description: '選択したテキストを切り取ります',
+    category: 'edit',
+    software: 'docs',
+    windows: 'Ctrl + X',
+    mac: '⌘ + X',
+    keywords: ['切り取り', 'カット', '移動']
+  },
+  {
+    id: 'docs-undo',
+    name: '元に戻す',
+    description: '最後の操作を元に戻します',
+    category: 'edit',
+    software: 'docs',
+    windows: 'Ctrl + Z',
+    mac: '⌘ + Z',
+    keywords: ['元に戻す', 'アンドゥ', '取消']
+  },
+  {
+    id: 'docs-redo',
+    name: 'やり直し',
+    description: '元に戻した操作をやり直します',
+    category: 'edit',
+    software: 'docs',
+    windows: 'Ctrl + Y',
+    mac: '⌘ + Shift + Z',
+    keywords: ['やり直し', 'リドゥ', '再実行']
+  },
+  {
+    id: 'docs-find',
+    name: '検索',
+    description: '文書内でテキストを検索します',
+    category: 'edit',
+    software: 'docs',
+    windows: 'Ctrl + F',
+    mac: '⌘ + F',
+    keywords: ['検索', 'ファインド', '探す']
+  },
+  {
+    id: 'docs-replace',
+    name: '置換',
+    description: 'テキストを検索して置換します',
+    category: 'edit',
+    software: 'docs',
+    windows: 'Ctrl + H',
+    mac: '⌘ + Shift + H',
+    keywords: ['置換', 'リプレース', '変更']
+  },
+  {
+    id: 'docs-select-all',
+    name: 'すべて選択',
+    description: '文書全体を選択します',
+    category: 'edit',
+    software: 'docs',
+    windows: 'Ctrl + A',
+    mac: '⌘ + A',
+    keywords: ['すべて選択', '全選択', '選択']
+  },
+  {
+    id: 'docs-save',
+    name: '保存',
+    description: '文書を保存します',
+    category: 'file',
+    software: 'docs',
+    windows: 'Ctrl + S',
+    mac: '⌘ + S',
+    keywords: ['保存', 'セーブ', 'ストレージ']
+  },
+  {
+    id: 'docs-new',
+    name: '新規文書',
+    description: '新しい文書を作成します',
+    category: 'file',
+    software: 'docs',
+    windows: 'Ctrl + N',
+    mac: '⌘ + N',
+    keywords: ['新規', 'ニュー', '作成']
+  },
+  {
+    id: 'docs-open',
+    name: '開く',
+    description: '既存の文書を開きます',
+    category: 'file',
+    software: 'docs',
+    windows: 'Ctrl + O',
+    mac: '⌘ + O',
+    keywords: ['開く', 'オープン', '読み込み']
+  },
+  {
+    id: 'docs-print',
+    name: '印刷',
+    description: '文書を印刷します',
+    category: 'file',
+    software: 'docs',
+    windows: 'Ctrl + P',
+    mac: '⌘ + P',
+    keywords: ['印刷', 'プリント', '出力']
+  },
+  {
+    id: 'docs-insert-link',
+    name: 'リンク挿入',
+    description: 'ハイパーリンクを挿入します',
+    category: 'insert',
+    software: 'docs',
+    windows: 'Ctrl + K',
+    mac: '⌘ + K',
+    keywords: ['リンク', 'ハイパーリンク', 'URL']
+  },
+  {
+    id: 'docs-insert-comment',
+    name: 'コメント挿入',
+    description: 'コメントを挿入します',
+    category: 'insert',
+    software: 'docs',
+    windows: 'Ctrl + Alt + M',
+    mac: '⌘ + Option + M',
+    keywords: ['コメント', 'メモ', '注釈']
+  },
+  {
+    id: 'docs-insert-table',
+    name: '表挿入',
+    description: '表を挿入します',
+    category: 'insert',
+    software: 'docs',
+    windows: 'Alt + I + T',
+    mac: '⌘ + Option + T',
+    keywords: ['表', 'テーブル', 'グリッド']
+  },
+  {
+    id: 'docs-insert-image',
+    name: '画像挿入',
+    description: '画像を挿入します',
+    category: 'insert',
+    software: 'docs',
+    windows: 'Alt + I + I',
+    mac: '⌘ + Option + I',
+    keywords: ['画像', 'イメージ', '写真']
+  },
+  {
+    id: 'docs-align-left',
+    name: '左揃え',
+    description: 'テキストを左揃えにします',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + Shift + L',
+    mac: '⌘ + Shift + L',
+    keywords: ['左揃え', 'アライメント', '配置']
+  },
+  {
+    id: 'docs-align-center',
+    name: '中央揃え',
+    description: 'テキストを中央揃えにします',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + Shift + E',
+    mac: '⌘ + Shift + E',
+    keywords: ['中央揃え', 'アライメント', '配置']
+  },
+  {
+    id: 'docs-align-right',
+    name: '右揃え',
+    description: 'テキストを右揃えにします',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + Shift + R',
+    mac: '⌘ + Shift + R',
+    keywords: ['右揃え', 'アライメント', '配置']
+  },
+  {
+    id: 'docs-justify',
+    name: '両端揃え',
+    description: 'テキストを両端揃えにします',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + Shift + J',
+    mac: '⌘ + Shift + J',
+    keywords: ['両端揃え', 'アライメント', '配置']
+  },
+  {
+    id: 'docs-bullet-list',
+    name: '箇条書き',
+    description: '箇条書きリストを作成します',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + Shift + 8',
+    mac: '⌘ + Shift + 8',
+    keywords: ['箇条書き', 'リスト', 'ブレット']
+  },
+  {
+    id: 'docs-numbered-list',
+    name: '番号付きリスト',
+    description: '番号付きリストを作成します',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + Shift + 7',
+    mac: '⌘ + Shift + 7',
+    keywords: ['番号付き', 'リスト', 'ナンバー']
+  },
+  {
+    id: 'docs-heading-1',
+    name: '見出し1',
+    description: '見出し1スタイルを適用します',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + Alt + 1',
+    mac: '⌘ + Option + 1',
+    keywords: ['見出し', 'ヘッダー', 'スタイル']
+  },
+  {
+    id: 'docs-heading-2',
+    name: '見出し2',
+    description: '見出し2スタイルを適用します',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + Alt + 2',
+    mac: '⌘ + Option + 2',
+    keywords: ['見出し', 'ヘッダー', 'スタイル']
+  },
+  {
+    id: 'docs-heading-3',
+    name: '見出し3',
+    description: '見出し3スタイルを適用します',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + Alt + 3',
+    mac: '⌘ + Option + 3',
+    keywords: ['見出し', 'ヘッダー', 'スタイル']
+  },
+  {
+    id: 'docs-normal-text',
+    name: '標準テキスト',
+    description: '標準テキストスタイルを適用します',
+    category: 'format',
+    software: 'docs',
+    windows: 'Ctrl + Alt + 0',
+    mac: '⌘ + Option + 0',
+    keywords: ['標準', 'ノーマル', 'スタイル']
+  },
+
+  // === Google Sheets 단축키 ===
+  {
+    id: 'sheets-bold',
+    name: '太字',
+    description: '選択したセルを太字にします',
+    category: 'format',
+    software: 'sheets',
+    windows: 'Ctrl + B',
+    mac: '⌘ + B',
+    keywords: ['太字', 'ボールド', 'フォント']
+  },
+  {
+    id: 'sheets-italic',
+    name: '斜体',
+    description: '選択したセルを斜体にします',
+    category: 'format',
+    software: 'sheets',
+    windows: 'Ctrl + I',
+    mac: '⌘ + I',
+    keywords: ['斜体', 'イタリック', 'フォント']
+  },
+  {
+    id: 'sheets-underline',
+    name: '下線',
+    description: '選択したセルに下線を引きます',
+    category: 'format',
+    software: 'sheets',
+    windows: 'Ctrl + U',
+    mac: '⌘ + U',
+    keywords: ['下線', 'アンダーライン', 'フォント']
+  },
+  {
+    id: 'sheets-copy',
+    name: 'コピー',
+    description: '選択したセルをコピーします',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + C',
+    mac: '⌘ + C',
+    keywords: ['コピー', '複製', 'コピー']
+  },
+  {
+    id: 'sheets-paste',
+    name: '貼り付け',
+    description: 'コピーしたセルを貼り付けます',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + V',
+    mac: '⌘ + V',
+    keywords: ['貼り付け', 'ペースト', '挿入']
+  },
+  {
+    id: 'sheets-cut',
+    name: '切り取り',
+    description: '選択したセルを切り取ります',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + X',
+    mac: '⌘ + X',
+    keywords: ['切り取り', 'カット', '移動']
+  },
+  {
+    id: 'sheets-undo',
+    name: '元に戻す',
+    description: '最後の操作を元に戻します',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + Z',
+    mac: '⌘ + Z',
+    keywords: ['元に戻す', 'アンドゥ', '取消']
+  },
+  {
+    id: 'sheets-redo',
+    name: 'やり直し',
+    description: '元に戻した操作をやり直します',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + Y',
+    mac: '⌘ + Shift + Z',
+    keywords: ['やり直し', 'リドゥ', '再実行']
+  },
+  {
+    id: 'sheets-find',
+    name: '検索',
+    description: 'スプレッドシート内でテキストを検索します',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + F',
+    mac: '⌘ + F',
+    keywords: ['検索', 'ファインド', '探す']
+  },
+  {
+    id: 'sheets-replace',
+    name: '置換',
+    description: 'テキストを検索して置換します',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + H',
+    mac: '⌘ + Shift + H',
+    keywords: ['置換', 'リプレース', '変更']
+  },
+  {
+    id: 'sheets-select-all',
+    name: 'すべて選択',
+    description: 'スプレッドシート全体を選択します',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + A',
+    mac: '⌘ + A',
+    keywords: ['すべて選択', '全選択', '選択']
+  },
+  {
+    id: 'sheets-save',
+    name: '保存',
+    description: 'スプレッドシートを保存します',
+    category: 'file',
+    software: 'sheets',
+    windows: 'Ctrl + S',
+    mac: '⌘ + S',
+    keywords: ['保存', 'セーブ', 'ストレージ']
+  },
+  {
+    id: 'sheets-new',
+    name: '新規スプレッドシート',
+    description: '新しいスプレッドシートを作成します',
+    category: 'file',
+    software: 'sheets',
+    windows: 'Ctrl + N',
+    mac: '⌘ + N',
+    keywords: ['新規', 'ニュー', '作成']
+  },
+  {
+    id: 'sheets-open',
+    name: '開く',
+    description: '既存のスプレッドシートを開きます',
+    category: 'file',
+    software: 'sheets',
+    windows: 'Ctrl + O',
+    mac: '⌘ + O',
+    keywords: ['開く', 'オープン', '読み込み']
+  },
+  {
+    id: 'sheets-print',
+    name: '印刷',
+    description: 'スプレッドシートを印刷します',
+    category: 'file',
+    software: 'sheets',
+    windows: 'Ctrl + P',
+    mac: '⌘ + P',
+    keywords: ['印刷', 'プリント', '出力']
+  },
+  {
+    id: 'sheets-insert-row',
+    name: '行挿入',
+    description: '選択した行の上に行を挿入します',
+    category: 'insert',
+    software: 'sheets',
+    windows: 'Ctrl + Alt + I + R',
+    mac: '⌘ + Option + I + R',
+    keywords: ['行', 'ロウ', '挿入']
+  },
+  {
+    id: 'sheets-insert-column',
+    name: '列挿入',
+    description: '選択した列の左に列を挿入します',
+    category: 'insert',
+    software: 'sheets',
+    windows: 'Ctrl + Alt + I + C',
+    mac: '⌘ + Option + I + C',
+    keywords: ['列', 'カラム', '挿入']
+  },
+  {
+    id: 'sheets-delete-row',
+    name: '行削除',
+    description: '選択した行を削除します',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + Alt + E + R',
+    mac: '⌘ + Option + E + R',
+    keywords: ['行', 'ロウ', '削除']
+  },
+  {
+    id: 'sheets-delete-column',
+    name: '列削除',
+    description: '選択した列を削除します',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + Alt + E + C',
+    mac: '⌘ + Option + E + C',
+    keywords: ['列', 'カラム', '削除']
+  },
+  {
+    id: 'sheets-insert-function',
+    name: '関数挿入',
+    description: '関数を挿入します',
+    category: 'insert',
+    software: 'sheets',
+    windows: 'Shift + F3',
+    mac: 'Shift + F3',
+    keywords: ['関数', 'ファンクション', '計算']
+  },
+  {
+    id: 'sheets-autosum',
+    name: 'オートSUM',
+    description: '選択した範囲の合計を自動計算します',
+    category: 'data',
+    software: 'sheets',
+    windows: 'Alt + =',
+    mac: '⌘ + Shift + T',
+    keywords: ['合計', 'SUM', '計算']
+  },
+  {
+    id: 'sheets-fill-down',
+    name: '下方向にコピー',
+    description: '選択したセルの内容を下方向にコピーします',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + D',
+    mac: '⌘ + D',
+    keywords: ['コピー', '下方向', 'フィル']
+  },
+  {
+    id: 'sheets-fill-right',
+    name: '右方向にコピー',
+    description: '選択したセルの内容を右方向にコピーします',
+    category: 'edit',
+    software: 'sheets',
+    windows: 'Ctrl + R',
+    mac: '⌘ + R',
+    keywords: ['コピー', '右方向', 'フィル']
+  },
+  {
+    id: 'sheets-format-cells',
+    name: 'セルの書式設定',
+    description: 'セルの書式設定ダイアログを開きます',
+    category: 'format',
+    software: 'sheets',
+    windows: 'Ctrl + 1',
+    mac: '⌘ + 1',
+    keywords: ['書式', 'フォーマット', '設定']
+  },
+  {
+    id: 'sheets-align-left',
+    name: '左揃え',
+    description: 'セルの内容を左揃えにします',
+    category: 'format',
+    software: 'sheets',
+    windows: 'Ctrl + Shift + L',
+    mac: '⌘ + Shift + L',
+    keywords: ['左揃え', 'アライメント', '配置']
+  },
+  {
+    id: 'sheets-align-center',
+    name: '中央揃え',
+    description: 'セルの内容を中央揃えにします',
+    category: 'format',
+    software: 'sheets',
+    windows: 'Ctrl + Shift + E',
+    mac: '⌘ + Shift + E',
+    keywords: ['中央揃え', 'アライメント', '配置']
+  },
+  {
+    id: 'sheets-align-right',
+    name: '右揃え',
+    description: 'セルの内容を右揃えにします',
+    category: 'format',
+    software: 'sheets',
+    windows: 'Ctrl + Shift + R',
+    mac: '⌘ + Shift + R',
+    keywords: ['右揃え', 'アライメント', '配置']
+  },
+  {
+    id: 'sheets-sort-ascending',
+    name: '昇順ソート',
+    description: '選択した範囲を昇順でソートします',
+    category: 'data',
+    software: 'sheets',
+    windows: 'Alt + A + S + A',
+    mac: '⌘ + Shift + R',
+    keywords: ['ソート', '昇順', '並び替え']
+  },
+  {
+    id: 'sheets-sort-descending',
+    name: '降順ソート',
+    description: '選択した範囲を降順でソートします',
+    category: 'data',
+    software: 'sheets',
+    windows: 'Alt + A + S + D',
+    mac: '⌘ + Shift + S',
+    keywords: ['ソート', '降順', '並び替え']
+  },
+  {
+    id: 'sheets-filter',
+    name: 'フィルター',
+    description: 'フィルターを作成または削除します',
+    category: 'data',
+    software: 'sheets',
+    windows: 'Ctrl + Shift + F',
+    mac: '⌘ + Shift + F',
+    keywords: ['フィルター', '絞り込み', 'データ']
+  },
+  {
+    id: 'sheets-chart',
+    name: 'グラフ挿入',
+    description: 'グラフを挿入します',
+    category: 'insert',
+    software: 'sheets',
+    windows: 'Alt + I + C',
+    mac: '⌘ + Option + C',
+    keywords: ['グラフ', 'チャート', '挿入']
+  },
+  {
+    id: 'sheets-freeze-rows',
+    name: '行を固定',
+    description: '選択した行を固定します',
+    category: 'view',
+    software: 'sheets',
+    windows: 'Alt + V + F + R',
+    mac: '⌘ + Option + F + R',
+    keywords: ['固定', 'フリーズ', '行']
+  },
+  {
+    id: 'sheets-freeze-columns',
+    name: '列を固定',
+    description: '選択した列を固定します',
+    category: 'view',
+    software: 'sheets',
+    windows: 'Alt + V + F + C',
+    mac: '⌘ + Option + F + C',
+    keywords: ['固定', 'フリーズ', '列']
+  },
+
+  // === Google Slides 단축키 ===
+  {
+    id: 'slides-bold',
+    name: '太字',
+    description: '選択したテキストを太字にします',
+    category: 'format',
+    software: 'slides',
+    windows: 'Ctrl + B',
+    mac: '⌘ + B',
+    keywords: ['太字', 'ボールド', 'フォント']
+  },
+  {
+    id: 'slides-italic',
+    name: '斜体',
+    description: '選択したテキストを斜体にします',
+    category: 'format',
+    software: 'slides',
+    windows: 'Ctrl + I',
+    mac: '⌘ + I',
+    keywords: ['斜体', 'イタリック', 'フォント']
+  },
+  {
+    id: 'slides-underline',
+    name: '下線',
+    description: '選択したテキストに下線を引きます',
+    category: 'format',
+    software: 'slides',
+    windows: 'Ctrl + U',
+    mac: '⌘ + U',
+    keywords: ['下線', 'アンダーライン', 'フォント']
+  },
+  {
+    id: 'slides-copy',
+    name: 'コピー',
+    description: '選択したオブジェクトをコピーします',
+    category: 'edit',
+    software: 'slides',
+    windows: 'Ctrl + C',
+    mac: '⌘ + C',
+    keywords: ['コピー', '複製', 'コピー']
+  },
+  {
+    id: 'slides-paste',
+    name: '貼り付け',
+    description: 'コピーしたオブジェクトを貼り付けます',
+    category: 'edit',
+    software: 'slides',
+    windows: 'Ctrl + V',
+    mac: '⌘ + V',
+    keywords: ['貼り付け', 'ペースト', '挿入']
+  },
+  {
+    id: 'slides-cut',
+    name: '切り取り',
+    description: '選択したオブジェクトを切り取ります',
+    category: 'edit',
+    software: 'slides',
+    windows: 'Ctrl + X',
+    mac: '⌘ + X',
+    keywords: ['切り取り', 'カット', '移動']
+  },
+  {
+    id: 'slides-undo',
+    name: '元に戻す',
+    description: '最後の操作を元に戻します',
+    category: 'edit',
+    software: 'slides',
+    windows: 'Ctrl + Z',
+    mac: '⌘ + Z',
+    keywords: ['元に戻す', 'アンドゥ', '取消']
+  },
+  {
+    id: 'slides-redo',
+    name: 'やり直し',
+    description: '元に戻した操作をやり直します',
+    category: 'edit',
+    software: 'slides',
+    windows: 'Ctrl + Y',
+    mac: '⌘ + Shift + Z',
+    keywords: ['やり直し', 'リドゥ', '再実行']
+  },
+  {
+    id: 'slides-new-slide',
+    name: '新しいスライド',
+    description: '新しいスライドを挿入します',
+    category: 'insert',
+    software: 'slides',
+    windows: 'Ctrl + M',
+    mac: '⌘ + M',
+    keywords: ['新しいスライド', '挿入', '追加']
+  },
+  {
+    id: 'slides-duplicate-slide',
+    name: 'スライドを複製',
+    description: '選択したスライドを複製します',
+    category: 'edit',
+    software: 'slides',
+    windows: 'Ctrl + D',
+    mac: '⌘ + D',
+    keywords: ['複製', 'コピー', 'スライド']
+  },
+  {
+    id: 'slides-delete-slide',
+    name: 'スライドを削除',
+    description: '選択したスライドを削除します',
+    category: 'edit',
+    software: 'slides',
+    windows: 'Delete',
+    mac: 'Delete',
+    keywords: ['削除', 'デリート', 'スライド']
+  },
+  {
+    id: 'slides-insert-text',
+    name: 'テキストボックス挿入',
+    description: 'テキストボックスを挿入します',
+    category: 'insert',
+    software: 'slides',
+    windows: 'Alt + I + T',
+    mac: '⌘ + Option + T',
+    keywords: ['テキストボックス', 'テキスト', '挿入']
+  },
+  {
+    id: 'slides-insert-image',
+    name: '画像挿入',
+    description: '画像を挿入します',
+    category: 'insert',
+    software: 'slides',
+    windows: 'Alt + I + I',
+    mac: '⌘ + Option + I',
+    keywords: ['画像', 'イメージ', '写真']
+  },
+  {
+    id: 'slides-insert-shape',
+    name: '図形挿入',
+    description: '図形を挿入します',
+    category: 'insert',
+    software: 'slides',
+    windows: 'Alt + I + S',
+    mac: '⌘ + Option + S',
+    keywords: ['図形', 'シェイプ', '挿入']
+  },
+  {
+    id: 'slides-insert-table',
+    name: '表挿入',
+    description: '表を挿入します',
+    category: 'insert',
+    software: 'slides',
+    windows: 'Alt + I + T',
+    mac: '⌘ + Option + T',
+    keywords: ['表', 'テーブル', 'グリッド']
+  },
+  {
+    id: 'slides-insert-chart',
+    name: 'グラフ挿入',
+    description: 'グラフを挿入します',
+    category: 'insert',
+    software: 'slides',
+    windows: 'Alt + I + C',
+    mac: '⌘ + Option + C',
+    keywords: ['グラフ', 'チャート', '挿入']
+  },
+  {
+    id: 'slides-align-left',
+    name: '左揃え',
+    description: '選択したオブジェクトを左揃えにします',
+    category: 'format',
+    software: 'slides',
+    windows: 'Ctrl + Shift + L',
+    mac: '⌘ + Shift + L',
+    keywords: ['左揃え', 'アライメント', '配置']
+  },
+  {
+    id: 'slides-align-center',
+    name: '中央揃え',
+    description: '選択したオブジェクトを中央揃えにします',
+    category: 'format',
+    software: 'slides',
+    windows: 'Ctrl + Shift + E',
+    mac: '⌘ + Shift + E',
+    keywords: ['中央揃え', 'アライメント', '配置']
+  },
+  {
+    id: 'slides-align-right',
+    name: '右揃え',
+    description: '選択したオブジェクトを右揃えにします',
+    category: 'format',
+    software: 'slides',
+    windows: 'Ctrl + Shift + R',
+    mac: '⌘ + Shift + R',
+    keywords: ['右揃え', 'アライメント', '配置']
+  },
+  {
+    id: 'slides-present',
+    name: 'プレゼンテーション開始',
+    description: 'プレゼンテーションを開始します',
+    category: 'presentation',
+    software: 'slides',
+    windows: 'Ctrl + F5',
+    mac: '⌘ + Shift + Enter',
+    keywords: ['プレゼンテーション', '開始', 'スライドショー']
+  },
+  {
+    id: 'slides-present-from-start',
+    name: '最初からプレゼンテーション',
+    description: '最初のスライドからプレゼンテーションを開始します',
+    category: 'presentation',
+    software: 'slides',
+    windows: 'F5',
+    mac: '⌘ + Enter',
+    keywords: ['プレゼンテーション', '最初から', 'スライドショー']
+  },
+  {
+    id: 'slides-next-slide',
+    name: '次のスライド',
+    description: '次のスライドに移動します',
+    category: 'navigation',
+    software: 'slides',
+    windows: 'Page Down',
+    mac: 'Page Down',
+    keywords: ['次のスライド', '進む', 'ナビゲーション']
+  },
+  {
+    id: 'slides-previous-slide',
+    name: '前のスライド',
+    description: '前のスライドに移動します',
+    category: 'navigation',
+    software: 'slides',
+    windows: 'Page Up',
+    mac: 'Page Up',
+    keywords: ['前のスライド', '戻る', 'ナビゲーション']
+  },
+  {
+    id: 'slides-first-slide',
+    name: '最初のスライド',
+    description: '最初のスライドに移動します',
+    category: 'navigation',
+    software: 'slides',
+    windows: 'Home',
+    mac: '⌘ + ↑',
+    keywords: ['最初のスライド', 'ホーム', 'ナビゲーション']
+  },
+  {
+    id: 'slides-last-slide',
+    name: '最後のスライド',
+    description: '最後のスライドに移動します',
+    category: 'navigation',
+    software: 'slides',
+    windows: 'End',
+    mac: '⌘ + ↓',
+    keywords: ['最後のスライド', 'エンド', 'ナビゲーション']
+  },
+  {
+    id: 'slides-zoom-in',
+    name: 'ズームイン',
+    description: 'スライドを拡大表示します',
+    category: 'view',
+    software: 'slides',
+    windows: 'Ctrl + +',
+    mac: '⌘ + +',
+    keywords: ['ズームイン', '拡大', 'ビュー']
+  },
+  {
+    id: 'slides-zoom-out',
+    name: 'ズームアウト',
+    description: 'スライドを縮小表示します',
+    category: 'view',
+    software: 'slides',
+    windows: 'Ctrl + -',
+    mac: '⌘ + -',
+    keywords: ['ズームアウト', '縮小', 'ビュー']
+  },
+  {
+    id: 'slides-fit-to-screen',
+    name: '画面に合わせる',
+    description: 'スライドを画面サイズに合わせて表示します',
+    category: 'view',
+    software: 'slides',
+    windows: 'Ctrl + 0',
+    mac: '⌘ + 0',
+    keywords: ['画面に合わせる', 'フィット', 'ビュー']
+  },
+  {
+    id: 'slides-save',
+    name: '保存',
+    description: 'プレゼンテーションを保存します',
+    category: 'file',
+    software: 'slides',
+    windows: 'Ctrl + S',
+    mac: '⌘ + S',
+    keywords: ['保存', 'セーブ', 'ストレージ']
+  },
+  {
+    id: 'slides-new',
+    name: '新規プレゼンテーション',
+    description: '新しいプレゼンテーションを作成します',
+    category: 'file',
+    software: 'slides',
+    windows: 'Ctrl + N',
+    mac: '⌘ + N',
+    keywords: ['新規', 'ニュー', '作成']
+  },
+  {
+    id: 'slides-open',
+    name: '開く',
+    description: '既存のプレゼンテーションを開きます',
+    category: 'file',
+    software: 'slides',
+    windows: 'Ctrl + O',
+    mac: '⌘ + O',
+    keywords: ['開く', 'オープン', '読み込み']
+  },
+  {
+    id: 'slides-print',
+    name: '印刷',
+    description: 'プレゼンテーションを印刷します',
+    category: 'file',
+    software: 'slides',
+    windows: 'Ctrl + P',
+    mac: '⌘ + P',
+    keywords: ['印刷', 'プリント', '出力']
+  },
+
+  // === Chrome 단축키 ===
+  {
+    id: 'chrome-new-tab',
+    name: '新しいタブ',
+    description: '新しいタブを開きます',
+    category: 'tabs',
+    software: 'chrome',
+    windows: 'Ctrl + T',
+    mac: '⌘ + T',
+    keywords: ['新しいタブ', 'タブ', '開く']
+  },
+  {
+    id: 'chrome-close-tab',
+    name: 'タブを閉じる',
+    description: '現在のタブを閉じます',
+    category: 'tabs',
+    software: 'chrome',
+    windows: 'Ctrl + W',
+    mac: '⌘ + W',
+    keywords: ['タブを閉じる', '閉じる', 'タブ']
+  },
+  {
+    id: 'chrome-reopen-tab',
+    name: '閉じたタブを再開',
+    description: '最近閉じたタブを再開します',
+    category: 'tabs',
+    software: 'chrome',
+    windows: 'Ctrl + Shift + T',
+    mac: '⌘ + Shift + T',
+    keywords: ['閉じたタブ', '再開', '復元']
+  },
+  {
+    id: 'chrome-new-window',
+    name: '新しいウィンドウ',
+    description: '新しいウィンドウを開きます',
+    category: 'browser',
+    software: 'chrome',
+    windows: 'Ctrl + N',
+    mac: '⌘ + N',
+    keywords: ['新しいウィンドウ', 'ウィンドウ', '開く']
+  },
+  {
+    id: 'chrome-new-incognito',
+    name: 'シークレットウィンドウ',
+    description: 'シークレットウィンドウを開きます',
+    category: 'browser',
+    software: 'chrome',
+    windows: 'Ctrl + Shift + N',
+    mac: '⌘ + Shift + N',
+    keywords: ['シークレット', 'プライベート', 'ウィンドウ']
+  },
+  {
+    id: 'chrome-bookmarks',
+    name: 'ブックマーク',
+    description: 'ブックマークマネージャーを開きます',
+    category: 'bookmarks',
+    software: 'chrome',
+    windows: 'Ctrl + Shift + O',
+    mac: '⌘ + Option + B',
+    keywords: ['ブックマーク', 'お気に入り', 'マネージャー']
+  },
+  {
+    id: 'chrome-bookmark-page',
+    name: 'ページをブックマーク',
+    description: '現在のページをブックマークします',
+    category: 'bookmarks',
+    software: 'chrome',
+    windows: 'Ctrl + D',
+    mac: '⌘ + D',
+    keywords: ['ブックマーク', 'お気に入り', '保存']
+  },
+  {
+    id: 'chrome-history',
+    name: '履歴',
+    description: '履歴ページを開きます',
+    category: 'browser',
+    software: 'chrome',
+    windows: 'Ctrl + H',
+    mac: '⌘ + Y',
+    keywords: ['履歴', 'ヒストリー', '過去']
+  },
+  {
+    id: 'chrome-downloads',
+    name: 'ダウンロード',
+    description: 'ダウンロードページを開きます',
+    category: 'browser',
+    software: 'chrome',
+    windows: 'Ctrl + J',
+    mac: '⌘ + Shift + J',
+    keywords: ['ダウンロード', 'ファイル', '取得']
+  },
+  {
+    id: 'chrome-address-bar',
+    name: 'アドレスバーにフォーカス',
+    description: 'アドレスバーにフォーカスを移動します',
+    category: 'navigation',
+    software: 'chrome',
+    windows: 'Ctrl + L',
+    mac: '⌘ + L',
+    keywords: ['アドレスバー', 'URL', 'フォーカス']
+  },
+  {
+    id: 'chrome-search',
+    name: '検索',
+    description: 'ページ内でテキストを検索します',
+    category: 'browser',
+    software: 'chrome',
+    windows: 'Ctrl + F',
+    mac: '⌘ + F',
+    keywords: ['検索', 'ファインド', '探す']
+  },
+  {
+    id: 'chrome-refresh',
+    name: '更新',
+    description: 'ページを更新します',
+    category: 'browser',
+    software: 'chrome',
+    windows: 'F5',
+    mac: '⌘ + R',
+    keywords: ['更新', 'リフレッシュ', '再読み込み']
+  },
+  {
+    id: 'chrome-force-refresh',
+    name: '強制更新',
+    description: 'キャッシュを無視してページを更新します',
+    category: 'browser',
+    software: 'chrome',
+    windows: 'Ctrl + F5',
+    mac: '⌘ + Shift + R',
+    keywords: ['強制更新', 'キャッシュ', '再読み込み']
+  },
+  {
+    id: 'chrome-back',
+    name: '戻る',
+    description: '前のページに戻ります',
+    category: 'navigation',
+    software: 'chrome',
+    windows: 'Alt + ←',
+    mac: '⌘ + ←',
+    keywords: ['戻る', 'バック', '前のページ']
+  },
+  {
+    id: 'chrome-forward',
+    name: '進む',
+    description: '次のページに進みます',
+    category: 'navigation',
+    software: 'chrome',
+    windows: 'Alt + →',
+    mac: '⌘ + →',
+    keywords: ['進む', 'フォワード', '次のページ']
+  },
+  {
+    id: 'chrome-home',
+    name: 'ホーム',
+    description: 'ホームページに移動します',
+    category: 'navigation',
+    software: 'chrome',
+    windows: 'Alt + Home',
+    mac: '⌘ + Shift + H',
+    keywords: ['ホーム', 'ホームページ', 'トップ']
+  },
+  {
+    id: 'chrome-zoom-in',
+    name: 'ズームイン',
+    description: 'ページを拡大表示します',
+    category: 'view',
+    software: 'chrome',
+    windows: 'Ctrl + +',
+    mac: '⌘ + +',
+    keywords: ['ズームイン', '拡大', 'ビュー']
+  },
+  {
+    id: 'chrome-zoom-out',
+    name: 'ズームアウト',
+    description: 'ページを縮小表示します',
+    category: 'view',
+    software: 'chrome',
+    windows: 'Ctrl + -',
+    mac: '⌘ + -',
+    keywords: ['ズームアウト', '縮小', 'ビュー']
+  },
+  {
+    id: 'chrome-reset-zoom',
+    name: 'ズームリセット',
+    description: 'ズームを100%にリセットします',
+    category: 'view',
+    software: 'chrome',
+    windows: 'Ctrl + 0',
+    mac: '⌘ + 0',
+    keywords: ['ズームリセット', '100%', 'ビュー']
+  },
+  {
+    id: 'chrome-devtools',
+    name: '開発者ツール',
+    description: '開発者ツールを開きます',
+    category: 'tools',
+    software: 'chrome',
+    windows: 'F12',
+    mac: '⌘ + Option + I',
+    keywords: ['開発者ツール', 'デバッグ', 'インスペクト']
+  },
+  {
+    id: 'chrome-task-manager',
+    name: 'タスクマネージャー',
+    description: 'ブラウザのタスクマネージャーを開きます',
+    category: 'tools',
+    software: 'chrome',
+    windows: 'Shift + Esc',
+    mac: 'Shift + Esc',
+    keywords: ['タスクマネージャー', 'プロセス', '管理']
+  },
+
+  // === Safari 단축키 ===
+  {
+    id: 'safari-new-tab',
+    name: '新しいタブ',
+    description: '新しいタブを開きます',
+    category: 'tabs',
+    software: 'safari',
+    windows: 'Ctrl + T',
+    mac: '⌘ + T',
+    keywords: ['新しいタブ', 'タブ', '開く']
+  },
+  {
+    id: 'safari-close-tab',
+    name: 'タブを閉じる',
+    description: '現在のタブを閉じます',
+    category: 'tabs',
+    software: 'safari',
+    windows: 'Ctrl + W',
+    mac: '⌘ + W',
+    keywords: ['タブを閉じる', '閉じる', 'タブ']
+  },
+  {
+    id: 'safari-reopen-tab',
+    name: '閉じたタブを再開',
+    description: '最近閉じたタブを再開します',
+    category: 'tabs',
+    software: 'safari',
+    windows: 'Ctrl + Shift + T',
+    mac: '⌘ + Shift + T',
+    keywords: ['閉じたタブ', '再開', '復元']
+  },
+  {
+    id: 'safari-new-window',
+    name: '新しいウィンドウ',
+    description: '新しいウィンドウを開きます',
+    category: 'browser',
+    software: 'safari',
+    windows: 'Ctrl + N',
+    mac: '⌘ + N',
+    keywords: ['新しいウィンドウ', 'ウィンドウ', '開く']
+  },
+  {
+    id: 'safari-new-private',
+    name: 'プライベートブラウジング',
+    description: 'プライベートブラウジングウィンドウを開きます',
+    category: 'browser',
+    software: 'safari',
+    windows: 'Ctrl + Shift + N',
+    mac: '⌘ + Shift + N',
+    keywords: ['プライベート', 'シークレット', 'ウィンドウ']
+  },
+  {
+    id: 'safari-bookmarks',
+    name: 'ブックマーク',
+    description: 'ブックマークを表示します',
+    category: 'bookmarks',
+    software: 'safari',
+    windows: 'Ctrl + Shift + O',
+    mac: '⌘ + Option + B',
+    keywords: ['ブックマーク', 'お気に入り', 'マネージャー']
+  },
+  {
+    id: 'safari-bookmark-page',
+    name: 'ページをブックマーク',
+    description: '現在のページをブックマークします',
+    category: 'bookmarks',
+    software: 'safari',
+    windows: 'Ctrl + D',
+    mac: '⌘ + D',
+    keywords: ['ブックマーク', 'お気に入り', '保存']
+  },
+  {
+    id: 'safari-history',
+    name: '履歴',
+    description: '履歴を表示します',
+    category: 'browser',
+    software: 'safari',
+    windows: 'Ctrl + H',
+    mac: '⌘ + Y',
+    keywords: ['履歴', 'ヒストリー', '過去']
+  },
+  {
+    id: 'safari-downloads',
+    name: 'ダウンロード',
+    description: 'ダウンロードを表示します',
+    category: 'browser',
+    software: 'safari',
+    windows: 'Ctrl + J',
+    mac: '⌘ + Shift + L',
+    keywords: ['ダウンロード', 'ファイル', '取得']
+  },
+  {
+    id: 'safari-address-bar',
+    name: 'アドレスバーにフォーカス',
+    description: 'アドレスバーにフォーカスを移動します',
+    category: 'navigation',
+    software: 'safari',
+    windows: 'Ctrl + L',
+    mac: '⌘ + L',
+    keywords: ['アドレスバー', 'URL', 'フォーカス']
+  },
+  {
+    id: 'safari-search',
+    name: '検索',
+    description: 'ページ内でテキストを検索します',
+    category: 'browser',
+    software: 'safari',
+    windows: 'Ctrl + F',
+    mac: '⌘ + F',
+    keywords: ['検索', 'ファインド', '探す']
+  },
+  {
+    id: 'safari-refresh',
+    name: '更新',
+    description: 'ページを更新します',
+    category: 'browser',
+    software: 'safari',
+    windows: 'F5',
+    mac: '⌘ + R',
+    keywords: ['更新', 'リフレッシュ', '再読み込み']
+  },
+  {
+    id: 'safari-back',
+    name: '戻る',
+    description: '前のページに戻ります',
+    category: 'navigation',
+    software: 'safari',
+    windows: 'Alt + ←',
+    mac: '⌘ + ←',
+    keywords: ['戻る', 'バック', '前のページ']
+  },
+  {
+    id: 'safari-forward',
+    name: '進む',
+    description: '次のページに進みます',
+    category: 'navigation',
+    software: 'safari',
+    windows: 'Alt + →',
+    mac: '⌘ + →',
+    keywords: ['進む', 'フォワード', '次のページ']
+  },
+  {
+    id: 'safari-home',
+    name: 'ホーム',
+    description: 'ホームページに移動します',
+    category: 'navigation',
+    software: 'safari',
+    windows: 'Alt + Home',
+    mac: '⌘ + Shift + H',
+    keywords: ['ホーム', 'ホームページ', 'トップ']
+  },
+  {
+    id: 'safari-zoom-in',
+    name: 'ズームイン',
+    description: 'ページを拡大表示します',
+    category: 'view',
+    software: 'safari',
+    windows: 'Ctrl + +',
+    mac: '⌘ + +',
+    keywords: ['ズームイン', '拡大', 'ビュー']
+  },
+  {
+    id: 'safari-zoom-out',
+    name: 'ズームアウト',
+    description: 'ページを縮小表示します',
+    category: 'view',
+    software: 'safari',
+    windows: 'Ctrl + -',
+    mac: '⌘ + -',
+    keywords: ['ズームアウト', '縮小', 'ビュー']
+  },
+  {
+    id: 'safari-reset-zoom',
+    name: 'ズームリセット',
+    description: 'ズームを100%にリセットします',
+    category: 'view',
+    software: 'safari',
+    windows: 'Ctrl + 0',
+    mac: '⌘ + 0',
+    keywords: ['ズームリセット', '100%', 'ビュー']
+  },
+  {
+    id: 'safari-web-inspector',
+    name: 'Webインスペクタ',
+    description: 'Webインスペクタを開きます',
+    category: 'tools',
+    software: 'safari',
+    windows: 'F12',
+    mac: '⌘ + Option + I',
+    keywords: ['Webインスペクタ', 'デバッグ', 'インスペクト']
+  },
+
+  // === Edge 단축키 ===
+  {
+    id: 'edge-new-tab',
+    name: '新しいタブ',
+    description: '新しいタブを開きます',
+    category: 'tabs',
+    software: 'edge',
+    windows: 'Ctrl + T',
+    mac: '⌘ + T',
+    keywords: ['新しいタブ', 'タブ', '開く']
+  },
+  {
+    id: 'edge-close-tab',
+    name: 'タブを閉じる',
+    description: '現在のタブを閉じます',
+    category: 'tabs',
+    software: 'edge',
+    windows: 'Ctrl + W',
+    mac: '⌘ + W',
+    keywords: ['タブを閉じる', '閉じる', 'タブ']
+  },
+  {
+    id: 'edge-reopen-tab',
+    name: '閉じたタブを再開',
+    description: '最近閉じたタブを再開します',
+    category: 'tabs',
+    software: 'edge',
+    windows: 'Ctrl + Shift + T',
+    mac: '⌘ + Shift + T',
+    keywords: ['閉じたタブ', '再開', '復元']
+  },
+  {
+    id: 'edge-new-window',
+    name: '新しいウィンドウ',
+    description: '新しいウィンドウを開きます',
+    category: 'browser',
+    software: 'edge',
+    windows: 'Ctrl + N',
+    mac: '⌘ + N',
+    keywords: ['新しいウィンドウ', 'ウィンドウ', '開く']
+  },
+  {
+    id: 'edge-new-incognito',
+    name: 'InPrivateウィンドウ',
+    description: 'InPrivateウィンドウを開きます',
+    category: 'browser',
+    software: 'edge',
+    windows: 'Ctrl + Shift + N',
+    mac: '⌘ + Shift + N',
+    keywords: ['InPrivate', 'プライベート', 'ウィンドウ']
+  },
+  {
+    id: 'edge-favorites',
+    name: 'お気に入り',
+    description: 'お気に入りを表示します',
+    category: 'bookmarks',
+    software: 'edge',
+    windows: 'Ctrl + Shift + O',
+    mac: '⌘ + Option + B',
+    keywords: ['お気に入り', 'ブックマーク', 'マネージャー']
+  },
+  {
+    id: 'edge-add-favorite',
+    name: 'お気に入りに追加',
+    description: '現在のページをお気に入りに追加します',
+    category: 'bookmarks',
+    software: 'edge',
+    windows: 'Ctrl + D',
+    mac: '⌘ + D',
+    keywords: ['お気に入り', 'ブックマーク', '追加']
+  },
+  {
+    id: 'edge-history',
+    name: '履歴',
+    description: '履歴を表示します',
+    category: 'browser',
+    software: 'edge',
+    windows: 'Ctrl + H',
+    mac: '⌘ + Y',
+    keywords: ['履歴', 'ヒストリー', '過去']
+  },
+  {
+    id: 'edge-downloads',
+    name: 'ダウンロード',
+    description: 'ダウンロードを表示します',
+    category: 'browser',
+    software: 'edge',
+    windows: 'Ctrl + J',
+    mac: '⌘ + Shift + L',
+    keywords: ['ダウンロード', 'ファイル', '取得']
+  },
+  {
+    id: 'edge-address-bar',
+    name: 'アドレスバーにフォーカス',
+    description: 'アドレスバーにフォーカスを移動します',
+    category: 'navigation',
+    software: 'edge',
+    windows: 'Ctrl + L',
+    mac: '⌘ + L',
+    keywords: ['アドレスバー', 'URL', 'フォーカス']
+  },
+  {
+    id: 'edge-search',
+    name: '検索',
+    description: 'ページ内でテキストを検索します',
+    category: 'browser',
+    software: 'edge',
+    windows: 'Ctrl + F',
+    mac: '⌘ + F',
+    keywords: ['検索', 'ファインド', '探す']
+  },
+  {
+    id: 'edge-refresh',
+    name: '更新',
+    description: 'ページを更新します',
+    category: 'browser',
+    software: 'edge',
+    windows: 'F5',
+    mac: '⌘ + R',
+    keywords: ['更新', 'リフレッシュ', '再読み込み']
+  },
+  {
+    id: 'edge-back',
+    name: '戻る',
+    description: '前のページに戻ります',
+    category: 'navigation',
+    software: 'edge',
+    windows: 'Alt + ←',
+    mac: '⌘ + ←',
+    keywords: ['戻る', 'バック', '前のページ']
+  },
+  {
+    id: 'edge-forward',
+    name: '進む',
+    description: '次のページに進みます',
+    category: 'navigation',
+    software: 'edge',
+    windows: 'Alt + →',
+    mac: '⌘ + →',
+    keywords: ['進む', 'フォワード', '次のページ']
+  },
+  {
+    id: 'edge-home',
+    name: 'ホーム',
+    description: 'ホームページに移動します',
+    category: 'navigation',
+    software: 'edge',
+    windows: 'Alt + Home',
+    mac: '⌘ + Shift + H',
+    keywords: ['ホーム', 'ホームページ', 'トップ']
+  },
+  {
+    id: 'edge-zoom-in',
+    name: 'ズームイン',
+    description: 'ページを拡大表示します',
+    category: 'view',
+    software: 'edge',
+    windows: 'Ctrl + +',
+    mac: '⌘ + +',
+    keywords: ['ズームイン', '拡大', 'ビュー']
+  },
+  {
+    id: 'edge-zoom-out',
+    name: 'ズームアウト',
+    description: 'ページを縮小表示します',
+    category: 'view',
+    software: 'edge',
+    windows: 'Ctrl + -',
+    mac: '⌘ + -',
+    keywords: ['ズームアウト', '縮小', 'ビュー']
+  },
+  {
+    id: 'edge-reset-zoom',
+    name: 'ズームリセット',
+    description: 'ズームを100%にリセットします',
+    category: 'view',
+    software: 'edge',
+    windows: 'Ctrl + 0',
+    mac: '⌘ + 0',
+    keywords: ['ズームリセット', '100%', 'ビュー']
+  },
+  {
+    id: 'edge-devtools',
+    name: '開発者ツール',
+    description: '開発者ツールを開きます',
+    category: 'tools',
+    software: 'edge',
+    windows: 'F12',
+    mac: '⌘ + Option + I',
+    keywords: ['開発者ツール', 'デバッグ', 'インスペクト']
+  },
+
+  // === Photoshop 단축키 ===
+  {
+    id: 'photoshop-new',
+    name: '新規ドキュメント',
+    description: '新しいドキュメントを作成します',
+    category: 'file',
+    software: 'photoshop',
+    windows: 'Ctrl + N',
+    mac: '⌘ + N',
+    keywords: ['新規', 'ドキュメント', '作成']
+  },
+  {
+    id: 'photoshop-open',
+    name: '開く',
+    description: '既存のファイルを開きます',
+    category: 'file',
+    software: 'photoshop',
+    windows: 'Ctrl + O',
+    mac: '⌘ + O',
+    keywords: ['開く', 'ファイル', '読み込み']
+  },
+  {
+    id: 'photoshop-save',
+    name: '保存',
+    description: 'ファイルを保存します',
+    category: 'file',
+    software: 'photoshop',
+    windows: 'Ctrl + S',
+    mac: '⌘ + S',
+    keywords: ['保存', 'セーブ', 'ストレージ']
+  },
+  {
+    id: 'photoshop-save-as',
+    name: '別名で保存',
+    description: 'ファイルを別名で保存します',
+    category: 'file',
+    software: 'photoshop',
+    windows: 'Ctrl + Shift + S',
+    mac: '⌘ + Shift + S',
+    keywords: ['別名で保存', '名前を付けて保存', 'エクスポート']
+  },
+  {
+    id: 'photoshop-undo',
+    name: '元に戻す',
+    description: '最後の操作を元に戻します',
+    category: 'edit',
+    software: 'photoshop',
+    windows: 'Ctrl + Z',
+    mac: '⌘ + Z',
+    keywords: ['元に戻す', 'アンドゥ', '取消']
+  },
+  {
+    id: 'photoshop-redo',
+    name: 'やり直し',
+    description: '元に戻した操作をやり直します',
+    category: 'edit',
+    software: 'photoshop',
+    windows: 'Ctrl + Shift + Z',
+    mac: '⌘ + Shift + Z',
+    keywords: ['やり直し', 'リドゥ', '再実行']
+  },
+  {
+    id: 'photoshop-copy',
+    name: 'コピー',
+    description: '選択した領域をコピーします',
+    category: 'edit',
+    software: 'photoshop',
+    windows: 'Ctrl + C',
+    mac: '⌘ + C',
+    keywords: ['コピー', '複製', 'コピー']
+  },
+  {
+    id: 'photoshop-paste',
+    name: '貼り付け',
+    description: 'コピーした内容を貼り付けます',
+    category: 'edit',
+    software: 'photoshop',
+    windows: 'Ctrl + V',
+    mac: '⌘ + V',
+    keywords: ['貼り付け', 'ペースト', '挿入']
+  },
+  {
+    id: 'photoshop-cut',
+    name: '切り取り',
+    description: '選択した領域を切り取ります',
+    category: 'edit',
+    software: 'photoshop',
+    windows: 'Ctrl + X',
+    mac: '⌘ + X',
+    keywords: ['切り取り', 'カット', '移動']
+  },
+  {
+    id: 'photoshop-select-all',
+    name: 'すべて選択',
+    description: 'レイヤー全体を選択します',
+    category: 'edit',
+    software: 'photoshop',
+    windows: 'Ctrl + A',
+    mac: '⌘ + A',
+    keywords: ['すべて選択', '全選択', '選択']
+  },
+  {
+    id: 'photoshop-deselect',
+    name: '選択解除',
+    description: '選択を解除します',
+    category: 'edit',
+    software: 'photoshop',
+    windows: 'Ctrl + D',
+    mac: '⌘ + D',
+    keywords: ['選択解除', 'デセレクト', '解除']
+  },
+  {
+    id: 'photoshop-free-transform',
+    name: '自由変形',
+    description: '自由変形ツールを起動します',
+    category: 'edit',
+    software: 'photoshop',
+    windows: 'Ctrl + T',
+    mac: '⌘ + T',
+    keywords: ['自由変形', 'トランスフォーム', '変形']
+  },
+  {
+    id: 'photoshop-zoom-in',
+    name: 'ズームイン',
+    description: '画像を拡大表示します',
+    category: 'view',
+    software: 'photoshop',
+    windows: 'Ctrl + +',
+    mac: '⌘ + +',
+    keywords: ['ズームイン', '拡大', 'ビュー']
+  },
+  {
+    id: 'photoshop-zoom-out',
+    name: 'ズームアウト',
+    description: '画像を縮小表示します',
+    category: 'view',
+    software: 'photoshop',
+    windows: 'Ctrl + -',
+    mac: '⌘ + -',
+    keywords: ['ズームアウト', '縮小', 'ビュー']
+  },
+  {
+    id: 'photoshop-fit-to-screen',
+    name: '画面に合わせる',
+    description: '画像を画面サイズに合わせて表示します',
+    category: 'view',
+    software: 'photoshop',
+    windows: 'Ctrl + 0',
+    mac: '⌘ + 0',
+    keywords: ['画面に合わせる', 'フィット', 'ビュー']
+  },
+  {
+    id: 'photoshop-actual-size',
+    name: '実際のサイズ',
+    description: '画像を実際のサイズで表示します',
+    category: 'view',
+    software: 'photoshop',
+    windows: 'Ctrl + Alt + 0',
+    mac: '⌘ + Option + 0',
+    keywords: ['実際のサイズ', '100%', 'ビュー']
+  },
+  {
+    id: 'photoshop-new-layer',
+    name: '新しいレイヤー',
+    description: '新しいレイヤーを作成します',
+    category: 'layers',
+    software: 'photoshop',
+    windows: 'Ctrl + Shift + N',
+    mac: '⌘ + Shift + N',
+    keywords: ['新しいレイヤー', 'レイヤー', '作成']
+  },
+  {
+    id: 'photoshop-duplicate-layer',
+    name: 'レイヤーを複製',
+    description: '選択したレイヤーを複製します',
+    category: 'layers',
+    software: 'photoshop',
+    windows: 'Ctrl + J',
+    mac: '⌘ + J',
+    keywords: ['レイヤー複製', '複製', 'コピー']
+  },
+  {
+    id: 'photoshop-merge-layers',
+    name: 'レイヤーを統合',
+    description: '選択したレイヤーを統合します',
+    category: 'layers',
+    software: 'photoshop',
+    windows: 'Ctrl + E',
+    mac: '⌘ + E',
+    keywords: ['レイヤー統合', '統合', 'マージ']
+  },
+  {
+    id: 'photoshop-flatten-image',
+    name: '画像を統合',
+    description: 'すべてのレイヤーを統合します',
+    category: 'layers',
+    software: 'photoshop',
+    windows: 'Ctrl + Shift + E',
+    mac: '⌘ + Shift + E',
+    keywords: ['画像統合', '統合', 'フラット']
+  },
+  {
+    id: 'photoshop-brush-tool',
+    name: 'ブラシツール',
+    description: 'ブラシツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'B',
+    mac: 'B',
+    keywords: ['ブラシ', 'ツール', '描画']
+  },
+  {
+    id: 'photoshop-eraser-tool',
+    name: '消しゴムツール',
+    description: '消しゴムツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'E',
+    mac: 'E',
+    keywords: ['消しゴム', 'ツール', '削除']
+  },
+  {
+    id: 'photoshop-move-tool',
+    name: '移動ツール',
+    description: '移動ツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'V',
+    mac: 'V',
+    keywords: ['移動', 'ツール', '位置']
+  },
+  {
+    id: 'photoshop-marquee-tool',
+    name: '選択ツール',
+    description: '選択ツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'M',
+    mac: 'M',
+    keywords: ['選択', 'ツール', 'マーキー']
+  },
+  {
+    id: 'photoshop-lasso-tool',
+    name: 'なげなわツール',
+    description: 'なげなわツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'L',
+    mac: 'L',
+    keywords: ['なげなわ', 'ツール', '選択']
+  },
+  {
+    id: 'photoshop-magic-wand',
+    name: '自動選択ツール',
+    description: '自動選択ツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'W',
+    mac: 'W',
+    keywords: ['自動選択', 'ツール', '選択']
+  },
+  {
+    id: 'photoshop-crop-tool',
+    name: '切り抜きツール',
+    description: '切り抜きツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'C',
+    mac: 'C',
+    keywords: ['切り抜き', 'ツール', 'クロップ']
+  },
+  {
+    id: 'photoshop-healing-brush',
+    name: '修復ブラシツール',
+    description: '修復ブラシツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'J',
+    mac: 'J',
+    keywords: ['修復ブラシ', 'ツール', '修復']
+  },
+  {
+    id: 'photoshop-clone-stamp',
+    name: 'スタンプツール',
+    description: 'スタンプツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'S',
+    mac: 'S',
+    keywords: ['スタンプ', 'ツール', '複製']
+  },
+  {
+    id: 'photoshop-gradient-tool',
+    name: 'グラデーションツール',
+    description: 'グラデーションツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'G',
+    mac: 'G',
+    keywords: ['グラデーション', 'ツール', '塗りつぶし']
+  },
+  {
+    id: 'photoshop-paint-bucket',
+    name: 'ペイントバケツツール',
+    description: 'ペイントバケツツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'G',
+    mac: 'G',
+    keywords: ['ペイントバケツ', 'ツール', '塗りつぶし']
+  },
+  {
+    id: 'photoshop-text-tool',
+    name: 'テキストツール',
+    description: 'テキストツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'T',
+    mac: 'T',
+    keywords: ['テキスト', 'ツール', '文字']
+  },
+  {
+    id: 'photoshop-pen-tool',
+    name: 'ペンツール',
+    description: 'ペンツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'P',
+    mac: 'P',
+    keywords: ['ペン', 'ツール', 'パス']
+  },
+  {
+    id: 'photoshop-shape-tool',
+    name: '図形ツール',
+    description: '図形ツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'U',
+    mac: 'U',
+    keywords: ['図形', 'ツール', 'シェイプ']
+  },
+  {
+    id: 'photoshop-eye-dropper',
+    name: 'スポイトツール',
+    description: 'スポイトツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'I',
+    mac: 'I',
+    keywords: ['スポイト', 'ツール', '色']
+  },
+  {
+    id: 'photoshop-hand-tool',
+    name: '手のひらツール',
+    description: '手のひらツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'H',
+    mac: 'H',
+    keywords: ['手のひら', 'ツール', '移動']
+  },
+  {
+    id: 'photoshop-zoom-tool',
+    name: 'ズームツール',
+    description: 'ズームツールを選択します',
+    category: 'tools',
+    software: 'photoshop',
+    windows: 'Z',
+    mac: 'Z',
+    keywords: ['ズーム', 'ツール', '拡大縮小']
+  },
+
+  // === Illustrator 단축키 ===
+  {
+    id: 'illustrator-new',
+    name: '新規ドキュメント',
+    description: '新しいドキュメントを作成します',
+    category: 'file',
+    software: 'illustrator',
+    windows: 'Ctrl + N',
+    mac: '⌘ + N',
+    keywords: ['新規', 'ドキュメント', '作成']
+  },
+  {
+    id: 'illustrator-open',
+    name: '開く',
+    description: '既存のファイルを開きます',
+    category: 'file',
+    software: 'illustrator',
+    windows: 'Ctrl + O',
+    mac: '⌘ + O',
+    keywords: ['開く', 'ファイル', '読み込み']
+  },
+  {
+    id: 'illustrator-save',
+    name: '保存',
+    description: 'ファイルを保存します',
+    category: 'file',
+    software: 'illustrator',
+    windows: 'Ctrl + S',
+    mac: '⌘ + S',
+    keywords: ['保存', 'セーブ', 'ストレージ']
+  },
+  {
+    id: 'illustrator-save-as',
+    name: '別名で保存',
+    description: 'ファイルを別名で保存します',
+    category: 'file',
+    software: 'illustrator',
+    windows: 'Ctrl + Shift + S',
+    mac: '⌘ + Shift + S',
+    keywords: ['別名で保存', '名前を付けて保存', 'エクスポート']
+  },
+  {
+    id: 'illustrator-undo',
+    name: '元に戻す',
+    description: '最後の操作を元に戻します',
+    category: 'edit',
+    software: 'illustrator',
+    windows: 'Ctrl + Z',
+    mac: '⌘ + Z',
+    keywords: ['元に戻す', 'アンドゥ', '取消']
+  },
+  {
+    id: 'illustrator-redo',
+    name: 'やり直し',
+    description: '元に戻した操作をやり直します',
+    category: 'edit',
+    software: 'illustrator',
+    windows: 'Ctrl + Shift + Z',
+    mac: '⌘ + Shift + Z',
+    keywords: ['やり直し', 'リドゥ', '再実行']
+  },
+  {
+    id: 'illustrator-copy',
+    name: 'コピー',
+    description: '選択したオブジェクトをコピーします',
+    category: 'edit',
+    software: 'illustrator',
+    windows: 'Ctrl + C',
+    mac: '⌘ + C',
+    keywords: ['コピー', '複製', 'コピー']
+  },
+  {
+    id: 'illustrator-paste',
+    name: '貼り付け',
+    description: 'コピーしたオブジェクトを貼り付けます',
+    category: 'edit',
+    software: 'illustrator',
+    windows: 'Ctrl + V',
+    mac: '⌘ + V',
+    keywords: ['貼り付け', 'ペースト', '挿入']
+  },
+  {
+    id: 'illustrator-cut',
+    name: '切り取り',
+    description: '選択したオブジェクトを切り取ります',
+    category: 'edit',
+    software: 'illustrator',
+    windows: 'Ctrl + X',
+    mac: '⌘ + X',
+    keywords: ['切り取り', 'カット', '移動']
+  },
+  {
+    id: 'illustrator-select-all',
+    name: 'すべて選択',
+    description: 'すべてのオブジェクトを選択します',
+    category: 'edit',
+    software: 'illustrator',
+    windows: 'Ctrl + A',
+    mac: '⌘ + A',
+    keywords: ['すべて選択', '全選択', '選択']
+  },
+  {
+    id: 'illustrator-deselect',
+    name: '選択解除',
+    description: '選択を解除します',
+    category: 'edit',
+    software: 'illustrator',
+    windows: 'Ctrl + Shift + A',
+    mac: '⌘ + Shift + A',
+    keywords: ['選択解除', 'デセレクト', '解除']
+  },
+  {
+    id: 'illustrator-free-transform',
+    name: '自由変形',
+    description: '自由変形ツールを起動します',
+    category: 'edit',
+    software: 'illustrator',
+    windows: 'Ctrl + T',
+    mac: '⌘ + T',
+    keywords: ['自由変形', 'トランスフォーム', '変形']
+  },
+  {
+    id: 'illustrator-zoom-in',
+    name: 'ズームイン',
+    description: 'アートボードを拡大表示します',
+    category: 'view',
+    software: 'illustrator',
+    windows: 'Ctrl + +',
+    mac: '⌘ + +',
+    keywords: ['ズームイン', '拡大', 'ビュー']
+  },
+  {
+    id: 'illustrator-zoom-out',
+    name: 'ズームアウト',
+    description: 'アートボードを縮小表示します',
+    category: 'view',
+    software: 'illustrator',
+    windows: 'Ctrl + -',
+    mac: '⌘ + -',
+    keywords: ['ズームアウト', '縮小', 'ビュー']
+  },
+  {
+    id: 'illustrator-fit-to-screen',
+    name: '画面に合わせる',
+    description: 'アートボードを画面サイズに合わせて表示します',
+    category: 'view',
+    software: 'illustrator',
+    windows: 'Ctrl + 0',
+    mac: '⌘ + 0',
+    keywords: ['画面に合わせる', 'フィット', 'ビュー']
+  },
+  {
+    id: 'illustrator-actual-size',
+    name: '実際のサイズ',
+    description: 'アートボードを実際のサイズで表示します',
+    category: 'view',
+    software: 'illustrator',
+    windows: 'Ctrl + 1',
+    mac: '⌘ + 1',
+    keywords: ['実際のサイズ', '100%', 'ビュー']
+  },
+  {
+    id: 'illustrator-selection-tool',
+    name: '選択ツール',
+    description: '選択ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'V',
+    mac: 'V',
+    keywords: ['選択', 'ツール', '移動']
+  },
+  {
+    id: 'illustrator-direct-selection',
+    name: 'ダイレクト選択ツール',
+    description: 'ダイレクト選択ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'A',
+    mac: 'A',
+    keywords: ['ダイレクト選択', 'ツール', '選択']
+  },
+  {
+    id: 'illustrator-pen-tool',
+    name: 'ペンツール',
+    description: 'ペンツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'P',
+    mac: 'P',
+    keywords: ['ペン', 'ツール', 'パス']
+  },
+  {
+    id: 'illustrator-type-tool',
+    name: '文字ツール',
+    description: '文字ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'T',
+    mac: 'T',
+    keywords: ['文字', 'ツール', 'テキスト']
+  },
+  {
+    id: 'illustrator-line-tool',
+    name: '直線ツール',
+    description: '直線ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: '\\',
+    mac: '\\',
+    keywords: ['直線', 'ツール', 'ライン']
+  },
+  {
+    id: 'illustrator-rectangle-tool',
+    name: '長方形ツール',
+    description: '長方形ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'M',
+    mac: 'M',
+    keywords: ['長方形', 'ツール', 'シェイプ']
+  },
+  {
+    id: 'illustrator-ellipse-tool',
+    name: '楕円形ツール',
+    description: '楕円形ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'L',
+    mac: 'L',
+    keywords: ['楕円形', 'ツール', 'シェイプ']
+  },
+  {
+    id: 'illustrator-polygon-tool',
+    name: '多角形ツール',
+    description: '多角形ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'M',
+    mac: 'M',
+    keywords: ['多角形', 'ツール', 'シェイプ']
+  },
+  {
+    id: 'illustrator-star-tool',
+    name: '星形ツール',
+    description: '星形ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'M',
+    mac: 'M',
+    keywords: ['星形', 'ツール', 'シェイプ']
+  },
+  {
+    id: 'illustrator-paintbrush-tool',
+    name: 'ブラシツール',
+    description: 'ブラシツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'B',
+    mac: 'B',
+    keywords: ['ブラシ', 'ツール', '描画']
+  },
+  {
+    id: 'illustrator-pencil-tool',
+    name: '鉛筆ツール',
+    description: '鉛筆ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'N',
+    mac: 'N',
+    keywords: ['鉛筆', 'ツール', '描画']
+  },
+  {
+    id: 'illustrator-eraser-tool',
+    name: '消しゴムツール',
+    description: '消しゴムツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'Shift + E',
+    mac: 'Shift + E',
+    keywords: ['消しゴム', 'ツール', '削除']
+  },
+  {
+    id: 'illustrator-scissors-tool',
+    name: 'はさみツール',
+    description: 'はさみツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'C',
+    mac: 'C',
+    keywords: ['はさみ', 'ツール', 'カット']
+  },
+  {
+    id: 'illustrator-rotate-tool',
+    name: '回転ツール',
+    description: '回転ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'R',
+    mac: 'R',
+    keywords: ['回転', 'ツール', '変形']
+  },
+  {
+    id: 'illustrator-reflect-tool',
+    name: 'リフレクトツール',
+    description: 'リフレクトツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'O',
+    mac: 'O',
+    keywords: ['リフレクト', 'ツール', '反転']
+  },
+  {
+    id: 'illustrator-scale-tool',
+    name: '拡大・縮小ツール',
+    description: '拡大・縮小ツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'S',
+    mac: 'S',
+    keywords: ['拡大縮小', 'ツール', '変形']
+  },
+  {
+    id: 'illustrator-shear-tool',
+    name: 'シアーツール',
+    description: 'シアーツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'O',
+    mac: 'O',
+    keywords: ['シアー', 'ツール', '変形']
+  },
+  {
+    id: 'illustrator-reshape-tool',
+    name: 'リシェイプツール',
+    description: 'リシェイプツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'Shift + R',
+    mac: 'Shift + R',
+    keywords: ['リシェイプ', 'ツール', '変形']
+  },
+  {
+    id: 'illustrator-gradient-tool',
+    name: 'グラデーションツール',
+    description: 'グラデーションツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'G',
+    mac: 'G',
+    keywords: ['グラデーション', 'ツール', '塗りつぶし']
+  },
+  {
+    id: 'illustrator-mesh-tool',
+    name: 'メッシュツール',
+    description: 'メッシュツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'U',
+    mac: 'U',
+    keywords: ['メッシュ', 'ツール', '塗りつぶし']
+  },
+  {
+    id: 'illustrator-eye-dropper',
+    name: 'スポイトツール',
+    description: 'スポイトツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'I',
+    mac: 'I',
+    keywords: ['スポイト', 'ツール', '色']
+  },
+  {
+    id: 'illustrator-hand-tool',
+    name: '手のひらツール',
+    description: '手のひらツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'H',
+    mac: 'H',
+    keywords: ['手のひら', 'ツール', '移動']
+  },
+  {
+    id: 'illustrator-zoom-tool',
+    name: 'ズームツール',
+    description: 'ズームツールを選択します',
+    category: 'tools',
+    software: 'illustrator',
+    windows: 'Z',
+    mac: 'Z',
+    keywords: ['ズーム', 'ツール', '拡大縮小']
+  },
+
+  // === Slack 단축키 ===
+  {
+    id: 'slack-quick-switcher',
+    name: 'クイックスイッチャー',
+    description: 'チャンネルやDMを素早く切り替えます',
+    category: 'navigation',
+    software: 'slack',
+    windows: 'Ctrl + K',
+    mac: '⌘ + K',
+    keywords: ['クイックスイッチャー', '切り替え', 'ナビゲーション']
+  },
+  {
+    id: 'slack-channel-browser',
+    name: 'チャンネルブラウザ',
+    description: 'チャンネルブラウザを開きます',
+    category: 'navigation',
+    software: 'slack',
+    windows: 'Ctrl + Shift + L',
+    mac: '⌘ + Shift + L',
+    keywords: ['チャンネルブラウザ', 'チャンネル', 'ナビゲーション']
+  },
+  {
+    id: 'slack-direct-messages',
+    name: 'ダイレクトメッセージ',
+    description: 'ダイレクトメッセージリストを開きます',
+    category: 'communication',
+    software: 'slack',
+    windows: 'Ctrl + Shift + K',
+    mac: '⌘ + Shift + K',
+    keywords: ['ダイレクトメッセージ', 'DM', 'メッセージ']
+  },
+  {
+    id: 'slack-mentions',
+    name: 'メンション',
+    description: 'メンションされたメッセージを表示します',
+    category: 'communication',
+    software: 'slack',
+    windows: 'Ctrl + Shift + M',
+    mac: '⌘ + Shift + M',
+    keywords: ['メンション', '通知', 'メッセージ']
+  },
+  {
+    id: 'slack-starred-items',
+    name: 'スター付きアイテム',
+    description: 'スター付きアイテムを表示します',
+    category: 'communication',
+    software: 'slack',
+    windows: 'Ctrl + Shift + S',
+    mac: '⌘ + Shift + S',
+    keywords: ['スター', 'お気に入り', 'アイテム']
+  },
+  {
+    id: 'slack-threads',
+    name: 'スレッド',
+    description: 'スレッドを表示します',
+    category: 'communication',
+    software: 'slack',
+    windows: 'Ctrl + Shift + T',
+    mac: '⌘ + Shift + T',
+    keywords: ['スレッド', '返信', 'メッセージ']
+  },
+  {
+    id: 'slack-all-unreads',
+    name: '未読メッセージ',
+    description: 'すべての未読メッセージを表示します',
+    category: 'communication',
+    software: 'slack',
+    windows: 'Ctrl + Shift + A',
+    mac: '⌘ + Shift + A',
+    keywords: ['未読', 'メッセージ', '通知']
+  },
+  {
+    id: 'slack-search',
+    name: '検索',
+    description: 'メッセージを検索します',
+    category: 'communication',
+    software: 'slack',
+    windows: 'Ctrl + F',
+    mac: '⌘ + F',
+    keywords: ['検索', 'ファインド', 'メッセージ']
+  },
+  {
+    id: 'slack-emoji-picker',
+    name: '絵文字ピッカー',
+    description: '絵文字ピッカーを開きます',
+    category: 'communication',
+    software: 'slack',
+    windows: 'Ctrl + Shift + :',
+    mac: '⌘ + Shift + :',
+    keywords: ['絵文字', 'ピッカー', 'エモジ']
+  },
+  {
+    id: 'slack-mark-as-read',
+    name: '既読にする',
+    description: 'チャンネルを既読にマークします',
+    category: 'communication',
+    software: 'slack',
+    windows: 'Esc',
+    mac: 'Esc',
+    keywords: ['既読', 'マーク', 'メッセージ']
+  },
+  {
+    id: 'slack-previous-channel',
+    name: '前のチャンネル',
+    description: '前のチャンネルに移動します',
+    category: 'navigation',
+    software: 'slack',
+    windows: 'Alt + ↑',
+    mac: 'Option + ↑',
+    keywords: ['前のチャンネル', '移動', 'ナビゲーション']
+  },
+  {
+    id: 'slack-next-channel',
+    name: '次のチャンネル',
+    description: '次のチャンネルに移動します',
+    category: 'navigation',
+    software: 'slack',
+    windows: 'Alt + ↓',
+    mac: 'Option + ↓',
+    keywords: ['次のチャンネル', '移動', 'ナビゲーション']
+  },
+  {
+    id: 'slack-previous-unread',
+    name: '前の未読チャンネル',
+    description: '前の未読チャンネルに移動します',
+    category: 'navigation',
+    software: 'slack',
+    windows: 'Alt + Shift + ↑',
+    mac: 'Option + Shift + ↑',
+    keywords: ['前の未読', 'チャンネル', 'ナビゲーション']
+  },
+  {
+    id: 'slack-next-unread',
+    name: '次の未読チャンネル',
+    description: '次の未読チャンネルに移動します',
+    category: 'navigation',
+    software: 'slack',
+    windows: 'Alt + Shift + ↓',
+    mac: 'Option + Shift + ↓',
+    keywords: ['次の未読', 'チャンネル', 'ナビゲーション']
+  },
+  {
+    id: 'slack-toggle-sidebar',
+    name: 'サイドバーの表示/非表示',
+    description: 'サイドバーの表示/非表示を切り替えます',
+    category: 'view',
+    software: 'slack',
+    windows: 'Ctrl + \\',
+    mac: '⌘ + \\',
+    keywords: ['サイドバー', '表示', '非表示']
+  },
+  {
+    id: 'slack-toggle-member-list',
+    name: 'メンバーリストの表示/非表示',
+    description: 'メンバーリストの表示/非表示を切り替えます',
+    category: 'view',
+    software: 'slack',
+    windows: 'Ctrl + Shift + U',
+    mac: '⌘ + Shift + U',
+    keywords: ['メンバーリスト', '表示', '非表示']
+  },
+  {
+    id: 'slack-preferences',
+    name: '設定',
+    description: '設定を開きます',
+    category: 'tools',
+    software: 'slack',
+    windows: 'Ctrl + ,',
+    mac: '⌘ + ,',
+    keywords: ['設定', 'プリファレンス', 'オプション']
+  },
+  {
+    id: 'slack-help',
+    name: 'ヘルプ',
+    description: 'ヘルプを開きます',
+    category: 'help',
+    software: 'slack',
+    windows: 'Ctrl + /',
+    mac: '⌘ + /',
+    keywords: ['ヘルプ', 'サポート', 'ガイド']
+  },
+  {
+    id: 'slack-keyboard-shortcuts',
+    name: 'キーボードショートカット',
+    description: 'キーボードショートカットを表示します',
+    category: 'help',
+    software: 'slack',
+    windows: 'Ctrl + Shift + /',
+    mac: '⌘ + Shift + /',
+    keywords: ['キーボードショートカット', 'ヘルプ', 'ガイド']
+  },
+  {
+    id: 'slack-mark-channel-read',
+    name: 'チャンネルを既読にする',
+    description: '現在のチャンネルを既読にマークします',
+    category: 'communication',
+    software: 'slack',
+    windows: 'Ctrl + Shift + M',
+    mac: '⌘ + Shift + M',
+    keywords: ['チャンネル', '既読', 'マーク']
+  },
+
+  // === Discord 단축키 ===
+  {
+    id: 'discord-server-list',
+    name: 'サーバーリスト',
+    description: 'サーバーリストにフォーカスします',
+    category: 'navigation',
+    software: 'discord',
+    windows: 'Ctrl + Alt + ↑',
+    mac: '⌘ + Option + ↑',
+    keywords: ['サーバーリスト', 'サーバー', 'ナビゲーション']
+  },
+  {
+    id: 'discord-channel-list',
+    name: 'チャンネルリスト',
+    description: 'チャンネルリストにフォーカスします',
+    category: 'navigation',
+    software: 'discord',
+    windows: 'Ctrl + Alt + ↓',
+    mac: '⌘ + Option + ↓',
+    keywords: ['チャンネルリスト', 'チャンネル', 'ナビゲーション']
+  },
+  {
+    id: 'discord-quick-switcher',
+    name: 'クイックスイッチャー',
+    description: 'クイックスイッチャーを開きます',
+    category: 'navigation',
+    software: 'discord',
+    windows: 'Ctrl + K',
+    mac: '⌘ + K',
+    keywords: ['クイックスイッチャー', '切り替え', 'ナビゲーション']
+  },
+  {
+    id: 'discord-mentions',
+    name: 'メンション',
+    description: 'メンションされたメッセージを表示します',
+    category: 'communication',
+    software: 'discord',
+    windows: 'Ctrl + Shift + M',
+    mac: '⌘ + Shift + M',
+    keywords: ['メンション', '通知', 'メッセージ']
+  },
+  {
+    id: 'discord-pinned-messages',
+    name: 'ピン留めメッセージ',
+    description: 'ピン留めされたメッセージを表示します',
+    category: 'communication',
+    software: 'discord',
+    windows: 'Ctrl + Shift + P',
+    mac: '⌘ + Shift + P',
+    keywords: ['ピン留め', 'メッセージ', '固定']
+  },
+  {
+    id: 'discord-search',
+    name: '検索',
+    description: 'メッセージを検索します',
+    category: 'communication',
+    software: 'discord',
+    windows: 'Ctrl + F',
+    mac: '⌘ + F',
+    keywords: ['検索', 'ファインド', 'メッセージ']
+  },
+  {
+    id: 'discord-emoji-picker',
+    name: '絵文字ピッカー',
+    description: '絵文字ピッカーを開きます',
+    category: 'communication',
+    software: 'discord',
+    windows: 'Ctrl + E',
+    mac: '⌘ + E',
+    keywords: ['絵文字', 'ピッカー', 'エモジ']
+  },
+  {
+    id: 'discord-gif-picker',
+    name: 'GIFピッカー',
+    description: 'GIFピッカーを開きます',
+    category: 'communication',
+    software: 'discord',
+    windows: 'Ctrl + G',
+    mac: '⌘ + G',
+    keywords: ['GIF', 'ピッカー', 'アニメーション']
+  },
+  {
+    id: 'discord-sticker-picker',
+    name: 'ステッカーピッカー',
+    description: 'ステッカーピッカーを開きます',
+    category: 'communication',
+    software: 'discord',
+    windows: 'Ctrl + S',
+    mac: '⌘ + S',
+    keywords: ['ステッカー', 'ピッカー', 'スタンプ']
+  },
+  {
+    id: 'discord-mark-as-read',
+    name: '既読にする',
+    description: 'チャンネルを既読にマークします',
+    category: 'communication',
+    software: 'discord',
+    windows: 'Esc',
+    mac: 'Esc',
+    keywords: ['既読', 'マーク', 'メッセージ']
+  },
+  {
+    id: 'discord-previous-channel',
+    name: '前のチャンネル',
+    description: '前のチャンネルに移動します',
+    category: 'navigation',
+    software: 'discord',
+    windows: 'Alt + ↑',
+    mac: 'Option + ↑',
+    keywords: ['前のチャンネル', '移動', 'ナビゲーション']
+  },
+  {
+    id: 'discord-next-channel',
+    name: '次のチャンネル',
+    description: '次のチャンネルに移動します',
+    category: 'navigation',
+    software: 'discord',
+    windows: 'Alt + ↓',
+    mac: 'Option + ↓',
+    keywords: ['次のチャンネル', '移動', 'ナビゲーション']
+  },
+  {
+    id: 'discord-previous-unread',
+    name: '前の未読チャンネル',
+    description: '前の未読チャンネルに移動します',
+    category: 'navigation',
+    software: 'discord',
+    windows: 'Alt + Shift + ↑',
+    mac: 'Option + Shift + ↑',
+    keywords: ['前の未読', 'チャンネル', 'ナビゲーション']
+  },
+  {
+    id: 'discord-next-unread',
+    name: '次の未読チャンネル',
+    description: '次の未読チャンネルに移動します',
+    category: 'navigation',
+    software: 'discord',
+    windows: 'Alt + Shift + ↓',
+    mac: 'Option + Shift + ↓',
+    keywords: ['次の未読', 'チャンネル', 'ナビゲーション']
+  },
+  {
+    id: 'discord-toggle-member-list',
+    name: 'メンバーリストの表示/非表示',
+    description: 'メンバーリストの表示/非表示を切り替えます',
+    category: 'view',
+    software: 'discord',
+    windows: 'Ctrl + Shift + U',
+    mac: '⌘ + Shift + U',
+    keywords: ['メンバーリスト', '表示', '非表示']
+  },
+  {
+    id: 'discord-toggle-server-list',
+    name: 'サーバーリストの表示/非表示',
+    description: 'サーバーリストの表示/非表示を切り替えます',
+    category: 'view',
+    software: 'discord',
+    windows: 'Ctrl + Shift + I',
+    mac: '⌘ + Shift + I',
+    keywords: ['サーバーリスト', '表示', '非表示']
+  },
+  {
+    id: 'discord-preferences',
+    name: '設定',
+    description: '設定を開きます',
+    category: 'tools',
+    software: 'discord',
+    windows: 'Ctrl + ,',
+    mac: '⌘ + ,',
+    keywords: ['設定', 'プリファレンス', 'オプション']
+  },
+  {
+    id: 'discord-help',
+    name: 'ヘルプ',
+    description: 'ヘルプを開きます',
+    category: 'help',
+    software: 'discord',
+    windows: 'Ctrl + /',
+    mac: '⌘ + /',
+    keywords: ['ヘルプ', 'サポート', 'ガイド']
+  },
+  {
+    id: 'discord-keyboard-shortcuts',
+    name: 'キーボードショートカット',
+    description: 'キーボードショートカットを表示します',
+    category: 'help',
+    software: 'discord',
+    windows: 'Ctrl + Shift + /',
+    mac: '⌘ + Shift + /',
+    keywords: ['キーボードショートカット', 'ヘルプ', 'ガイド']
+  },
+  {
+    id: 'discord-mark-server-read',
+    name: 'サーバーを既読にする',
+    description: '現在のサーバーを既読にマークします',
+    category: 'communication',
+    software: 'discord',
+    windows: 'Ctrl + Shift + M',
+    mac: '⌘ + Shift + M',
+    keywords: ['サーバー', '既読', 'マーク']
+  },
+  {
+    id: 'discord-toggle-mute',
+    name: 'ミュートの切り替え',
+    description: 'ミュートの切り替えを行います',
+    category: 'communication',
+    software: 'discord',
+    windows: 'Ctrl + Shift + M',
+    mac: '⌘ + Shift + M',
+    keywords: ['ミュート', '切り替え', '音声']
+  },
+  {
+    id: 'discord-toggle-deafen',
+    name: 'デフンの切り替え',
+    description: 'デフンの切り替えを行います',
+    category: 'communication',
+    software: 'discord',
+    windows: 'Ctrl + Shift + D',
+    mac: '⌘ + Shift + D',
+    keywords: ['デフン', '切り替え', '音声']
+  },
+  {
+    id: 'discord-toggle-overlay',
+    name: 'オーバーレイの切り替え',
+    description: 'オーバーレイの表示/非表示を切り替えます',
+    category: 'view',
+    software: 'discord',
+    windows: 'Ctrl + Shift + O',
+    mac: '⌘ + Shift + O',
+    keywords: ['オーバーレイ', '表示', '非表示']
+  },
+  {
+    id: 'discord-streamer-mode',
+    name: 'ストリーマーモード',
+    description: 'ストリーマーモードの切り替えを行います',
+    category: 'tools',
+    software: 'discord',
+    windows: 'Ctrl + Shift + S',
+    mac: '⌘ + Shift + S',
+    keywords: ['ストリーマーモード', 'プライバシー', '保護']
   }
 ];

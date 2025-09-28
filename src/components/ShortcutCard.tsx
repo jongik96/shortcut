@@ -1,9 +1,11 @@
 'use client';
 
 import { Shortcut, Platform } from '@/types/shortcuts';
-import { Star, Copy } from 'lucide-react';
+import { Star, Copy, ExternalLink } from 'lucide-react';
 import KeyboardVisualizer from './KeyboardVisualizer';
 import { cn } from '@/lib/utils';
+import Link from 'next/link';
+import { useFavorites } from '@/contexts/FavoritesContext';
 
 interface ShortcutCardProps {
   shortcut: Shortcut;
@@ -22,14 +24,18 @@ const ShortcutCard = ({
   onCopy,
   className 
 }: ShortcutCardProps) => {
+  const { isFavorite: isFav, toggleFavorite } = useFavorites();
   const shortcutText = platform === 'windows' ? shortcut.windows : shortcut.mac;
+  const isCurrentlyFavorite = isFav(shortcut.id);
 
   const handleCopy = () => {
     onCopy?.(shortcutText);
   };
 
-  const handleToggleFavorite = () => {
-    onToggleFavorite?.(shortcut.id);
+  const handleToggleFavorite = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    toggleFavorite(shortcut.id);
   };
 
   const getCategoryColor = (category: string) => {
@@ -67,54 +73,64 @@ const ShortcutCard = ({
   };
 
   return (
-    <div className={cn(
-      'p-4 border rounded-lg bg-white shadow-sm hover:shadow-md transition-shadow duration-200',
-      className
-    )}>
-      <div className="flex items-start justify-between mb-3">
-        <div className="flex-1">
-          <div className="flex items-center gap-2 mb-1">
-            <h3 className="font-semibold text-gray-900">{shortcut.name}</h3>
-            <span className={cn(
-              'px-2 py-1 text-xs font-medium rounded-full',
-              getCategoryColor(shortcut.category)
-            )}>
-              {getCategoryName(shortcut.category)}
-            </span>
+    <Link href={`/shortcut/${shortcut.id}`} className="block">
+      <div className={cn(
+        'p-4 border rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer group',
+        className
+      )}>
+        <div className="flex items-start justify-between mb-3">
+          <div className="flex-1">
+            <div className="flex items-center gap-2 mb-1">
+              <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                {shortcut.name}
+              </h3>
+              <span className={cn(
+                'px-2 py-1 text-xs font-medium rounded-full',
+                getCategoryColor(shortcut.category)
+              )}>
+                {getCategoryName(shortcut.category)}
+              </span>
+            </div>
+            <p className="text-sm text-gray-600 mb-3">{shortcut.description}</p>
           </div>
-          <p className="text-sm text-gray-600 mb-3">{shortcut.description}</p>
-        </div>
-        <div className="flex items-center gap-1 ml-2">
-          <button
-            onClick={handleCopy}
-            className="p-1 text-gray-400 hover:text-gray-600 transition-colors"
-            title="コピー"
-          >
-            <Copy size={16} />
-          </button>
-          {onToggleFavorite && (
+          <div className="flex items-center gap-1 ml-2">
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                handleCopy();
+              }}
+              className="p-1 text-gray-400 hover:text-gray-600 transition-colors"
+              title="コピー"
+            >
+              <Copy size={16} />
+            </button>
             <button
               onClick={handleToggleFavorite}
               className={cn(
                 'p-1 transition-colors',
-                isFavorite 
+                isCurrentlyFavorite 
                   ? 'text-yellow-500 hover:text-yellow-600' 
                   : 'text-gray-400 hover:text-yellow-500'
               )}
-              title={isFavorite ? 'お気に入りから削除' : 'お気に入りに追加'}
+              title={isCurrentlyFavorite ? 'お気に入りから削除' : 'お気に入りに追加'}
             >
-              <Star size={16} fill={isFavorite ? 'currentColor' : 'none'} />
+              <Star size={16} fill={isCurrentlyFavorite ? 'currentColor' : 'none'} />
             </button>
-          )}
+            <ExternalLink size={16} className="text-gray-400 group-hover:text-blue-500 transition-colors" />
+          </div>
+        </div>
+        
+        <KeyboardVisualizer 
+          shortcut={shortcut} 
+          platform={platform}
+          className="text-sm"
+        />
+        
+        <div className="mt-3 text-xs text-gray-500 group-hover:text-blue-600 transition-colors">
+          クリックして詳細を見る →
         </div>
       </div>
-      
-      <KeyboardVisualizer 
-        shortcut={shortcut} 
-        platform={platform}
-        className="text-sm"
-      />
-    </div>
+    </Link>
   );
 };
 

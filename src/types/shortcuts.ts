@@ -2,8 +2,8 @@ export interface Shortcut {
   id: string;
   name: string;
   description: string;
-  category: 'format' | 'navigation' | 'data' | 'sheet' | 'file' | 'edit' | 'view' | 'insert' | 'tools' | 'help' | 'system';
-  software: 'excel' | 'word' | 'powerpoint' | 'system';
+  category: 'format' | 'navigation' | 'data' | 'sheet' | 'file' | 'edit' | 'view' | 'insert' | 'tools' | 'help' | 'system' | 'slides' | 'presentation' | 'text' | 'table' | 'browser' | 'tabs' | 'bookmarks' | 'design' | 'layers' | 'tools' | 'communication' | 'channels';
+  software: 'excel' | 'word' | 'powerpoint' | 'system' | 'docs' | 'sheets' | 'slides' | 'chrome' | 'safari' | 'edge' | 'photoshop' | 'illustrator' | 'slack' | 'discord';
   windows: string;
   mac: string;
   keywords: string[];
@@ -33,7 +33,7 @@ export interface FavoriteShortcut {
 }
 
 export type Platform = 'windows' | 'mac';
-export type Software = 'excel' | 'word' | 'powerpoint' | 'system';
+export type Software = 'excel' | 'word' | 'powerpoint' | 'system' | 'docs' | 'sheets' | 'slides' | 'chrome' | 'safari' | 'edge' | 'photoshop' | 'illustrator' | 'slack' | 'discord';
 
 export interface SidebarItem {
   id: string;
