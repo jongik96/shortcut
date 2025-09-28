@@ -12,17 +12,17 @@ const AboutPage = ({ className }: AboutPageProps) => {
     {
       name: '豊富なデータベース',
       role: '500+ ショートカット',
-      description: '운영체제, Microsoft Office, Google Workspace, Browser, Adobe, Others의 단축키를 포괄적으로 수록'
+      description: 'OS, Microsoft Office, Google Workspace, Browser, Adobe, Othersのショートカットを包括的に収録'
     },
     {
-      name: '카테고리별 구성',
-      role: '6개 메인 카테고리',
-      description: '메인 카테고리와 하위 카테고리로 체계적으로 구성된 단축키 데이터베이스'
+      name: 'カテゴリ別構成',
+      role: '6つのメインカテゴリ',
+      description: 'メインカテゴリとサブカテゴリで体系的に構成されたショートカットデータベース'
     },
     {
-      name: '직관적인 UI',
-      role: '사용 편의성 중시',
-      description: '사이드바와 탭 구조로 누구나 쉽게 사용할 수 있는 직관적인 사용자 인터페이스'
+      name: '直感的なUI',
+      role: '使いやすさ重視',
+      description: 'サイドバーとタブ構造で誰でも簡単に使える直感的なユーザーインターフェース'
     }
   ];
 
@@ -57,9 +57,9 @@ const AboutPage = ({ className }: AboutPageProps) => {
           サービス概要
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          LearnShortcuts.dev는 운영체제, Microsoft Office, Google Workspace, Browser, Adobe, Others의 단축키를
-          효율적으로 학습·검색할 수 있는 온라인 플랫폼입니다.
-          정확하고 신뢰할 수 있는 정보를 제공하여 여러분의 작업 효율을 극적으로 향상시킵니다.
+          LearnShortcuts.devは、OS, Microsoft Office, Google Workspace, Browser, Adobe, Othersのショートカットを
+          効率的に学習・検索できるオンラインプラットフォームです。
+          正確で信頼できる情報を提供し、あなたの作業効率を劇的に向上させます。
         </p>
       </section>
 
