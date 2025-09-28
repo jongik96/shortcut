@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import Header from '@/components/Header';
 import SearchBar from '@/components/SearchBar';
 import ShortcutCard from '@/components/ShortcutCard';
@@ -25,7 +25,7 @@ export default function BookmarkPage() {
     }));
   }, [favorites, platform]);
 
-  const getCategoryName = (category: string) => {
+  const getCategoryName = useCallback((category: string) => {
     const categoryNames = {
       format: 'フォーマット',
       navigation: '移動',
@@ -44,7 +44,7 @@ export default function BookmarkPage() {
       table: 'テーブル'
     };
     return categoryNames[category as keyof typeof categoryNames] || category;
-  };
+  }, []);
 
   // 카테고리별 필터링
   const filteredShortcuts = useMemo(() => {

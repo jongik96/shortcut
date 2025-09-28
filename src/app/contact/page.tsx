@@ -20,7 +20,7 @@ export default function ContactPage() {
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Have questions about keyboard shortcuts? Need help with a specific software? 
-            We're here to help you master productivity shortcuts and improve your workflow.
+            We&apos;re here to help you master productivity shortcuts and improve your workflow.
           </p>
         </div>
 
@@ -39,7 +39,7 @@ export default function ContactPage() {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Email Us</h3>
                   <p className="text-gray-600 mb-3">
-                    Send us an email and we'll get back to you as soon as possible.
+                    Send us an email and we&apos;ll get back to you as soon as possible.
                   </p>
                   <button
                     onClick={handleEmailClick}
@@ -115,7 +115,7 @@ export default function ContactPage() {
                   Can I request shortcuts for new software?
                 </h3>
                 <p className="text-gray-600">
-                  Absolutely! We're always looking to expand our coverage. Send us your suggestions and we'll consider adding them to our platform.
+                  Absolutely! We&apos;re always looking to expand our coverage. Send us your suggestions and we&apos;ll consider adding them to our platform.
                 </p>
               </div>
 
