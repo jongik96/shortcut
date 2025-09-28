@@ -15,7 +15,7 @@ interface KeyPosition {
   y: number;
   width: number;
   height: number;
-  key: string;
+  key?: string;
 }
 
 const KeyboardAnimation = ({ shortcut, platform, shortcutText }: KeyboardAnimationProps) => {
