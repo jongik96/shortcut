@@ -14,7 +14,7 @@ const AboutPage = ({ className }: AboutPageProps) => {
 
   const serviceInfo = t.serviceInfo.items;
 
-  const values = t.values.items.map((item: any, index: number) => ({
+  const values = t.values.items.map((item: { title: string; description: string }, index: number) => ({
     icon: [Target, Users, Award, Heart][index],
     title: item.title,
     description: item.description

@@ -1,8 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Shortcut } from '@/types/shortcuts';
-import Image from 'next/image';
 
 interface ShortcutAnimationProps {
   shortcut: Shortcut;
@@ -37,7 +36,7 @@ const AnimatedKey = ({ keyName, isActive, delay, className = '' }: AnimatedKeyPr
   </div>
 );
 
-const ShortcutAnimation = ({ shortcut, platform, shortcutText }: ShortcutAnimationProps) => {
+const ShortcutAnimation = ({ platform, shortcutText }: ShortcutAnimationProps) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
 

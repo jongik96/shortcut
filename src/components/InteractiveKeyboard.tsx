@@ -34,7 +34,7 @@ const Key = ({ keyName, isPressed, onClick, className = '' }: KeyProps) => (
   </button>
 );
 
-const InteractiveKeyboard = ({ shortcut, platform, shortcutText }: InteractiveKeyboardProps) => {
+const InteractiveKeyboard = ({ shortcut, shortcutText }: InteractiveKeyboardProps) => {
   const { locale } = useLocaleContext();
   const translated = getShortcutTranslation(shortcut, locale);
   const [pressedKeys, setPressedKeys] = useState<string[]>([]);

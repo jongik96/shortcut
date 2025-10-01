@@ -4,6 +4,7 @@ import { useState, useMemo } from 'react';
 import SearchBar from '@/components/SearchBar';
 import ShortcutCard from '@/components/ShortcutCard';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import CategorySidebar from '@/components/CategorySidebar';
 import { shortcuts } from '@/data/shortcuts';
 import { useLocaleContext } from '@/contexts/LocaleContext';
@@ -155,20 +156,7 @@ export default function PowerPointPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="bg-white border-t mt-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <p className="text-gray-500">© 2024 LearnShortcuts. All rights reserved.</p>
-            </div>
-            <div className="flex space-x-6">
-              <a href="/about" className="text-gray-500 hover:text-gray-900">サービス概要</a>
-              <a href="/privacy" className="text-gray-500 hover:text-gray-900">プライバシーポリシー</a>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

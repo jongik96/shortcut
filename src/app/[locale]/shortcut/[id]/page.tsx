@@ -7,7 +7,7 @@ import InteractiveKeyboard from '@/components/InteractiveKeyboard';
 import KeyboardAnimation from '@/components/KeyboardAnimation';
 import { shortcuts } from '@/data/shortcuts';
 import { Shortcut } from '@/types/shortcuts';
-import { ArrowLeft, Copy, Star, Share2, Download } from 'lucide-react';
+import { ArrowLeft, Copy, Star, Share2 } from 'lucide-react';
 import { useFavorites } from '@/contexts/FavoritesContext';
 
 export default function ShortcutDetailPage() {

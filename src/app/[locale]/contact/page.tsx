@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
@@ -135,7 +136,7 @@ export default function ContactPage() {
         <div className="mt-12 bg-blue-50 border border-blue-200 rounded-lg p-6">
           <h3 className="text-lg font-semibold text-blue-900 mb-3">Before You Contact Us</h3>
           <div className="text-blue-800 space-y-2">
-            <p>• Check our <a href="/guide" className="underline hover:text-blue-600">How to Use</a> page for common questions</p>
+            <p>• Check our <Link href="/guide" className="underline hover:text-blue-600">How to Use</Link> page for common questions</p>
             <p>• Browse our comprehensive shortcut lists to see if your question is already answered</p>
             <p>• Include specific software version and operating system in your inquiry for faster assistance</p>
             <p>• For bug reports, please include steps to reproduce the issue</p>

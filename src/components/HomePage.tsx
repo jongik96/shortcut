@@ -2,9 +2,9 @@
 
 import Link from 'next/link';
 import { useLocaleContext } from '@/contexts/LocaleContext';
-import { Keyboard, Zap, BookOpen, Users, Star, ArrowRight } from 'lucide-react';
+import { Keyboard, Zap, BookOpen, Star, ArrowRight } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { WindowsIcon, MacIcon, OfficeIcon, GoogleIcon, ChromeIcon, AdobeIcon, SlackIcon, DiscordIcon } from '@/components/icons/BrandIcons';
+import { WindowsIcon, OfficeIcon, GoogleIcon, ChromeIcon, AdobeIcon, SlackIcon } from '@/components/icons/BrandIcons';
 
 interface HomePageProps {
   className?: string;

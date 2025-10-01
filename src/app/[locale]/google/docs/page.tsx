@@ -10,9 +10,7 @@ import { useLocaleContext } from '@/contexts/LocaleContext';
 
 export default function GoogleDocsPage() {
   const { dictionary } = useLocaleContext();
-  const t = dictionary.categories.google;
   const tCommon = dictionary.common;
-  const tPlatform = dictionary.platform;
   
   const [searchQuery, setSearchQuery] = useState('');
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');

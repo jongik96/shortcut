@@ -3,9 +3,11 @@
 import { createContext, useContext } from 'react';
 import type { Locale } from '@/i18n/config';
 
+type Dictionary = Awaited<ReturnType<typeof import('@/i18n/dictionaries').getDictionary>>;
+
 type LocaleContextType = {
   locale: Locale;
-  dictionary: any;
+  dictionary: Dictionary;
 };
 
 const LocaleContext = createContext<LocaleContextType | undefined>(undefined);
@@ -17,7 +19,7 @@ export function LocaleProvider({
 }: {
   children: React.ReactNode;
   locale: Locale;
-  dictionary: any;
+  dictionary: Dictionary;
 }) {
   return (
     <LocaleContext.Provider value={{ locale, dictionary }}>
@@ -26,7 +28,7 @@ export function LocaleProvider({
   );
 }
 
-export function useLocaleContext() {
+export function useLocaleContext(): LocaleContextType {
   const context = useContext(LocaleContext);
   if (context === undefined) {
     throw new Error('useLocaleContext must be used within LocaleProvider');

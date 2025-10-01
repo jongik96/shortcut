@@ -44,19 +44,49 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ar: "دليل شامل لاختصارات OS و Microsoft Office و Google Workspace و Browser و Adobe والمزيد! اعثر على الاختصارات على الفور باستخدام وظيفة البحث."
   };
 
+  const keywords = {
+    ja: [
+      "Windows ショートカット", "Mac ショートカット", "Excel ショートカット", "Word ショートカット", "PowerPoint ショートカット",
+      "Google Docs ショートカット", "Google Sheets ショートカット", "Chrome ショートカット", "Safari ショートカット",
+      "Photoshop ショートカット", "Illustrator ショートカット", "Slack ショートカット", "Discord ショートカット",
+      "キーボードショートカット", "ショートカット一覧", "ショートカット検索", "生産性向上", "作業効率化", "PC作業効率"
+    ],
+    en: [
+      "Windows shortcuts", "Mac shortcuts", "Excel shortcuts", "Word shortcuts", "PowerPoint shortcuts",
+      "Google Docs shortcuts", "Google Sheets shortcuts", "Chrome shortcuts", "Safari shortcuts",
+      "Photoshop shortcuts", "Illustrator shortcuts", "Slack shortcuts", "Discord shortcuts",
+      "keyboard shortcuts", "shortcuts guide", "productivity", "work efficiency", "keyboard commands"
+    ],
+    ko: [
+      "윈도우 단축키", "맥 단축키", "엑셀 단축키", "워드 단축키", "파워포인트 단축키",
+      "구글 독스 단축키", "구글 스프레드시트 단축키", "크롬 단축키", "사파리 단축키",
+      "포토샵 단축키", "일러스트레이터 단축키", "슬랙 단축키", "디스코드 단축키",
+      "키보드 단축키", "단축키 모음", "단축키 검색", "생산성 향상", "작업 효율", "업무 효율"
+    ],
+    ar: [
+      "اختصارات Windows", "اختصارات Mac", "اختصارات Excel", "اختصارات Word", "اختصارات PowerPoint",
+      "اختصارات Google Docs", "اختصارات Google Sheets", "اختصارات Chrome", "اختصارات Safari",
+      "اختصارات Photoshop", "اختصارات Illustrator", "اختصارات Slack", "اختصارات Discord",
+      "اختصارات لوحة المفاتيح", "دليل الاختصارات", "الإنتاجية", "كفاءة العمل", "أوامر لوحة المفاتيح"
+    ]
+  };
+
+  const ogImageAlts = {
+    ja: "LearnShortcuts.dev - ショートカット完全ガイド",
+    en: "LearnShortcuts.dev - Complete Shortcuts Guide",
+    ko: "LearnShortcuts.dev - 단축키 완벽 가이드",
+    ar: "LearnShortcuts.dev - دليل شامل للاختصارات"
+  };
+
   const title = titles[locale as keyof typeof titles] || titles.ja;
   const description = descriptions[locale as keyof typeof descriptions] || descriptions.ja;
+  const keywordList = keywords[locale as keyof typeof keywords] || keywords.ja;
+  const ogImageAlt = ogImageAlts[locale as keyof typeof ogImageAlts] || ogImageAlts.ja;
 
   return {
     title,
     description,
-    keywords: [
-      "Windows shortcuts",
-      "Mac shortcuts", 
-      "Excel shortcuts",
-      "keyboard shortcuts",
-      "productivity",
-    ],
+    keywords: keywordList,
     authors: [{ name: "LearnShortcuts.dev" }],
     creator: "LearnShortcuts.dev",
     publisher: "LearnShortcuts.dev",
@@ -68,6 +98,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         'en': '/en',
         'ko': '/ko',
         'ar': '/ar',
+        'x-default': '/ja',
       },
     },
     openGraph: {
@@ -79,10 +110,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: locale === 'ja' ? 'ja_JP' : locale === 'en' ? 'en_US' : locale === 'ko' ? 'ko_KR' : 'ar_AR',
       images: [
         {
-          url: "/shortcut.png",
+          url: "https://learnshortcuts.dev/shortcut.png",
           width: 1200,
           height: 630,
-          alt: "LearnShortcuts.dev",
+          alt: ogImageAlt,
         },
       ],
     },
@@ -90,7 +121,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
-      images: ["/shortcut.png"],
+      images: ["https://learnshortcuts.dev/shortcut.png"],
+      creator: "@learnshortcuts",
+      site: "@learnshortcuts",
     },
   };
 }

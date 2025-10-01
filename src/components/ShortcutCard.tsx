@@ -12,8 +12,6 @@ import { getShortcutTranslation } from '@/lib/shortcut-translations';
 interface ShortcutCardProps {
   shortcut: Shortcut;
   platform: Platform;
-  isFavorite?: boolean;
-  onToggleFavorite?: (shortcutId: string) => void;
   onCopy?: (text: string) => void;
   className?: string;
 }
@@ -21,8 +19,6 @@ interface ShortcutCardProps {
 const ShortcutCard = ({ 
   shortcut, 
   platform, 
-  isFavorite = false, 
-  onToggleFavorite,
   onCopy,
   className 
 }: ShortcutCardProps) => {

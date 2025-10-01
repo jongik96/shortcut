@@ -6,8 +6,12 @@ import CategorySidebar from '@/components/CategorySidebar';
 import SearchBar from '@/components/SearchBar';
 import ShortcutCard from '@/components/ShortcutCard';
 import { shortcuts } from '@/data/shortcuts';
+import { useLocaleContext } from '@/contexts/LocaleContext';
 
 export default function GoogleSheetsPage() {
+  const { dictionary } = useLocaleContext();
+  const tCommon = dictionary.common;
+  
   const [searchQuery, setSearchQuery] = useState('');
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');
   const [selectedCategory, setSelectedCategory] = useState('all');

@@ -41,7 +41,7 @@ function getLocale(request: NextRequest): string | undefined {
 
   // Find first matching locale
   for (const { locale } of languages) {
-    if (locales.includes(locale as any)) {
+    if (locales.includes(locale as typeof locales[number])) {
       return locale;
     }
   }

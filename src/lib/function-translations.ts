@@ -7,7 +7,19 @@ import functionsEn from '../../messages/functions-en.json';
 import functionsKo from '../../messages/functions-ko.json';
 import functionsAr from '../../messages/functions-ar.json';
 
-const translations: Record<Locale, any> = {
+interface FunctionTranslations {
+  [key: string]: {
+    name: string;
+    description: string;
+    example?: string;
+    result?: string;
+    usageTips?: string[];
+    commonMistakes?: string[];
+    syntaxNotes?: string;
+  };
+}
+
+const translations: Record<Locale, FunctionTranslations> = {
   ja: functionsJa.functions,
   en: functionsEn.functions,
   ko: functionsKo.functions,

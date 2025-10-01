@@ -1,6 +1,5 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { Shortcut } from '@/types/shortcuts';
 import Image from 'next/image';
 
@@ -18,7 +17,7 @@ interface KeyPosition {
   key?: string;
 }
 
-const KeyboardAnimation = ({ shortcut, platform, shortcutText }: KeyboardAnimationProps) => {
+const KeyboardAnimation = ({ platform, shortcutText }: KeyboardAnimationProps) => {
   // 단축키 텍스트를 파싱하여 키 배열로 변환
   const parseShortcutKeys = (shortcutText: string): string[] => {
     return shortcutText

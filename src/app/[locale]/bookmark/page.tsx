@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useMemo, useCallback } from 'react';
+import Link from 'next/link';
 import Header from '@/components/Header';
 import SearchBar from '@/components/SearchBar';
 import ShortcutCard from '@/components/ShortcutCard';
@@ -109,18 +110,18 @@ export default function BookmarkPage() {
               ショートカットカードの星マークをクリックして、お気に入りに追加してください
             </p>
             <div className="flex gap-4 justify-center">
-              <a
+              <Link
                 href="/os"
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
               >
                 OSショートカットを見る
-              </a>
-              <a
-                href="/excel"
+              </Link>
+              <Link
+                href="/office/excel"
                 className="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors"
               >
                 Excelショートカットを見る
-              </a>
+              </Link>
             </div>
           </div>
         ) : (

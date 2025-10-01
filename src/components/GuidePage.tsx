@@ -1,6 +1,6 @@
 'use client';
 
-import { Search, Filter, Star, BookOpen, MousePointer, Keyboard, Zap, ExternalLink, Play, Eye } from 'lucide-react';
+import { Search, Filter, BookOpen, Keyboard, Zap, ExternalLink, Play, Eye } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useLocaleContext } from '@/contexts/LocaleContext';
@@ -41,7 +41,7 @@ const GuidePage = ({ className }: GuidePageProps) => {
     }
   ];
 
-  const features = t.features.items.map((item: any, index: number) => ({
+  const features = t.features.items.map((item: { title: string; description: string }, index: number) => ({
     icon: [Keyboard, Play, Eye, Zap][index],
     title: item.title,
     description: item.description

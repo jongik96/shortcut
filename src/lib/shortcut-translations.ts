@@ -7,7 +7,14 @@ import shortcutsEn from '../../messages/shortcuts-en.json';
 import shortcutsKo from '../../messages/shortcuts-ko.json';
 import shortcutsAr from '../../messages/shortcuts-ar.json';
 
-const translations: Record<Locale, any> = {
+interface ShortcutTranslations {
+  [key: string]: {
+    name: string;
+    description: string;
+  };
+}
+
+const translations: Record<Locale, ShortcutTranslations> = {
   ja: shortcutsJa.shortcuts,
   en: shortcutsEn.shortcuts,
   ko: shortcutsKo.shortcuts,
