@@ -81,34 +81,56 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
       // 日本語キーワードマッチング
       const keywords = [
         // 日付関連
-        { words: ['年'], funcs: ['year-extraction'] },
-        { words: ['月'], funcs: ['month-extraction'] },
-        { words: ['日', '日付'], funcs: ['day-extraction'] },
+        { words: ['年', 'year'], funcs: ['year-extraction'] },
+        { words: ['月', 'month'], funcs: ['month-extraction'] },
+        { words: ['日', '日付', 'day'], funcs: ['day-extraction'] },
+        { words: ['今日', '現在の日付', 'today'], funcs: ['today-date'] },
+        { words: ['今', '現在の時刻', 'now'], funcs: ['now-datetime'] },
+        { words: ['曜日', 'weekday'], funcs: ['weekday-day-of-week'] },
+        { words: ['営業日', 'workday'], funcs: ['workday-next-workday', 'networkdays-working-days'] },
         
         // 数学関連
-        { words: ['合計', '足し算', '合わ'], funcs: ['sum-cells', 'sumif'] },
-        { words: ['平均'], funcs: ['average-cells'] },
-        { words: ['個数', '数える', 'カウント'], funcs: ['count-cells', 'countif'] },
-        { words: ['最大', '最大値'], funcs: ['max-value'] },
-        { words: ['最小', '最小値'], funcs: ['min-value'] },
+        { words: ['合計', '足し算', '合わ', '加算', 'sum'], funcs: ['sum-cells'] },
+        { words: ['条件付き合計', 'sumif'], funcs: ['sumif'] },
+        { words: ['平均', 'average'], funcs: ['average-cells'] },
+        { words: ['個数', '数える', 'カウント', 'count'], funcs: ['count-cells'] },
+        { words: ['条件を満たす', '条件付きカウント', 'countif'], funcs: ['countif'] },
+        { words: ['最大', '最大値', 'max'], funcs: ['max-value'] },
+        { words: ['最小', '最小値', 'min'], funcs: ['min-value'] },
+        { words: ['絶対値', 'abs'], funcs: ['abs-value'] },
+        { words: ['四捨五入', '丸める', 'round'], funcs: ['round-number'] },
+        { words: ['切り上げ', 'roundup', 'ceiling'], funcs: ['ceiling-number', 'roundup-function'] },
+        { words: ['切り捨て', 'rounddown', 'floor'], funcs: ['floor-number', 'rounddown-function'] },
+        { words: ['平方根', 'sqrt'], funcs: ['sqrt-square-root'] },
         
         // テキスト関連
-        { words: ['結合', 'つなぐ'], funcs: ['concatenate-text', 'text-join'] },
-        { words: ['探す', '検索'], funcs: ['find-text'] },
-        { words: ['左'], funcs: ['left-text'] },
-        { words: ['右'], funcs: ['right-text'] },
-        { words: ['中央', '真ん中'], funcs: ['mid-text'] },
-        { words: ['長さ', '文字数'], funcs: ['len-text'] },
-        { words: ['大文字'], funcs: ['upper-text'] },
-        { words: ['小文字'], funcs: ['lower-text'] },
+        { words: ['結合', 'つなぐ', '連結', 'concatenate'], funcs: ['concatenate-text', 'text-join'] },
+        { words: ['探す', '検索', 'find', 'search'], funcs: ['find-text'] },
+        { words: ['左', '左側', 'left'], funcs: ['left-text'] },
+        { words: ['右', '右側', 'right'], funcs: ['right-text'] },
+        { words: ['中央', '真ん中', '途中', 'mid'], funcs: ['mid-text'] },
+        { words: ['長さ', '文字数', 'len', 'length'], funcs: ['len-text'] },
+        { words: ['大文字', '大文字化', 'upper'], funcs: ['upper-text'] },
+        { words: ['小文字', '小文字化', 'lower'], funcs: ['lower-text'] },
+        { words: ['空白削除', 'トリム', 'trim'], funcs: ['trim-spaces', 'trim-function'] },
+        { words: ['置換', '置き換え', 'substitute', 'replace'], funcs: ['substitute-text', 'replace-text'] },
         
-        // 条件関連
-        { words: ['条件', 'もし'], funcs: ['if-condition'] },
-        { words: ['検索', 'ルックアップ'], funcs: ['vlookup'] },
+        // 条件・論理関数
+        { words: ['条件', 'もし', 'if'], funcs: ['if-condition'] },
+        { words: ['複数条件', 'ifs'], funcs: ['ifs-multiple-conditions'] },
+        { words: ['かつ', 'そして', 'and'], funcs: ['and-logical', 'and-function'] },
+        { words: ['または', 'or'], funcs: ['or-logical', 'or-function'] },
+        { words: ['エラー処理', 'iferror'], funcs: ['iferror-function'] },
         
-        // 日付/時刻
-        { words: ['今日', '現在の日付'], funcs: ['today-date'] },
-        { words: ['今', '現在の時刻'], funcs: ['now-datetime'] }
+        // 検索・参照関数
+        { words: ['検索', 'ルックアップ', 'vlookup', '対応', '取得'], funcs: ['vlookup'] },
+        
+        // 統計関数
+        { words: ['中央値', 'median'], funcs: ['median-value', 'median-function'] },
+        { words: ['最頻値', 'mode'], funcs: ['mode-value', 'mode-function'] },
+        { words: ['標準偏差', 'stdev'], funcs: ['stdev-standard-deviation', 'stdev-function'] },
+        { words: ['分散', 'var', 'variance'], funcs: ['var-variance', 'var-function'] },
+        { words: ['順位', 'rank'], funcs: ['rank-value', 'rank-function'] }
       ];
 
       keywords.forEach(({ words, funcs }) => {
@@ -158,14 +180,14 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
   const exampleInputs = [
     '日付から年だけ抽出したい',
     '2つのセルの値を結合したい',
-    '空のセルを数えたい',
-    'テキストを大文字に変換したい',
     '条件に応じて異なる値を表示したい',
-    'SUM',
-    'VLOOKUP',
-    'IF',
-    'COUNTIF',
-    'CONCATENATE'
+    '数値の合計を計算したい',
+    '検索して対応する値を取得したい',
+    '条件を満たすセルを数えたい',
+    'テキストを大文字に変換したい',
+    '今日の日付を表示したい',
+    '空白セルを除外したい',
+    '最大値を求めたい'
   ];
 
   return (
@@ -282,6 +304,62 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
                         <p className="text-gray-600 font-mono">{suggestion.result}</p>
                       </div>
                     </div>
+
+                    {/* 構文ノート */}
+                    {suggestion.syntaxNotes && (
+                      <div className="mt-3 pt-3 border-t">
+                        <p className="text-sm font-medium text-gray-700 mb-1">構文:</p>
+                        <p className="text-sm text-gray-600 font-mono bg-gray-50 p-2 rounded">{suggestion.syntaxNotes}</p>
+                      </div>
+                    )}
+
+                    {/* 使用のコツ */}
+                    {suggestion.usageTips && suggestion.usageTips.length > 0 && (
+                      <div className="mt-3 pt-3 border-t">
+                        <p className="text-sm font-medium text-green-700 mb-2">💡 使用のコツ:</p>
+                        <ul className="space-y-1 text-sm text-gray-600">
+                          {suggestion.usageTips.map((tip, tipIndex) => (
+                            <li key={tipIndex} className="flex items-start gap-2">
+                              <span className="text-green-600 mt-1">•</span>
+                              <span>{tip}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* よくある間違い */}
+                    {suggestion.commonMistakes && suggestion.commonMistakes.length > 0 && (
+                      <div className="mt-3 pt-3 border-t">
+                        <p className="text-sm font-medium text-orange-700 mb-2">⚠️ よくある間違い:</p>
+                        <ul className="space-y-1 text-sm text-gray-600">
+                          {suggestion.commonMistakes.map((mistake, mistakeIndex) => (
+                            <li key={mistakeIndex} className="flex items-start gap-2">
+                              <span className="text-orange-600 mt-1">•</span>
+                              <span>{mistake}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    {/* 関連関数 */}
+                    {suggestion.relatedFunctions && suggestion.relatedFunctions.length > 0 && (
+                      <div className="mt-3 pt-3 border-t">
+                        <p className="text-sm font-medium text-gray-700 mb-2">関連関数:</p>
+                        <div className="flex flex-wrap gap-1">
+                          {suggestion.relatedFunctions.map((rel, relIndex) => (
+                            <span
+                              key={relIndex}
+                              className="px-2 py-1 text-xs bg-blue-50 text-blue-700 rounded hover:bg-blue-100 cursor-pointer transition-colors"
+                              onClick={() => handleInputChange(rel)}
+                            >
+                              {rel}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
 
                     {suggestion.alternatives && suggestion.alternatives.length > 0 && (
                       <div className="mt-3 pt-3 border-t">

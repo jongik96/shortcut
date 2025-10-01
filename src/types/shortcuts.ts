@@ -24,6 +24,10 @@ export interface FunctionSuggestion {
   };
   category: 'math' | 'text' | 'date' | 'logical' | 'lookup' | 'statistical' | 'financial' | 'engineering' | 'database' | 'information';
   difficulty: 'beginner' | 'intermediate' | 'advanced';
+  usageTips?: string[];
+  commonMistakes?: string[];
+  relatedFunctions?: string[];
+  syntaxNotes?: string;
 }
 
 export interface FavoriteShortcut {

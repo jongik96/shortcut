@@ -63,7 +63,18 @@ export const functionMappings: FunctionSuggestion[] = [
       description: 'A1:A5の数値を合計'
     },
     category: 'math',
-    difficulty: 'beginner'
+    difficulty: 'beginner',
+    usageTips: [
+      '複数の範囲を指定可能: =SUM(A1:A10, C1:C10)',
+      '個別のセルも追加可能: =SUM(A1, A3, A5, B1:B10)',
+      'テキストや空白セルは自動的に無視されます'
+    ],
+    commonMistakes: [
+      '範囲指定の間違い: A1-A10ではなくA1:A10を使用',
+      '非数値データが含まれている場合は無視されます'
+    ],
+    relatedFunctions: ['SUMIF', 'SUMIFS', 'SUBTOTAL', 'AVERAGE'],
+    syntaxNotes: '=SUM(数値1, [数値2], ...)'
   },
   {
     id: 'sumif',
@@ -79,7 +90,18 @@ export const functionMappings: FunctionSuggestion[] = [
       description: 'A列が5より大きい場合のB列の合計'
     },
     category: 'math',
-    difficulty: 'intermediate'
+    difficulty: 'intermediate',
+    usageTips: [
+      '条件範囲と合計範囲は同じサイズである必要があります',
+      'ワイルドカード使用可能: "りんご*"で「りんご」で始まる文字を検索',
+      '複数条件の場合はSUMIFS関数を使用'
+    ],
+    commonMistakes: [
+      '条件は必ず引用符で囲む: ">5"',
+      '範囲のサイズが一致しない場合はエラーになります'
+    ],
+    relatedFunctions: ['SUMIFS', 'COUNTIF', 'AVERAGEIF', 'SUM'],
+    syntaxNotes: '=SUMIF(範囲, 条件, [合計範囲])'
   },
   {
     id: 'average-cells',
@@ -127,7 +149,18 @@ export const functionMappings: FunctionSuggestion[] = [
       description: 'A1:A5で5より大きい値の個数をカウント'
     },
     category: 'statistical',
-    difficulty: 'intermediate'
+    difficulty: 'intermediate',
+    usageTips: [
+      'ワイルドカード使用可能: "りんご*"で「りんご」で始まる',
+      '空白以外をカウント: COUNTIF(A1:A10,"<>")',
+      '複数条件の場合はCOUNTIFS関数を使用'
+    ],
+    commonMistakes: [
+      '条件は必ず引用符で囲む: ">5"',
+      'セル参照を条件に使う場合: COUNTIF(A1:A10,">"&B1)'
+    ],
+    relatedFunctions: ['COUNTIFS', 'SUMIF', 'COUNT', 'COUNTA'],
+    syntaxNotes: '=COUNTIF(範囲, 条件)'
   },
   {
     id: 'max-value',
@@ -175,7 +208,18 @@ export const functionMappings: FunctionSuggestion[] = [
       description: 'A1とB1のテキストを結合'
     },
     category: 'text',
-    difficulty: 'beginner'
+    difficulty: 'beginner',
+    usageTips: [
+      '& 演算子でも結合可能: =A1&" "&B1',
+      'Excel 2016以降はTEXTJOIN関数がより便利',
+      '改行を挿入: =CONCATENATE(A1,CHAR(10),B1)'
+    ],
+    commonMistakes: [
+      '数値を結合すると文字列になります',
+      '空白セルは空文字として扱われます'
+    ],
+    relatedFunctions: ['TEXTJOIN', 'CONCAT', '& 演算子'],
+    syntaxNotes: '=CONCATENATE(テキスト1, [テキスト2], ...)'
   },
   {
     id: 'text-join',
@@ -319,7 +363,19 @@ export const functionMappings: FunctionSuggestion[] = [
       description: 'A1が5より大きいかチェック'
     },
     category: 'logical',
-    difficulty: 'beginner'
+    difficulty: 'beginner',
+    usageTips: [
+      'ネスト（入れ子）で複数条件を設定可能: =IF(A1>90,"A",IF(A1>80,"B","C"))',
+      '複数条件の場合はIFS関数の方が読みやすい',
+      'AND, OR関数と組み合わせて複雑な条件を作成可能'
+    ],
+    commonMistakes: [
+      'テキストは必ず引用符で囲む: "大きい"',
+      'ネストが深すぎると可読性が低下（最大7階層まで）',
+      '空白を返す場合は""を使用'
+    ],
+    relatedFunctions: ['IFS', 'AND', 'OR', 'IFERROR', 'SWITCH'],
+    syntaxNotes: '=IF(条件, 真の場合, 偽の場合)'
   },
   {
     id: 'vlookup',
@@ -335,7 +391,20 @@ export const functionMappings: FunctionSuggestion[] = [
       description: 'A1の値に対応する翻訳を検索'
     },
     category: 'lookup',
-    difficulty: 'intermediate'
+    difficulty: 'intermediate',
+    usageTips: [
+      'FALSEで完全一致、TRUEで近似一致を検索',
+      'テーブルの最初の列を検索キーとして使用',
+      '列番号は1から始まります（1列目=検索キー列）',
+      'エラー処理にはIFERROR関数と組み合わせる'
+    ],
+    commonMistakes: [
+      '検索値がテーブルの左端列にない場合は検索できません',
+      '完全一致の場合は必ずFALSEを指定（省略するとTRUE）',
+      'テーブル範囲を絶対参照($)で固定しないとコピー時にずれる'
+    ],
+    relatedFunctions: ['HLOOKUP', 'INDEX', 'MATCH', 'XLOOKUP', 'IFERROR'],
+    syntaxNotes: '=VLOOKUP(検索値, 範囲, 列番号, [検索方法])'
   },
   {
     id: 'today-date',
