@@ -1,0 +1,57 @@
+{
+  "site": {
+    "title": "LearnShortcuts.dev",
+    "description": "Master keyboard shortcuts for efficient work"
+  },
+  "nav": {
+    "os": "OS",
+    "office": "Office",
+    "google": "Google",
+    "browser": "Browser",
+    "adobe": "Adobe",
+    "others": "Others",
+    "bookmarks": "Favorites",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "guide": "Guide",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2025 LearnShortcuts.dev. All rights reserved.",
+    "description": "Master keyboard shortcuts for efficient work",
+    "brand": {
+      "title": "LearnShortcuts.dev",
+      "subtitle": "Master keyboard shortcuts and boost your productivity"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "guide": "User Guide",
+      "about": "About Us",
+      "bookmarks": "Favorites"
+    },
+    "support": {
+      "title": "Support",
+      "privacy": "Privacy Policy",
+      "contact": "Contact Us"
+    }
+  },
+  "platform": {
+    "windows": "Windows",
+    "mac": "Mac"
+  },
+  "common": {
+    "search": "Search",
+    "filter": "Filter",
+    "all": "All",
+    "copy": "Copy",
+    "copied": "Copied",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close"
+  }
+}
+

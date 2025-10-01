@@ -6,12 +6,15 @@ import { functionMappings } from '@/data/functionMappings';
 import { FunctionSuggestion } from '@/types/shortcuts';
 import { copyToClipboard } from '@/lib/utils';
 import { cn } from '@/lib/utils';
+import { useLocaleContext } from '@/contexts/LocaleContext';
+import { getFunctionTranslation } from '@/lib/function-translations';
 
 interface FunctionGeneratorProps {
   className?: string;
 }
 
 const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
+  const { locale } = useLocaleContext();
   const [input, setInput] = useState('');
   const [suggestions, setSuggestions] = useState<FunctionSuggestion[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -251,13 +254,14 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
             {suggestions.length > 0 ? (
               suggestions.map((suggestion) => {
                 const CategoryIcon = getCategoryIcon(suggestion.category);
+                const translated = getFunctionTranslation(suggestion, locale);
                 return (
                   <div key={suggestion.id} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
                     <div className="flex items-start justify-between mb-3">
                       <div className="flex-1">
                         <div className="flex items-center gap-2 mb-2">
                           <CategoryIcon className="h-5 w-5 text-blue-600" />
-                          <h4 className="font-semibold text-gray-900">{suggestion.name}</h4>
+                          <h4 className="font-semibold text-gray-900">{translated.name}</h4>
                           <span className="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">
                             関数
                           </span>
@@ -265,7 +269,7 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
                             {getDifficultyText(suggestion.difficulty)}
                           </span>
                         </div>
-                        <p className="text-sm text-gray-600 mb-3">{suggestion.description}</p>
+                        <p className="text-sm text-gray-600 mb-3">{translated.description}</p>
                         <div className="bg-gray-100 p-3 rounded font-mono text-sm text-gray-900 mb-3">
                           {suggestion.formula}
                         </div>
@@ -297,28 +301,28 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
                     <div className="grid md:grid-cols-2 gap-4 text-sm">
                       <div>
                         <p className="font-medium text-gray-700 mb-1">例:</p>
-                        <p className="text-gray-600">{suggestion.example}</p>
+                        <p className="text-gray-600">{translated.example}</p>
                       </div>
                       <div>
                         <p className="font-medium text-gray-700 mb-1">結果:</p>
-                        <p className="text-gray-600 font-mono">{suggestion.result}</p>
+                        <p className="text-gray-600 font-mono">{translated.result}</p>
                       </div>
                     </div>
 
                     {/* 構文ノート */}
-                    {suggestion.syntaxNotes && (
+                    {translated.syntaxNotes && (
                       <div className="mt-3 pt-3 border-t">
                         <p className="text-sm font-medium text-gray-700 mb-1">構文:</p>
-                        <p className="text-sm text-gray-600 font-mono bg-gray-50 p-2 rounded">{suggestion.syntaxNotes}</p>
+                        <p className="text-sm text-gray-600 font-mono bg-gray-50 p-2 rounded">{translated.syntaxNotes}</p>
                       </div>
                     )}
 
                     {/* 使用のコツ */}
-                    {suggestion.usageTips && suggestion.usageTips.length > 0 && (
+                    {translated.usageTips && translated.usageTips.length > 0 && (
                       <div className="mt-3 pt-3 border-t">
                         <p className="text-sm font-medium text-green-700 mb-2">💡 使用のコツ:</p>
                         <ul className="space-y-1 text-sm text-gray-600">
-                          {suggestion.usageTips.map((tip, tipIndex) => (
+                          {translated.usageTips.map((tip: string, tipIndex: number) => (
                             <li key={tipIndex} className="flex items-start gap-2">
                               <span className="text-green-600 mt-1">•</span>
                               <span>{tip}</span>
@@ -329,11 +333,11 @@ const FunctionGenerator = ({ className }: FunctionGeneratorProps) => {
                     )}
 
                     {/* よくある間違い */}
-                    {suggestion.commonMistakes && suggestion.commonMistakes.length > 0 && (
+                    {translated.commonMistakes && translated.commonMistakes.length > 0 && (
                       <div className="mt-3 pt-3 border-t">
                         <p className="text-sm font-medium text-orange-700 mb-2">⚠️ よくある間違い:</p>
                         <ul className="space-y-1 text-sm text-gray-600">
-                          {suggestion.commonMistakes.map((mistake, mistakeIndex) => (
+                          {translated.commonMistakes.map((mistake: string, mistakeIndex: number) => (
                             <li key={mistakeIndex} className="flex items-start gap-2">
                               <span className="text-orange-600 mt-1">•</span>
                               <span>{mistake}</span>

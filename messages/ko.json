@@ -1,0 +1,431 @@
+{
+  "site": {
+    "title": "LearnShortcuts.dev",
+    "description": "더 효율적인 작업을 위한 단축키 학습 사이트",
+    "tagline": "키보드 단축키를 마스터하고 생산성을 높이세요"
+  },
+  "nav": {
+    "os": "OS",
+    "office": "Office",
+    "google": "Google",
+    "browser": "Browser",
+    "adobe": "Adobe",
+    "others": "Others",
+    "bookmarks": "즐겨찾기",
+    "about": "소개",
+    "privacy": "개인정보처리방침",
+    "guide": "사용 가이드",
+    "contact": "문의하기"
+  },
+  "home": {
+    "hero": {
+      "title": "단축키",
+      "titleHighlight": "마스터",
+      "subtitle": "Excel, Word, PowerPoint, 시스템의 단축키를 효율적으로 학습·검색할 수 있는 플랫폼. 작업 효율을 극적으로 향상시키세요.",
+      "ctaShortcuts": "단축키 목록 보기",
+      "ctaGuide": "사용법 배우기"
+    },
+    "stats": {
+      "shortcuts": "단축키 수",
+      "mainCategories": "메인 카테고리",
+      "subCategories": "서브 카테고리",
+      "free": "무료"
+    },
+    "features": {
+      "title": "주요 기능",
+      "subtitle": "효율적인 단축키 학습을 지원하는 기능",
+      "richShortcuts": {
+        "title": "풍부한 단축키",
+        "description": "Excel, Word, PowerPoint, 시스템의 단축키를 포괄적으로 수록"
+      },
+      "fastSearch": {
+        "title": "빠른 검색",
+        "description": "키워드 검색과 카테고리 필터로 원하는 단축키를 즉시 발견"
+      },
+      "detailedExplanation": {
+        "title": "상세한 설명",
+        "description": "각 단축키의 사용법과 효과를 알기 쉽게 설명"
+      },
+      "favorites": {
+        "title": "즐겨찾기 기능",
+        "description": "자주 사용하는 단축키를 저장하여 효율적으로 접근"
+      }
+    },
+    "software": {
+      "title": "지원 소프트웨어",
+      "subtitle": "주요 오피스 소프트웨어와 시스템의 단축키를 지원",
+      "os": {
+        "name": "OS",
+        "description": "Windows/Mac 기본 단축키"
+      },
+      "office": {
+        "name": "Office",
+        "description": "Word, Excel, PowerPoint 단축키"
+      },
+      "google": {
+        "name": "Google",
+        "description": "Docs, Sheets, Slides 단축키"
+      },
+      "browser": {
+        "name": "Browser",
+        "description": "Chrome, Safari, Edge 단축키"
+      },
+      "adobe": {
+        "name": "Adobe",
+        "description": "Photoshop, Illustrator 단축키"
+      },
+      "others": {
+        "name": "Others",
+        "description": "Slack, Discord 등 기타 소프트웨어"
+      }
+    },
+    "cta": {
+      "title": "지금 바로 작업 효율을 향상시키세요",
+      "subtitle": "무료로 시작할 수 있는 단축키 학습 플랫폼",
+      "button": "단축키 목록 보기"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 LearnShortcuts.dev. 모든 권리 보유.",
+    "description": "더 효율적인 작업을 위한 단축키 학습 사이트",
+    "brand": {
+      "title": "LearnShortcuts.dev",
+      "subtitle": "OS, Microsoft Office, Google Workspace, Browser, Adobe, 기타 소프트웨어의 단축키를 마스터하여 생산성 향상"
+    },
+    "quickLinks": {
+      "title": "빠른 링크"
+    },
+    "support": {
+      "title": "지원"
+    }
+  },
+  "platform": {
+    "windows": "Windows",
+    "mac": "Mac"
+  },
+  "common": {
+    "search": "검색",
+    "searchPlaceholder": "단축키 검색...",
+    "filter": "필터",
+    "all": "전체",
+    "copy": "복사",
+    "copied": "복사됨",
+    "loading": "로딩 중...",
+    "noResults": "결과를 찾을 수 없습니다",
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "edit": "수정",
+    "close": "닫기",
+    "shortcuts": "단축키",
+    "categories": "카테고리"
+  },
+  "categories": {
+    "os": {
+      "title": "OS 단축키",
+      "description": "Windows와 Mac의 기본 시스템 단축키",
+      "windows": "Windows 단축키",
+      "mac": "Mac 단축키"
+    },
+    "office": {
+      "title": "Microsoft Office 단축키",
+      "description": "Word, Excel, PowerPoint 생산성 향상 단축키",
+      "word": "Word 단축키",
+      "excel": "Excel 단축키",
+      "powerpoint": "PowerPoint 단축키"
+    },
+    "google": {
+      "title": "Google Workspace 단축키",
+      "description": "Google Docs, Sheets, Slides의 효율적인 단축키",
+      "docs": "Google Docs 단축키",
+      "sheets": "Google Sheets 단축키",
+      "slides": "Google Slides 단축키"
+    },
+    "browser": {
+      "title": "브라우저 단축키",
+      "description": "Chrome, Safari, Edge의 유용한 단축키",
+      "chrome": "Chrome 단축키",
+      "safari": "Safari 단축키",
+      "edge": "Edge 단축키"
+    },
+    "adobe": {
+      "title": "Adobe 단축키",
+      "description": "Photoshop, Illustrator 크리에이티브 작업 단축키",
+      "photoshop": "Photoshop 단축키",
+      "illustrator": "Illustrator 단축키"
+    },
+    "others": {
+      "title": "기타 소프트웨어 단축키",
+      "description": "Slack, Discord 등 커뮤니케이션 도구 단축키",
+      "slack": "Slack 단축키",
+      "discord": "Discord 단축키"
+    }
+  },
+  "categoryPage": {
+    "selectCategory": "카테고리 선택",
+    "allCategories": "모든 카테고리",
+    "shortcuts": "단축키",
+    "tabs": "탭",
+    "functions": "함수"
+  },
+  "guide": {
+    "title": "사용 가이드",
+    "subtitle": "LearnShortcuts.dev의 기본적인 사용 방법을 단계별로 설명합니다. 효율적으로 단축키를 학습·검색하는 방법을 마스터하세요."
+  },
+  "about": {
+    "title": "서비스 소개",
+    "subtitle": "LearnShortcuts.dev는 OS, Microsoft Office, Google Workspace, Browser, Adobe, Others의 단축키를 효율적으로 학습·검색할 수 있는 온라인 플랫폼입니다. 정확하고 신뢰할 수 있는 정보를 제공하여 작업 효율을 극적으로 향상시킵니다."
+  },
+  "contact": {
+    "title": "문의하기",
+    "subtitle": "키보드 단축키에 대한 질문이 있으신가요? 특정 소프트웨어에 대한 도움이 필요하신가요? 생산성 단축키를 마스터하고 워크플로우를 개선할 수 있도록 도와드리겠습니다."
+  },
+  "privacy": {
+    "title": "개인정보처리방침",
+    "subtitle": "LearnShortcuts.dev에서의 개인정보 처리에 관하여"
+  },
+  "bookmark": {
+    "title": "즐겨찾기",
+    "subtitle": "저장한 단축키 목록",
+    "empty": "아직 즐겨찾기에 추가된 단축키가 없습니다",
+    "addSome": "단축키 페이지에서 즐겨찾기를 추가해보세요"
+  },
+  "guide": {
+    "hero": {
+      "title": "사용 가이드",
+      "subtitle": "LearnShortcuts.dev의 기본 사용법을 단계별로 설명합니다. 효율적으로 단축키를 학습하고 검색하는 방법을 마스터하세요."
+    },
+    "steps": {
+      "title": "기본 단계",
+      "subtitle": "4가지 간단한 단계로 단축키 마스터하기",
+      "step1": {
+        "title": "카테고리 선택",
+        "description": "OS, Office, Google, Browser, Adobe, Others 중에서 목적에 맞는 카테고리 선택",
+        "details": [
+          "헤더 메뉴에서 메인 카테고리 선택",
+          "OS: Windows/Mac 기본 단축키",
+          "Office: Word, Excel, PowerPoint 단축키",
+          "Google: Docs, Sheets, Slides 단축키",
+          "Browser: Chrome, Safari, Edge 단축키",
+          "Adobe: Photoshop, Illustrator 단축키",
+          "Others: Slack, Discord 등 기타 소프트웨어"
+        ]
+      },
+      "step2": {
+        "title": "서브카테고리 선택",
+        "description": "사이드바에서 서브카테고리를 선택하여 특정 소프트웨어의 단축키 확인",
+        "details": [
+          "Office: Word, Excel, PowerPoint",
+          "Google: Docs, Sheets, Slides",
+          "Browser: Chrome, Safari, Edge",
+          "Adobe: Photoshop, Illustrator",
+          "Others: Slack, Discord",
+          "각 서브카테고리에서 Windows/Mac 탭으로 플랫폼 전환"
+        ]
+      },
+      "step3": {
+        "title": "단축키 상세 페이지",
+        "description": "단축키 카드를 클릭하여 상세 페이지에서 학습",
+        "details": [
+          "인터랙티브 키보드로 키 위치 확인",
+          "애니메이션으로 누르는 방법을 시각적으로 학습",
+          "플랫폼별 사용 팁 확인",
+          "관련 단축키도 발견 가능"
+        ]
+      },
+      "step4": {
+        "title": "실천적 학습",
+        "description": "시각적·인터랙티브 기능으로 효율적으로 학습",
+        "details": [
+          "키보드 맵에서 키를 클릭하여 설명 확인",
+          "애니메이션 재생으로 누르는 방법 확인",
+          "단계별 설명",
+          "플랫폼별 실천적 팁"
+        ]
+      }
+    },
+    "features": {
+      "title": "주요 기능",
+      "subtitle": "LearnShortcuts.dev의 유용한 기능 소개",
+      "items": [
+        {
+          "title": "인터랙티브 키보드",
+          "description": "가상 키보드로 단축키를 시각적으로 확인하고, 키를 클릭하여 상세 설명 표시"
+        },
+        {
+          "title": "애니메이션 학습",
+          "description": "단축키 누르는 방법을 애니메이션으로 시각적으로 학습하고, 단계별로 확인"
+        },
+        {
+          "title": "상세 페이지",
+          "description": "각 단축키의 상세 정보, 관련 단축키, 플랫폼별 사용 팁 제공"
+        },
+        {
+          "title": "빠른 검색",
+          "description": "실시간 검색으로 즉시 결과 표시, 카테고리 필터로 효율적 검색"
+        }
+      ]
+    },
+    "newFeatures": {
+      "title": "새로운 기능: 인터랙티브 학습",
+      "subtitle": "시각적이고 인터랙티브한 학습 경험 제공",
+      "keyboard": {
+        "title": "인터랙티브 키보드",
+        "description": "가상 키보드로 단축키를 시각적으로 확인할 수 있습니다. 각 키를 클릭하면 상세한 설명이 표시되어 키의 역할을 이해할 수 있습니다.",
+        "points": [
+          "키의 위치와 역할을 시각적으로 학습",
+          "클릭으로 상세 설명 확인",
+          "플랫폼별 사용 팁"
+        ]
+      },
+      "animation": {
+        "title": "애니메이션 학습",
+        "description": "단축키 누르는 방법을 애니메이션으로 시각적으로 학습할 수 있습니다. 실제 조작 순서를 단계별로 확인할 수 있습니다.",
+        "points": [
+          "누르는 방법의 애니메이션 재생",
+          "단계별 설명",
+          "실천적 사용 팁"
+        ]
+      }
+    },
+    "tips": {
+      "title": "사용 팁",
+      "subtitle": "더 효율적으로 사용하기 위한 힌트",
+      "list": [
+        "단축키 카드를 클릭하여 상세 페이지에서 인터랙티브하게 학습하세요",
+        "인터랙티브 키보드에서 각 키를 클릭하여 상세 설명을 확인할 수 있습니다",
+        "애니메이션 기능으로 실제 누르는 방법을 시각적으로 학습할 수 있습니다",
+        "Windows/Mac 탭을 전환하여 플랫폼별 키를 확인하세요",
+        "Excel 페이지에서는 함수 생성기로 수식을 자동 생성할 수 있습니다",
+        "관련 단축키에서 유사한 기능을 발견할 수 있습니다",
+        "플랫폼별 실천적 팁을 참고하여 효율적으로 학습하세요"
+      ]
+    },
+    "software": {
+      "title": "지원 소프트웨어",
+      "subtitle": "주요 오피스 소프트웨어 및 시스템 단축키 지원"
+    },
+    "cta": {
+      "title": "지금 바로 단축키 찾아보기",
+      "subtitle": "사용법을 마스터했다면, 실제 단축키 목록에서 검색해보세요",
+      "buttonOS": "OS 단축키 보기",
+      "buttonOffice": "Office 단축키 보기"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "서비스 소개",
+      "subtitle": "LearnShortcuts.dev는 OS, Microsoft Office, Google Workspace, Browser, Adobe 등의 단축키를 효율적으로 학습하고 검색할 수 있는 온라인 플랫폼입니다. 정확하고 신뢰할 수 있는 정보를 제공하여 작업 효율을 극대화합니다."
+    },
+    "mission": {
+      "title": "서비스 특징",
+      "quote": "모든 사용자가 자신의 도구를 완전히 활용할 수 있도록 지원",
+      "description": "단순한 단축키 목록 제공을 넘어, 사용자가 자신의 작업 환경에서 최대한의 효율을 달성할 수 있도록 지원하는 포괄적인 학습 플랫폼을 제공합니다."
+    },
+    "values": {
+      "title": "서비스 강점",
+      "subtitle": "다른 서비스와 비교한 우리의 강점",
+      "items": [
+        {
+          "title": "정확성",
+          "description": "모든 단축키 정보를 철저히 검증하여 정확성을 보장합니다."
+        },
+        {
+          "title": "사용자 중심",
+          "description": "사용자의 편의성과 효율성을 최우선으로 고려합니다."
+        },
+        {
+          "title": "품질",
+          "description": "지속적인 개선을 통해 최고 품질의 서비스를 제공합니다."
+        },
+        {
+          "title": "열정",
+          "description": "사용자의 생산성 향상에 대한 열정으로 개발하고 있습니다."
+        }
+      ]
+    },
+    "serviceInfo": {
+      "title": "서비스 상세",
+      "subtitle": "LearnShortcuts.dev의 주요 기능과 특징",
+      "items": [
+        {
+          "name": "풍부한 데이터베이스",
+          "role": "500+ 단축키",
+          "description": "OS, Microsoft Office, Google Workspace, Browser, Adobe, Others의 단축키를 포괄적으로 수록"
+        },
+        {
+          "name": "카테고리별 구성",
+          "role": "6개 메인 카테고리",
+          "description": "메인 카테고리와 서브 카테고리로 체계적으로 구성된 단축키 데이터베이스"
+        },
+        {
+          "name": "직관적인 UI",
+          "role": "사용 편의성 중시",
+          "description": "사이드바와 탭 구조로 누구나 쉽게 사용할 수 있는 직관적인 사용자 인터페이스"
+        }
+      ]
+    }
+  },
+  "privacyPage": {
+    "hero": {
+      "title": "개인정보처리방침",
+      "subtitle": "LearnShortcuts.dev는 사용자의 개인정보 보호를 최우선으로 합니다.",
+      "lastUpdated": "최종 업데이트: 2025년 1월 27일"
+    },
+    "overview": {
+      "title": "개요",
+      "content": "LearnShortcuts.dev(이하 '서비스')는 사용자의 개인정보를 중요시하며, 개인정보보호법 및 관련 법령에 따라 개인정보를 안전하게 보호·관리합니다. 본 개인정보처리방침은 서비스 이용 시 개인정보가 어떻게 수집, 사용, 보호되는지 설명합니다."
+    },
+    "sections": {
+      "collection": {
+        "title": "수집하는 정보",
+        "items": [
+          "서비스 이용 시 자동으로 수집되는 정보 (IP 주소, 브라우저 정보, 접속 시간)",
+          "사용자가 직접 입력하는 정보 (검색어, 즐겨찾기 설정)",
+          "쿠키 및 유사 기술을 통한 정보 수집"
+        ]
+      },
+      "usage": {
+        "title": "정보 사용 목적",
+        "items": [
+          "서비스 제공 및 개선",
+          "사용자 경험 향상",
+          "서비스 통계 및 분석",
+          "고객 지원 제공"
+        ]
+      },
+      "protection": {
+        "title": "정보 보호",
+        "items": [
+          "개인정보는 암호화되어 안전하게 저장됩니다",
+          "접근 권한이 있는 직원만 개인정보에 접근할 수 있습니다",
+          "정기적인 보안 점검을 실시합니다",
+          "개인정보 유출 시 즉시 사용자에게 통지합니다"
+        ]
+      },
+      "rights": {
+        "title": "사용자 권리",
+        "items": [
+          "개인정보 열람, 정정, 삭제 요구",
+          "개인정보 처리 정지 요구",
+          "개인정보 처리 현황 통지 요구",
+          "개인정보보호법에 따른 손해배상 청구"
+        ]
+      }
+    },
+    "cookies": {
+      "title": "쿠키 정책",
+      "description": "우리는 서비스 기능을 향상시키고 사용자 경험을 개선하기 위해 쿠키를 사용합니다.",
+      "typesTitle": "사용하는 쿠키 종류:",
+      "types": [
+        "필수 쿠키: 서비스 기본 기능 제공",
+        "성능 쿠키: 서비스 사용 통계 수집",
+        "기능 쿠키: 사용자 설정 저장"
+      ]
+    },
+    "legal": {
+      "title": "법적 고지",
+      "content": "본 개인정보처리방침은 관련 법령의 변경이나 서비스 정책의 변경에 따라 수정될 수 있습니다. 중요한 변경사항이 있을 경우 서비스 내 공지를 통해 사전에 안내드립니다."
+    }
+  }
+}

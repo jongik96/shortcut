@@ -1,0 +1,57 @@
+{
+  "site": {
+    "title": "LearnShortcuts.dev",
+    "description": "より効率的な作業のためのショートカット学習サイト"
+  },
+  "nav": {
+    "os": "OS",
+    "office": "Office",
+    "google": "Google",
+    "browser": "Browser",
+    "adobe": "Adobe",
+    "others": "Others",
+    "bookmarks": "お気に入り",
+    "about": "サービス概要",
+    "privacy": "プライバシーポリシー",
+    "guide": "使い方ガイド",
+    "contact": "お問い合わせ"
+  },
+  "footer": {
+    "copyright": "© 2025 LearnShortcuts.dev。全著作権所有。",
+    "description": "より効率的な作業のためのショートカット学習サイト",
+    "brand": {
+      "title": "LearnShortcuts.dev",
+      "subtitle": "キーボードショートカットをマスターして生産性を向上"
+    },
+    "quickLinks": {
+      "title": "クイックリンク",
+      "guide": "使い方ガイド",
+      "about": "サービス概要",
+      "bookmarks": "お気に入り"
+    },
+    "support": {
+      "title": "サポート",
+      "privacy": "プライバシーポリシー",
+      "contact": "お問い合わせ"
+    }
+  },
+  "platform": {
+    "windows": "Windows",
+    "mac": "Mac"
+  },
+  "common": {
+    "search": "検索",
+    "filter": "フィルター",
+    "all": "すべて",
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "loading": "読み込み中...",
+    "noResults": "結果が見つかりません",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる"
+  }
+}
+

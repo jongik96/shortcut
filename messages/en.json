@@ -1,0 +1,431 @@
+{
+  "site": {
+    "title": "LearnShortcuts.dev",
+    "description": "Master keyboard shortcuts for efficient work",
+    "tagline": "Master keyboard shortcuts and boost your productivity"
+  },
+  "nav": {
+    "os": "OS",
+    "office": "Office",
+    "google": "Google",
+    "browser": "Browser",
+    "adobe": "Adobe",
+    "others": "Others",
+    "bookmarks": "Favorites",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "guide": "Guide",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "title": "Master",
+      "titleHighlight": "Shortcuts",
+      "subtitle": "An efficient platform to learn and search shortcuts for Excel, Word, PowerPoint, and system. Dramatically improve your work efficiency.",
+      "ctaShortcuts": "View Shortcuts",
+      "ctaGuide": "Learn How to Use"
+    },
+    "stats": {
+      "shortcuts": "Shortcuts",
+      "mainCategories": "Main Categories",
+      "subCategories": "Sub Categories",
+      "free": "Free"
+    },
+    "features": {
+      "title": "Key Features",
+      "subtitle": "Features that support efficient shortcut learning",
+      "richShortcuts": {
+        "title": "Rich Shortcuts",
+        "description": "Comprehensive collection of shortcuts for Excel, Word, PowerPoint, and system"
+      },
+      "fastSearch": {
+        "title": "Fast Search",
+        "description": "Find shortcuts instantly with keyword search and category filters"
+      },
+      "detailedExplanation": {
+        "title": "Detailed Explanations",
+        "description": "Clear explanations of how to use each shortcut and its effects"
+      },
+      "favorites": {
+        "title": "Favorites Feature",
+        "description": "Save frequently used shortcuts for efficient access"
+      }
+    },
+    "software": {
+      "title": "Supported Software",
+      "subtitle": "Support shortcuts for major office software and systems",
+      "os": {
+        "name": "OS",
+        "description": "Windows/Mac Basic Shortcuts"
+      },
+      "office": {
+        "name": "Office",
+        "description": "Word, Excel, PowerPoint Shortcuts"
+      },
+      "google": {
+        "name": "Google",
+        "description": "Docs, Sheets, Slides Shortcuts"
+      },
+      "browser": {
+        "name": "Browser",
+        "description": "Chrome, Safari, Edge Shortcuts"
+      },
+      "adobe": {
+        "name": "Adobe",
+        "description": "Photoshop, Illustrator Shortcuts"
+      },
+      "others": {
+        "name": "Others",
+        "description": "Slack, Discord and other software"
+      }
+    },
+    "cta": {
+      "title": "Start improving your work efficiency now",
+      "subtitle": "Free shortcut learning platform to get started",
+      "button": "View Shortcuts"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 LearnShortcuts.dev. All rights reserved.",
+    "description": "Master keyboard shortcuts for efficient work",
+    "brand": {
+      "title": "LearnShortcuts.dev",
+      "subtitle": "Master shortcuts for OS, Microsoft Office, Google Workspace, Browser, Adobe, and other software to boost productivity"
+    },
+    "quickLinks": {
+      "title": "Quick Links"
+    },
+    "support": {
+      "title": "Support"
+    }
+  },
+  "platform": {
+    "windows": "Windows",
+    "mac": "Mac"
+  },
+  "common": {
+    "search": "Search",
+    "searchPlaceholder": "Search shortcuts...",
+    "filter": "Filter",
+    "all": "All",
+    "copy": "Copy",
+    "copied": "Copied",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "shortcuts": "Shortcuts",
+    "categories": "Categories"
+  },
+  "categories": {
+    "os": {
+      "title": "OS Shortcuts",
+      "description": "Basic system shortcuts for Windows and Mac",
+      "windows": "Windows Shortcuts",
+      "mac": "Mac Shortcuts"
+    },
+    "office": {
+      "title": "Microsoft Office Shortcuts",
+      "description": "Productivity shortcuts for Word, Excel, PowerPoint",
+      "word": "Word Shortcuts",
+      "excel": "Excel Shortcuts",
+      "powerpoint": "PowerPoint Shortcuts"
+    },
+    "google": {
+      "title": "Google Workspace Shortcuts",
+      "description": "Efficient shortcuts for Google Docs, Sheets, Slides",
+      "docs": "Google Docs Shortcuts",
+      "sheets": "Google Sheets Shortcuts",
+      "slides": "Google Slides Shortcuts"
+    },
+    "browser": {
+      "title": "Browser Shortcuts",
+      "description": "Useful shortcuts for Chrome, Safari, Edge",
+      "chrome": "Chrome Shortcuts",
+      "safari": "Safari Shortcuts",
+      "edge": "Edge Shortcuts"
+    },
+    "adobe": {
+      "title": "Adobe Shortcuts",
+      "description": "Creative work shortcuts for Photoshop, Illustrator",
+      "photoshop": "Photoshop Shortcuts",
+      "illustrator": "Illustrator Shortcuts"
+    },
+    "others": {
+      "title": "Other Software Shortcuts",
+      "description": "Communication tools shortcuts like Slack, Discord",
+      "slack": "Slack Shortcuts",
+      "discord": "Discord Shortcuts"
+    }
+  },
+  "categoryPage": {
+    "selectCategory": "Select Category",
+    "allCategories": "All Categories",
+    "shortcuts": "Shortcuts",
+    "tabs": "Tabs",
+    "functions": "Functions"
+  },
+  "guide": {
+    "title": "User Guide",
+    "subtitle": "Learn how to use LearnShortcuts.dev step by step. Master efficient ways to learn and search for keyboard shortcuts."
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "LearnShortcuts.dev is an online platform where you can efficiently learn and search shortcuts for OS, Microsoft Office, Google Workspace, Browser, Adobe, and more. We provide accurate and reliable information to dramatically improve your work efficiency."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions about keyboard shortcuts? Need help with a specific software? We're here to help you master productivity shortcuts and improve your workflow."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "How we handle your personal information at LearnShortcuts.dev"
+  },
+  "bookmark": {
+    "title": "Favorites",
+    "subtitle": "Your saved shortcuts",
+    "empty": "No shortcuts added to favorites yet",
+    "addSome": "Try adding some shortcuts from the shortcuts pages"
+  },
+  "guide": {
+    "hero": {
+      "title": "User Guide",
+      "subtitle": "Learn how to use LearnShortcuts.dev step by step. Master the efficient way to learn and search for shortcuts."
+    },
+    "steps": {
+      "title": "Basic Steps",
+      "subtitle": "Master shortcuts in 4 easy steps",
+      "step1": {
+        "title": "Select Category",
+        "description": "Choose the appropriate category from OS, Office, Google, Browser, Adobe, Others",
+        "details": [
+          "Select main category from header menu",
+          "OS: Windows/Mac basic shortcuts",
+          "Office: Word, Excel, PowerPoint shortcuts",
+          "Google: Docs, Sheets, Slides shortcuts",
+          "Browser: Chrome, Safari, Edge shortcuts",
+          "Adobe: Photoshop, Illustrator shortcuts",
+          "Others: Slack, Discord and other software"
+        ]
+      },
+      "step2": {
+        "title": "Select Subcategory",
+        "description": "Choose subcategory from sidebar to view specific software shortcuts",
+        "details": [
+          "Office: Word, Excel, PowerPoint",
+          "Google: Docs, Sheets, Slides",
+          "Browser: Chrome, Safari, Edge",
+          "Adobe: Photoshop, Illustrator",
+          "Others: Slack, Discord",
+          "Switch platforms using Windows/Mac tabs in each subcategory"
+        ]
+      },
+      "step3": {
+        "title": "Shortcut Detail Page",
+        "description": "Click shortcut cards to learn on detail pages",
+        "details": [
+          "Check key positions with interactive keyboard",
+          "Learn visually how to press keys with animations",
+          "View platform-specific usage tips",
+          "Discover related shortcuts"
+        ]
+      },
+      "step4": {
+        "title": "Practical Learning",
+        "description": "Learn efficiently with visual and interactive features",
+        "details": [
+          "Click keys on keyboard map to view descriptions",
+          "Watch animations to see how to press keys",
+          "Step-by-step explanations",
+          "Platform-specific practical tips"
+        ]
+      }
+    },
+    "features": {
+      "title": "Key Features",
+      "subtitle": "Discover useful features of LearnShortcuts.dev",
+      "items": [
+        {
+          "title": "Interactive Keyboard",
+          "description": "Visually check shortcut keys on virtual keyboard and click keys to display detailed descriptions"
+        },
+        {
+          "title": "Animation Learning",
+          "description": "Learn visually how to press shortcut keys with animations and confirm step-by-step"
+        },
+        {
+          "title": "Detail Pages",
+          "description": "Provides detailed information for each shortcut, related shortcuts, and platform-specific usage tips"
+        },
+        {
+          "title": "Fast Search",
+          "description": "Display results instantly with real-time search and filter efficiently by category"
+        }
+      ]
+    },
+    "newFeatures": {
+      "title": "New Features: Interactive Learning",
+      "subtitle": "Visual and interactive learning experience",
+      "keyboard": {
+        "title": "Interactive Keyboard",
+        "description": "Visually check shortcut keys on virtual keyboard. Click each key to display detailed descriptions and understand key roles.",
+        "points": [
+          "Learn key positions and roles visually",
+          "View detailed descriptions by clicking",
+          "Platform-specific usage tips"
+        ]
+      },
+      "animation": {
+        "title": "Animation Learning",
+        "description": "Learn visually how to press shortcut keys with animations. Confirm actual operation steps step-by-step.",
+        "points": [
+          "Play key press animations",
+          "Step-by-step explanations",
+          "Practical usage tips"
+        ]
+      }
+    },
+    "tips": {
+      "title": "Usage Tips",
+      "subtitle": "Tips for more efficient use",
+      "list": [
+        "Click shortcut cards to learn interactively on detail pages",
+        "Click each key on interactive keyboard to view detailed descriptions",
+        "Learn visually how to press keys with animation feature",
+        "Switch Windows/Mac tabs to check platform-specific keys",
+        "Auto-generate formulas with function generator on Excel page",
+        "Discover similar functions from related shortcuts",
+        "Learn efficiently by referring to platform-specific practical tips"
+      ]
+    },
+    "software": {
+      "title": "Supported Software",
+      "subtitle": "Supporting shortcuts for major office software and systems"
+    },
+    "cta": {
+      "title": "Start Exploring Shortcuts Now",
+      "subtitle": "After mastering the guide, try searching the shortcut list",
+      "buttonOS": "View OS Shortcuts",
+      "buttonOffice": "View Office Shortcuts"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Us",
+      "subtitle": "LearnShortcuts.dev is an online platform for efficiently learning and searching shortcuts for OS, Microsoft Office, Google Workspace, Browser, Adobe, and more. We provide accurate and reliable information to dramatically improve your work efficiency."
+    },
+    "mission": {
+      "title": "Service Features",
+      "quote": "Helping all users fully utilize their tools",
+      "description": "Beyond providing simple shortcut lists, we offer a comprehensive learning platform that helps users achieve maximum efficiency in their work environment."
+    },
+    "values": {
+      "title": "Our Strengths",
+      "subtitle": "What sets us apart from other services",
+      "items": [
+        {
+          "title": "Accuracy",
+          "description": "We thoroughly verify all shortcut information to guarantee accuracy."
+        },
+        {
+          "title": "User-Centric",
+          "description": "We prioritize user convenience and efficiency above all."
+        },
+        {
+          "title": "Quality",
+          "description": "We provide the highest quality service through continuous improvement."
+        },
+        {
+          "title": "Passion",
+          "description": "Developed with passion for improving user productivity."
+        }
+      ]
+    },
+    "serviceInfo": {
+      "title": "Service Details",
+      "subtitle": "Key features and characteristics of LearnShortcuts.dev",
+      "items": [
+        {
+          "name": "Rich Database",
+          "role": "500+ Shortcuts",
+          "description": "Comprehensive collection of shortcuts for OS, Microsoft Office, Google Workspace, Browser, Adobe, Others"
+        },
+        {
+          "name": "Category Structure",
+          "role": "6 Main Categories",
+          "description": "Systematically organized shortcut database with main and sub categories"
+        },
+        {
+          "name": "Intuitive UI",
+          "role": "Focus on Usability",
+          "description": "Intuitive user interface with sidebar and tab structure that anyone can easily use"
+        }
+      ]
+    }
+  },
+  "privacyPage": {
+    "hero": {
+      "title": "Privacy Policy",
+      "subtitle": "LearnShortcuts.dev prioritizes the protection of user personal information.",
+      "lastUpdated": "Last updated: January 27, 2025"
+    },
+    "overview": {
+      "title": "Overview",
+      "content": "LearnShortcuts.dev (hereinafter \"Service\") values user personal information and safely protects and manages personal information in accordance with personal information protection laws and related regulations. This Privacy Policy explains how personal information is collected, used, and protected when using the Service."
+    },
+    "sections": {
+      "collection": {
+        "title": "Information We Collect",
+        "items": [
+          "Information automatically collected during service use (IP address, browser information, access time)",
+          "Information directly entered by users (search terms, favorite settings)",
+          "Information collected through cookies and similar technologies"
+        ]
+      },
+      "usage": {
+        "title": "Purpose of Information Use",
+        "items": [
+          "Service provision and improvement",
+          "User experience enhancement",
+          "Service statistics and analysis",
+          "Customer support provision"
+        ]
+      },
+      "protection": {
+        "title": "Information Protection",
+        "items": [
+          "Personal information is encrypted and stored securely",
+          "Only authorized personnel can access personal information",
+          "Regular security inspections are conducted",
+          "Users are notified immediately in case of personal information leakage"
+        ]
+      },
+      "rights": {
+        "title": "User Rights",
+        "items": [
+          "Request to view, correct, and delete personal information",
+          "Request to stop processing personal information",
+          "Request notification of personal information processing status",
+          "Request for compensation under personal information protection law"
+        ]
+      }
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "description": "We use cookies to improve service functionality and enhance user experience.",
+      "typesTitle": "Types of cookies we use:",
+      "types": [
+        "Essential cookies: Provide basic service functions",
+        "Performance cookies: Collect service usage statistics",
+        "Functional cookies: Save user settings"
+      ]
+    },
+    "legal": {
+      "title": "Legal Notice",
+      "content": "This Privacy Policy may be revised in accordance with changes in related laws or service policies. Important changes will be notified in advance through service announcements."
+    }
+  }
+}

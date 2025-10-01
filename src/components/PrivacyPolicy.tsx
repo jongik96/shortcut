@@ -2,51 +2,36 @@
 
 import { Shield, Eye, Lock, Database } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useLocaleContext } from '@/contexts/LocaleContext';
 
 interface PrivacyPolicyProps {
   className?: string;
 }
 
 const PrivacyPolicy = ({ className }: PrivacyPolicyProps) => {
+  const { dictionary } = useLocaleContext();
+  const t = dictionary.privacyPage;
+
   const sections = [
     {
       icon: Database,
-      title: '収集する情報',
-      content: [
-        'サービス利用時に自動で収集される情報（IPアドレス、ブラウザ情報、アクセス時間）',
-        'ユーザーが直接入力する情報（検索語、お気に入り設定）',
-        'クッキーおよび類似技術による情報収集'
-      ]
+      title: t.sections.collection.title,
+      content: t.sections.collection.items
     },
     {
       icon: Eye,
-      title: '情報使用目的',
-      content: [
-        'サービス提供および改善',
-        'ユーザー体験向上',
-        'サービス統計および分析',
-        'カスタマーサポート提供'
-      ]
+      title: t.sections.usage.title,
+      content: t.sections.usage.items
     },
     {
       icon: Lock,
-      title: '情報保護',
-      content: [
-        '個人情報は暗号化されて安全に保存されます',
-        'アクセス権限のある職員のみが個人情報にアクセスできます',
-        '定期的なセキュリティ点検を実施します',
-        '個人情報漏洩時は即座にユーザーに通知します'
-      ]
+      title: t.sections.protection.title,
+      content: t.sections.protection.items
     },
     {
       icon: Shield,
-      title: 'ユーザー権利',
-      content: [
-        '個人情報閲覧、訂正、削除要求',
-        '個人情報処理停止要求',
-        '個人情報処理現況通知要求',
-        '個人情報保護法に基づく損害賠償請求'
-      ]
+      title: t.sections.rights.title,
+      content: t.sections.rights.items
     }
   ];
 
@@ -55,23 +40,21 @@ const PrivacyPolicy = ({ className }: PrivacyPolicyProps) => {
       {/* ヘッダー */}
       <section className="text-center py-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          プライバシーポリシー
+          {t.hero.title}
         </h1>
         <p className="text-lg text-gray-600">
-          LearnShortcuts.devはユーザーの個人情報保護を最優先とします。
+          {t.hero.subtitle}
         </p>
         <p className="text-sm text-gray-500 mt-2">
-          最終更新: 2025年1月27日
+          {t.hero.lastUpdated}
         </p>
       </section>
 
       {/* 概要 */}
       <section className="bg-blue-50 rounded-xl p-8">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">概要</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 mb-4">{t.overview.title}</h2>
         <p className="text-gray-700 leading-relaxed">
-          LearnShortcuts.dev（以下「サービス」）はユーザーの個人情報を重要視し、
-          個人情報保護法および関連法令に従って個人情報を安全に保護・管理します。
-          本プライバシーポリシーは、サービス利用時に個人情報がどのように収集、使用、保護されるかについて説明します。
+          {t.overview.content}
         </p>
       </section>
 
@@ -103,17 +86,17 @@ const PrivacyPolicy = ({ className }: PrivacyPolicyProps) => {
 
       {/* クッキーポリシー */}
       <section className="bg-gray-50 rounded-xl p-8">
-        <h2 className="text-2xl font-semibold text-gray-900 mb-4">クッキーポリシー</h2>
+        <h2 className="text-2xl font-semibold text-gray-900 mb-4">{t.cookies.title}</h2>
         <div className="space-y-4 text-gray-700">
           <p>
-            私たちはサービスの機能を向上させ、ユーザー体験を改善するためにクッキーを使用します。
+            {t.cookies.description}
           </p>
           <div>
-            <h3 className="font-semibold mb-2">使用するクッキーの種類:</h3>
+            <h3 className="font-semibold mb-2">{t.cookies.typesTitle}</h3>
             <ul className="list-disc list-inside space-y-1 ml-4">
-              <li>必須クッキー: サービス基本機能提供</li>
-              <li>パフォーマンスクッキー: サービス使用統計収集</li>
-              <li>機能クッキー: ユーザー設定保存</li>
+              {t.cookies.types.map((type: string, index: number) => (
+                <li key={index}>{type}</li>
+              ))}
             </ul>
           </div>
         </div>
@@ -122,11 +105,9 @@ const PrivacyPolicy = ({ className }: PrivacyPolicyProps) => {
 
       {/* 法的告知 */}
       <section className="bg-yellow-50 border border-yellow-200 rounded-xl p-6">
-        <h2 className="text-lg font-semibold text-gray-900 mb-2">法的告知</h2>
+        <h2 className="text-lg font-semibold text-gray-900 mb-2">{t.legal.title}</h2>
         <p className="text-sm text-gray-700">
-          本プライバシーポリシーは関連法令の変更やサービスポリシーの変更に従って
-          修正される場合があります。重要な変更事項がある場合はサービス内お知らせを通じて
-          事前にご案内いたします。
+          {t.legal.content}
         </p>
       </section>
     </div>

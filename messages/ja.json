@@ -1,0 +1,431 @@
+{
+  "site": {
+    "title": "LearnShortcuts.dev",
+    "description": "より効率的な作業のためのショートカット学習サイト",
+    "tagline": "キーボードショートカットをマスターして生産性を向上"
+  },
+  "nav": {
+    "os": "OS",
+    "office": "Office",
+    "google": "Google",
+    "browser": "Browser",
+    "adobe": "Adobe",
+    "others": "Others",
+    "bookmarks": "お気に入り",
+    "about": "サービス概要",
+    "privacy": "プライバシーポリシー",
+    "guide": "使い方ガイド",
+    "contact": "お問い合わせ"
+  },
+  "home": {
+    "hero": {
+      "title": "ショートカット",
+      "titleHighlight": "マスター",
+      "subtitle": "Excel、Word、PowerPoint、システムのショートカットを効率的に学習・検索できるプラットフォーム。作業効率を劇的に向上させましょう。",
+      "ctaShortcuts": "ショートカット一覧を見る",
+      "ctaGuide": "使い方を学ぶ"
+    },
+    "stats": {
+      "shortcuts": "ショートカット数",
+      "mainCategories": "メインカテゴリ",
+      "subCategories": "サブカテゴリ",
+      "free": "無料"
+    },
+    "features": {
+      "title": "主要機能",
+      "subtitle": "効率的なショートカット学習をサポートする機能",
+      "richShortcuts": {
+        "title": "豊富なショートカット",
+        "description": "Excel、Word、PowerPoint、システムのショートカットを網羅的に収録"
+      },
+      "fastSearch": {
+        "title": "高速検索",
+        "description": "キーワード検索とカテゴリフィルタで目的のショートカットを瞬時に発見"
+      },
+      "detailedExplanation": {
+        "title": "詳細な説明",
+        "description": "各ショートカットの使い方と効果を分かりやすく解説"
+      },
+      "favorites": {
+        "title": "お気に入り機能",
+        "description": "よく使うショートカットを保存して効率的にアクセス"
+      }
+    },
+    "software": {
+      "title": "対応ソフトウェア",
+      "subtitle": "主要なオフィスソフトウェアとシステムのショートカットをサポート",
+      "os": {
+        "name": "OS",
+        "description": "Windows/Mac基本ショートカット"
+      },
+      "office": {
+        "name": "Office",
+        "description": "Word, Excel, PowerPointショートカット"
+      },
+      "google": {
+        "name": "Google",
+        "description": "Docs, Sheets, Slidesショートカット"
+      },
+      "browser": {
+        "name": "Browser",
+        "description": "Chrome, Safari, Edgeショートカット"
+      },
+      "adobe": {
+        "name": "Adobe",
+        "description": "Photoshop, Illustratorショートカット"
+      },
+      "others": {
+        "name": "Others",
+        "description": "Slack, Discordなどその他のソフトウェア"
+      }
+    },
+    "cta": {
+      "title": "今すぐ作業効率を向上させましょう",
+      "subtitle": "無料で始められるショートカット学習プラットフォーム",
+      "button": "ショートカット一覧を見る"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 LearnShortcuts.dev。全著作権所有。",
+    "description": "より効率的な作業のためのショートカット学習サイト",
+    "brand": {
+      "title": "LearnShortcuts.dev",
+      "subtitle": "OS, Microsoft Office, Google Workspace, Browser, Adobe, その他ソフトウェアのショートカットをマスターして生産性を向上"
+    },
+    "quickLinks": {
+      "title": "クイックリンク"
+    },
+    "support": {
+      "title": "サポート"
+    }
+  },
+  "platform": {
+    "windows": "Windows",
+    "mac": "Mac"
+  },
+  "common": {
+    "search": "検索",
+    "searchPlaceholder": "ショートカットを検索...",
+    "filter": "フィルター",
+    "all": "すべて",
+    "copy": "コピー",
+    "copied": "コピーしました",
+    "loading": "読み込み中...",
+    "noResults": "結果が見つかりません",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "close": "閉じる",
+    "shortcuts": "ショートカット",
+    "categories": "カテゴリ"
+  },
+  "categories": {
+    "os": {
+      "title": "OSショートカット",
+      "description": "Windows とMac の基本的なシステムショートカット",
+      "windows": "Windows ショートカット",
+      "mac": "Mac ショートカット"
+    },
+    "office": {
+      "title": "Microsoft Office ショートカット",
+      "description": "Word, Excel, PowerPoint の生産性向上ショートカット",
+      "word": "Word ショートカット",
+      "excel": "Excel ショートカット",
+      "powerpoint": "PowerPoint ショートカット"
+    },
+    "google": {
+      "title": "Google Workspace ショートカット",
+      "description": "Google Docs, Sheets, Slides の効率的なショートカット",
+      "docs": "Google Docs ショートカット",
+      "sheets": "Google Sheets ショートカット",
+      "slides": "Google Slides ショートカット"
+    },
+    "browser": {
+      "title": "ブラウザショートカット",
+      "description": "Chrome, Safari, Edge の便利なショートカット",
+      "chrome": "Chrome ショートカット",
+      "safari": "Safari ショートカット",
+      "edge": "Edge ショートカット"
+    },
+    "adobe": {
+      "title": "Adobe ショートカット",
+      "description": "Photoshop, Illustrator のクリエイティブワークショートカット",
+      "photoshop": "Photoshop ショートカット",
+      "illustrator": "Illustrator ショートカット"
+    },
+    "others": {
+      "title": "その他ソフトウェアショートカット",
+      "description": "Slack, Discord などのコミュニケーションツールショートカット",
+      "slack": "Slack ショートカット",
+      "discord": "Discord ショートカット"
+    }
+  },
+  "categoryPage": {
+    "selectCategory": "カテゴリを選択",
+    "allCategories": "すべてのカテゴリ",
+    "shortcuts": "ショートカット",
+    "tabs": "タブ",
+    "functions": "関数"
+  },
+  "guide": {
+    "title": "使い方ガイド",
+    "subtitle": "LearnShortcuts.devの基本的な使い方をステップバイステップで説明します。効率的にショートカットを学習・検索する方法をマスターしましょう。"
+  },
+  "about": {
+    "title": "サービス概要",
+    "subtitle": "LearnShortcuts.devは、OS, Microsoft Office, Google Workspace, Browser, Adobe, Othersのショートカットを効率的に学習・検索できるオンラインプラットフォームです。正確で信頼できる情報を提供し、あなたの作業効率を劇的に向上させます。"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have questions about keyboard shortcuts? Need help with a specific software? We're here to help you master productivity shortcuts and improve your workflow."
+  },
+  "privacy": {
+    "title": "プライバシーポリシー",
+    "subtitle": "LearnShortcuts.devにおける個人情報の取り扱いについて"
+  },
+  "bookmark": {
+    "title": "お気に入り",
+    "subtitle": "保存したショートカット一覧",
+    "empty": "まだお気に入りに追加されたショートカットはありません",
+    "addSome": "ショートカットページでお気に入りを追加してみましょう"
+  },
+  "guide": {
+    "hero": {
+      "title": "使い方ガイド",
+      "subtitle": "LearnShortcuts.devの基本的な使い方をステップバイステップで説明します。効率的にショートカットを学習・検索する方法をマスターしましょう。"
+    },
+    "steps": {
+      "title": "基本ステップ",
+      "subtitle": "4つの簡単なステップでショートカットをマスター",
+      "step1": {
+        "title": "カテゴリを選択",
+        "description": "OS, Office, Google, Browser, Adobe, Othersの中から目的に合ったカテゴリを選択",
+        "details": [
+          "ヘッダーメニューからメインカテゴリを選択",
+          "OS: Windows/Mac基本ショートカット",
+          "Office: Word, Excel, PowerPointショートカット",
+          "Google: Docs, Sheets, Slidesショートカット",
+          "Browser: Chrome, Safari, Edgeショートカット",
+          "Adobe: Photoshop, Illustratorショートカット",
+          "Others: Slack, Discordなどその他のソフトウェア"
+        ]
+      },
+      "step2": {
+        "title": "サブカテゴリ選択",
+        "description": "サイドバーからサブカテゴリを選択して特定ソフトウェアのショートカットを確認",
+        "details": [
+          "Office: Word, Excel, PowerPoint",
+          "Google: Docs, Sheets, Slides",
+          "Browser: Chrome, Safari, Edge",
+          "Adobe: Photoshop, Illustrator",
+          "Others: Slack, Discord",
+          "各サブカテゴリでWindows/Macタブでプラットフォーム切り替え"
+        ]
+      },
+      "step3": {
+        "title": "ショートカット詳細ページ",
+        "description": "ショートカットカードをクリックして詳細ページで学習",
+        "details": [
+          "インタラクティブキーボードでキー位置確認",
+          "アニメーションで押し方を視覚的に学習",
+          "プラットフォーム別の使用コツを確認",
+          "関連ショートカットも発見可能"
+        ]
+      },
+      "step4": {
+        "title": "実践的な学習",
+        "description": "視覚的・インタラクティブな機能で効率的に学習",
+        "details": [
+          "キーボードマップでキーをクリックして説明確認",
+          "アニメーション再生で押し方を確認",
+          "ステップバイステップの説明",
+          "プラットフォーム別の実践的なコツ"
+        ]
+      }
+    },
+    "features": {
+      "title": "主要機能",
+      "subtitle": "LearnShortcuts.devの便利な機能をご紹介",
+      "items": [
+        {
+          "title": "インタラクティブキーボード",
+          "description": "仮想キーボードでショートカットキーを視覚的に確認し、キーをクリックして詳細説明を表示"
+        },
+        {
+          "title": "アニメーション学習",
+          "description": "ショートカットキーの押し方をアニメーションで視覚的に学習し、ステップバイステップで確認"
+        },
+        {
+          "title": "詳細ページ",
+          "description": "各ショートカットの詳細情報、関連ショートカット、プラットフォーム別の使用コツを提供"
+        },
+        {
+          "title": "高速検索",
+          "description": "リアルタイム検索で瞬時に結果を表示し、カテゴリフィルターで効率的に絞り込み"
+        }
+      ]
+    },
+    "newFeatures": {
+      "title": "新機能: インタラクティブ学習",
+      "subtitle": "視覚的でインタラクティブな学習体験を提供",
+      "keyboard": {
+        "title": "インタラクティブキーボード",
+        "description": "仮想キーボードでショートカットキーを視覚的に確認できます。各キーをクリックすると詳細な説明が表示され、キーの役割を理解できます。",
+        "points": [
+          "キーの位置と役割を視覚的に学習",
+          "クリックで詳細説明を確認",
+          "プラットフォーム別の使用コツ"
+        ]
+      },
+      "animation": {
+        "title": "アニメーション学習",
+        "description": "ショートカットキーの押し方をアニメーションで視覚的に学習できます。実際の操作手順をステップバイステップで確認できます。",
+        "points": [
+          "押し方のアニメーション再生",
+          "ステップバイステップの説明",
+          "実践的な使用コツ"
+        ]
+      }
+    },
+    "tips": {
+      "title": "使用のコツ",
+      "subtitle": "より効率的に使うためのヒント",
+      "list": [
+        "ショートカットカードをクリックして詳細ページでインタラクティブに学習しましょう",
+        "インタラクティブキーボードで各キーをクリックして詳細説明を確認できます",
+        "アニメーション機能で実際の押し方を視覚的に学習できます",
+        "Windows/Macタブを切り替えてプラットフォーム別のキーを確認しましょう",
+        "Excelページでは関数ジェネレーターで数式を自動生成できます",
+        "関連ショートカットから類似の機能を発見できます",
+        "プラットフォーム別の実践的なコツを参考に効率的に学習しましょう"
+      ]
+    },
+    "software": {
+      "title": "対応ソフトウェア",
+      "subtitle": "主要なオフィスソフトウェアとシステムのショートカットをサポート"
+    },
+    "cta": {
+      "title": "今すぐショートカットを探してみましょう",
+      "subtitle": "使い方をマスターしたら、実際にショートカット一覧で検索してみてください",
+      "buttonOS": "OSショートカットを見る",
+      "buttonOffice": "Officeショートカットを見る"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "サービス概要",
+      "subtitle": "LearnShortcuts.devは、OS, Microsoft Office, Google Workspace, Browser, Adobe, Othersのショートカットを効率的に学習・検索できるオンラインプラットフォームです。正確で信頼できる情報を提供し、あなたの作業効率を劇的に向上させます。"
+    },
+    "mission": {
+      "title": "サービス特徴",
+      "quote": "すべてのユーザーが自分のツールを完全に活用できるよう支援する",
+      "description": "単純なショートカット一覧の提供を超えて、ユーザーが自分の作業環境で最大限の効率を達成できるよう支援する包括的な学習プラットフォームを提供しています。"
+    },
+    "values": {
+      "title": "サービス優位性",
+      "subtitle": "他のサービスと比較した当サービスの強み",
+      "items": [
+        {
+          "title": "正確性",
+          "description": "すべてのショートカット情報を徹底的に検証し、正確性を保証します。"
+        },
+        {
+          "title": "ユーザー中心",
+          "description": "ユーザーの利便性と効率性を最優先に考慮します。"
+        },
+        {
+          "title": "品質",
+          "description": "継続的な改善を通じて最高品質のサービスを提供します。"
+        },
+        {
+          "title": "情熱",
+          "description": "ユーザーの生産性向上への情熱で開発しています。"
+        }
+      ]
+    },
+    "serviceInfo": {
+      "title": "サービス詳細",
+      "subtitle": "LearnShortcuts.devの主要機能と特徴",
+      "items": [
+        {
+          "name": "豊富なデータベース",
+          "role": "500+ ショートカット",
+          "description": "OS, Microsoft Office, Google Workspace, Browser, Adobe, Othersのショートカットを包括的に収録"
+        },
+        {
+          "name": "カテゴリ別構成",
+          "role": "6つのメインカテゴリ",
+          "description": "メインカテゴリとサブカテゴリで体系的に構成されたショートカットデータベース"
+        },
+        {
+          "name": "直感的なUI",
+          "role": "使いやすさ重視",
+          "description": "サイドバーとタブ構造で誰でも簡単に使える直感的なユーザーインターフェース"
+        }
+      ]
+    }
+  },
+  "privacyPage": {
+    "hero": {
+      "title": "プライバシーポリシー",
+      "subtitle": "LearnShortcuts.devはユーザーの個人情報保護を最優先とします。",
+      "lastUpdated": "最終更新: 2025年1月27日"
+    },
+    "overview": {
+      "title": "概要",
+      "content": "LearnShortcuts.dev（以下「サービス」）はユーザーの個人情報を重要視し、個人情報保護法および関連法令に従って個人情報を安全に保護・管理します。本プライバシーポリシーは、サービス利用時に個人情報がどのように収集、使用、保護されるかについて説明します。"
+    },
+    "sections": {
+      "collection": {
+        "title": "収集する情報",
+        "items": [
+          "サービス利用時に自動で収集される情報（IPアドレス、ブラウザ情報、アクセス時間）",
+          "ユーザーが直接入力する情報（検索語、お気に入り設定）",
+          "クッキーおよび類似技術による情報収集"
+        ]
+      },
+      "usage": {
+        "title": "情報使用目的",
+        "items": [
+          "サービス提供および改善",
+          "ユーザー体験向上",
+          "サービス統計および分析",
+          "カスタマーサポート提供"
+        ]
+      },
+      "protection": {
+        "title": "情報保護",
+        "items": [
+          "個人情報は暗号化されて安全に保存されます",
+          "アクセス権限のある職員のみが個人情報にアクセスできます",
+          "定期的なセキュリティ点検を実施します",
+          "個人情報漏洩時は即座にユーザーに通知します"
+        ]
+      },
+      "rights": {
+        "title": "ユーザー権利",
+        "items": [
+          "個人情報閲覧、訂正、削除要求",
+          "個人情報処理停止要求",
+          "個人情報処理現況通知要求",
+          "個人情報保護法に基づく損害賠償請求"
+        ]
+      }
+    },
+    "cookies": {
+      "title": "クッキーポリシー",
+      "description": "私たちはサービスの機能を向上させ、ユーザー体験を改善するためにクッキーを使用します。",
+      "typesTitle": "使用するクッキーの種類:",
+      "types": [
+        "必須クッキー: サービス基本機能提供",
+        "パフォーマンスクッキー: サービス使用統計収集",
+        "機能クッキー: ユーザー設定保存"
+      ]
+    },
+    "legal": {
+      "title": "法的告知",
+      "content": "本プライバシーポリシーは関連法令の変更やサービスポリシーの変更に従って修正される場合があります。重要な変更事項がある場合はサービス内お知らせを通じて事前にご案内いたします。"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "site": {
+    "title": "LearnShortcuts.dev",
+    "description": "더 효율적인 작업을 위한 단축키 학습 사이트"
+  },
+  "nav": {
+    "os": "OS",
+    "office": "Office",
+    "google": "Google",
+    "browser": "Browser",
+    "adobe": "Adobe",
+    "others": "Others",
+    "bookmarks": "즐겨찾기",
+    "about": "소개",
+    "privacy": "개인정보처리방침",
+    "guide": "사용 가이드",
+    "contact": "문의하기"
+  },
+  "footer": {
+    "copyright": "© 2025 LearnShortcuts.dev. 모든 권리 보유.",
+    "description": "더 효율적인 작업을 위한 단축키 학습 사이트",
+    "brand": {
+      "title": "LearnShortcuts.dev",
+      "subtitle": "키보드 단축키를 마스터하고 생산성을 높이세요"
+    },
+    "quickLinks": {
+      "title": "빠른 링크",
+      "guide": "사용 가이드",
+      "about": "서비스 소개",
+      "bookmarks": "즐겨찾기"
+    },
+    "support": {
+      "title": "지원",
+      "privacy": "개인정보처리방침",
+      "contact": "문의하기"
+    }
+  },
+  "platform": {
+    "windows": "Windows",
+    "mac": "Mac"
+  },
+  "common": {
+    "search": "검색",
+    "filter": "필터",
+    "all": "전체",
+    "copy": "복사",
+    "copied": "복사됨",
+    "loading": "로딩 중...",
+    "noResults": "결과를 찾을 수 없습니다",
+    "save": "저장",
+    "cancel": "취소",
+    "delete": "삭제",
+    "edit": "수정",
+    "close": "닫기"
+  }
+}
+

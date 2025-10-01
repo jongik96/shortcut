@@ -6,6 +6,8 @@ import KeyboardVisualizer from './KeyboardVisualizer';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { useFavorites } from '@/contexts/FavoritesContext';
+import { useLocaleContext } from '@/contexts/LocaleContext';
+import { getShortcutTranslation } from '@/lib/shortcut-translations';
 
 interface ShortcutCardProps {
   shortcut: Shortcut;
@@ -24,9 +26,13 @@ const ShortcutCard = ({
   onCopy,
   className 
 }: ShortcutCardProps) => {
+  const { locale } = useLocaleContext();
   const { isFavorite: isFav, toggleFavorite } = useFavorites();
   const shortcutText = platform === 'windows' ? shortcut.windows : shortcut.mac;
   const isCurrentlyFavorite = isFav(shortcut.id);
+  
+  // 번역된 텍스트 가져오기
+  const translated = getShortcutTranslation(shortcut, locale);
 
   const handleCopy = () => {
     onCopy?.(shortcutText);
@@ -82,7 +88,7 @@ const ShortcutCard = ({
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-1">
               <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                {shortcut.name}
+                {translated.name}
               </h3>
               <span className={cn(
                 'px-2 py-1 text-xs font-medium rounded-full',
@@ -91,7 +97,7 @@ const ShortcutCard = ({
                 {getCategoryName(shortcut.category)}
               </span>
             </div>
-            <p className="text-sm text-gray-600 mb-3">{shortcut.description}</p>
+            <p className="text-sm text-gray-600 mb-3">{translated.description}</p>
           </div>
           <div className="flex items-center gap-1 ml-2">
             <button

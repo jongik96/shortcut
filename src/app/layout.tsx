@@ -1,9 +1,6 @@
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { structuredData } from "./structured-data";
-import { Analytics } from "@vercel/analytics/next";
-import { FavoritesProvider } from "@/contexts/FavoritesContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,82 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "LearnShortcuts.dev - OS・Office・Google・Browser・Adobe ショートカット完全ガイド",
-  description: "OS・Microsoft Office・Google Workspace・Browser・Adobe・その他ソフトウェアのショートカットを完全網羅！検索機能で瞬時に見つける。効率的な作業のためのショートカット学習サイト。",
   icons: {
     icon: "/shortcut.png",
     shortcut: "/shortcut.png",
     apple: "/shortcut.png",
   },
-  keywords: [
-    "Windows ショートカット",
-    "Mac ショートカット", 
-    "Excel ショートカット",
-    "Word ショートカット",
-    "PowerPoint ショートカット",
-    "Google Docs ショートカット",
-    "Google Sheets ショートカット",
-    "Google Slides ショートカット",
-    "Chrome ショートカット",
-    "Safari ショートカット",
-    "Edge ショートカット",
-    "Photoshop ショートカット",
-    "Illustrator ショートカット",
-    "Slack ショートカット",
-    "Discord ショートカット",
-    "キーボードショートカット",
-    "ショートカット 一覧",
-    "ショートカット 覚え方",
-    "ショートカット 早見表",
-    "Windows 基本ショートカット",
-    "Mac 基本ショートカット",
-    "Excel 関数",
-    "効率化",
-    "生産性向上",
-    "オフィスソフト",
-    "Microsoft Office",
-    "Google Workspace",
-    "Adobe Creative Suite",
-    "ショートカット 学習",
-    "ショートカット ガイド",
-    "learnshortcuts",
-    "ショートカット 検索"
-  ],
-  authors: [{ name: "LearnShortcuts.dev" }],
-  creator: "LearnShortcuts.dev",
-  publisher: "LearnShortcuts.dev",
-  robots: "index, follow",
   metadataBase: new URL("https://learnshortcuts.dev"),
-  alternates: {
-    canonical: "/",
-  },
-  openGraph: {
-    title: "LearnShortcuts.dev - OS・Office・Google・Browser・Adobe ショートカット完全ガイド",
-    description: "OS・Microsoft Office・Google Workspace・Browser・Adobe・その他ソフトウェアのショートカットを完全網羅！検索機能で瞬時に見つける。効率的な作業のためのショートカット学習サイト。",
-    url: "https://learnshortcuts.dev",
-    siteName: "LearnShortcuts.dev",
-    type: "website",
-    locale: "ja_JP",
-    images: [
-      {
-        url: "/shortcut.png",
-        width: 1200,
-        height: 630,
-        alt: "LearnShortcuts.dev - ショートカット完全ガイド",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "LearnShortcuts.dev - OS・Office・Google・Browser・Adobe ショートカット完全ガイド",
-    description: "OS・Microsoft Office・Google Workspace・Browser・Adobe・その他ソフトウェアのショートカットを完全網羅！検索機能で瞬時に見つける。",
-    images: ["/shortcut.png"],
-  },
-};
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -99,29 +26,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="ja">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(structuredData),
-          }}
-        />
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8843011911940029"
-          crossOrigin="anonymous"
-        />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <FavoritesProvider>
-          {children}
-        </FavoritesProvider>
-        <Analytics />
-      </body>
-    </html>
-  );
+  return children;
 }

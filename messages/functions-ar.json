@@ -1,0 +1,867 @@
+{
+  "functions": {
+    "year-extraction": {
+      "name": "دالة YEAR",
+      "description": "استخراج السنة من التاريخ",
+      "example": "A1に2024-03-15がある場合",
+      "result": "2024",
+      "visualDescription": "A1の日付から年を抽出"
+    },
+    "month-extraction": {
+      "name": "دالة MONTH",
+      "description": "استخراج الشهر من التاريخ",
+      "example": "A1に2024-03-15がある場合",
+      "result": "3",
+      "visualDescription": "A1の日付から月を抽出"
+    },
+    "day-extraction": {
+      "name": "دالة DAY",
+      "description": "استخراج اليوم من التاريخ",
+      "example": "A1に2024-03-15がある場合",
+      "result": "15",
+      "visualDescription": "A1の日付から日を抽出"
+    },
+    "sum-cells": {
+      "name": "دالة SUM",
+      "description": "جمع الأرقام في النطاق المحدد",
+      "example": "A1:A10に1,2,3...10がある場合",
+      "result": "55",
+      "visualDescription": "A1:A5の数値を合計"
+    },
+    "sumif": {
+      "name": "دالة SUMIF",
+      "description": "جمع قيم الخلايا التي تستوفي الشرط",
+      "example": "A列が5より大きい場合のB列の合計",
+      "result": "条件に合う値の合計",
+      "visualDescription": ""
+    },
+    "average-cells": {
+      "name": "دالة AVERAGE",
+      "description": "指定した範囲の数値の平均を計算します",
+      "example": "A1:A10に1,2,3...10がある場合",
+      "result": "5.5",
+      "visualDescription": "A1:A5の数値の平均を計算"
+    },
+    "count-cells": {
+      "name": "دالة COUNT",
+      "description": "数値が入力されているセルの個数を数えます",
+      "example": "A1:A10に数値が8個ある場合",
+      "result": "8",
+      "visualDescription": "A1:A5の数値セルの個数をカウント"
+    },
+    "countif": {
+      "name": "COUNTIF関数",
+      "description": "条件に合うセルの個数を数えます",
+      "example": "A1:A10で5より大きい値の個数",
+      "result": "条件に合うセルの個数",
+      "visualDescription": "A1:A5で5より大きい値の個数をカウント"
+    },
+    "max-value": {
+      "name": "دالة MAX",
+      "description": "指定した範囲の最大値を求めます",
+      "example": "A1:A10に1,2,3...10がある場合",
+      "result": "10",
+      "visualDescription": "A1:A5の最大値を求める"
+    },
+    "min-value": {
+      "name": "دالة MIN",
+      "description": "指定した範囲の最小値を求めます",
+      "example": "A1:A10に1,2,3...10がある場合",
+      "result": "1",
+      "visualDescription": "A1:A5の最小値を求める"
+    },
+    "concatenate-text": {
+      "name": "CONCATENATE関数",
+      "description": "複数のテキストを結合します",
+      "example": "A1=\"Hello\", B1=\"World\"の場合",
+      "result": "Hello World",
+      "visualDescription": "A1とB1のテキストを結合"
+    },
+    "text-join": {
+      "name": "TEXTJOIN関数",
+      "description": "区切り文字でテキストを結合します",
+      "example": "A1:A10の値をカンマで結合",
+      "result": "値1,値2,値3...",
+      "visualDescription": "A1:A3の値をカンマで結合"
+    },
+    "find-text": {
+      "name": "FIND関数",
+      "description": "テキスト内で指定した文字列の位置を検索します",
+      "example": "A1=\"Hello abc World\"の場合",
+      "result": "7",
+      "visualDescription": "A1で\"abc\"の位置を検索",
+      "usageTips": [
+        "ネスト（入れ子）で複数条件を設定可能: =IF(A1>90,\"A\",IF(A1>80,\"B\",\"C\"))",
+        "複数条件の場合はIFS関数の方が読みやすい",
+        "AND, OR関数と組み合わせて複雑な条件を作成可能"
+      ],
+      "commonMistakes": [
+        "テキストは必ず引用符で囲む: \"大きい\"",
+        "ネストが深すぎると可読性が低下（最大7階層まで）",
+        "空白を返す場合は\"\"を使用"
+      ],
+      "syntaxNotes": "=IF(条件, 真の場合, 偽の場合)",
+      "relatedFunctions": [
+        "IFS",
+        "AND",
+        "OR",
+        "IFERROR",
+        "SWITCH"
+      ]
+    },
+    "left-text": {
+      "name": "LEFT関数",
+      "description": "テキストの左側から指定した文字数を取得します",
+      "example": "A1=\"Hello World\"の場合",
+      "result": "Hello",
+      "visualDescription": "A1の左側から5文字を取得",
+      "usageTips": [
+        "ネスト（入れ子）で複数条件を設定可能: =IF(A1>90,\"A\",IF(A1>80,\"B\",\"C\"))",
+        "複数条件の場合はIFS関数の方が読みやすい",
+        "AND, OR関数と組み合わせて複雑な条件を作成可能"
+      ],
+      "commonMistakes": [
+        "テキストは必ず引用符で囲む: \"大きい\"",
+        "ネストが深すぎると可読性が低下（最大7階層まで）",
+        "空白を返す場合は\"\"を使用"
+      ],
+      "syntaxNotes": "=IF(条件, 真の場合, 偽の場合)",
+      "relatedFunctions": [
+        "IFS",
+        "AND",
+        "OR",
+        "IFERROR",
+        "SWITCH"
+      ]
+    },
+    "right-text": {
+      "name": "RIGHT関数",
+      "description": "テキストの右側から指定した文字数を取得します",
+      "example": "A1=\"Hello World\"の場合",
+      "result": "World",
+      "visualDescription": "A1の右側から5文字を取得",
+      "usageTips": [
+        "ネスト（入れ子）で複数条件を設定可能: =IF(A1>90,\"A\",IF(A1>80,\"B\",\"C\"))",
+        "複数条件の場合はIFS関数の方が読みやすい",
+        "AND, OR関数と組み合わせて複雑な条件を作成可能"
+      ],
+      "commonMistakes": [
+        "テキストは必ず引用符で囲む: \"大きい\"",
+        "ネストが深すぎると可読性が低下（最大7階層まで）",
+        "空白を返す場合は\"\"を使用"
+      ],
+      "syntaxNotes": "=IF(条件, 真の場合, 偽の場合)",
+      "relatedFunctions": [
+        "IFS",
+        "AND",
+        "OR",
+        "IFERROR",
+        "SWITCH"
+      ]
+    },
+    "mid-text": {
+      "name": "MID関数",
+      "description": "テキストの指定した位置から指定した文字数を取得します",
+      "example": "A1=\"Hello World\"の場合",
+      "result": "llo W",
+      "visualDescription": "A1の3文字目から5文字を取得",
+      "usageTips": [
+        "ネスト（入れ子）で複数条件を設定可能: =IF(A1>90,\"A\",IF(A1>80,\"B\",\"C\"))",
+        "複数条件の場合はIFS関数の方が読みやすい",
+        "AND, OR関数と組み合わせて複雑な条件を作成可能"
+      ],
+      "commonMistakes": [
+        "テキストは必ず引用符で囲む: \"大きい\"",
+        "ネストが深すぎると可読性が低下（最大7階層まで）",
+        "空白を返す場合は\"\"を使用"
+      ],
+      "syntaxNotes": "=IF(条件, 真の場合, 偽の場合)",
+      "relatedFunctions": [
+        "IFS",
+        "AND",
+        "OR",
+        "IFERROR",
+        "SWITCH"
+      ]
+    },
+    "len-text": {
+      "name": "LEN関数",
+      "description": "テキストの文字数を数えます",
+      "example": "A1=\"Hello\"の場合",
+      "result": "5",
+      "visualDescription": "A1の文字数をカウント",
+      "usageTips": [
+        "ネスト（入れ子）で複数条件を設定可能: =IF(A1>90,\"A\",IF(A1>80,\"B\",\"C\"))",
+        "複数条件の場合はIFS関数の方が読みやすい",
+        "AND, OR関数と組み合わせて複雑な条件を作成可能"
+      ],
+      "commonMistakes": [
+        "テキストは必ず引用符で囲む: \"大きい\"",
+        "ネストが深すぎると可読性が低下（最大7階層まで）",
+        "空白を返す場合は\"\"を使用"
+      ],
+      "syntaxNotes": "=IF(条件, 真の場合, 偽の場合)",
+      "relatedFunctions": [
+        "IFS",
+        "AND",
+        "OR",
+        "IFERROR",
+        "SWITCH"
+      ]
+    },
+    "upper-text": {
+      "name": "UPPER関数",
+      "description": "テキストを大文字に変換します",
+      "example": "A1=\"hello\"の場合",
+      "result": "HELLO",
+      "visualDescription": "A1のテキストを大文字に変換",
+      "usageTips": [
+        "ネスト（入れ子）で複数条件を設定可能: =IF(A1>90,\"A\",IF(A1>80,\"B\",\"C\"))",
+        "複数条件の場合はIFS関数の方が読みやすい",
+        "AND, OR関数と組み合わせて複雑な条件を作成可能"
+      ],
+      "commonMistakes": [
+        "テキストは必ず引用符で囲む: \"大きい\"",
+        "ネストが深すぎると可読性が低下（最大7階層まで）",
+        "空白を返す場合は\"\"を使用"
+      ],
+      "syntaxNotes": "=IF(条件, 真の場合, 偽の場合)",
+      "relatedFunctions": [
+        "IFS",
+        "AND",
+        "OR",
+        "IFERROR",
+        "SWITCH"
+      ]
+    },
+    "lower-text": {
+      "name": "LOWER関数",
+      "description": "テキストを小文字に変換します",
+      "example": "A1=\"HELLO\"の場合",
+      "result": "hello",
+      "visualDescription": "A1のテキストを小文字に変換",
+      "usageTips": [
+        "ネスト（入れ子）で複数条件を設定可能: =IF(A1>90,\"A\",IF(A1>80,\"B\",\"C\"))",
+        "複数条件の場合はIFS関数の方が読みやすい",
+        "AND, OR関数と組み合わせて複雑な条件を作成可能"
+      ],
+      "commonMistakes": [
+        "テキストは必ず引用符で囲む: \"大きい\"",
+        "ネストが深すぎると可読性が低下（最大7階層まで）",
+        "空白を返す場合は\"\"を使用"
+      ],
+      "syntaxNotes": "=IF(条件, 真の場合, 偽の場合)",
+      "relatedFunctions": [
+        "IFS",
+        "AND",
+        "OR",
+        "IFERROR",
+        "SWITCH"
+      ]
+    },
+    "if-condition": {
+      "name": "دالة IF",
+      "description": "条件に応じて異なる値を返します",
+      "example": "A1が5より大きい場合",
+      "result": "条件に応じた値",
+      "visualDescription": "A1が5より大きいかチェック",
+      "usageTips": [
+        "ネスト（入れ子）で複数条件を設定可能: =IF(A1>90,\"A\",IF(A1>80,\"B\",\"C\"))",
+        "複数条件の場合はIFS関数の方が読みやすい",
+        "AND, OR関数と組み合わせて複雑な条件を作成可能"
+      ],
+      "commonMistakes": [
+        "テキストは必ず引用符で囲む: \"大きい\"",
+        "ネストが深すぎると可読性が低下（最大7階層まで）",
+        "空白を返す場合は\"\"を使用"
+      ],
+      "syntaxNotes": "=IF(条件, 真の場合, 偽の場合)",
+      "relatedFunctions": [
+        "IFS",
+        "AND",
+        "OR",
+        "IFERROR",
+        "SWITCH"
+      ]
+    },
+    "vlookup": {
+      "name": "دالة VLOOKUP",
+      "description": "指定した値に対応する値を検索します",
+      "example": "A1の値に対応するTable1の2列目の値",
+      "result": "検索された値",
+      "visualDescription": "A1の値に対応する翻訳を検索",
+      "usageTips": [
+        "FALSEで完全一致、TRUEで近似一致を検索",
+        "テーブルの最初の列を検索キーとして使用",
+        "列番号は1から始まります（1列目=検索キー列）",
+        "エラー処理にはIFERROR関数と組み合わせる"
+      ],
+      "commonMistakes": [
+        "検索値がテーブルの左端列にない場合は検索できません",
+        "完全一致の場合は必ずFALSEを指定（省略するとTRUE）",
+        "テーブル範囲を絶対参照($)で固定しないとコピー時にずれる"
+      ],
+      "syntaxNotes": "=VLOOKUP(検索値, 範囲, 列番号, [検索方法])",
+      "relatedFunctions": [
+        "HLOOKUP",
+        "INDEX",
+        "MATCH",
+        "XLOOKUP",
+        "IFERROR"
+      ]
+    },
+    "today-date": {
+      "name": "دالة TODAY",
+      "description": "現在の日付を取得します",
+      "example": "今日が2024年3月15日の場合",
+      "result": "2024-03-15",
+      "visualDescription": "現在の日付を自動取得"
+    },
+    "now-datetime": {
+      "name": "دالة NOW",
+      "description": "現在の日時を取得します",
+      "example": "現在の日時",
+      "result": "2024-03-15 14:30:00",
+      "visualDescription": "現在の日時を自動取得"
+    },
+    "abs-value": {
+      "name": "ABS関数",
+      "description": "数値の絶対値を返します",
+      "example": "A1に-5がある場合",
+      "result": "5",
+      "visualDescription": "A1の絶対値を計算"
+    },
+    "round-number": {
+      "name": "ROUND関数",
+      "description": "数値を指定した桁数で四捨五入します",
+      "example": "A1に3.14159がある場合",
+      "result": "3.14",
+      "visualDescription": "A1を小数点第2位で四捨五入"
+    },
+    "ceiling-number": {
+      "name": "CEILING関数",
+      "description": "数値を指定した基準値の倍数に切り上げます",
+      "example": "A1に2.3がある場合",
+      "result": "2.5",
+      "visualDescription": "A1を0.5の倍数に切り上げ"
+    },
+    "floor-number": {
+      "name": "FLOOR関数",
+      "description": "数値を指定した基準値の倍数に切り下げます",
+      "example": "A1に2.7がある場合",
+      "result": "2.5",
+      "visualDescription": "A1を0.5の倍数に切り下げ"
+    },
+    "mod-remainder": {
+      "name": "MOD関数",
+      "description": "除算の余りを返します",
+      "example": "A1に10、B1に3がある場合",
+      "result": "1",
+      "visualDescription": "A1をB1で割った余り"
+    },
+    "power-exponent": {
+      "name": "POWER関数",
+      "description": "数値を指定した累乗にします",
+      "example": "A1に2、B1に3がある場合",
+      "result": "8",
+      "visualDescription": "A1のB1乗を計算"
+    },
+    "sqrt-square-root": {
+      "name": "SQRT関数",
+      "description": "数値の平方根を計算します",
+      "example": "A1に16がある場合",
+      "result": "4",
+      "visualDescription": "A1の平方根を計算"
+    },
+    "factorial": {
+      "name": "FACT関数",
+      "description": "数値の階乗を計算します",
+      "example": "A1に5がある場合",
+      "result": "120",
+      "visualDescription": "A1の階乗を計算（5! = 5×4×3×2×1）"
+    },
+    "gcd-greatest-common-divisor": {
+      "name": "GCD関数",
+      "description": "複数の数値の最大公約数を求めます",
+      "example": "A1に12、B1に18がある場合",
+      "result": "6",
+      "visualDescription": "A1とB1の最大公約数"
+    },
+    "lcm-least-common-multiple": {
+      "name": "LCM関数",
+      "description": "複数の数値の最小公倍数を求めます",
+      "example": "A1に4、B1に6がある場合",
+      "result": "12",
+      "visualDescription": "A1とB1の最小公倍数"
+    },
+    "proper-case": {
+      "name": "PROPER関数",
+      "description": "各単語の最初の文字を大文字にします",
+      "example": "A1に\"hello world\"がある場合",
+      "result": "Hello World",
+      "visualDescription": "A1の各単語の最初を大文字に"
+    },
+    "trim-spaces": {
+      "name": "TRIM関数",
+      "description": "テキストの前後の空白を削除します",
+      "example": "A1に\"  hello  \"がある場合",
+      "result": "hello",
+      "visualDescription": "A1の前後の空白を削除"
+    },
+    "clean-text": {
+      "name": "CLEAN関数",
+      "description": "テキストから印刷できない文字を削除します",
+      "example": "A1に制御文字が含まれている場合",
+      "result": "クリーンなテキスト",
+      "visualDescription": "A1から制御文字を削除"
+    },
+    "substitute-text": {
+      "name": "SUBSTITUTE関数",
+      "description": "テキスト内の指定した文字列を置換します",
+      "example": "A1に\"Hello World\"がある場合",
+      "result": "置換されたテキスト",
+      "visualDescription": "A1の\"World\"を\"Excel\"に置換"
+    },
+    "replace-text": {
+      "name": "REPLACE関数",
+      "description": "テキストの指定した位置から指定した文字数を置換します",
+      "example": "A1に\"Hello World\"がある場合",
+      "result": "New World",
+      "visualDescription": "A1の1文字目から5文字を\"New\"に置換"
+    },
+    "exact-compare": {
+      "name": "EXACT関数",
+      "description": "2つのテキストが完全に一致するかチェックします",
+      "example": "A1に\"Hello\"、B1に\"hello\"がある場合",
+      "result": "FALSE",
+      "visualDescription": "A1とB1が完全に一致するかチェック"
+    },
+    "value-convert": {
+      "name": "VALUE関数",
+      "description": "テキスト形式の数値を数値に変換します",
+      "example": "A1に\"123\"がある場合",
+      "result": "123",
+      "visualDescription": "A1のテキストを数値に変換"
+    },
+    "text-format": {
+      "name": "دالة TEXT",
+      "description": "数値を指定した形式のテキストに変換します",
+      "example": "A1に日付がある場合",
+      "result": "2024-03-15",
+      "visualDescription": "A1の数値を日付形式のテキストに変換"
+    },
+    "numbervalue-convert": {
+      "name": "NUMBERVALUE関数",
+      "description": "ロケールに応じてテキストを数値に変換します",
+      "example": "A1に\"1,234.56\"がある場合",
+      "result": "1234.56",
+      "visualDescription": "A1のテキストを数値に変換（カンマ区切り対応）"
+    },
+    "unicode-character": {
+      "name": "UNICHAR関数",
+      "description": "数値に対応するUnicode文字を返します",
+      "example": "A1に65がある場合",
+      "result": "A",
+      "visualDescription": "A1の数値に対応するUnicode文字"
+    },
+    "unicode-number": {
+      "name": "UNICODE関数",
+      "description": "文字のUnicode数値を返します",
+      "example": "A1に\"A\"がある場合",
+      "result": "65",
+      "visualDescription": "A1の文字のUnicode数値"
+    },
+    "ifs-multiple-conditions": {
+      "name": "IFS関数",
+      "description": "複数の条件を順番にチェックして対応する値を返します",
+      "example": "A1に85がある場合",
+      "result": "B",
+      "visualDescription": "A1の点数に応じて成績を判定"
+    },
+    "switch-multiple-values": {
+      "name": "SWITCH関数",
+      "description": "値に応じて対応する結果を返します",
+      "example": "A1に\"B\"がある場合",
+      "result": "良好",
+      "visualDescription": "A1の成績に応じて評価を返す"
+    },
+    "and-logical": {
+      "name": "AND関数",
+      "description": "すべての条件が真の場合にTRUEを返します",
+      "example": "A1に5、B1に3がある場合",
+      "result": "TRUE",
+      "visualDescription": "A1とB1が両方とも0より大きいかチェック"
+    },
+    "or-logical": {
+      "name": "OR関数",
+      "description": "いずれかの条件が真の場合にTRUEを返します",
+      "example": "A1に-2、B1に3がある場合",
+      "result": "TRUE",
+      "visualDescription": "A1またはB1のいずれかが0より大きいかチェック"
+    },
+    "not-logical": {
+      "name": "NOT関数",
+      "description": "論理値を反転します",
+      "example": "A1に5がある場合",
+      "result": "FALSE",
+      "visualDescription": "A1が0より大きいかどうかを反転"
+    },
+    "xor-logical": {
+      "name": "XOR関数",
+      "description": "排他的論理和を返します",
+      "example": "A1に5、B1に-3がある場合",
+      "result": "TRUE",
+      "visualDescription": "A1とB1の排他的論理和"
+    },
+    "choose-value": {
+      "name": "CHOOSE関数",
+      "description": "インデックスに応じて値を選択します",
+      "example": "A1に3がある場合",
+      "result": "水",
+      "visualDescription": "A1の数値に応じて曜日を選択"
+    },
+    "median-value": {
+      "name": "MEDIAN関数",
+      "description": "数値の中央値を求めます",
+      "example": "A1:A10に1,2,3,4,5,6,7,8,9,10がある場合",
+      "result": "5.5",
+      "visualDescription": ""
+    },
+    "mode-value": {
+      "name": "MODE関数",
+      "description": "最も頻繁に出現する値を求めます",
+      "example": "A1:A10に1,2,2,3,3,3,4,5がある場合",
+      "result": "3",
+      "visualDescription": "A1:A5で最も頻繁に出現する値"
+    },
+    "stdev-standard-deviation": {
+      "name": "STDEV関数",
+      "description": "標本の標準偏差を計算します",
+      "example": "A1:A10に数値がある場合",
+      "result": "標準偏差の値",
+      "visualDescription": "A1:A5の標本標準偏差を計算"
+    },
+    "var-variance": {
+      "name": "VAR関数",
+      "description": "標本の分散を計算します",
+      "example": "A1:A10に数値がある場合",
+      "result": "分散の値",
+      "visualDescription": "A1:A5の標本分散を計算"
+    },
+    "large-value": {
+      "name": "LARGE関数",
+      "description": "指定した順位の大きい値を求めます",
+      "example": "A1:A10に1,2,3...10がある場合",
+      "result": "9",
+      "visualDescription": "A1:A5で2番目に大きい値"
+    },
+    "small-value": {
+      "name": "SMALL関数",
+      "description": "指定した順位の小さい値を求めます",
+      "example": "A1:A10に1,2,3...10がある場合",
+      "result": "2",
+      "visualDescription": "A1:A5で2番目に小さい値"
+    },
+    "rank-value": {
+      "name": "RANK関数",
+      "description": "数値の順位を求めます",
+      "example": "A1に8、A1:A10に1,2,3...10がある場合",
+      "result": "8",
+      "visualDescription": "A1の値がA1:A5の中で何番目に大きいか"
+    },
+    "percentile-value": {
+      "name": "PERCENTILE関数",
+      "description": "指定した百分位の値を求めます",
+      "example": "A1:A10に1,2,3...10がある場合",
+      "result": "3.25",
+      "visualDescription": ""
+    },
+    "quartile-value": {
+      "name": "QUARTILE関数",
+      "description": "指定した四分位の値を求めます",
+      "example": "A1:A10に1,2,3...10がある場合",
+      "result": "3.25",
+      "visualDescription": "A1:A5の第1四分位値を計算"
+    },
+    "date-create": {
+      "name": "DATE関数",
+      "description": "年、月、日から日付を作成します",
+      "example": "年=2024、月=3、日=15の場合",
+      "result": "2024-03-15",
+      "visualDescription": "A1(年)、B1(月)、C1(日)から日付を作成"
+    },
+    "time-create": {
+      "name": "TIME関数",
+      "description": "時、分、秒から時刻を作成します",
+      "example": "時=14、分=30、秒=0の場合",
+      "result": "14:30:00",
+      "visualDescription": "A1(時)、B1(分)、C1(秒)から時刻を作成"
+    },
+    "datedif-difference": {
+      "name": "DATEDIF関数",
+      "description": "2つの日付の差を計算します",
+      "example": "A1に2024-01-01、B1に2024-03-15がある場合",
+      "result": "74",
+      "visualDescription": "A1とB1の日付差を日数で計算"
+    },
+    "weekday-day-of-week": {
+      "name": "WEEKDAY関数",
+      "description": "日付の曜日を数値で返します",
+      "example": "A1に2024-03-15がある場合",
+      "result": "6",
+      "visualDescription": "A1の日付の曜日を数値で返す（1=日曜日）"
+    },
+    "workday-next-workday": {
+      "name": "WORKDAY関数",
+      "description": "指定した営業日数後の日付を求めます",
+      "example": "A1に2024-03-15、営業日数5の場合",
+      "result": "2024-03-22",
+      "visualDescription": "A1から5営業日後の日付を計算"
+    },
+    "networkdays-working-days": {
+      "name": "NETWORKDAYS関数",
+      "description": "2つの日付間の営業日数を計算します",
+      "example": "A1に2024-03-01、B1に2024-03-15がある場合",
+      "result": "11",
+      "visualDescription": "A1とB1の間の営業日数を計算"
+    },
+    "eomonth-end-of-month": {
+      "name": "EOMONTH関数",
+      "description": "指定した月の月末日を求めます",
+      "example": "A1に2024-03-15がある場合",
+      "result": "2024-03-31",
+      "visualDescription": "A1の月の月末日を計算"
+    },
+    "edate-add-months": {
+      "name": "EDATE関数",
+      "description": "指定した月数を加算した日付を求めます",
+      "example": "A1に2024-03-15、3ヶ月後の場合",
+      "result": "2024-06-15",
+      "visualDescription": "A1に3ヶ月を加算した日付"
+    },
+    "round-function": {
+      "name": "ROUND",
+      "description": "数値を指定した桁数に四捨五入します",
+      "example": "=ROUND(3.14159, 2)",
+      "result": "3.14",
+      "visualDescription": "A1の値を小数点以下2桁に四捨五入"
+    },
+    "roundup-function": {
+      "name": "ROUNDUP",
+      "description": "数値を指定した桁数に切り上げます",
+      "example": "=ROUNDUP(3.14159, 2)",
+      "result": "3.15",
+      "visualDescription": "A1の値を小数点以下2桁に切り上げ"
+    },
+    "rounddown-function": {
+      "name": "ROUNDDOWN",
+      "description": "数値を指定した桁数に切り捨てます",
+      "example": "=ROUNDDOWN(3.14159, 2)",
+      "result": "3.14",
+      "visualDescription": "A1の値を小数点以下2桁に切り捨て"
+    },
+    "abs-function": {
+      "name": "ABS",
+      "description": "数値の絶対値を返します",
+      "example": "=ABS(-5)",
+      "result": "5",
+      "visualDescription": "A1の絶対値を計算"
+    },
+    "sqrt-function": {
+      "name": "SQRT",
+      "description": "数値の平方根を返します",
+      "example": "=SQRT(16)",
+      "result": "4",
+      "visualDescription": "A1の平方根を計算"
+    },
+    "trim-function": {
+      "name": "TRIM",
+      "description": "テキストから前後の空白を削除します",
+      "example": "=TRIM(\"  Hello  \")",
+      "result": "Hello",
+      "visualDescription": "A1の前後の空白を削除"
+    },
+    "clean-function": {
+      "name": "CLEAN",
+      "description": "テキストから印刷できない文字を削除します",
+      "example": "=CLEAN(\"Hello\"&CHAR(10)&\"World\")",
+      "result": "HelloWorld",
+      "visualDescription": "A1の改行文字を削除"
+    },
+    "substitute-function": {
+      "name": "SUBSTITUTE",
+      "description": "テキスト内の指定した文字列を置換します",
+      "example": "=SUBSTITUTE(\"Hello World\", \"World\", \"Excel\")",
+      "result": "Hello Excel",
+      "visualDescription": "A1の\"World\"を\"Excel\"に置換"
+    },
+    "replace-function": {
+      "name": "REPLACE",
+      "description": "テキストの指定した位置から指定した文字数を置換します",
+      "example": "=REPLACE(\"Hello World\", 7, 5, \"Excel\")",
+      "result": "Hello Excel",
+      "visualDescription": "A1の7文字目から5文字を\"Excel\"に置換"
+    },
+    "exact-function": {
+      "name": "EXACT",
+      "description": "2つのテキストが完全に一致するかチェックします",
+      "example": "=EXACT(\"Hello\", \"hello\")",
+      "result": "FALSE",
+      "visualDescription": "A1とB1が完全に一致するかチェック"
+    },
+    "weekday-function": {
+      "name": "WEEKDAY",
+      "description": "日付の曜日を数値で返します",
+      "example": "=WEEKDAY(\"2024-01-15\")",
+      "result": "2",
+      "visualDescription": "A1の日付の曜日を数値で取得（月曜日=2）"
+    },
+    "weeknum-function": {
+      "name": "WEEKNUM",
+      "description": "日付の週番号を返します",
+      "example": "=WEEKNUM(\"2024-01-15\")",
+      "result": "3",
+      "visualDescription": "A1の日付の週番号を取得"
+    },
+    "datedif-function": {
+      "name": "DATEDIF",
+      "description": "2つの日付間の差を計算します",
+      "example": "=DATEDIF(\"2024-01-01\", \"2024-12-31\", \"D\")",
+      "result": "365",
+      "visualDescription": "A1とB1の日付間の日数を計算"
+    },
+    "networkdays-function": {
+      "name": "NETWORKDAYS",
+      "description": "2つの日付間の営業日数を計算します",
+      "example": "=NETWORKDAYS(\"2024-01-01\", \"2024-01-31\")",
+      "result": "23",
+      "visualDescription": "A1とB1の間の営業日数を計算"
+    },
+    "workday-function": {
+      "name": "WORKDAY",
+      "description": "指定した営業日数後の日付を返します",
+      "example": "=WORKDAY(\"2024-01-01\", 10)",
+      "result": "2024-01-15",
+      "visualDescription": "A1から10営業日後の日付を計算"
+    },
+    "and-function": {
+      "name": "AND",
+      "description": "すべての引数がTRUEの場合にTRUEを返します",
+      "example": "=AND(TRUE, TRUE, FALSE)",
+      "result": "FALSE",
+      "visualDescription": "A1, B1, C1がすべてTRUEかチェック"
+    },
+    "or-function": {
+      "name": "OR",
+      "description": "いずれかの引数がTRUEの場合にTRUEを返します",
+      "example": "=OR(TRUE, FALSE, FALSE)",
+      "result": "TRUE",
+      "visualDescription": "A1, B1, C1のいずれかがTRUEかチェック"
+    },
+    "not-function": {
+      "name": "NOT",
+      "description": "論理値の反対を返します",
+      "example": "=NOT(TRUE)",
+      "result": "FALSE",
+      "visualDescription": "A1の論理値を反転"
+    },
+    "xor-function": {
+      "name": "XOR",
+      "description": "奇数個の引数がTRUEの場合にTRUEを返します",
+      "example": "=XOR(TRUE, TRUE, FALSE)",
+      "result": "FALSE",
+      "visualDescription": "A1, B1, C1の奇数個がTRUEかチェック"
+    },
+    "iferror-function": {
+      "name": "IFERROR",
+      "description": "エラーが発生した場合に指定した値を返します",
+      "example": "=IFERROR(1/0, \"エラー\")",
+      "result": "エラー",
+      "visualDescription": "A1/B1でエラーが発生した場合に\"エラー\"を表示"
+    },
+    "ifna-function": {
+      "name": "IFNA",
+      "description": "NAエラーが発生した場合に指定した値を返します",
+      "example": "=IFNA(VLOOKUP(\"存在しない\", A1:B10, 2, FALSE), \"見つかりません\")",
+      "result": "見つかりません",
+      "visualDescription": "VLOOKUPでNAエラーが発生した場合に\"見つかりません\"を表示"
+    },
+    "iserror-function": {
+      "name": "ISERROR",
+      "description": "値がエラーかどうかをチェックします",
+      "example": "=ISERROR(1/0)",
+      "result": "TRUE",
+      "visualDescription": "A1がエラーかどうかをチェック"
+    },
+    "isna-function": {
+      "name": "ISNA",
+      "description": "値がNAエラーかどうかをチェックします",
+      "example": "=ISNA(NA())",
+      "result": "TRUE",
+      "visualDescription": "A1がNAエラーかどうかをチェック"
+    },
+    "isblank-function": {
+      "name": "ISBLANK",
+      "description": "値が空白かどうかをチェックします",
+      "example": "=ISBLANK(A1)",
+      "result": "TRUE",
+      "visualDescription": "A1が空白かどうかをチェック"
+    },
+    "isnumber-function": {
+      "name": "ISNUMBER",
+      "description": "値が数値かどうかをチェックします",
+      "example": "=ISNUMBER(123)",
+      "result": "TRUE",
+      "visualDescription": "A1が数値かどうかをチェック"
+    },
+    "median-function": {
+      "name": "MEDIAN",
+      "description": "数値の中央値を返します",
+      "example": "=MEDIAN(1, 2, 3, 4, 5)",
+      "result": "3",
+      "visualDescription": "A1:E1の中央値を計算"
+    },
+    "mode-function": {
+      "name": "MODE",
+      "description": "最も頻繁に出現する数値を返します",
+      "example": "=MODE(1, 2, 2, 3, 2)",
+      "result": "2",
+      "visualDescription": "A1:E1の最頻値を計算"
+    },
+    "stdev-function": {
+      "name": "STDEV",
+      "description": "標本の標準偏差を計算します",
+      "example": "=STDEV(1, 2, 3, 4, 5)",
+      "result": "1.58",
+      "visualDescription": "A1:E1の標本標準偏差を計算"
+    },
+    "var-function": {
+      "name": "VAR",
+      "description": "標本の分散を計算します",
+      "example": "=VAR(1, 2, 3, 4, 5)",
+      "result": "2.5",
+      "visualDescription": "A1:E1の標本分散を計算"
+    },
+    "rank-function": {
+      "name": "RANK",
+      "description": "数値の順位を返します",
+      "example": "=RANK(85, {70, 85, 90, 85}, 0)",
+      "result": "2",
+      "visualDescription": "A1の値のB1:D1内での順位を計算"
+    },
+    "percentile-function": {
+      "name": "PERCENTILE",
+      "description": "配列の指定した百分位の値を返します",
+      "example": "=PERCENTILE({1,2,3,4,5}, 0.5)",
+      "result": "3",
+      "visualDescription": "A1:E1の50パーセンタイル値を計算"
+    },
+    "quartile-function": {
+      "name": "QUARTILE",
+      "description": "配列の指定した四分位の値を返します",
+      "example": "=QUARTILE({1,2,3,4,5}, 1)",
+      "result": "2",
+      "visualDescription": "A1:E1の第1四分位値を計算"
+    }
+  }
+}

@@ -1,0 +1,1892 @@
+{
+  "shortcuts": {
+    "win-copy": {
+      "name": "복사",
+      "description": "선택한 항목을 복사합니다"
+    },
+    "win-paste": {
+      "name": "붙여넣기",
+      "description": "복사한 항목을 붙여넣습니다"
+    },
+    "win-cut": {
+      "name": "잘라내기",
+      "description": "선택한 항목을 잘라냅니다"
+    },
+    "win-undo": {
+      "name": "실행 취소",
+      "description": "마지막 작업을 실행 취소합니다"
+    },
+    "win-redo": {
+      "name": "다시 실행",
+      "description": "실행 취소한 작업을 다시 실행합니다"
+    },
+    "win-save": {
+      "name": "저장",
+      "description": "현재 파일을 저장합니다"
+    },
+    "win-open": {
+      "name": "열기",
+      "description": "파일을 엽니다"
+    },
+    "win-new": {
+      "name": "새로 만들기",
+      "description": "새 파일을 만듭니다"
+    },
+    "win-print": {
+      "name": "인쇄",
+      "description": "현재 파일을 인쇄합니다"
+    },
+    "win-find": {
+      "name": "검색",
+      "description": "텍스트를 검색합니다"
+    },
+    "win-select-all": {
+      "name": "모두 선택",
+      "description": "모든 항목을 선택합니다"
+    },
+    "win-close": {
+      "name": "닫기",
+      "description": "현재 창을 닫습니다"
+    },
+    "win-new-tab": {
+      "name": "새 탭",
+      "description": "새 탭을 엽니다"
+    },
+    "win-close-tab": {
+      "name": "탭 닫기",
+      "description": "현재 탭을 닫습니다"
+    },
+    "win-refresh": {
+      "name": "페이지 새로고침",
+      "description": "페이지를 새로고침합니다"
+    },
+    "win-task-manager": {
+      "name": "タスクマネージャー",
+      "description": "タスクマネージャーを開きます"
+    },
+    "win-screenshot": {
+      "name": "スクリーンショット",
+      "description": "スクリーンショットを撮ります"
+    },
+    "win-force-quit": {
+      "name": "強制終了",
+      "description": "アプリケーションを強制終了します"
+    },
+    "win-alt-tab": {
+      "name": "アプリ切り替え",
+      "description": "開いているアプリケーションを切り替えます"
+    },
+    "win-win-key": {
+      "name": "スタートメニュー",
+      "description": "スタートメニューを開きます"
+    },
+    "win-desktop": {
+      "name": "デスクトップ表示",
+      "description": "デスクトップを表示します"
+    },
+    "win-file-explorer": {
+      "name": "エクスプローラー",
+      "description": "ファイルエクスプローラーを開きます"
+    },
+    "win-settings": {
+      "name": "設定",
+      "description": "Windows設定を開きます"
+    },
+    "win-lock": {
+      "name": "画面ロック",
+      "description": "画面をロックします"
+    },
+    "win-run": {
+      "name": "ファイル名を指定して実行",
+      "description": "ファイル名を指定して実行ダイアログを開きます"
+    },
+    "win-search": {
+      "name": "검색",
+      "description": "Windows検索を開きます"
+    },
+    "win-task-view": {
+      "name": "タスクビュー",
+      "description": "タスクビューを開きます"
+    },
+    "win-minimize-all": {
+      "name": "すべて最小化",
+      "description": "すべてのウィンドウを最小化します"
+    },
+    "win-restore-windows": {
+      "name": "ウィンドウ復元",
+      "description": "最小化されたウィンドウを復元します"
+    },
+    "win-project": {
+      "name": "プロジェクション",
+      "description": "プロジェクション設定を開きます"
+    },
+    "win-calculator": {
+      "name": "電卓",
+      "description": "電卓を開きます"
+    },
+    "win-notepad": {
+      "name": "メモ帳",
+      "description": "メモ帳を開きます"
+    },
+    "win-cmd": {
+      "name": "コマンドプロンプト",
+      "description": "コマンドプロンプトを開きます"
+    },
+    "win-powershell": {
+      "name": "PowerShell",
+      "description": "PowerShellを開きます"
+    },
+    "win-device-manager": {
+      "name": "デバイスマネージャー",
+      "description": "デバイスマネージャーを開きます"
+    },
+    "win-control-panel": {
+      "name": "コントロールパネル",
+      "description": "コントロールパネルを開きます"
+    },
+    "win-event-viewer": {
+      "name": "イベントビューアー",
+      "description": "イベントビューアーを開きます"
+    },
+    "win-registry": {
+      "name": "レジストリエディター",
+      "description": "レジストリエディターを開きます"
+    },
+    "win-system-info": {
+      "name": "システム情報",
+      "description": "システム情報を表示します"
+    },
+    "win-disk-cleanup": {
+      "name": "ディスククリーンアップ",
+      "description": "ディスククリーンアップを開きます"
+    },
+    "win-resource-monitor": {
+      "name": "リソースモニター",
+      "description": "リソースモニターを開きます"
+    },
+    "win-performance-monitor": {
+      "name": "パフォーマンスモニター",
+      "description": "パフォーマンスモニターを開きます"
+    },
+    "win-services": {
+      "name": "サービス",
+      "description": "サービス管理を開きます"
+    },
+    "win-group-policy": {
+      "name": "グループポリシー",
+      "description": "グループポリシーエディターを開きます"
+    },
+    "win-windows-update": {
+      "name": "Windows Update",
+      "description": "Windows Updateを開きます"
+    },
+    "win-backup-restore": {
+      "name": "バックアップと復元",
+      "description": "バックアップと復元を開きます"
+    },
+    "win-windows-defender": {
+      "name": "Windows Defender",
+      "description": "Windows Defenderを開きます"
+    },
+    "mac-spotlight": {
+      "name": "Spotlight検索",
+      "description": "Spotlight検索を開きます"
+    },
+    "mac-launchpad": {
+      "name": "Launchpad",
+      "description": "Launchpadを開きます"
+    },
+    "mac-mission-control": {
+      "name": "Mission Control",
+      "description": "Mission Controlを開きます"
+    },
+    "mac-expose": {
+      "name": "Exposé",
+      "description": "すべてのウィンドウを表示します"
+    },
+    "mac-application-windows": {
+      "name": "アプリケーションウィンドウ",
+      "description": "現在のアプリのウィンドウを表示します"
+    },
+    "mac-dashboard": {
+      "name": "Dashboard",
+      "description": "Dashboardを開きます"
+    },
+    "mac-dock": {
+      "name": "Dock表示/非表示",
+      "description": "Dockを表示/非表示にします"
+    },
+    "mac-finder": {
+      "name": "Finder",
+      "description": "Finderを開きます"
+    },
+    "mac-system-preferences": {
+      "name": "システム環境設定",
+      "description": "システム環境設定を開きます"
+    },
+    "mac-force-quit": {
+      "name": "強制終了",
+      "description": "アプリケーションを強制終了します"
+    },
+    "mac-logout": {
+      "name": "ログアウト",
+      "description": "ユーザーをログアウトします"
+    },
+    "mac-sleep": {
+      "name": "スリープ",
+      "description": "Macをスリープモードにします"
+    },
+    "mac-shutdown": {
+      "name": "シャットダウン",
+      "description": "Macをシャットダウンします"
+    },
+    "mac-restart": {
+      "name": "再起動",
+      "description": "Macを再起動します"
+    },
+    "mac-screenshot-full": {
+      "name": "全画面スクリーンショット",
+      "description": "全画面のスクリーンショットを撮ります"
+    },
+    "mac-screenshot-selection": {
+      "name": "選択範囲スクリーンショット",
+      "description": "選択範囲のスクリーンショットを撮ります"
+    },
+    "mac-screenshot-window": {
+      "name": "ウィンドウスクリーンショット",
+      "description": "ウィンドウのスクリーンショットを撮ります"
+    },
+    "mac-clipboard-manager": {
+      "name": "クリップボードマネージャー",
+      "description": "クリップボードマネージャーを開きます"
+    },
+    "mac-character-viewer": {
+      "name": "文字ビューアー",
+      "description": "文字ビューアーを開きます"
+    },
+    "mac-emoji-picker": {
+      "name": "絵文字ピッカー",
+      "description": "絵文字ピッカーを開きます"
+    },
+    "mac-activity-monitor": {
+      "name": "アクティビティモニター",
+      "description": "アクティビティモニターを開きます"
+    },
+    "mac-terminal": {
+      "name": "ターミナル",
+      "description": "ターミナルを開きます"
+    },
+    "mac-disk-utility": {
+      "name": "ディスクユーティリティ",
+      "description": "ディスクユーティリティを開きます"
+    },
+    "excel-bold": {
+      "name": "굵게",
+      "description": "選択したテキストを太字にします"
+    },
+    "excel-italic": {
+      "name": "기울임꼴",
+      "description": "選択したテキストを斜体にします"
+    },
+    "excel-underline": {
+      "name": "밑줄",
+      "description": "選択したテキストに下線を引きます"
+    },
+    "excel-merge-cells": {
+      "name": "셀 병합",
+      "description": "選択したセルを1つに結合します"
+    },
+    "excel-center-align": {
+      "name": "가운데 맞춤",
+      "description": "セルの内容を中央揃えにします"
+    },
+    "excel-go-to-cell": {
+      "name": "セル移動",
+      "description": "特定のセルに直接移動します"
+    },
+    "excel-find-replace": {
+      "name": "検索と置換",
+      "description": "テキストを検索して置換します"
+    },
+    "excel-insert-row": {
+      "name": "행 삽입",
+      "description": "選択した行の上に行を挿入します"
+    },
+    "excel-insert-column": {
+      "name": "열 삽입",
+      "description": "選択した列の左に列を挿入します"
+    },
+    "excel-delete-row": {
+      "name": "행 삭제",
+      "description": "選択した行を削除します"
+    },
+    "excel-delete-column": {
+      "name": "열 삭제",
+      "description": "選択した列を削除します"
+    },
+    "excel-auto-sum": {
+      "name": "オートSUM",
+      "description": "選択した範囲の合計を自動計算します"
+    },
+    "excel-format-cells": {
+      "name": "셀 서식",
+      "description": "セルの書式設定ダイアログを開きます"
+    },
+    "excel-chart": {
+      "name": "차트 삽입",
+      "description": "選択したデータからグラフを作成します"
+    },
+    "excel-freeze-panes": {
+      "name": "ウィンドウ枠の固定",
+      "description": "選択したセルより上と左の枠を固定します"
+    },
+    "excel-insert-function": {
+      "name": "関数の挿入",
+      "description": "関数の挿入ダイアログを開きます"
+    },
+    "excel-auto-calculate": {
+      "name": "自動計算",
+      "description": "ワークシートを再計算します"
+    },
+    "excel-absolute-reference": {
+      "name": "絶対参照",
+      "description": "セル参照を絶対参照に切り替えます"
+    },
+    "excel-fill-down": {
+      "name": "下方向にコピー",
+      "description": "選択したセルを下方向にコピーします"
+    },
+    "excel-fill-right": {
+      "name": "右方向にコピー",
+      "description": "選択したセルを右方向にコピーします"
+    },
+    "excel-fill-series": {
+      "name": "連続データの作成",
+      "description": "連続データを作成します"
+    },
+    "excel-data-validation": {
+      "name": "データの入力規則",
+      "description": "データの入力規則ダイアログを開きます"
+    },
+    "excel-conditional-formatting": {
+      "name": "条件付き書式",
+      "description": "条件付き書式を適用します"
+    },
+    "excel-remove-duplicates": {
+      "name": "重複の削除",
+      "description": "重複するデータを削除します"
+    },
+    "excel-sort-ascending": {
+      "name": "昇順で並べ替え",
+      "description": "選択した範囲を昇順で並べ替えます"
+    },
+    "excel-sort-descending": {
+      "name": "降順で並べ替え",
+      "description": "選択した範囲を降順で並べ替えます"
+    },
+    "excel-filter": {
+      "name": "필터",
+      "description": "フィルターを適用/解除します"
+    },
+    "excel-pivot-table": {
+      "name": "ピボットテーブル",
+      "description": "ピボットテーブルを作成します"
+    },
+    "excel-chart-wizard": {
+      "name": "グラフウィザード",
+      "description": "グラフウィザードを開きます"
+    },
+    "excel-insert-table": {
+      "name": "テーブル挿入",
+      "description": "テーブルを挿入します"
+    },
+    "excel-name-manager": {
+      "name": "名前の管理",
+      "description": "名前の管理ダイアログを開きます"
+    },
+    "excel-go-to-special": {
+      "name": "セルの選択",
+      "description": "特別なセルを選択します"
+    },
+    "excel-hide-columns": {
+      "name": "列を非表示",
+      "description": "選択した列を非表示にします"
+    },
+    "excel-hide-rows": {
+      "name": "行を非表示",
+      "description": "選択した行を非表示にします"
+    },
+    "excel-unhide-columns": {
+      "name": "列の表示",
+      "description": "非表示の列を表示します"
+    },
+    "excel-unhide-rows": {
+      "name": "行の表示",
+      "description": "非表示の行を表示します"
+    },
+    "excel-group-columns": {
+      "name": "列のグループ化",
+      "description": "選択した列をグループ化します"
+    },
+    "excel-group-rows": {
+      "name": "行のグループ化",
+      "description": "選択した行をグループ化します"
+    },
+    "excel-ungroup": {
+      "name": "グループ解除",
+      "description": "グループ化を解除します"
+    },
+    "excel-subtotal": {
+      "name": "小計",
+      "description": "小計を挿入します"
+    },
+    "excel-outline": {
+      "name": "アウトライン",
+      "description": "アウトラインを表示/非表示にします"
+    },
+    "excel-data-table": {
+      "name": "データテーブル",
+      "description": "データテーブルを作成します"
+    },
+    "excel-scenario-manager": {
+      "name": "シナリオマネージャー",
+      "description": "シナリオマネージャーを開きます"
+    },
+    "excel-goal-seek": {
+      "name": "ゴールシーク",
+      "description": "ゴールシークを実行します"
+    },
+    "excel-solver": {
+      "name": "ソルバー",
+      "description": "ソルバーを開きます"
+    },
+    "excel-data-analysis": {
+      "name": "データ分析",
+      "description": "データ分析ツールを開きます"
+    },
+    "excel-macro-recorder": {
+      "name": "マクロ記録",
+      "description": "マクロの記録を開始/停止します"
+    },
+    "excel-visual-basic": {
+      "name": "Visual Basic Editor",
+      "description": "Visual Basic Editorを開きます"
+    },
+    "excel-add-ins": {
+      "name": "アドイン",
+      "description": "アドインを管理します"
+    },
+    "excel-options": {
+      "name": "オプション",
+      "description": "Excelのオプションを開きます"
+    },
+    "word-bold": {
+      "name": "굵게",
+      "description": "選択したテキストを太字にします"
+    },
+    "word-italic": {
+      "name": "기울임꼴",
+      "description": "選択したテキストを斜体にします"
+    },
+    "word-underline": {
+      "name": "밑줄",
+      "description": "選択したテキストに下線を引きます"
+    },
+    "word-center-align": {
+      "name": "가운데 맞춤",
+      "description": "段落を中央揃えにします"
+    },
+    "word-left-align": {
+      "name": "왼쪽 맞춤",
+      "description": "段落を左揃えにします"
+    },
+    "word-right-align": {
+      "name": "오른쪽 맞춤",
+      "description": "段落を右揃えにします"
+    },
+    "word-justify": {
+      "name": "양쪽 맞춤",
+      "description": "段落を両端揃えにします"
+    },
+    "word-find-replace": {
+      "name": "検索と置換",
+      "description": "テキストを検索して置換します"
+    },
+    "word-spell-check": {
+      "name": "맞춤법 검사",
+      "description": "スペルチェックを実行します"
+    },
+    "word-insert-table": {
+      "name": "표 삽입",
+      "description": "表を挿入します"
+    },
+    "word-insert-page-break": {
+      "name": "改ページ",
+      "description": "改ページを挿入します"
+    },
+    "word-insert-hyperlink": {
+      "name": "ハイパーリンク挿入",
+      "description": "ハイパーリンクを挿入します"
+    },
+    "word-insert-image": {
+      "name": "그림 삽입",
+      "description": "画像を挿入します"
+    },
+    "word-word-count": {
+      "name": "文字数カウント",
+      "description": "文字数をカウントします"
+    },
+    "word-print-preview": {
+      "name": "印刷プレビュー",
+      "description": "印刷プレビューを表示します"
+    },
+    "word-page-break": {
+      "name": "改ページ挿入",
+      "description": "改ページを挿入します"
+    },
+    "word-column-break": {
+      "name": "段区切り",
+      "description": "段区切りを挿入します"
+    },
+    "word-line-break": {
+      "name": "改行",
+      "description": "改行を挿入します"
+    },
+    "word-non-breaking-space": {
+      "name": "改行しないスペース",
+      "description": "改行しないスペースを挿入します"
+    },
+    "word-non-breaking-hyphen": {
+      "name": "改行しないハイフン",
+      "description": "改行しないハイフンを挿入します"
+    },
+    "word-soft-hyphen": {
+      "name": "ソフトハイフン",
+      "description": "ソフトハイフンを挿入します"
+    },
+    "word-em-dash": {
+      "name": "長いダッシュ",
+      "description": "長いダッシュを挿入します"
+    },
+    "word-en-dash": {
+      "name": "短いダッシュ",
+      "description": "短いダッシュを挿入します"
+    },
+    "word-ellipsis": {
+      "name": "省略記号",
+      "description": "省略記号を挿入します"
+    },
+    "word-copyright": {
+      "name": "著作権記号",
+      "description": "著作権記号を挿入します"
+    },
+    "word-trademark": {
+      "name": "商標記号",
+      "description": "商標記号を挿入します"
+    },
+    "word-registered": {
+      "name": "登録商標記号",
+      "description": "登録商標記号を挿入します"
+    },
+    "word-degree": {
+      "name": "度記号",
+      "description": "度記号を挿入します"
+    },
+    "word-plus-minus": {
+      "name": "プラスマイナス記号",
+      "description": "プラスマイナス記号を挿入します"
+    },
+    "word-section-break": {
+      "name": "セクション区切り",
+      "description": "セクション区切りを挿入します"
+    },
+    "word-page-numbers": {
+      "name": "ページ番号",
+      "description": "ページ番号を挿入します"
+    },
+    "word-date-time": {
+      "name": "日付と時刻",
+      "description": "日付と時刻を挿入します"
+    },
+    "ppt-bold": {
+      "name": "굵게",
+      "description": "選択したテキストを太字にします"
+    },
+    "ppt-italic": {
+      "name": "기울임꼴",
+      "description": "選択したテキストを斜体にします"
+    },
+    "ppt-underline": {
+      "name": "밑줄",
+      "description": "選択したテキストに下線を引きます"
+    },
+    "ppt-center-align": {
+      "name": "가운데 맞춤",
+      "description": "テキストを中央揃えにします"
+    },
+    "ppt-new-slide": {
+      "name": "新しいスライド",
+      "description": "新しいスライドを挿入します"
+    },
+    "ppt-duplicate-slide": {
+      "name": "슬라이드 복제",
+      "description": "現在のスライドを複製します"
+    },
+    "ppt-slide-show": {
+      "name": "슬라이드쇼 시작",
+      "description": "スライドショーを開始します"
+    },
+    "ppt-slide-show-from-current": {
+      "name": "現在のスライドから開始",
+      "description": "現在のスライドからスライドショーを開始します"
+    },
+    "ppt-insert-image": {
+      "name": "그림 삽입",
+      "description": "画像を挿入します"
+    },
+    "ppt-insert-shape": {
+      "name": "図形挿入",
+      "description": "図形を挿入します"
+    },
+    "ppt-insert-text-box": {
+      "name": "テキストボックス挿入",
+      "description": "テキストボックスを挿入します"
+    },
+    "ppt-group-objects": {
+      "name": "オブジェクトグループ化",
+      "description": "選択したオブジェクトをグループ化します"
+    },
+    "ppt-ungroup-objects": {
+      "name": "グループ解除",
+      "description": "グループ化されたオブジェクトを解除します"
+    },
+    "ppt-copy-format": {
+      "name": "書式のコピー",
+      "description": "選択したオブジェクトの書式をコピーします"
+    },
+    "ppt-paste-format": {
+      "name": "書式の貼り付け",
+      "description": "コピーした書式を貼り付けます"
+    },
+    "ppt-new-presentation": {
+      "name": "新しいプレゼンテーション",
+      "description": "新しいプレゼンテーションを作成します"
+    },
+    "ppt-open-presentation": {
+      "name": "プレゼンテーションを開く",
+      "description": "既存のプレゼンテーションを開きます"
+    },
+    "ppt-save-presentation": {
+      "name": "プレゼンテーションを保存",
+      "description": "プレゼンテーションを保存します"
+    },
+    "ppt-save-as": {
+      "name": "名前を付けて保存",
+      "description": "プレゼンテーションを別名で保存します"
+    },
+    "ppt-print": {
+      "name": "인쇄",
+      "description": "プレゼンテーションを印刷します"
+    },
+    "ppt-close-presentation": {
+      "name": "プレゼンテーションを閉じる",
+      "description": "現在のプレゼンテーションを閉じます"
+    },
+    "ppt-exit-powerpoint": {
+      "name": "PowerPointを終了",
+      "description": "PowerPointを終了します"
+    },
+    "ppt-undo": {
+      "name": "실행 취소",
+      "description": "마지막 작업을 실행 취소합니다"
+    },
+    "ppt-redo": {
+      "name": "다시 실행",
+      "description": "실행 취소한 작업을 다시 실행합니다"
+    },
+    "ppt-cut": {
+      "name": "잘라내기",
+      "description": "선택한 항목을 잘라냅니다"
+    },
+    "ppt-copy": {
+      "name": "복사",
+      "description": "선택한 항목을 복사합니다"
+    },
+    "ppt-paste": {
+      "name": "붙여넣기",
+      "description": "복사한 항목을 붙여넣습니다"
+    },
+    "ppt-select-all": {
+      "name": "모두 선택",
+      "description": "모든 항목을 선택합니다"
+    },
+    "ppt-find": {
+      "name": "검색",
+      "description": "텍스트를 검색합니다"
+    },
+    "ppt-replace": {
+      "name": "置換",
+      "description": "テキストを検索して置換します"
+    },
+    "ppt-delete": {
+      "name": "삭제",
+      "description": "選択した項目を削除します"
+    },
+    "ppt-duplicate-slide-copy": {
+      "name": "슬라이드 복제",
+      "description": "現在のスライドを複製します"
+    },
+    "ppt-move-slide-up": {
+      "name": "スライドを上に移動",
+      "description": "選択したスライドを上に移動します"
+    },
+    "ppt-move-slide-down": {
+      "name": "スライドを下に移動",
+      "description": "選択したスライドを下に移動します"
+    },
+    "ppt-zoom-in": {
+      "name": "확대",
+      "description": "表示を拡大します"
+    },
+    "ppt-zoom-out": {
+      "name": "축소",
+      "description": "表示を縮小します"
+    },
+    "ppt-fit-to-window": {
+      "name": "ウィンドウに合わせる",
+      "description": "スライドをウィンドウに合わせて表示します"
+    },
+    "ppt-normal-view": {
+      "name": "標準表示",
+      "description": "標準表示に切り替えます"
+    },
+    "ppt-slide-sorter-view": {
+      "name": "スライド一覧表示",
+      "description": "スライド一覧表示に切り替えます"
+    },
+    "ppt-notes-view": {
+      "name": "ノート表示",
+      "description": "ノート表示に切り替えます"
+    },
+    "ppt-master-view": {
+      "name": "マスター表示",
+      "description": "マスター表示に切り替えます"
+    },
+    "ppt-ruler": {
+      "name": "ルーラー",
+      "description": "ルーラーを表示/非表示にします"
+    },
+    "ppt-grid": {
+      "name": "グリッド",
+      "description": "グリッドを表示/非表示にします"
+    },
+    "ppt-guides": {
+      "name": "ガイド",
+      "description": "ガイドを表示/非表示にします"
+    },
+    "ppt-slide-master": {
+      "name": "スライドマスター",
+      "description": "スライドマスターを開きます"
+    },
+    "ppt-handout-master": {
+      "name": "配布資料マスター",
+      "description": "配布資料マスターを開きます"
+    },
+    "ppt-notes-master": {
+      "name": "ノートマスター",
+      "description": "ノートマスターを開きます"
+    },
+    "docs-bold": {
+      "name": "굵게",
+      "description": "選択したテキストを太字にします"
+    },
+    "docs-italic": {
+      "name": "기울임꼴",
+      "description": "選択したテキストを斜体にします"
+    },
+    "docs-underline": {
+      "name": "밑줄",
+      "description": "選択したテキストに下線を引きます"
+    },
+    "docs-copy": {
+      "name": "복사",
+      "description": "選択したテキストをコピーします"
+    },
+    "docs-paste": {
+      "name": "붙여넣기",
+      "description": "コピーしたテキストを貼り付けます"
+    },
+    "docs-cut": {
+      "name": "잘라내기",
+      "description": "選択したテキストを切り取ります"
+    },
+    "docs-undo": {
+      "name": "실행 취소",
+      "description": "마지막 작업을 실행 취소합니다"
+    },
+    "docs-redo": {
+      "name": "다시 실행",
+      "description": "실행 취소한 작업을 다시 실행합니다"
+    },
+    "docs-find": {
+      "name": "검색",
+      "description": "文書内でテキストを検索します"
+    },
+    "docs-replace": {
+      "name": "置換",
+      "description": "テキストを検索して置換します"
+    },
+    "docs-select-all": {
+      "name": "모두 선택",
+      "description": "文書全体を選択します"
+    },
+    "docs-save": {
+      "name": "저장",
+      "description": "文書を保存します"
+    },
+    "docs-new": {
+      "name": "新規文書",
+      "description": "新しい文書を作成します"
+    },
+    "docs-open": {
+      "name": "열기",
+      "description": "既存の文書を開きます"
+    },
+    "docs-print": {
+      "name": "인쇄",
+      "description": "文書を印刷します"
+    },
+    "docs-insert-link": {
+      "name": "リンク挿入",
+      "description": "ハイパーリンクを挿入します"
+    },
+    "docs-insert-comment": {
+      "name": "コメント挿入",
+      "description": "コメントを挿入します"
+    },
+    "docs-insert-table": {
+      "name": "표 삽입",
+      "description": "表を挿入します"
+    },
+    "docs-insert-image": {
+      "name": "그림 삽입",
+      "description": "画像を挿入します"
+    },
+    "docs-align-left": {
+      "name": "왼쪽 맞춤",
+      "description": "テキストを左揃えにします"
+    },
+    "docs-align-center": {
+      "name": "가운데 맞춤",
+      "description": "テキストを中央揃えにします"
+    },
+    "docs-align-right": {
+      "name": "오른쪽 맞춤",
+      "description": "テキストを右揃えにします"
+    },
+    "docs-justify": {
+      "name": "양쪽 맞춤",
+      "description": "テキストを両端揃えにします"
+    },
+    "docs-bullet-list": {
+      "name": "글머리 기호",
+      "description": "箇条書きリストを作成します"
+    },
+    "docs-numbered-list": {
+      "name": "번호 매기기",
+      "description": "番号付きリストを作成します"
+    },
+    "docs-heading-1": {
+      "name": "見出し1",
+      "description": "見出し1スタイルを適用します"
+    },
+    "docs-heading-2": {
+      "name": "見出し2",
+      "description": "見出し2スタイルを適用します"
+    },
+    "docs-heading-3": {
+      "name": "見出し3",
+      "description": "見出し3スタイルを適用します"
+    },
+    "docs-normal-text": {
+      "name": "標準テキスト",
+      "description": "標準テキストスタイルを適用します"
+    },
+    "sheets-bold": {
+      "name": "굵게",
+      "description": "選択したセルを太字にします"
+    },
+    "sheets-italic": {
+      "name": "기울임꼴",
+      "description": "選択したセルを斜体にします"
+    },
+    "sheets-underline": {
+      "name": "밑줄",
+      "description": "選択したセルに下線を引きます"
+    },
+    "sheets-copy": {
+      "name": "복사",
+      "description": "選択したセルをコピーします"
+    },
+    "sheets-paste": {
+      "name": "붙여넣기",
+      "description": "コピーしたセルを貼り付けます"
+    },
+    "sheets-cut": {
+      "name": "잘라내기",
+      "description": "選択したセルを切り取ります"
+    },
+    "sheets-undo": {
+      "name": "실행 취소",
+      "description": "마지막 작업을 실행 취소합니다"
+    },
+    "sheets-redo": {
+      "name": "다시 실행",
+      "description": "실행 취소한 작업을 다시 실행합니다"
+    },
+    "sheets-find": {
+      "name": "검색",
+      "description": "スプレッドシート内でテキストを検索します"
+    },
+    "sheets-replace": {
+      "name": "置換",
+      "description": "テキストを検索して置換します"
+    },
+    "sheets-select-all": {
+      "name": "모두 선택",
+      "description": "スプレッドシート全体を選択します"
+    },
+    "sheets-save": {
+      "name": "저장",
+      "description": "スプレッドシートを保存します"
+    },
+    "sheets-new": {
+      "name": "新規スプレッドシート",
+      "description": "新しいスプレッドシートを作成します"
+    },
+    "sheets-open": {
+      "name": "열기",
+      "description": "既存のスプレッドシートを開きます"
+    },
+    "sheets-print": {
+      "name": "인쇄",
+      "description": "スプレッドシートを印刷します"
+    },
+    "sheets-insert-row": {
+      "name": "행 삽입",
+      "description": "選択した行の上に行を挿入します"
+    },
+    "sheets-insert-column": {
+      "name": "열 삽입",
+      "description": "選択した列の左に列を挿入します"
+    },
+    "sheets-delete-row": {
+      "name": "행 삭제",
+      "description": "選択した行を削除します"
+    },
+    "sheets-delete-column": {
+      "name": "열 삭제",
+      "description": "選択した列を削除します"
+    },
+    "sheets-insert-function": {
+      "name": "関数挿入",
+      "description": "関数を挿入します"
+    },
+    "sheets-autosum": {
+      "name": "オートSUM",
+      "description": "選択した範囲の合計を自動計算します"
+    },
+    "sheets-fill-down": {
+      "name": "下方向にコピー",
+      "description": "選択したセルの内容を下方向にコピーします"
+    },
+    "sheets-fill-right": {
+      "name": "右方向にコピー",
+      "description": "選択したセルの内容を右方向にコピーします"
+    },
+    "sheets-format-cells": {
+      "name": "셀 서식",
+      "description": "セルの書式設定ダイアログを開きます"
+    },
+    "sheets-align-left": {
+      "name": "왼쪽 맞춤",
+      "description": "セルの内容を左揃えにします"
+    },
+    "sheets-align-center": {
+      "name": "가운데 맞춤",
+      "description": "セルの内容を中央揃えにします"
+    },
+    "sheets-align-right": {
+      "name": "오른쪽 맞춤",
+      "description": "セルの内容を右揃えにします"
+    },
+    "sheets-sort-ascending": {
+      "name": "昇順ソート",
+      "description": "選択した範囲を昇順でソートします"
+    },
+    "sheets-sort-descending": {
+      "name": "降順ソート",
+      "description": "選択した範囲を降順でソートします"
+    },
+    "sheets-filter": {
+      "name": "필터",
+      "description": "フィルターを作成または削除します"
+    },
+    "sheets-chart": {
+      "name": "차트 삽입",
+      "description": "グラフを挿入します"
+    },
+    "sheets-freeze-rows": {
+      "name": "行を固定",
+      "description": "選択した行を固定します"
+    },
+    "sheets-freeze-columns": {
+      "name": "列を固定",
+      "description": "選択した列を固定します"
+    },
+    "slides-bold": {
+      "name": "굵게",
+      "description": "選択したテキストを太字にします"
+    },
+    "slides-italic": {
+      "name": "기울임꼴",
+      "description": "選択したテキストを斜体にします"
+    },
+    "slides-underline": {
+      "name": "밑줄",
+      "description": "選択したテキストに下線を引きます"
+    },
+    "slides-copy": {
+      "name": "복사",
+      "description": "選択したオブジェクトをコピーします"
+    },
+    "slides-paste": {
+      "name": "붙여넣기",
+      "description": "コピーしたオブジェクトを貼り付けます"
+    },
+    "slides-cut": {
+      "name": "잘라내기",
+      "description": "選択したオブジェクトを切り取ります"
+    },
+    "slides-undo": {
+      "name": "실행 취소",
+      "description": "마지막 작업을 실행 취소합니다"
+    },
+    "slides-redo": {
+      "name": "다시 실행",
+      "description": "실행 취소한 작업을 다시 실행합니다"
+    },
+    "slides-new-slide": {
+      "name": "新しいスライド",
+      "description": "新しいスライドを挿入します"
+    },
+    "slides-duplicate-slide": {
+      "name": "スライドを複製",
+      "description": "選択したスライドを複製します"
+    },
+    "slides-delete-slide": {
+      "name": "スライドを削除",
+      "description": "選択したスライドを削除します"
+    },
+    "slides-insert-text": {
+      "name": "テキストボックス挿入",
+      "description": "テキストボックスを挿入します"
+    },
+    "slides-insert-image": {
+      "name": "그림 삽입",
+      "description": "画像を挿入します"
+    },
+    "slides-insert-shape": {
+      "name": "図形挿入",
+      "description": "図形を挿入します"
+    },
+    "slides-insert-table": {
+      "name": "표 삽입",
+      "description": "表を挿入します"
+    },
+    "slides-insert-chart": {
+      "name": "차트 삽입",
+      "description": "グラフを挿入します"
+    },
+    "slides-align-left": {
+      "name": "왼쪽 맞춤",
+      "description": "選択したオブジェクトを左揃えにします"
+    },
+    "slides-align-center": {
+      "name": "가운데 맞춤",
+      "description": "選択したオブジェクトを中央揃えにします"
+    },
+    "slides-align-right": {
+      "name": "오른쪽 맞춤",
+      "description": "選択したオブジェクトを右揃えにします"
+    },
+    "slides-present": {
+      "name": "プレゼンテーション開始",
+      "description": "プレゼンテーションを開始します"
+    },
+    "slides-present-from-start": {
+      "name": "最初からプレゼンテーション",
+      "description": "最初のスライドからプレゼンテーションを開始します"
+    },
+    "slides-next-slide": {
+      "name": "次のスライド",
+      "description": "次のスライドに移動します"
+    },
+    "slides-previous-slide": {
+      "name": "前のスライド",
+      "description": "前のスライドに移動します"
+    },
+    "slides-first-slide": {
+      "name": "最初のスライド",
+      "description": "最初のスライドに移動します"
+    },
+    "slides-last-slide": {
+      "name": "最後のスライド",
+      "description": "最後のスライドに移動します"
+    },
+    "slides-zoom-in": {
+      "name": "확대",
+      "description": "スライドを拡大表示します"
+    },
+    "slides-zoom-out": {
+      "name": "축소",
+      "description": "スライドを縮小表示します"
+    },
+    "slides-fit-to-screen": {
+      "name": "画面に合わせる",
+      "description": "スライドを画面サイズに合わせて表示します"
+    },
+    "slides-save": {
+      "name": "저장",
+      "description": "プレゼンテーションを保存します"
+    },
+    "slides-new": {
+      "name": "新規プレゼンテーション",
+      "description": "新しいプレゼンテーションを作成します"
+    },
+    "slides-open": {
+      "name": "열기",
+      "description": "既存のプレゼンテーションを開きます"
+    },
+    "slides-print": {
+      "name": "인쇄",
+      "description": "プレゼンテーションを印刷します"
+    },
+    "chrome-new-tab": {
+      "name": "새 탭",
+      "description": "새 탭을 엽니다"
+    },
+    "chrome-close-tab": {
+      "name": "탭 닫기",
+      "description": "현재 탭을 닫습니다"
+    },
+    "chrome-reopen-tab": {
+      "name": "閉じたタブを再開",
+      "description": "最近閉じたタブを再開します"
+    },
+    "chrome-new-window": {
+      "name": "新しいウィンドウ",
+      "description": "新しいウィンドウを開きます"
+    },
+    "chrome-new-incognito": {
+      "name": "シークレットウィンドウ",
+      "description": "シークレットウィンドウを開きます"
+    },
+    "chrome-bookmarks": {
+      "name": "북마크",
+      "description": "ブックマークマネージャーを開きます"
+    },
+    "chrome-bookmark-page": {
+      "name": "ページをブックマーク",
+      "description": "現在のページをブックマークします"
+    },
+    "chrome-history": {
+      "name": "방문 기록",
+      "description": "履歴ページを開きます"
+    },
+    "chrome-downloads": {
+      "name": "다운로드",
+      "description": "ダウンロードページを開きます"
+    },
+    "chrome-address-bar": {
+      "name": "アドレスバーにフォーカス",
+      "description": "アドレスバーにフォーカスを移動します"
+    },
+    "chrome-search": {
+      "name": "검색",
+      "description": "ページ内でテキストを検索します"
+    },
+    "chrome-refresh": {
+      "name": "更新",
+      "description": "페이지를 새로고침합니다"
+    },
+    "chrome-force-refresh": {
+      "name": "強制更新",
+      "description": "キャッシュを無視してページを更新します"
+    },
+    "chrome-back": {
+      "name": "戻る",
+      "description": "前のページに戻ります"
+    },
+    "chrome-forward": {
+      "name": "進む",
+      "description": "次のページに進みます"
+    },
+    "chrome-home": {
+      "name": "ホーム",
+      "description": "ホームページに移動します"
+    },
+    "chrome-zoom-in": {
+      "name": "확대",
+      "description": "ページを拡大表示します"
+    },
+    "chrome-zoom-out": {
+      "name": "축소",
+      "description": "ページを縮小表示します"
+    },
+    "chrome-reset-zoom": {
+      "name": "ズームリセット",
+      "description": "ズームを100%にリセットします"
+    },
+    "chrome-devtools": {
+      "name": "개발자 도구",
+      "description": "開発者ツールを開きます"
+    },
+    "chrome-task-manager": {
+      "name": "タスクマネージャー",
+      "description": "ブラウザのタスクマネージャーを開きます"
+    },
+    "safari-new-tab": {
+      "name": "새 탭",
+      "description": "새 탭을 엽니다"
+    },
+    "safari-close-tab": {
+      "name": "탭 닫기",
+      "description": "현재 탭을 닫습니다"
+    },
+    "safari-reopen-tab": {
+      "name": "閉じたタブを再開",
+      "description": "最近閉じたタブを再開します"
+    },
+    "safari-new-window": {
+      "name": "新しいウィンドウ",
+      "description": "新しいウィンドウを開きます"
+    },
+    "safari-new-private": {
+      "name": "プライベートブラウジング",
+      "description": "プライベートブラウジングウィンドウを開きます"
+    },
+    "safari-bookmarks": {
+      "name": "북마크",
+      "description": "ブックマークを表示します"
+    },
+    "safari-bookmark-page": {
+      "name": "ページをブックマーク",
+      "description": "現在のページをブックマークします"
+    },
+    "safari-history": {
+      "name": "방문 기록",
+      "description": "履歴を表示します"
+    },
+    "safari-downloads": {
+      "name": "다운로드",
+      "description": "ダウンロードを表示します"
+    },
+    "safari-address-bar": {
+      "name": "アドレスバーにフォーカス",
+      "description": "アドレスバーにフォーカスを移動します"
+    },
+    "safari-search": {
+      "name": "검색",
+      "description": "ページ内でテキストを検索します"
+    },
+    "safari-refresh": {
+      "name": "更新",
+      "description": "페이지를 새로고침합니다"
+    },
+    "safari-back": {
+      "name": "戻る",
+      "description": "前のページに戻ります"
+    },
+    "safari-forward": {
+      "name": "進む",
+      "description": "次のページに進みます"
+    },
+    "safari-home": {
+      "name": "ホーム",
+      "description": "ホームページに移動します"
+    },
+    "safari-zoom-in": {
+      "name": "확대",
+      "description": "ページを拡大表示します"
+    },
+    "safari-zoom-out": {
+      "name": "축소",
+      "description": "ページを縮小表示します"
+    },
+    "safari-reset-zoom": {
+      "name": "ズームリセット",
+      "description": "ズームを100%にリセットします"
+    },
+    "safari-web-inspector": {
+      "name": "Webインスペクタ",
+      "description": "Webインスペクタを開きます"
+    },
+    "edge-new-tab": {
+      "name": "새 탭",
+      "description": "새 탭을 엽니다"
+    },
+    "edge-close-tab": {
+      "name": "탭 닫기",
+      "description": "현재 탭을 닫습니다"
+    },
+    "edge-reopen-tab": {
+      "name": "閉じたタブを再開",
+      "description": "最近閉じたタブを再開します"
+    },
+    "edge-new-window": {
+      "name": "新しいウィンドウ",
+      "description": "新しいウィンドウを開きます"
+    },
+    "edge-new-incognito": {
+      "name": "InPrivateウィンドウ",
+      "description": "InPrivateウィンドウを開きます"
+    },
+    "edge-favorites": {
+      "name": "お気に入り",
+      "description": "お気に入りを表示します"
+    },
+    "edge-add-favorite": {
+      "name": "お気に入りに追加",
+      "description": "現在のページをお気に入りに追加します"
+    },
+    "edge-history": {
+      "name": "방문 기록",
+      "description": "履歴を表示します"
+    },
+    "edge-downloads": {
+      "name": "다운로드",
+      "description": "ダウンロードを表示します"
+    },
+    "edge-address-bar": {
+      "name": "アドレスバーにフォーカス",
+      "description": "アドレスバーにフォーカスを移動します"
+    },
+    "edge-search": {
+      "name": "검색",
+      "description": "ページ内でテキストを検索します"
+    },
+    "edge-refresh": {
+      "name": "更新",
+      "description": "페이지를 새로고침합니다"
+    },
+    "edge-back": {
+      "name": "戻る",
+      "description": "前のページに戻ります"
+    },
+    "edge-forward": {
+      "name": "進む",
+      "description": "次のページに進みます"
+    },
+    "edge-home": {
+      "name": "ホーム",
+      "description": "ホームページに移動します"
+    },
+    "edge-zoom-in": {
+      "name": "확대",
+      "description": "ページを拡大表示します"
+    },
+    "edge-zoom-out": {
+      "name": "축소",
+      "description": "ページを縮小表示します"
+    },
+    "edge-reset-zoom": {
+      "name": "ズームリセット",
+      "description": "ズームを100%にリセットします"
+    },
+    "edge-devtools": {
+      "name": "개발자 도구",
+      "description": "開発者ツールを開きます"
+    },
+    "photoshop-new": {
+      "name": "新規ドキュメント",
+      "description": "新しいドキュメントを作成します"
+    },
+    "photoshop-open": {
+      "name": "열기",
+      "description": "既存のファイルを開きます"
+    },
+    "photoshop-save": {
+      "name": "저장",
+      "description": "ファイルを保存します"
+    },
+    "photoshop-save-as": {
+      "name": "別名で保存",
+      "description": "ファイルを別名で保存します"
+    },
+    "photoshop-undo": {
+      "name": "실행 취소",
+      "description": "마지막 작업을 실행 취소합니다"
+    },
+    "photoshop-redo": {
+      "name": "다시 실행",
+      "description": "실행 취소한 작업을 다시 실행합니다"
+    },
+    "photoshop-copy": {
+      "name": "복사",
+      "description": "選択した領域をコピーします"
+    },
+    "photoshop-paste": {
+      "name": "붙여넣기",
+      "description": "コピーした内容を貼り付けます"
+    },
+    "photoshop-cut": {
+      "name": "잘라내기",
+      "description": "選択した領域を切り取ります"
+    },
+    "photoshop-select-all": {
+      "name": "모두 선택",
+      "description": "レイヤー全体を選択します"
+    },
+    "photoshop-deselect": {
+      "name": "選択解除",
+      "description": "選択を解除します"
+    },
+    "photoshop-free-transform": {
+      "name": "自由変形",
+      "description": "自由変形ツールを起動します"
+    },
+    "photoshop-zoom-in": {
+      "name": "확대",
+      "description": "画像を拡大表示します"
+    },
+    "photoshop-zoom-out": {
+      "name": "축소",
+      "description": "画像を縮小表示します"
+    },
+    "photoshop-fit-to-screen": {
+      "name": "画面に合わせる",
+      "description": "画像を画面サイズに合わせて表示します"
+    },
+    "photoshop-actual-size": {
+      "name": "実際のサイズ",
+      "description": "画像を実際のサイズで表示します"
+    },
+    "photoshop-new-layer": {
+      "name": "新しいレイヤー",
+      "description": "新しいレイヤーを作成します"
+    },
+    "photoshop-duplicate-layer": {
+      "name": "レイヤーを複製",
+      "description": "選択したレイヤーを複製します"
+    },
+    "photoshop-merge-layers": {
+      "name": "レイヤーを統合",
+      "description": "選択したレイヤーを統合します"
+    },
+    "photoshop-flatten-image": {
+      "name": "画像を統合",
+      "description": "すべてのレイヤーを統合します"
+    },
+    "photoshop-brush-tool": {
+      "name": "브러시 도구",
+      "description": "ブラシツールを選択します"
+    },
+    "photoshop-eraser-tool": {
+      "name": "지우개 도구",
+      "description": "消しゴムツールを選択します"
+    },
+    "photoshop-move-tool": {
+      "name": "移動ツール",
+      "description": "移動ツールを選択します"
+    },
+    "photoshop-marquee-tool": {
+      "name": "선택 도구",
+      "description": "選択ツールを選択します"
+    },
+    "photoshop-lasso-tool": {
+      "name": "なげなわツール",
+      "description": "なげなわツールを選択します"
+    },
+    "photoshop-magic-wand": {
+      "name": "自動選択ツール",
+      "description": "自動選択ツールを選択します"
+    },
+    "photoshop-crop-tool": {
+      "name": "切り抜きツール",
+      "description": "切り抜きツールを選択します"
+    },
+    "photoshop-healing-brush": {
+      "name": "修復ブラシツール",
+      "description": "修復ブラシツールを選択します"
+    },
+    "photoshop-clone-stamp": {
+      "name": "スタンプツール",
+      "description": "スタンプツールを選択します"
+    },
+    "photoshop-gradient-tool": {
+      "name": "グラデーションツール",
+      "description": "グラデーションツールを選択します"
+    },
+    "photoshop-paint-bucket": {
+      "name": "ペイントバケツツール",
+      "description": "ペイントバケツツールを選択します"
+    },
+    "photoshop-text-tool": {
+      "name": "テキストツール",
+      "description": "テキストツールを選択します"
+    },
+    "photoshop-pen-tool": {
+      "name": "펜 도구",
+      "description": "ペンツールを選択します"
+    },
+    "photoshop-shape-tool": {
+      "name": "図形ツール",
+      "description": "図形ツールを選択します"
+    },
+    "photoshop-eye-dropper": {
+      "name": "スポイトツール",
+      "description": "スポイトツールを選択します"
+    },
+    "photoshop-hand-tool": {
+      "name": "手のひらツール",
+      "description": "手のひらツールを選択します"
+    },
+    "photoshop-zoom-tool": {
+      "name": "ズームツール",
+      "description": "ズームツールを選択します"
+    },
+    "illustrator-new": {
+      "name": "新規ドキュメント",
+      "description": "新しいドキュメントを作成します"
+    },
+    "illustrator-open": {
+      "name": "열기",
+      "description": "既存のファイルを開きます"
+    },
+    "illustrator-save": {
+      "name": "저장",
+      "description": "ファイルを保存します"
+    },
+    "illustrator-save-as": {
+      "name": "別名で保存",
+      "description": "ファイルを別名で保存します"
+    },
+    "illustrator-undo": {
+      "name": "실행 취소",
+      "description": "마지막 작업을 실행 취소합니다"
+    },
+    "illustrator-redo": {
+      "name": "다시 실행",
+      "description": "실행 취소한 작업을 다시 실행합니다"
+    },
+    "illustrator-copy": {
+      "name": "복사",
+      "description": "選択したオブジェクトをコピーします"
+    },
+    "illustrator-paste": {
+      "name": "붙여넣기",
+      "description": "コピーしたオブジェクトを貼り付けます"
+    },
+    "illustrator-cut": {
+      "name": "잘라내기",
+      "description": "選択したオブジェクトを切り取ります"
+    },
+    "illustrator-select-all": {
+      "name": "모두 선택",
+      "description": "すべてのオブジェクトを選択します"
+    },
+    "illustrator-deselect": {
+      "name": "選択解除",
+      "description": "選択を解除します"
+    },
+    "illustrator-free-transform": {
+      "name": "自由変形",
+      "description": "自由変形ツールを起動します"
+    },
+    "illustrator-zoom-in": {
+      "name": "확대",
+      "description": "アートボードを拡大表示します"
+    },
+    "illustrator-zoom-out": {
+      "name": "축소",
+      "description": "アートボードを縮小表示します"
+    },
+    "illustrator-fit-to-screen": {
+      "name": "画面に合わせる",
+      "description": "アートボードを画面サイズに合わせて表示します"
+    },
+    "illustrator-actual-size": {
+      "name": "実際のサイズ",
+      "description": "アートボードを実際のサイズで表示します"
+    },
+    "illustrator-selection-tool": {
+      "name": "선택 도구",
+      "description": "選択ツールを選択します"
+    },
+    "illustrator-direct-selection": {
+      "name": "ダイレクト選択ツール",
+      "description": "ダイレクト選択ツールを選択します"
+    },
+    "illustrator-pen-tool": {
+      "name": "펜 도구",
+      "description": "ペンツールを選択します"
+    },
+    "illustrator-type-tool": {
+      "name": "文字ツール",
+      "description": "文字ツールを選択します"
+    },
+    "illustrator-line-tool": {
+      "name": "直線ツール",
+      "description": "直線ツールを選択します"
+    },
+    "illustrator-rectangle-tool": {
+      "name": "長方形ツール",
+      "description": "長方形ツールを選択します"
+    },
+    "illustrator-ellipse-tool": {
+      "name": "楕円形ツール",
+      "description": "楕円形ツールを選択します"
+    },
+    "illustrator-polygon-tool": {
+      "name": "多角形ツール",
+      "description": "多角形ツールを選択します"
+    },
+    "illustrator-star-tool": {
+      "name": "星形ツール",
+      "description": "星形ツールを選択します"
+    },
+    "illustrator-paintbrush-tool": {
+      "name": "브러시 도구",
+      "description": "ブラシツールを選択します"
+    },
+    "illustrator-pencil-tool": {
+      "name": "鉛筆ツール",
+      "description": "鉛筆ツールを選択します"
+    },
+    "illustrator-eraser-tool": {
+      "name": "지우개 도구",
+      "description": "消しゴムツールを選択します"
+    },
+    "illustrator-scissors-tool": {
+      "name": "はさみツール",
+      "description": "はさみツールを選択します"
+    },
+    "illustrator-rotate-tool": {
+      "name": "回転ツール",
+      "description": "回転ツールを選択します"
+    },
+    "illustrator-reflect-tool": {
+      "name": "リフレクトツール",
+      "description": "リフレクトツールを選択します"
+    },
+    "illustrator-scale-tool": {
+      "name": "拡大・縮小ツール",
+      "description": "拡大・縮小ツールを選択します"
+    },
+    "illustrator-shear-tool": {
+      "name": "シアーツール",
+      "description": "シアーツールを選択します"
+    },
+    "illustrator-reshape-tool": {
+      "name": "リシェイプツール",
+      "description": "リシェイプツールを選択します"
+    },
+    "illustrator-gradient-tool": {
+      "name": "グラデーションツール",
+      "description": "グラデーションツールを選択します"
+    },
+    "illustrator-mesh-tool": {
+      "name": "メッシュツール",
+      "description": "メッシュツールを選択します"
+    },
+    "illustrator-eye-dropper": {
+      "name": "スポイトツール",
+      "description": "スポイトツールを選択します"
+    },
+    "illustrator-hand-tool": {
+      "name": "手のひらツール",
+      "description": "手のひらツールを選択します"
+    },
+    "illustrator-zoom-tool": {
+      "name": "ズームツール",
+      "description": "ズームツールを選択します"
+    },
+    "slack-quick-switcher": {
+      "name": "クイックスイッチャー",
+      "description": "チャンネルやDMを素早く切り替えます"
+    },
+    "slack-channel-browser": {
+      "name": "チャンネルブラウザ",
+      "description": "チャンネルブラウザを開きます"
+    },
+    "slack-direct-messages": {
+      "name": "ダイレクトメッセージ",
+      "description": "ダイレクトメッセージリストを開きます"
+    },
+    "slack-mentions": {
+      "name": "メンション",
+      "description": "メンションされたメッセージを表示します"
+    },
+    "slack-starred-items": {
+      "name": "スター付きアイテム",
+      "description": "スター付きアイテムを表示します"
+    },
+    "slack-threads": {
+      "name": "スレッド",
+      "description": "スレッドを表示します"
+    },
+    "slack-all-unreads": {
+      "name": "未読メッセージ",
+      "description": "すべての未読メッセージを表示します"
+    },
+    "slack-search": {
+      "name": "검색",
+      "description": "メッセージを検索します"
+    },
+    "slack-emoji-picker": {
+      "name": "絵文字ピッカー",
+      "description": "絵文字ピッカーを開きます"
+    },
+    "slack-mark-as-read": {
+      "name": "既読にする",
+      "description": "チャンネルを既読にマークします"
+    },
+    "slack-previous-channel": {
+      "name": "前のチャンネル",
+      "description": "前のチャンネルに移動します"
+    },
+    "slack-next-channel": {
+      "name": "次のチャンネル",
+      "description": "次のチャンネルに移動します"
+    },
+    "slack-previous-unread": {
+      "name": "前の未読チャンネル",
+      "description": "前の未読チャンネルに移動します"
+    },
+    "slack-next-unread": {
+      "name": "次の未読チャンネル",
+      "description": "次の未読チャンネルに移動します"
+    },
+    "slack-toggle-sidebar": {
+      "name": "サイドバーの表示/非表示",
+      "description": "サイドバーの表示/非表示を切り替えます"
+    },
+    "slack-toggle-member-list": {
+      "name": "メンバーリストの表示/非表示",
+      "description": "メンバーリストの表示/非表示を切り替えます"
+    },
+    "slack-preferences": {
+      "name": "設定",
+      "description": "設定を開きます"
+    },
+    "slack-help": {
+      "name": "ヘルプ",
+      "description": "ヘルプを開きます"
+    },
+    "slack-keyboard-shortcuts": {
+      "name": "キーボードショートカット",
+      "description": "キーボードショートカットを表示します"
+    },
+    "slack-mark-channel-read": {
+      "name": "チャンネルを既読にする",
+      "description": "現在のチャンネルを既読にマークします"
+    },
+    "discord-server-list": {
+      "name": "サーバーリスト",
+      "description": "サーバーリストにフォーカスします"
+    },
+    "discord-channel-list": {
+      "name": "チャンネルリスト",
+      "description": "チャンネルリストにフォーカスします"
+    },
+    "discord-quick-switcher": {
+      "name": "クイックスイッチャー",
+      "description": "クイックスイッチャーを開きます"
+    },
+    "discord-mentions": {
+      "name": "メンション",
+      "description": "メンションされたメッセージを表示します"
+    },
+    "discord-pinned-messages": {
+      "name": "ピン留めメッセージ",
+      "description": "ピン留めされたメッセージを表示します"
+    },
+    "discord-search": {
+      "name": "검색",
+      "description": "メッセージを検索します"
+    },
+    "discord-emoji-picker": {
+      "name": "絵文字ピッカー",
+      "description": "絵文字ピッカーを開きます"
+    },
+    "discord-gif-picker": {
+      "name": "GIFピッカー",
+      "description": "GIFピッカーを開きます"
+    },
+    "discord-sticker-picker": {
+      "name": "ステッカーピッカー",
+      "description": "ステッカーピッカーを開きます"
+    },
+    "discord-mark-as-read": {
+      "name": "既読にする",
+      "description": "チャンネルを既読にマークします"
+    },
+    "discord-previous-channel": {
+      "name": "前のチャンネル",
+      "description": "前のチャンネルに移動します"
+    },
+    "discord-next-channel": {
+      "name": "次のチャンネル",
+      "description": "次のチャンネルに移動します"
+    },
+    "discord-previous-unread": {
+      "name": "前の未読チャンネル",
+      "description": "前の未読チャンネルに移動します"
+    },
+    "discord-next-unread": {
+      "name": "次の未読チャンネル",
+      "description": "次の未読チャンネルに移動します"
+    },
+    "discord-toggle-member-list": {
+      "name": "メンバーリストの表示/非表示",
+      "description": "メンバーリストの表示/非表示を切り替えます"
+    },
+    "discord-toggle-server-list": {
+      "name": "サーバーリストの表示/非表示",
+      "description": "サーバーリストの表示/非表示を切り替えます"
+    },
+    "discord-preferences": {
+      "name": "設定",
+      "description": "設定を開きます"
+    },
+    "discord-help": {
+      "name": "ヘルプ",
+      "description": "ヘルプを開きます"
+    },
+    "discord-keyboard-shortcuts": {
+      "name": "キーボードショートカット",
+      "description": "キーボードショートカットを表示します"
+    },
+    "discord-mark-server-read": {
+      "name": "サーバーを既読にする",
+      "description": "現在のサーバーを既読にマークします"
+    },
+    "discord-toggle-mute": {
+      "name": "ミュートの切り替え",
+      "description": "ミュートの切り替えを行います"
+    },
+    "discord-toggle-deafen": {
+      "name": "デフンの切り替え",
+      "description": "デフンの切り替えを行います"
+    },
+    "discord-toggle-overlay": {
+      "name": "オーバーレイの切り替え",
+      "description": "オーバーレイの表示/非表示を切り替えます"
+    },
+    "discord-streamer-mode": {
+      "name": "ストリーマーモード",
+      "description": "ストリーマーモードの切り替えを行います"
+    }
+  }
+}

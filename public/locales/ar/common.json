@@ -1,0 +1,57 @@
+{
+  "site": {
+    "title": "LearnShortcuts.dev",
+    "description": "موقع تعلم الاختصارات للعمل بكفاءة أكبر"
+  },
+  "nav": {
+    "os": "نظام التشغيل",
+    "office": "Office",
+    "google": "Google",
+    "browser": "المتصفح",
+    "adobe": "Adobe",
+    "others": "أخرى",
+    "bookmarks": "المفضلة",
+    "about": "حول",
+    "privacy": "سياسة الخصوصية",
+    "guide": "الدليل",
+    "contact": "اتصل بنا"
+  },
+  "footer": {
+    "copyright": "© 2025 LearnShortcuts.dev. جميع الحقوق محفوظة.",
+    "description": "موقع تعلم الاختصارات للعمل بكفاءة أكبر",
+    "brand": {
+      "title": "LearnShortcuts.dev",
+      "subtitle": "أتقن اختصارات لوحة المفاتيح وعزز إنتاجيتك"
+    },
+    "quickLinks": {
+      "title": "روابط سريعة",
+      "guide": "دليل المستخدم",
+      "about": "معلومات عنا",
+      "bookmarks": "المفضلة"
+    },
+    "support": {
+      "title": "الدعم",
+      "privacy": "سياسة الخصوصية",
+      "contact": "اتصل بنا"
+    }
+  },
+  "platform": {
+    "windows": "Windows",
+    "mac": "Mac"
+  },
+  "common": {
+    "search": "بحث",
+    "filter": "تصفية",
+    "all": "الكل",
+    "copy": "نسخ",
+    "copied": "تم النسخ",
+    "loading": "جاري التحميل...",
+    "noResults": "لم يتم العثور على نتائج",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "close": "إغلاق"
+  }
+}
+

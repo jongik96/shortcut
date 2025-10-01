@@ -2,77 +2,45 @@
 
 import { Users, Target, Award, Heart } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useLocaleContext } from '@/contexts/LocaleContext';
 
 interface AboutPageProps {
   className?: string;
 }
 
 const AboutPage = ({ className }: AboutPageProps) => {
-  const serviceInfo = [
-    {
-      name: '豊富なデータベース',
-      role: '500+ ショートカット',
-      description: 'OS, Microsoft Office, Google Workspace, Browser, Adobe, Othersのショートカットを包括的に収録'
-    },
-    {
-      name: 'カテゴリ別構成',
-      role: '6つのメインカテゴリ',
-      description: 'メインカテゴリとサブカテゴリで体系的に構成されたショートカットデータベース'
-    },
-    {
-      name: '直感的なUI',
-      role: '使いやすさ重視',
-      description: 'サイドバーとタブ構造で誰でも簡単に使える直感的なユーザーインターフェース'
-    }
-  ];
+  const { dictionary } = useLocaleContext();
+  const t = dictionary.about;
 
-  const values = [
-    {
-      icon: Target,
-      title: '正確性',
-      description: 'すべてのショートカット情報を徹底的に検証し、正確性を保証します。'
-    },
-    {
-      icon: Users,
-      title: 'ユーザー中心',
-      description: 'ユーザーの利便性と効率性を最優先に考慮します。'
-    },
-    {
-      icon: Award,
-      title: '品質',
-      description: '継続的な改善を通じて最高品質のサービスを提供します。'
-    },
-    {
-      icon: Heart,
-      title: '情熱',
-      description: 'ユーザーの生産性向上への情熱で開発しています。'
-    }
-  ];
+  const serviceInfo = t.serviceInfo.items;
+
+  const values = t.values.items.map((item: any, index: number) => ({
+    icon: [Target, Users, Award, Heart][index],
+    title: item.title,
+    description: item.description
+  }));
 
   return (
     <div className={cn('space-y-16', className)}>
       {/* ヒーローセクション */}
       <section className="text-center py-16">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          サービス概要
+          {t.hero.title}
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          LearnShortcuts.devは、OS, Microsoft Office, Google Workspace, Browser, Adobe, Othersのショートカットを
-          効率的に学習・検索できるオンラインプラットフォームです。
-          正確で信頼できる情報を提供し、あなたの作業効率を劇的に向上させます。
+          {t.hero.subtitle}
         </p>
       </section>
 
       {/* サービス特徴セクション */}
       <section className="py-16 bg-blue-50 rounded-2xl">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">サービス特徴</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">{t.mission.title}</h2>
           <p className="text-lg text-gray-700 leading-relaxed">
-            「すべてのユーザーが自分のツールを完全に活用できるよう支援する」
+            「{t.mission.quote}」
           </p>
           <p className="text-gray-600 mt-4">
-            単純なショートカット一覧の提供を超えて、ユーザーが自分の作業環境で
-            最大限の効率を達成できるよう支援する包括的な学習プラットフォームを提供しています。
+            {t.mission.description}
           </p>
         </div>
       </section>
@@ -80,9 +48,9 @@ const AboutPage = ({ className }: AboutPageProps) => {
       {/* サービス優位性セクション */}
       <section className="py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">サービス優位性</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.values.title}</h2>
           <p className="text-xl text-gray-600">
-            他のサービスと比較した当サービスの強み
+            {t.values.subtitle}
           </p>
         </div>
         
@@ -106,9 +74,9 @@ const AboutPage = ({ className }: AboutPageProps) => {
       {/* サービス詳細セクション */}
       <section className="py-16 bg-gray-50 rounded-2xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">サービス詳細</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.serviceInfo.title}</h2>
           <p className="text-xl text-gray-600">
-            LearnShortcuts.devの主要機能と特徴
+            {t.serviceInfo.subtitle}
           </p>
         </div>
         
