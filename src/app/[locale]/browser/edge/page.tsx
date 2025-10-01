@@ -6,8 +6,12 @@ import CategorySidebar from '@/components/CategorySidebar';
 import SearchBar from '@/components/SearchBar';
 import ShortcutCard from '@/components/ShortcutCard';
 import { shortcuts } from '@/data/shortcuts';
+import { useLocaleContext } from '@/contexts/LocaleContext';
 
 export default function EdgePage() {
+  const { dictionary } = useLocaleContext();
+  const tCommon = dictionary.common;
+  
   const [searchQuery, setSearchQuery] = useState('');
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -42,14 +46,15 @@ export default function EdgePage() {
 
   const getCategoryName = (category: string) => {
     const categoryNames: Record<string, string> = {
-      all: 'すべて',
-      tabs: 'タブ',
-      browser: 'ブラウザ',
-      bookmarks: 'ブックマーク',
-      navigation: 'ナビゲーション',
-      view: '表示',
-      tools: 'ツール',
-      help: 'ヘルプ'
+      all: tCommon.all,
+      tabs: tCommon.tabs,
+      browser: tCommon.browser,
+      bookmarks: tCommon.bookmarks,
+      navigation: tCommon.navigation,
+      view: tCommon.view,
+      edit: tCommon.edit,
+      tools: tCommon.tools,
+      help: tCommon.help
     };
     return categoryNames[category] || category;
   };

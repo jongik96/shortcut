@@ -54,13 +54,13 @@ export default function ExcelPage() {
   }, [excelShortcuts, selectedCategory, searchQuery]);
 
   const categories = [
-    { id: 'navigation', name: 'ナビゲーション' },
-    { id: 'editing', name: '編集' },
-    { id: 'formatting', name: '書式設定' },
-    { id: 'formulas', name: '数式' },
-    { id: 'data', name: 'データ' },
-    { id: 'view', name: '表示' },
-    { id: 'file', name: 'ファイル' },
+    { id: 'navigation', name: tCommon.navigation },
+    { id: 'editing', name: tCommon.editing },
+    { id: 'formatting', name: tCommon.formatting },
+    { id: 'formulas', name: tCommon.formulas },
+    { id: 'data', name: tCommon.data },
+    { id: 'view', name: tCommon.view },
+    { id: 'file', name: tCommon.file },
     { id: 'all', name: tCommon.all }
   ];
 

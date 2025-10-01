@@ -51,13 +51,13 @@ export default function WordPage() {
   }, [wordShortcuts, selectedCategory, searchQuery]);
 
   const categories = [
-    { id: 'navigation', name: 'ナビゲーション' },
-    { id: 'editing', name: '編集' },
-    { id: 'formatting', name: '書式設定' },
-    { id: 'text', name: 'テキスト' },
-    { id: 'table', name: 'テーブル' },
-    { id: 'view', name: '表示' },
-    { id: 'file', name: 'ファイル' },
+    { id: 'navigation', name: tCommon.navigation },
+    { id: 'editing', name: tCommon.editing },
+    { id: 'formatting', name: tCommon.formatting },
+    { id: 'text', name: tCommon.text },
+    { id: 'table', name: tCommon.table },
+    { id: 'view', name: tCommon.view },
+    { id: 'file', name: tCommon.file },
     { id: 'all', name: tCommon.all }
   ];
 

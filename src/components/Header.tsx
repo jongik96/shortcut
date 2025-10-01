@@ -110,82 +110,90 @@ const Header = () => {
             <Link href={getLocalePath('/about')} className="text-gray-500 hover:text-gray-900 transition-colors">
               {t.about}
             </Link>
-            <Link href={getLocalePath('/privacy')} className="text-gray-500 hover:text-gray-900 transition-colors">
-              {t.privacy}
-            </Link>
             <LanguageSwitcher />
           </nav>
         </div>
 
         {/* Mobile Navigation */}
         <div className="md:hidden pb-4">
-          <div className="flex flex-wrap gap-2 mb-2">
+          {/* 카테고리 메뉴 - 2줄로 배치 */}
+          <div className="flex flex-wrap gap-2 mb-3">
             <Link 
               href={getLocalePath('/os')}
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
                 pathname.includes('/os') 
-                  ? 'text-blue-600' 
-                  : 'text-gray-900 hover:text-gray-600'
+                  ? 'bg-blue-100 text-blue-600' 
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {t.os}
+              <span>💻</span>
+              <span>{t.os}</span>
             </Link>
             <Link 
               href={getLocalePath('/office')}
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
                 pathname.includes('/office') 
-                  ? 'text-blue-600' 
-                  : 'text-gray-900 hover:text-gray-600'
+                  ? 'bg-blue-100 text-blue-600' 
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {t.office}
+              <span>📊</span>
+              <span>{t.office}</span>
             </Link>
             <Link 
               href={getLocalePath('/google')}
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
                 pathname.includes('/google') 
-                  ? 'text-blue-600' 
-                  : 'text-gray-900 hover:text-gray-600'
+                  ? 'bg-blue-100 text-blue-600' 
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {t.google}
+              <span>🔍</span>
+              <span>{t.google}</span>
             </Link>
             <Link 
               href={getLocalePath('/browser')}
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
                 pathname.includes('/browser') 
-                  ? 'text-blue-600' 
-                  : 'text-gray-900 hover:text-gray-600'
+                  ? 'bg-blue-100 text-blue-600' 
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {t.browser}
+              <span>🌐</span>
+              <span>{t.browser}</span>
             </Link>
             <Link 
               href={getLocalePath('/adobe')}
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
                 pathname.includes('/adobe') 
-                  ? 'text-blue-600' 
-                  : 'text-gray-900 hover:text-gray-600'
+                  ? 'bg-blue-100 text-blue-600' 
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {t.adobe}
+              <span>🎨</span>
+              <span>{t.adobe}</span>
             </Link>
             <Link 
               href={getLocalePath('/others')}
-              className={`px-3 py-2 text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
                 pathname.includes('/others') 
-                  ? 'text-blue-600' 
-                  : 'text-gray-900 hover:text-gray-600'
+                  ? 'bg-blue-100 text-blue-600' 
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
-              {t.others}
+              <span>💬</span>
+              <span>{t.others}</span>
             </Link>
+          </div>
+          
+          {/* 유틸리티 메뉴 */}
+          <div className="flex flex-wrap gap-2 items-center">
             <Link 
               href={getLocalePath('/bookmark')}
-              className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors ${
+              className={`flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
                 pathname.includes('/bookmark') 
-                  ? 'text-blue-600' 
-                  : 'text-gray-900 hover:text-gray-600'
+                  ? 'bg-blue-100 text-blue-600' 
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
               }`}
             >
               <Star className="h-3 w-3" />
@@ -196,6 +204,19 @@ const Header = () => {
                 </span>
               )}
             </Link>
+            <Link 
+              href={getLocalePath('/guide')}
+              className="px-3 py-1.5 text-xs font-medium rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+            >
+              {t.guide}
+            </Link>
+            <Link 
+              href={getLocalePath('/about')}
+              className="px-3 py-1.5 text-xs font-medium rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+            >
+              {t.about}
+            </Link>
+            <LanguageSwitcher />
           </div>
         </div>
       </div>

@@ -7,9 +7,13 @@ import SearchBar from '@/components/SearchBar';
 import ShortcutCard from '@/components/ShortcutCard';
 import { shortcuts } from '@/data/shortcuts';
 import { useFavorites } from '@/contexts/FavoritesContext';
+import { useLocaleContext } from '@/contexts/LocaleContext';
 import { Star, Filter } from 'lucide-react';
 
 export default function BookmarkPage() {
+  const { dictionary } = useLocaleContext();
+  const tCommon = dictionary.common;
+  
   const [searchQuery, setSearchQuery] = useState('');
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -28,24 +32,33 @@ export default function BookmarkPage() {
 
   const getCategoryName = useCallback((category: string) => {
     const categoryNames = {
-      format: 'フォーマット',
-      navigation: '移動',
-      data: 'データ',
-      sheet: 'シート',
-      file: 'ファイル',
-      edit: '編集',
-      view: '表示',
-      insert: '挿入',
-      tools: 'ツール',
-      help: 'ヘルプ',
-      system: 'システム',
-      slides: 'スライド',
-      presentation: 'プレゼンテーション',
-      text: 'テキスト',
-      table: 'テーブル'
+      format: tCommon.formatting,
+      formatting: tCommon.formatting,
+      navigation: tCommon.navigation,
+      data: tCommon.data,
+      sheet: tCommon.sheet,
+      file: tCommon.file,
+      edit: tCommon.edit,
+      editing: tCommon.editing,
+      view: tCommon.view,
+      insert: tCommon.insert,
+      tools: tCommon.tools,
+      help: tCommon.help,
+      system: tCommon.system,
+      slides: tCommon.slides,
+      presentation: tCommon.presentation,
+      text: tCommon.text,
+      table: tCommon.table,
+      tabs: tCommon.tabs,
+      bookmarks: tCommon.bookmarks,
+      browser: tCommon.browser,
+      design: tCommon.design,
+      layers: tCommon.layers,
+      communication: tCommon.communication,
+      channels: tCommon.channels
     };
     return categoryNames[category as keyof typeof categoryNames] || category;
-  }, []);
+  }, [tCommon]);
 
   // 카테고리별 필터링
   const filteredShortcuts = useMemo(() => {
@@ -77,7 +90,7 @@ export default function BookmarkPage() {
   }, [favoriteShortcuts, getCategoryName]);
 
   const categories = [
-    { id: 'all', name: 'すべて' },
+    { id: 'all', name: tCommon.all },
     ...availableCategories
   ];
 

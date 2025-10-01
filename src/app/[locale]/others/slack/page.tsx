@@ -6,8 +6,12 @@ import CategorySidebar from '@/components/CategorySidebar';
 import SearchBar from '@/components/SearchBar';
 import ShortcutCard from '@/components/ShortcutCard';
 import { shortcuts } from '@/data/shortcuts';
+import { useLocaleContext } from '@/contexts/LocaleContext';
 
 export default function SlackPage() {
+  const { dictionary } = useLocaleContext();
+  const tCommon = dictionary.common;
+  
   const [searchQuery, setSearchQuery] = useState('');
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -42,12 +46,14 @@ export default function SlackPage() {
 
   const getCategoryName = (category: string) => {
     const categoryNames: Record<string, string> = {
-      all: 'すべて',
-      navigation: 'ナビゲーション',
-      communication: 'コミュニケーション',
-      view: '表示',
-      tools: 'ツール',
-      help: 'ヘルプ'
+      all: tCommon.all,
+      navigation: tCommon.navigation,
+      communication: tCommon.communication,
+      channels: tCommon.channels,
+      view: tCommon.view,
+      edit: tCommon.edit,
+      tools: tCommon.tools,
+      help: tCommon.help
     };
     return categoryNames[category] || category;
   };

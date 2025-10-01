@@ -6,8 +6,12 @@ import CategorySidebar from '@/components/CategorySidebar';
 import SearchBar from '@/components/SearchBar';
 import ShortcutCard from '@/components/ShortcutCard';
 import { shortcuts } from '@/data/shortcuts';
+import { useLocaleContext } from '@/contexts/LocaleContext';
 
 export default function PhotoshopPage() {
+  const { dictionary } = useLocaleContext();
+  const tCommon = dictionary.common;
+  
   const [searchQuery, setSearchQuery] = useState('');
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -42,14 +46,16 @@ export default function PhotoshopPage() {
 
   const getCategoryName = (category: string) => {
     const categoryNames: Record<string, string> = {
-      all: 'すべて',
-      file: 'ファイル',
-      edit: '編集',
-      view: '表示',
-      layers: 'レイヤー',
-      tools: 'ツール',
-      design: 'デザイン',
-      help: 'ヘルプ'
+      all: tCommon.all,
+      file: tCommon.file,
+      edit: tCommon.edit,
+      editing: tCommon.editing,
+      view: tCommon.view,
+      layers: tCommon.layers,
+      tools: tCommon.tools,
+      design: tCommon.design,
+      navigation: tCommon.navigation,
+      help: tCommon.help
     };
     return categoryNames[category] || category;
   };

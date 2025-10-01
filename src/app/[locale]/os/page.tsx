@@ -50,10 +50,10 @@ export default function OSPage() {
   }, [osShortcuts, selectedCategory, searchQuery]);
 
   const categories = [
-    { id: 'edit', name: dictionary.common.categories || '編集' },
-    { id: 'file', name: 'ファイル' },
-    { id: 'view', name: '表示' },
-    { id: 'navigation', name: 'ナビゲーション' },
+    { id: 'edit', name: tCommon.edit },
+    { id: 'file', name: tCommon.file },
+    { id: 'view', name: tCommon.view },
+    { id: 'navigation', name: tCommon.navigation },
     { id: 'all', name: tCommon.all }
   ];
 

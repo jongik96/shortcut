@@ -46,15 +46,17 @@ export default function GoogleDocsPage() {
 
   const getCategoryName = (category: string) => {
     const categoryNames: Record<string, string> = {
-      all: 'すべて',
-      format: 'フォーマット',
-      edit: '編集',
-      file: 'ファイル',
-      insert: '挿入',
-      view: '表示',
-      navigation: 'ナビゲーション',
-      tools: 'ツール',
-      help: 'ヘルプ'
+      all: tCommon.all,
+      format: tCommon.formatting,
+      formatting: tCommon.formatting,
+      edit: tCommon.edit,
+      editing: tCommon.editing,
+      file: tCommon.file,
+      insert: tCommon.insert,
+      view: tCommon.view,
+      navigation: tCommon.navigation,
+      tools: tCommon.tools,
+      help: tCommon.help
     };
     return categoryNames[category] || category;
   };

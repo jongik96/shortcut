@@ -46,15 +46,18 @@ export default function GoogleSheetsPage() {
 
   const getCategoryName = (category: string) => {
     const categoryNames: Record<string, string> = {
-      all: 'すべて',
-      format: 'フォーマット',
-      edit: '編集',
-      file: 'ファイル',
-      insert: '挿入',
-      view: '表示',
-      data: 'データ',
-      tools: 'ツール',
-      help: 'ヘルプ'
+      all: tCommon.all,
+      format: tCommon.formatting,
+      formatting: tCommon.formatting,
+      edit: tCommon.edit,
+      editing: tCommon.editing,
+      file: tCommon.file,
+      insert: tCommon.insert,
+      view: tCommon.view,
+      data: tCommon.data,
+      navigation: tCommon.navigation,
+      tools: tCommon.tools,
+      help: tCommon.help
     };
     return categoryNames[category] || category;
   };
