@@ -327,7 +327,39 @@
     },
     "software": {
       "title": "البرامج المدعومة",
-      "subtitle": "دعم اختصارات البرامج المكتبية الرئيسية والأنظمة"
+      "subtitle": "دعم اختصارات البرامج المكتبية الرئيسية والأنظمة",
+      "items": [
+        {
+          "name": "نظام التشغيل",
+          "description": "اختصارات Windows/Mac الأساسية",
+          "shortcuts": "130+ اختصارًا"
+        },
+        {
+          "name": "Office",
+          "description": "اختصارات Word و Excel و PowerPoint",
+          "shortcuts": "370+ اختصارًا"
+        },
+        {
+          "name": "Google",
+          "description": "اختصارات Docs و Sheets و Slides",
+          "shortcuts": "200+ اختصارًا"
+        },
+        {
+          "name": "Browser",
+          "description": "اختصارات Chrome و Safari و Edge",
+          "shortcuts": "150+ اختصارًا"
+        },
+        {
+          "name": "Adobe",
+          "description": "اختصارات Photoshop و Illustrator",
+          "shortcuts": "100+ اختصارًا"
+        },
+        {
+          "name": "Others",
+          "description": "Slack و Discord وبرامج أخرى",
+          "shortcuts": "80+ اختصارًا"
+        }
+      ]
     },
     "cta": {
       "title": "ابدأ استكشاف الاختصارات الآن",

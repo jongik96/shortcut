@@ -327,7 +327,39 @@
     },
     "software": {
       "title": "Supported Software",
-      "subtitle": "Supporting shortcuts for major office software and systems"
+      "subtitle": "Supporting shortcuts for major office software and systems",
+      "items": [
+        {
+          "name": "OS",
+          "description": "Windows/Mac Basic Shortcuts",
+          "shortcuts": "130+ Shortcuts"
+        },
+        {
+          "name": "Office",
+          "description": "Word, Excel, PowerPoint Shortcuts",
+          "shortcuts": "370+ Shortcuts"
+        },
+        {
+          "name": "Google",
+          "description": "Docs, Sheets, Slides Shortcuts",
+          "shortcuts": "200+ Shortcuts"
+        },
+        {
+          "name": "Browser",
+          "description": "Chrome, Safari, Edge Shortcuts",
+          "shortcuts": "150+ Shortcuts"
+        },
+        {
+          "name": "Adobe",
+          "description": "Photoshop, Illustrator Shortcuts",
+          "shortcuts": "100+ Shortcuts"
+        },
+        {
+          "name": "Others",
+          "description": "Slack, Discord and other software",
+          "shortcuts": "80+ Shortcuts"
+        }
+      ]
     },
     "cta": {
       "title": "Start Exploring Shortcuts Now",

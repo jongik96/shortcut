@@ -210,26 +210,29 @@ const GuidePage = ({ className }: GuidePageProps) => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { name: 'OS', icon: '🖥️', description: 'Windows/Mac基本ショートカット', shortcuts: '130+ショートカット' },
-            { name: 'Office', icon: '📊', description: 'Word, Excel, PowerPointショートカット', shortcuts: '370+ショートカット' },
-            { name: 'Google', icon: '🔍', description: 'Docs, Sheets, Slidesショートカット', shortcuts: '200+ショートカット' },
-            { name: 'Browser', icon: '🌐', description: 'Chrome, Safari, Edgeショートカット', shortcuts: '150+ショートカット' },
-            { name: 'Adobe', icon: '🎨', description: 'Photoshop, Illustratorショートカット', shortcuts: '100+ショートカット' },
-            { name: 'Others', icon: '💬', description: 'Slack, Discordなどその他のソフトウェア', shortcuts: '80+ショートカット' }
-          ].map((software, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-sm text-center">
-              <div className="text-4xl mb-4">{software.icon}</div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {software.name}
-              </h3>
-              <p className="text-gray-600 text-sm mb-3">
-                {software.description}
-              </p>
-              <div className="text-blue-600 font-semibold text-sm">
-                {software.shortcuts}
+            { icon: '🖥️' },
+            { icon: '📊' },
+            { icon: '🔍' },
+            { icon: '🌐' },
+            { icon: '🎨' },
+            { icon: '💬' }
+          ].map((item, index) => {
+            const software = t.software.items[index];
+            return (
+              <div key={index} className="bg-white p-6 rounded-xl shadow-sm text-center">
+                <div className="text-4xl mb-4">{item.icon}</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {software.name}
+                </h3>
+                <p className="text-gray-600 text-sm mb-3">
+                  {software.description}
+                </p>
+                <div className="text-blue-600 font-semibold text-sm">
+                  {software.shortcuts}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 

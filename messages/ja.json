@@ -327,7 +327,39 @@
     },
     "software": {
       "title": "対応ソフトウェア",
-      "subtitle": "主要なオフィスソフトウェアとシステムのショートカットをサポート"
+      "subtitle": "主要なオフィスソフトウェアとシステムのショートカットをサポート",
+      "items": [
+        {
+          "name": "OS",
+          "description": "Windows/Mac基本ショートカット",
+          "shortcuts": "130+ショートカット"
+        },
+        {
+          "name": "Office",
+          "description": "Word, Excel, PowerPointショートカット",
+          "shortcuts": "370+ショートカット"
+        },
+        {
+          "name": "Google",
+          "description": "Docs, Sheets, Slidesショートカット",
+          "shortcuts": "200+ショートカット"
+        },
+        {
+          "name": "Browser",
+          "description": "Chrome, Safari, Edgeショートカット",
+          "shortcuts": "150+ショートカット"
+        },
+        {
+          "name": "Adobe",
+          "description": "Photoshop, Illustratorショートカット",
+          "shortcuts": "100+ショートカット"
+        },
+        {
+          "name": "Others",
+          "description": "Slack, Discordなどその他のソフトウェア",
+          "shortcuts": "80+ショートカット"
+        }
+      ]
     },
     "cta": {
       "title": "今すぐショートカットを探してみましょう",

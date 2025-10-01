@@ -327,7 +327,39 @@
     },
     "software": {
       "title": "지원 소프트웨어",
-      "subtitle": "주요 오피스 소프트웨어 및 시스템 단축키 지원"
+      "subtitle": "주요 오피스 소프트웨어 및 시스템 단축키 지원",
+      "items": [
+        {
+          "name": "OS",
+          "description": "Windows/Mac 기본 단축키",
+          "shortcuts": "130+ 단축키"
+        },
+        {
+          "name": "Office",
+          "description": "Word, Excel, PowerPoint 단축키",
+          "shortcuts": "370+ 단축키"
+        },
+        {
+          "name": "Google",
+          "description": "Docs, Sheets, Slides 단축키",
+          "shortcuts": "200+ 단축키"
+        },
+        {
+          "name": "Browser",
+          "description": "Chrome, Safari, Edge 단축키",
+          "shortcuts": "150+ 단축키"
+        },
+        {
+          "name": "Adobe",
+          "description": "Photoshop, Illustrator 단축키",
+          "shortcuts": "100+ 단축키"
+        },
+        {
+          "name": "Others",
+          "description": "Slack, Discord 등 기타 소프트웨어",
+          "shortcuts": "80+ 단축키"
+        }
+      ]
     },
     "cta": {
       "title": "지금 바로 단축키 찾아보기",
