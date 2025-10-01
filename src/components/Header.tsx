@@ -107,9 +107,6 @@ const Header = () => {
                 </span>
               )}
             </Link>
-            <Link href={getLocalePath('/about')} className="text-gray-500 hover:text-gray-900 transition-colors">
-              {t.about}
-            </Link>
             <LanguageSwitcher />
           </nav>
         </div>
@@ -184,13 +181,31 @@ const Header = () => {
               <span>💬</span>
               <span>{t.others}</span>
             </Link>
+            
+            {/* 작은 화면에서만 즐겨찾기를 여기에 표시 */}
+            <Link 
+              href={getLocalePath('/bookmark')}
+              className={`sm:hidden flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
+                pathname.includes('/bookmark') 
+                  ? 'bg-blue-100 text-blue-600' 
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+            >
+              <Star className="h-3 w-3" />
+              <span>{t.bookmarks}</span>
+              {favorites.length > 0 && (
+                <span className="bg-blue-600 text-white text-xs rounded-full px-1.5 py-0.5 min-w-[16px] text-center">
+                  {favorites.length}
+                </span>
+              )}
+            </Link>
           </div>
           
-          {/* 유틸리티 메뉴 */}
+          {/* 유틸리티 메뉴 - 큰 화면에서만 즐겨찾기 표시 */}
           <div className="flex flex-wrap gap-2 items-center">
             <Link 
               href={getLocalePath('/bookmark')}
-              className={`flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
+              className={`hidden sm:flex items-center gap-1 px-3 py-1.5 text-xs font-medium rounded-md transition-colors ${
                 pathname.includes('/bookmark') 
                   ? 'bg-blue-100 text-blue-600' 
                   : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
@@ -209,12 +224,6 @@ const Header = () => {
               className="px-3 py-1.5 text-xs font-medium rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
             >
               {t.guide}
-            </Link>
-            <Link 
-              href={getLocalePath('/about')}
-              className="px-3 py-1.5 text-xs font-medium rounded-md bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-            >
-              {t.about}
             </Link>
             <LanguageSwitcher />
           </div>
