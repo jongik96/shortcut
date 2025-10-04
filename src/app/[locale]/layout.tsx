@@ -91,6 +91,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     creator: "LearnShortcuts.dev",
     publisher: "LearnShortcuts.dev",
     robots: "index, follow",
+    icons: {
+      icon: [
+        { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+        { url: '/favicon.ico', sizes: '16x16', type: 'image/x-icon' },
+      ],
+      apple: [
+        { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+      ],
+    },
     alternates: {
       canonical: `/${locale}`,
       languages: {
