@@ -11,7 +11,7 @@ import { useLocaleContext } from '@/contexts/LocaleContext';
 import { Star, Filter } from 'lucide-react';
 
 export default function BookmarkPage() {
-  const { dictionary } = useLocaleContext();
+  const { locale, dictionary } = useLocaleContext();
   const tCommon = dictionary.common;
   
   const [searchQuery, setSearchQuery] = useState('');
@@ -103,13 +103,13 @@ export default function BookmarkPage() {
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Star className="h-8 w-8 text-yellow-500 fill-current" />
-            <h1 className="text-3xl font-bold text-gray-900">お気に入りショートカット</h1>
+            <h1 className="text-3xl font-bold text-gray-900">{dictionary.bookmark.title}</h1>
           </div>
           <p className="text-gray-600 text-lg">
-            保存したショートカットを効率的に管理できます
+            {dictionary.bookmark.subtitle}
           </p>
           <div className="mt-4 text-sm text-gray-500">
-            {favorites.length} 個のショートカットが保存されています
+            {favorites.length} {dictionary.bookmark.saved}
           </div>
         </div>
 
@@ -117,23 +117,23 @@ export default function BookmarkPage() {
           <div className="text-center py-16">
             <Star className="h-16 w-16 text-gray-300 mx-auto mb-4" />
             <h2 className="text-xl font-semibold text-gray-600 mb-2">
-              お気に入りショートカットがありません
+              {dictionary.bookmark.noFavorites}
             </h2>
             <p className="text-gray-500 mb-6">
-              ショートカットカードの星マークをクリックして、お気に入りに追加してください
+              {dictionary.bookmark.clickToAdd}
             </p>
             <div className="flex gap-4 justify-center">
               <Link
-                href="/os"
+                href={`/${locale}/os`}
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
               >
-                OSショートカットを見る
+                {dictionary.bookmark.viewOS}
               </Link>
               <Link
-                href="/office/excel"
+                href={`/${locale}/office/excel`}
                 className="bg-green-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-green-700 transition-colors"
               >
-                Excelショートカットを見る
+                {dictionary.bookmark.viewExcel}
               </Link>
             </div>
           </div>
@@ -180,7 +180,7 @@ export default function BookmarkPage() {
               <div className="mt-4">
                 <div className="flex items-center gap-2 mb-3">
                   <Filter className="h-4 w-4 text-gray-500" />
-                  <span className="text-sm font-medium text-gray-700">カテゴリ:</span>
+                  <span className="text-sm font-medium text-gray-700">{tCommon.categories}:</span>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {categories.map((category) => (
@@ -209,7 +209,7 @@ export default function BookmarkPage() {
 
             {filteredShortcuts.length === 0 && (
               <div className="text-center py-12">
-                <p className="text-gray-500 text-lg">該当するショートカットが見つかりませんでした。</p>
+                <p className="text-gray-500 text-lg">{dictionary.bookmark.noResults}</p>
               </div>
             )}
           </>

@@ -210,9 +210,26 @@
   },
   "bookmark": {
     "title": "Favorites",
-    "subtitle": "Your saved shortcuts",
+    "subtitle": "Manage your saved shortcuts efficiently",
     "empty": "No shortcuts added to favorites yet",
-    "addSome": "Try adding some shortcuts from the shortcuts pages"
+    "addSome": "Try adding some shortcuts from the shortcuts pages",
+    "saved": "shortcuts saved",
+    "noFavorites": "No favorite shortcuts",
+    "clickToAdd": "Click the star icon on shortcut cards to add to favorites",
+    "viewOS": "View OS Shortcuts",
+    "viewExcel": "View Excel Shortcuts",
+    "noResults": "No matching shortcuts found"
+  },
+  "shortcutDetail": {
+    "notFound": "Shortcut not found",
+    "back": "Back",
+    "clickToCopy": "Click to copy",
+    "interactiveKeyboard": "Interactive Keyboard",
+    "interactiveDesc": "Visualize the shortcut on the keyboard below. Click on keys to see detailed descriptions.",
+    "keyboardVisual": "Keyboard Visual",
+    "keyboardVisualDesc": "See the shortcut key positions on the keyboard.",
+    "relatedShortcuts": "Related Shortcuts",
+    "viewDetail": "Click to view details →"
   },
   "guide": {
     "hero": {

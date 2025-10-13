@@ -22,7 +22,7 @@ const ShortcutCard = ({
   onCopy,
   className 
 }: ShortcutCardProps) => {
-  const { locale } = useLocaleContext();
+  const { locale, dictionary } = useLocaleContext();
   const { isFavorite: isFav, toggleFavorite } = useFavorites();
   const shortcutText = platform === 'windows' ? shortcut.windows : shortcut.mac;
   const isCurrentlyFavorite = isFav(shortcut.id);
@@ -58,24 +58,38 @@ const ShortcutCard = ({
   };
 
   const getCategoryName = (category: string) => {
+    const tCommon = dictionary.common;
     const categoryNames = {
-      format: 'フォーマット',
-      navigation: '移動',
-      data: 'データ',
-      sheet: 'シート',
-      file: 'ファイル',
-      edit: '編集',
-      view: '表示',
-      insert: '挿入',
-      tools: 'ツール',
-      help: 'ヘルプ',
-      system: 'システム'
+      format: tCommon.formatting,
+      formatting: tCommon.formatting,
+      navigation: tCommon.navigation,
+      data: tCommon.data,
+      sheet: tCommon.sheet,
+      file: tCommon.file,
+      edit: tCommon.edit,
+      editing: tCommon.editing,
+      view: tCommon.view,
+      insert: tCommon.insert,
+      tools: tCommon.tools,
+      help: tCommon.help,
+      system: tCommon.system,
+      slides: tCommon.slides,
+      presentation: tCommon.presentation,
+      text: tCommon.text,
+      table: tCommon.table,
+      tabs: tCommon.tabs,
+      bookmarks: tCommon.bookmarks,
+      browser: tCommon.browser,
+      design: tCommon.design,
+      layers: tCommon.layers,
+      communication: tCommon.communication,
+      channels: tCommon.channels
     };
     return categoryNames[category as keyof typeof categoryNames] || category;
   };
 
   return (
-    <Link href={`/shortcut/${shortcut.id}`} className="block">
+    <Link href={`/${locale}/shortcut/${shortcut.id}`} className="block">
       <div className={cn(
         'p-4 border rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer group',
         className

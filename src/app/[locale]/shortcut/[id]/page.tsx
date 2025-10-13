@@ -9,10 +9,13 @@ import { shortcuts } from '@/data/shortcuts';
 import { Shortcut } from '@/types/shortcuts';
 import { ArrowLeft, Copy, Star, Share2 } from 'lucide-react';
 import { useFavorites } from '@/contexts/FavoritesContext';
+import { useLocaleContext } from '@/contexts/LocaleContext';
+import { getShortcutTranslation } from '@/lib/shortcut-translations';
 
 export default function ShortcutDetailPage() {
   const params = useParams();
   const router = useRouter();
+  const { locale, dictionary } = useLocaleContext();
   const [shortcut, setShortcut] = useState<Shortcut | null>(null);
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');
   const { isFavorite, toggleFavorite } = useFavorites();
@@ -30,12 +33,12 @@ export default function ShortcutDetailPage() {
         <Header />
         <div className="container mx-auto px-4 py-8">
           <div className="text-center">
-            <h1 className="text-2xl font-bold text-gray-900 mb-4">ショートカットが見つかりません</h1>
+            <h1 className="text-2xl font-bold text-gray-900 mb-4">{dictionary.shortcutDetail.notFound}</h1>
             <button
               onClick={() => router.back()}
               className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
             >
-              戻る
+              {dictionary.shortcutDetail.back}
             </button>
           </div>
         </div>
@@ -43,6 +46,7 @@ export default function ShortcutDetailPage() {
     );
   }
 
+  const translated = getShortcutTranslation(shortcut, locale);
   const shortcutText = platform === 'windows' ? shortcut.windows : shortcut.mac;
   const softwareName = shortcut.software === 'system' ? 'OS' : 
                      shortcut.software === 'excel' ? 'Excel' :
@@ -77,7 +81,7 @@ export default function ShortcutDetailPage() {
           className="flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-6 transition-colors"
         >
           <ArrowLeft className="h-5 w-5" />
-          戻る
+          {dictionary.shortcutDetail.back}
         </button>
 
         <div className="max-w-4xl mx-auto">
@@ -93,8 +97,8 @@ export default function ShortcutDetailPage() {
                     {shortcut.category}
                   </span>
                 </div>
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">{shortcut.name}</h1>
-                <p className="text-gray-600 text-lg">{shortcut.description}</p>
+                <h1 className="text-3xl font-bold text-gray-900 mb-2">{translated.name}</h1>
+                <p className="text-gray-600 text-lg">{translated.description}</p>
               </div>
               
               <div className="flex items-center gap-2">
@@ -150,15 +154,15 @@ export default function ShortcutDetailPage() {
               <div className="text-2xl font-mono font-bold text-gray-900 mb-2">
                 {shortcutText}
               </div>
-              <p className="text-gray-600">クリックしてコピー</p>
+              <p className="text-gray-600">{dictionary.shortcutDetail.clickToCopy}</p>
             </div>
           </div>
 
           {/* 인터랙티브 키보드 섹션 */}
           <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">インタラクティブキーボード</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">{dictionary.shortcutDetail.interactiveKeyboard}</h2>
             <p className="text-gray-600 mb-6">
-              以下のキーボードでショートカットキーを視覚的に確認できます。キーをクリックすると詳細な説明が表示されます。
+              {dictionary.shortcutDetail.interactiveDesc}
             </p>
             <InteractiveKeyboard 
               shortcut={shortcut} 
@@ -169,9 +173,9 @@ export default function ShortcutDetailPage() {
 
           {/* 키보드 시각화 섹션 */}
           <div className="bg-white rounded-xl shadow-sm p-8 mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">キーボードビジュアル</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">{dictionary.shortcutDetail.keyboardVisual}</h2>
             <p className="text-gray-600 mb-6">
-              ショートカットキーの位置をキーボード上で確認できます。
+              {dictionary.shortcutDetail.keyboardVisualDesc}
             </p>
             <KeyboardAnimation 
               shortcut={shortcut} 
@@ -182,28 +186,31 @@ export default function ShortcutDetailPage() {
 
           {/* 관련 단축키 섹션 */}
           <div className="bg-white rounded-xl shadow-sm p-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">関連ショートカット</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">{dictionary.shortcutDetail.relatedShortcuts}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {shortcuts
                 .filter(s => s.software === shortcut.software && s.id !== shortcut.id)
                 .slice(0, 6)
-                .map(relatedShortcut => (
-                  <button
-                    key={relatedShortcut.id}
-                    onClick={() => router.push(`/shortcut/${relatedShortcut.id}`)}
-                    className="text-left p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
-                  >
-                    <div className="font-medium text-gray-900 mb-1">
-                      {relatedShortcut.name}
-                    </div>
-                    <div className="text-sm text-gray-600 mb-2">
-                      {relatedShortcut.description}
-                    </div>
-                    <div className="text-sm font-mono text-blue-600">
-                      {platform === 'windows' ? relatedShortcut.windows : relatedShortcut.mac}
-                    </div>
-                  </button>
-                ))}
+                .map(relatedShortcut => {
+                  const relatedTranslated = getShortcutTranslation(relatedShortcut, locale);
+                  return (
+                    <button
+                      key={relatedShortcut.id}
+                      onClick={() => router.push(`/${locale}/shortcut/${relatedShortcut.id}`)}
+                      className="text-left p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors"
+                    >
+                      <div className="font-medium text-gray-900 mb-1">
+                        {relatedTranslated.name}
+                      </div>
+                      <div className="text-sm text-gray-600 mb-2">
+                        {relatedTranslated.description}
+                      </div>
+                      <div className="text-sm font-mono text-blue-600">
+                        {platform === 'windows' ? relatedShortcut.windows : relatedShortcut.mac}
+                      </div>
+                    </button>
+                  );
+                })}
             </div>
           </div>
         </div>
