@@ -11,6 +11,7 @@ import { useLocaleContext } from '@/contexts/LocaleContext';
 export default function GoogleSlidesPage() {
   const { dictionary } = useLocaleContext();
   const tCommon = dictionary.common;
+  const t = dictionary.categories.google;
   
   const [searchQuery, setSearchQuery] = useState('');
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');
@@ -77,8 +78,8 @@ export default function GoogleSlidesPage() {
           {/* Main Content */}
           <div className="lg:col-span-3">
             <div className="mb-8">
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">Google Slides</h1>
-              <p className="text-gray-600">Google Slidesの便利なショートカットキーを学びましょう</p>
+              <h1 className="text-3xl font-bold text-gray-900 mb-2">{t.slides}</h1>
+              <p className="text-gray-600">{t.slidesDesc}</p>
             </div>
 
             {/* Platform Tabs */}

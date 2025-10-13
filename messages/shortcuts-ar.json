@@ -2,15 +2,15 @@
   "shortcuts": {
     "win-copy": {
       "name": "نسخ",
-      "description": "نسخ العنصر المحدد"
+      "description": "نسخ العناصر المحددة"
     },
     "win-paste": {
       "name": "لصق",
-      "description": "لصق العنصر المنسوخ"
+      "description": "لصق العناصر المنسوخة"
     },
     "win-cut": {
       "name": "قص",
-      "description": "قص العنصر المحدد"
+      "description": "قص العناصر المحددة"
     },
     "win-undo": {
       "name": "تراجع",
@@ -18,7 +18,7 @@
     },
     "win-redo": {
       "name": "إعادة",
-      "description": "إعادة الإجراء الذي تم التراجع عنه"
+      "description": "إعادة الإجراء المتراجع عنه"
     },
     "win-save": {
       "name": "حفظ",
@@ -61,640 +61,640 @@
       "description": "تحديث الصفحة"
     },
     "win-task-manager": {
-      "name": "タスクマネージャー",
-      "description": "タスクマネージャーを開きます"
+      "name": "مدير المهام",
+      "description": "فتح مدير المهام"
     },
     "win-screenshot": {
-      "name": "スクリーンショット",
-      "description": "スクリーンショットを撮ります"
+      "name": "لقطة شاشة",
+      "description": "التقاط لقطة شاشة"
     },
     "win-force-quit": {
-      "name": "強制終了",
-      "description": "アプリケーションを強制終了します"
+      "name": "إنهاء قسري",
+      "description": "إنهاء التطبيق قسرياً"
     },
     "win-alt-tab": {
-      "name": "アプリ切り替え",
-      "description": "開いているアプリケーションを切り替えます"
+      "name": "تبديل التطبيقات",
+      "description": "التبديل بين التطبيقات المفتوحة"
     },
     "win-win-key": {
-      "name": "スタートメニュー",
-      "description": "スタートメニューを開きます"
+      "name": "قائمة ابدأ",
+      "description": "فتح قائمة ابدأ"
     },
     "win-desktop": {
-      "name": "デスクトップ表示",
-      "description": "デスクトップを表示します"
+      "name": "إظهار سطح المكتب",
+      "description": "إظهار سطح المكتب"
     },
     "win-file-explorer": {
-      "name": "エクスプローラー",
-      "description": "ファイルエクスプローラーを開きます"
+      "name": "مستكشف الملفات",
+      "description": "فتح مستكشف الملفات"
     },
     "win-settings": {
-      "name": "設定",
-      "description": "Windows設定を開きます"
+      "name": "الإعدادات",
+      "description": "فتح إعدادات Windows"
     },
     "win-lock": {
-      "name": "画面ロック",
-      "description": "画面をロックします"
+      "name": "قفل الشاشة",
+      "description": "قفل الشاشة"
     },
     "win-run": {
-      "name": "ファイル名を指定して実行",
-      "description": "ファイル名を指定して実行ダイアログを開きます"
+      "name": "تشغيل",
+      "description": "فتح مربع حوار التشغيل"
     },
     "win-search": {
       "name": "بحث",
-      "description": "Windows検索を開きます"
+      "description": "فتح بحث Windows"
     },
     "win-task-view": {
-      "name": "タスクビュー",
-      "description": "タスクビューを開きます"
+      "name": "عرض المهام",
+      "description": "فتح عرض المهام"
     },
     "win-minimize-all": {
-      "name": "すべて最小化",
-      "description": "すべてのウィンドウを最小化します"
+      "name": "تصغير الكل",
+      "description": "تصغير جميع النوافذ"
     },
     "win-restore-windows": {
-      "name": "ウィンドウ復元",
-      "description": "最小化されたウィンドウを復元します"
+      "name": "استعادة النوافذ",
+      "description": "استعادة النوافذ المصغرة"
     },
     "win-project": {
-      "name": "プロジェクション",
-      "description": "プロジェクション設定を開きます"
+      "name": "عرض",
+      "description": "فتح إعدادات العرض"
     },
     "win-calculator": {
-      "name": "電卓",
-      "description": "電卓を開きます"
+      "name": "الآلة الحاسبة",
+      "description": "فتح الآلة الحاسبة"
     },
     "win-notepad": {
-      "name": "メモ帳",
-      "description": "メモ帳を開きます"
+      "name": "المفكرة",
+      "description": "فتح المفكرة"
     },
     "win-cmd": {
-      "name": "コマンドプロンプト",
-      "description": "コマンドプロンプトを開きます"
+      "name": "موجه الأوامر",
+      "description": "فتح موجه الأوامر"
     },
     "win-powershell": {
       "name": "PowerShell",
-      "description": "PowerShellを開きます"
+      "description": "فتح PowerShell"
     },
     "win-device-manager": {
-      "name": "デバイスマネージャー",
-      "description": "デバイスマネージャーを開きます"
+      "name": "مدير الأجهزة",
+      "description": "فتح مدير الأجهزة"
     },
     "win-control-panel": {
-      "name": "コントロールパネル",
-      "description": "コントロールパネルを開きます"
+      "name": "لوحة التحكم",
+      "description": "فتح لوحة التحكم"
     },
     "win-event-viewer": {
-      "name": "イベントビューアー",
-      "description": "イベントビューアーを開きます"
+      "name": "عارض الأحداث",
+      "description": "فتح عارض الأحداث"
     },
     "win-registry": {
-      "name": "レジストリエディター",
-      "description": "レジストリエディターを開きます"
+      "name": "محرر السجل",
+      "description": "فتح محرر السجل"
     },
     "win-system-info": {
-      "name": "システム情報",
-      "description": "システム情報を表示します"
+      "name": "معلومات النظام",
+      "description": "عرض معلومات النظام"
     },
     "win-disk-cleanup": {
-      "name": "ディスククリーンアップ",
-      "description": "ディスククリーンアップを開きます"
+      "name": "تنظيف القرص",
+      "description": "فتح تنظيف القرص"
     },
     "win-resource-monitor": {
-      "name": "リソースモニター",
-      "description": "リソースモニターを開きます"
+      "name": "مراقب الموارد",
+      "description": "فتح مراقب الموارد"
     },
     "win-performance-monitor": {
-      "name": "パフォーマンスモニター",
-      "description": "パフォーマンスモニターを開きます"
+      "name": "مراقب الأداء",
+      "description": "فتح مراقب الأداء"
     },
     "win-services": {
-      "name": "サービス",
-      "description": "サービス管理を開きます"
+      "name": "الخدمات",
+      "description": "فتح إدارة الخدمات"
     },
     "win-group-policy": {
-      "name": "グループポリシー",
-      "description": "グループポリシーエディターを開きます"
+      "name": "نهج المجموعة",
+      "description": "فتح محرر نهج المجموعة"
     },
     "win-windows-update": {
       "name": "Windows Update",
-      "description": "Windows Updateを開きます"
+      "description": "فتح Windows Update"
     },
     "win-backup-restore": {
-      "name": "バックアップと復元",
-      "description": "バックアップと復元を開きます"
+      "name": "النسخ الاحتياطي والاستعادة",
+      "description": "فتح النسخ الاحتياطي والاستعادة"
     },
     "win-windows-defender": {
       "name": "Windows Defender",
-      "description": "Windows Defenderを開きます"
+      "description": "فتح Windows Defender"
     },
     "mac-spotlight": {
-      "name": "Spotlight検索",
-      "description": "Spotlight検索を開きます"
+      "name": "بحث Spotlight",
+      "description": "فتح بحث Spotlight"
     },
     "mac-launchpad": {
       "name": "Launchpad",
-      "description": "Launchpadを開きます"
+      "description": "فتح Launchpad"
     },
     "mac-mission-control": {
       "name": "Mission Control",
-      "description": "Mission Controlを開きます"
+      "description": "فتح Mission Control"
     },
     "mac-expose": {
       "name": "Exposé",
-      "description": "すべてのウィンドウを表示します"
+      "description": "إظهار جميع النوافذ"
     },
     "mac-application-windows": {
-      "name": "アプリケーションウィンドウ",
-      "description": "現在のアプリのウィンドウを表示します"
+      "name": "نوافذ التطبيق",
+      "description": "إظهار نوافذ التطبيق الحالي"
     },
     "mac-dashboard": {
       "name": "Dashboard",
-      "description": "Dashboardを開きます"
+      "description": "فتح Dashboard"
     },
     "mac-dock": {
-      "name": "Dock表示/非表示",
-      "description": "Dockを表示/非表示にします"
+      "name": "إظهار/إخفاء Dock",
+      "description": "إظهار أو إخفاء Dock"
     },
     "mac-finder": {
       "name": "Finder",
-      "description": "Finderを開きます"
+      "description": "فتح Finder"
     },
     "mac-system-preferences": {
-      "name": "システム環境設定",
-      "description": "システム環境設定を開きます"
+      "name": "تفضيلات النظام",
+      "description": "فتح تفضيلات النظام"
     },
     "mac-force-quit": {
-      "name": "強制終了",
-      "description": "アプリケーションを強制終了します"
+      "name": "إنهاء قسري",
+      "description": "إنهاء التطبيق قسرياً"
     },
     "mac-logout": {
-      "name": "ログアウト",
-      "description": "ユーザーをログアウトします"
+      "name": "تسجيل الخروج",
+      "description": "تسجيل خروج المستخدم"
     },
     "mac-sleep": {
-      "name": "スリープ",
-      "description": "Macをスリープモードにします"
+      "name": "سكون",
+      "description": "وضع Mac في وضع السكون"
     },
     "mac-shutdown": {
-      "name": "シャットダウン",
-      "description": "Macをシャットダウンします"
+      "name": "إيقاف التشغيل",
+      "description": "إيقاف تشغيل Mac"
     },
     "mac-restart": {
-      "name": "再起動",
-      "description": "Macを再起動します"
+      "name": "إعادة التشغيل",
+      "description": "إعادة تشغيل Mac"
     },
     "mac-screenshot-full": {
-      "name": "全画面スクリーンショット",
-      "description": "全画面のスクリーンショットを撮ります"
+      "name": "لقطة شاشة كاملة",
+      "description": "التقاط لقطة شاشة كاملة"
     },
     "mac-screenshot-selection": {
-      "name": "選択範囲スクリーンショット",
-      "description": "選択範囲のスクリーンショットを撮ります"
+      "name": "لقطة شاشة للتحديد",
+      "description": "التقاط لقطة شاشة للتحديد"
     },
     "mac-screenshot-window": {
-      "name": "ウィンドウスクリーンショット",
-      "description": "ウィンドウのスクリーンショットを撮ります"
+      "name": "لقطة شاشة للنافذة",
+      "description": "التقاط لقطة شاشة للنافذة"
     },
     "mac-clipboard-manager": {
-      "name": "クリップボードマネージャー",
-      "description": "クリップボードマネージャーを開きます"
+      "name": "مدير الحافظة",
+      "description": "فتح مدير الحافظة"
     },
     "mac-character-viewer": {
-      "name": "文字ビューアー",
-      "description": "文字ビューアーを開きます"
+      "name": "عارض الأحرف",
+      "description": "فتح عارض الأحرف"
     },
     "mac-emoji-picker": {
-      "name": "絵文字ピッカー",
-      "description": "絵文字ピッカーを開きます"
+      "name": "منتقي الرموز التعبيرية",
+      "description": "فتح منتقي الرموز التعبيرية"
     },
     "mac-activity-monitor": {
-      "name": "アクティビティモニター",
-      "description": "アクティビティモニターを開きます"
+      "name": "مراقب النشاط",
+      "description": "فتح مراقب النشاط"
     },
     "mac-terminal": {
-      "name": "ターミナル",
-      "description": "ターミナルを開きます"
+      "name": "Terminal",
+      "description": "فتح Terminal"
     },
     "mac-disk-utility": {
-      "name": "ディスクユーティリティ",
-      "description": "ディスクユーティリティを開きます"
+      "name": "أداة القرص",
+      "description": "فتح أداة القرص"
     },
     "excel-bold": {
-      "name": "太字",
-      "description": "選択したテキストを太字にします"
+      "name": "غامق",
+      "description": "جعل النص المحدد غامقاً"
     },
     "excel-italic": {
-      "name": "斜体",
-      "description": "選択したテキストを斜体にします"
+      "name": "مائل",
+      "description": "جعل النص المحدد مائلاً"
     },
     "excel-underline": {
-      "name": "下線",
-      "description": "選択したテキストに下線を引きます"
+      "name": "تسطير",
+      "description": "وضع خط تحت النص المحدد"
     },
     "excel-merge-cells": {
-      "name": "セル結合",
-      "description": "選択したセルを1つに結合します"
+      "name": "دمج الخلايا",
+      "description": "دمج الخلايا المحددة في واحدة"
     },
     "excel-center-align": {
-      "name": "中央揃え",
-      "description": "セルの内容を中央揃えにします"
+      "name": "محاذاة للوسط",
+      "description": "محاذاة محتوى الخلية للوسط"
     },
     "excel-go-to-cell": {
-      "name": "セル移動",
-      "description": "特定のセルに直接移動します"
+      "name": "الانتقال إلى خلية",
+      "description": "الانتقال مباشرة إلى خلية محددة"
     },
     "excel-find-replace": {
-      "name": "検索と置換",
-      "description": "テキストを検索して置換します"
+      "name": "بحث واستبدال",
+      "description": "البحث عن نص واستبداله"
     },
     "excel-insert-row": {
-      "name": "行挿入",
-      "description": "選択した行の上に行を挿入します"
+      "name": "إدراج صف",
+      "description": "إدراج صف فوق الصف المحدد"
     },
     "excel-insert-column": {
-      "name": "列挿入",
-      "description": "選択した列の左に列を挿入します"
+      "name": "إدراج عمود",
+      "description": "إدراج عمود على يسار العمود المحدد"
     },
     "excel-delete-row": {
-      "name": "行削除",
-      "description": "選択した行を削除します"
+      "name": "حذف صف",
+      "description": "حذف الصف المحدد"
     },
     "excel-delete-column": {
-      "name": "列削除",
-      "description": "選択した列を削除します"
+      "name": "حذف عمود",
+      "description": "حذف العمود المحدد"
     },
     "excel-auto-sum": {
-      "name": "オートSUM",
-      "description": "選択した範囲の合計を自動計算します"
+      "name": "جمع تلقائي",
+      "description": "حساب مجموع النطاق المحدد تلقائياً"
     },
     "excel-format-cells": {
-      "name": "セルの書式設定",
-      "description": "セルの書式設定ダイアログを開きます"
+      "name": "تنسيق الخلايا",
+      "description": "فتح مربع حوار تنسيق الخلايا"
     },
     "excel-chart": {
-      "name": "グラフ挿入",
-      "description": "選択したデータからグラフを作成します"
+      "name": "إدراج مخطط",
+      "description": "إنشاء مخطط من البيانات المحددة"
     },
     "excel-freeze-panes": {
-      "name": "ウィンドウ枠の固定",
-      "description": "選択したセルより上と左の枠を固定します"
+      "name": "تجميد الأجزاء",
+      "description": "تجميد الأجزاء أعلى ويسار الخلية المحددة"
     },
     "excel-insert-function": {
-      "name": "関数の挿入",
-      "description": "関数の挿入ダイアログを開きます"
+      "name": "إدراج دالة",
+      "description": "فتح مربع حوار إدراج الدالة"
     },
     "excel-auto-calculate": {
-      "name": "自動計算",
-      "description": "ワークシートを再計算します"
+      "name": "حساب تلقائي",
+      "description": "إعادة حساب ورقة العمل"
     },
     "excel-absolute-reference": {
-      "name": "絶対参照",
-      "description": "セル参照を絶対参照に切り替えます"
+      "name": "مرجع مطلق",
+      "description": "تبديل مرجع الخلية إلى مطلق"
     },
     "excel-fill-down": {
-      "name": "下方向にコピー",
-      "description": "選択したセルを下方向にコピーします"
+      "name": "ملء لأسفل",
+      "description": "نسخ الخلايا المحددة لأسفل"
     },
     "excel-fill-right": {
-      "name": "右方向にコピー",
-      "description": "選択したセルを右方向にコピーします"
+      "name": "ملء لليمين",
+      "description": "نسخ الخلايا المحددة لليمين"
     },
     "excel-fill-series": {
-      "name": "連続データの作成",
-      "description": "連続データを作成します"
+      "name": "ملء متسلسل",
+      "description": "إنشاء بيانات متسلسلة"
     },
     "excel-data-validation": {
-      "name": "データの入力規則",
-      "description": "データの入力規則ダイアログを開きます"
+      "name": "التحقق من صحة البيانات",
+      "description": "فتح مربع حوار التحقق من صحة البيانات"
     },
     "excel-conditional-formatting": {
-      "name": "条件付き書式",
-      "description": "条件付き書式を適用します"
+      "name": "تنسيق شرطي",
+      "description": "تطبيق تنسيق شرطي"
     },
     "excel-remove-duplicates": {
-      "name": "重複の削除",
-      "description": "重複するデータを削除します"
+      "name": "إزالة التكرارات",
+      "description": "حذف البيانات المكررة"
     },
     "excel-sort-ascending": {
-      "name": "昇順で並べ替え",
-      "description": "選択した範囲を昇順で並べ替えます"
+      "name": "ترتيب تصاعدي",
+      "description": "ترتيب النطاق المحدد تصاعدياً"
     },
     "excel-sort-descending": {
-      "name": "降順で並べ替え",
-      "description": "選択した範囲を降順で並べ替えます"
+      "name": "ترتيب تنازلي",
+      "description": "ترتيب النطاق المحدد تنازلياً"
     },
     "excel-filter": {
-      "name": "フィルター",
-      "description": "フィルターを適用/解除します"
+      "name": "تصفية",
+      "description": "تطبيق أو إزالة التصفية"
     },
     "excel-pivot-table": {
-      "name": "ピボットテーブル",
-      "description": "ピボットテーブルを作成します"
+      "name": "جدول محوري",
+      "description": "إنشاء جدول محوري"
     },
     "excel-chart-wizard": {
-      "name": "グラフウィザード",
-      "description": "グラフウィザードを開きます"
+      "name": "معالج المخطط",
+      "description": "فتح معالج المخطط"
     },
     "excel-insert-table": {
-      "name": "テーブル挿入",
-      "description": "テーブルを挿入します"
+      "name": "إدراج جدول",
+      "description": "إدراج جدول"
     },
     "excel-name-manager": {
-      "name": "名前の管理",
-      "description": "名前の管理ダイアログを開きます"
+      "name": "مدير الأسماء",
+      "description": "فتح مربع حوار مدير الأسماء"
     },
     "excel-go-to-special": {
-      "name": "セルの選択",
-      "description": "特別なセルを選択します"
+      "name": "الانتقال إلى خاص",
+      "description": "تحديد خلايا خاصة"
     },
     "excel-hide-columns": {
-      "name": "列を非表示",
-      "description": "選択した列を非表示にします"
+      "name": "إخفاء الأعمدة",
+      "description": "إخفاء الأعمدة المحددة"
     },
     "excel-hide-rows": {
-      "name": "行を非表示",
-      "description": "選択した行を非表示にします"
+      "name": "إخفاء الصفوف",
+      "description": "إخفاء الصفوف المحددة"
     },
     "excel-unhide-columns": {
-      "name": "列の表示",
-      "description": "非表示の列を表示します"
+      "name": "إظهار الأعمدة",
+      "description": "إظهار الأعمدة المخفية"
     },
     "excel-unhide-rows": {
-      "name": "行の表示",
-      "description": "非表示の行を表示します"
+      "name": "إظهار الصفوف",
+      "description": "إظهار الصفوف المخفية"
     },
     "excel-group-columns": {
-      "name": "列のグループ化",
-      "description": "選択した列をグループ化します"
+      "name": "تجميع الأعمدة",
+      "description": "تجميع الأعمدة المحددة"
     },
     "excel-group-rows": {
-      "name": "行のグループ化",
-      "description": "選択した行をグループ化します"
+      "name": "تجميع الصفوف",
+      "description": "تجميع الصفوف المحددة"
     },
     "excel-ungroup": {
-      "name": "グループ解除",
-      "description": "グループ化を解除します"
+      "name": "فك التجميع",
+      "description": "فك تجميع العناصر المجمعة"
     },
     "excel-subtotal": {
-      "name": "小計",
-      "description": "小計を挿入します"
+      "name": "المجموع الفرعي",
+      "description": "إدراج المجاميع الفرعية"
     },
     "excel-outline": {
-      "name": "アウトライン",
-      "description": "アウトラインを表示/非表示にします"
+      "name": "المخطط التفصيلي",
+      "description": "إظهار أو إخفاء المخطط التفصيلي"
     },
     "excel-data-table": {
-      "name": "データテーブル",
-      "description": "データテーブルを作成します"
+      "name": "جدول البيانات",
+      "description": "إنشاء جدول بيانات"
     },
     "excel-scenario-manager": {
-      "name": "シナリオマネージャー",
-      "description": "シナリオマネージャーを開きます"
+      "name": "مدير السيناريوهات",
+      "description": "فتح مدير السيناريوهات"
     },
     "excel-goal-seek": {
-      "name": "ゴールシーク",
-      "description": "ゴールシークを実行します"
+      "name": "البحث عن الهدف",
+      "description": "تشغيل البحث عن الهدف"
     },
     "excel-solver": {
-      "name": "ソルバー",
-      "description": "ソルバーを開きます"
+      "name": "الحلال",
+      "description": "فتح الحلال"
     },
     "excel-data-analysis": {
-      "name": "データ分析",
-      "description": "データ分析ツールを開きます"
+      "name": "تحليل البيانات",
+      "description": "فتح أدوات تحليل البيانات"
     },
     "excel-macro-recorder": {
-      "name": "マクロ記録",
-      "description": "マクロの記録を開始/停止します"
+      "name": "مسجل الماكرو",
+      "description": "بدء/إيقاف تسجيل الماكرو"
     },
     "excel-visual-basic": {
-      "name": "Visual Basic Editor",
-      "description": "Visual Basic Editorを開きます"
+      "name": "محرر Visual Basic",
+      "description": "فتح محرر Visual Basic"
     },
     "excel-add-ins": {
-      "name": "アドイン",
-      "description": "アドインを管理します"
+      "name": "الوظائف الإضافية",
+      "description": "إدارة الوظائف الإضافية"
     },
     "excel-options": {
-      "name": "オプション",
-      "description": "Excelのオプションを開きます"
+      "name": "خيارات",
+      "description": "فتح خيارات Excel"
     },
     "word-bold": {
-      "name": "太字",
-      "description": "選択したテキストを太字にします"
+      "name": "غامق",
+      "description": "جعل النص المحدد غامقاً"
     },
     "word-italic": {
-      "name": "斜体",
-      "description": "選択したテキストを斜体にします"
+      "name": "مائل",
+      "description": "جعل النص المحدد مائلاً"
     },
     "word-underline": {
-      "name": "下線",
-      "description": "選択したテキストに下線を引きます"
+      "name": "تسطير",
+      "description": "وضع خط تحت النص المحدد"
     },
     "word-center-align": {
-      "name": "中央揃え",
-      "description": "段落を中央揃えにします"
+      "name": "محاذاة للوسط",
+      "description": "محاذاة الفقرة للوسط"
     },
     "word-left-align": {
-      "name": "左揃え",
-      "description": "段落を左揃えにします"
+      "name": "محاذاة لليسار",
+      "description": "محاذاة الفقرة لليسار"
     },
     "word-right-align": {
-      "name": "右揃え",
-      "description": "段落を右揃えにします"
+      "name": "محاذاة لليمين",
+      "description": "محاذاة الفقرة لليمين"
     },
     "word-justify": {
-      "name": "両端揃え",
-      "description": "段落を両端揃えにします"
+      "name": "ضبط",
+      "description": "ضبط الفقرة"
     },
     "word-find-replace": {
-      "name": "検索と置換",
-      "description": "テキストを検索して置換します"
+      "name": "بحث واستبدال",
+      "description": "البحث عن نص واستبداله"
     },
     "word-spell-check": {
-      "name": "スペルチェック",
-      "description": "スペルチェックを実行します"
+      "name": "التدقيق الإملائي",
+      "description": "تشغيل التدقيق الإملائي"
     },
     "word-insert-table": {
-      "name": "表挿入",
-      "description": "表を挿入します"
+      "name": "إدراج جدول",
+      "description": "إدراج جدول"
     },
     "word-insert-page-break": {
-      "name": "改ページ",
-      "description": "改ページを挿入します"
+      "name": "فاصل صفحات",
+      "description": "إدراج فاصل صفحات"
     },
     "word-insert-hyperlink": {
-      "name": "ハイパーリンク挿入",
-      "description": "ハイパーリンクを挿入します"
+      "name": "إدراج ارتباط تشعبي",
+      "description": "إدراج ارتباط تشعبي"
     },
     "word-insert-image": {
-      "name": "画像挿入",
-      "description": "画像を挿入します"
+      "name": "إدراج صورة",
+      "description": "إدراج صورة"
     },
     "word-word-count": {
-      "name": "文字数カウント",
-      "description": "文字数をカウントします"
+      "name": "عدد الكلمات",
+      "description": "حساب عدد الكلمات"
     },
     "word-print-preview": {
-      "name": "印刷プレビュー",
-      "description": "印刷プレビューを表示します"
+      "name": "معاينة قبل الطباعة",
+      "description": "عرض معاينة قبل الطباعة"
     },
     "word-page-break": {
-      "name": "改ページ挿入",
-      "description": "改ページを挿入します"
+      "name": "إدراج فاصل صفحات",
+      "description": "إدراج فاصل صفحات"
     },
     "word-column-break": {
-      "name": "段区切り",
-      "description": "段区切りを挿入します"
+      "name": "فاصل أعمدة",
+      "description": "إدراج فاصل أعمدة"
     },
     "word-line-break": {
-      "name": "改行",
-      "description": "改行を挿入します"
+      "name": "فاصل أسطر",
+      "description": "إدراج فاصل أسطر"
     },
     "word-non-breaking-space": {
-      "name": "改行しないスペース",
-      "description": "改行しないスペースを挿入します"
+      "name": "مسافة بدون فاصل",
+      "description": "إدراج مسافة بدون فاصل"
     },
     "word-non-breaking-hyphen": {
-      "name": "改行しないハイフン",
-      "description": "改行しないハイフンを挿入します"
+      "name": "واصلة بدون فاصل",
+      "description": "إدراج واصلة بدون فاصل"
     },
     "word-soft-hyphen": {
-      "name": "ソフトハイフン",
-      "description": "ソフトハイフンを挿入します"
+      "name": "واصلة ناعمة",
+      "description": "إدراج واصلة ناعمة"
     },
     "word-em-dash": {
-      "name": "長いダッシュ",
-      "description": "長いダッシュを挿入します"
+      "name": "شرطة طويلة",
+      "description": "إدراج شرطة طويلة"
     },
     "word-en-dash": {
-      "name": "短いダッシュ",
-      "description": "短いダッシュを挿入します"
+      "name": "شرطة قصيرة",
+      "description": "إدراج شرطة قصيرة"
     },
     "word-ellipsis": {
-      "name": "省略記号",
-      "description": "省略記号を挿入します"
+      "name": "علامة حذف",
+      "description": "إدراج علامة حذف"
     },
     "word-copyright": {
-      "name": "著作権記号",
-      "description": "著作権記号を挿入します"
+      "name": "رمز حقوق النشر",
+      "description": "إدراج رمز حقوق النشر"
     },
     "word-trademark": {
-      "name": "商標記号",
-      "description": "商標記号を挿入します"
+      "name": "رمز العلامة التجارية",
+      "description": "إدراج رمز العلامة التجارية"
     },
     "word-registered": {
-      "name": "登録商標記号",
-      "description": "登録商標記号を挿入します"
+      "name": "رمز العلامة المسجلة",
+      "description": "إدراج رمز العلامة المسجلة"
     },
     "word-degree": {
-      "name": "度記号",
-      "description": "度記号を挿入します"
+      "name": "رمز الدرجة",
+      "description": "إدراج رمز الدرجة"
     },
     "word-plus-minus": {
-      "name": "プラスマイナス記号",
-      "description": "プラスマイナス記号を挿入します"
+      "name": "رمز زائد ناقص",
+      "description": "إدراج رمز زائد ناقص"
     },
     "word-section-break": {
-      "name": "セクション区切り",
-      "description": "セクション区切りを挿入します"
+      "name": "فاصل مقطعي",
+      "description": "إدراج فاصل مقطعي"
     },
     "word-page-numbers": {
-      "name": "ページ番号",
-      "description": "ページ番号を挿入します"
+      "name": "أرقام الصفحات",
+      "description": "إدراج أرقام الصفحات"
     },
     "word-date-time": {
-      "name": "日付と時刻",
-      "description": "日付と時刻を挿入します"
+      "name": "التاريخ والوقت",
+      "description": "إدراج التاريخ والوقت"
     },
     "ppt-bold": {
-      "name": "太字",
-      "description": "選択したテキストを太字にします"
+      "name": "غامق",
+      "description": "جعل النص المحدد غامقاً"
     },
     "ppt-italic": {
-      "name": "斜体",
-      "description": "選択したテキストを斜体にします"
+      "name": "مائل",
+      "description": "جعل النص المحدد مائلاً"
     },
     "ppt-underline": {
-      "name": "下線",
-      "description": "選択したテキストに下線を引きます"
+      "name": "تسطير",
+      "description": "وضع خط تحت النص المحدد"
     },
     "ppt-center-align": {
-      "name": "中央揃え",
-      "description": "テキストを中央揃えにします"
+      "name": "محاذاة للوسط",
+      "description": "محاذاة النص للوسط"
     },
     "ppt-new-slide": {
-      "name": "新しいスライド",
-      "description": "新しいスライドを挿入します"
+      "name": "شريحة جديدة",
+      "description": "إدراج شريحة جديدة"
     },
     "ppt-duplicate-slide": {
-      "name": "スライド複製",
-      "description": "現在のスライドを複製します"
+      "name": "تكرار الشريحة",
+      "description": "تكرار الشريحة الحالية"
     },
     "ppt-slide-show": {
-      "name": "スライドショー開始",
-      "description": "スライドショーを開始します"
+      "name": "بدء عرض الشرائح",
+      "description": "بدء عرض الشرائح"
     },
     "ppt-slide-show-from-current": {
-      "name": "現在のスライドから開始",
-      "description": "現在のスライドからスライドショーを開始します"
+      "name": "البدء من الشريحة الحالية",
+      "description": "بدء عرض الشرائح من الشريحة الحالية"
     },
     "ppt-insert-image": {
-      "name": "画像挿入",
-      "description": "画像を挿入します"
+      "name": "إدراج صورة",
+      "description": "إدراج صورة"
     },
     "ppt-insert-shape": {
-      "name": "図形挿入",
-      "description": "図形を挿入します"
+      "name": "إدراج شكل",
+      "description": "إدراج شكل"
     },
     "ppt-insert-text-box": {
-      "name": "テキストボックス挿入",
-      "description": "テキストボックスを挿入します"
+      "name": "إدراج مربع نص",
+      "description": "إدراج مربع نص"
     },
     "ppt-group-objects": {
-      "name": "オブジェクトグループ化",
-      "description": "選択したオブジェクトをグループ化します"
+      "name": "تجميع الكائنات",
+      "description": "تجميع الكائنات المحددة"
     },
     "ppt-ungroup-objects": {
-      "name": "グループ解除",
-      "description": "グループ化されたオブジェクトを解除します"
+      "name": "فك تجميع الكائنات",
+      "description": "فك تجميع الكائنات المجمعة"
     },
     "ppt-copy-format": {
-      "name": "書式のコピー",
-      "description": "選択したオブジェクトの書式をコピーします"
+      "name": "نسخ التنسيق",
+      "description": "نسخ تنسيق الكائن المحدد"
     },
     "ppt-paste-format": {
-      "name": "書式の貼り付け",
-      "description": "コピーした書式を貼り付けます"
+      "name": "لصق التنسيق",
+      "description": "لصق التنسيق المنسوخ"
     },
     "ppt-new-presentation": {
-      "name": "新しいプレゼンテーション",
-      "description": "新しいプレゼンテーションを作成します"
+      "name": "عرض تقديمي جديد",
+      "description": "إنشاء عرض تقديمي جديد"
     },
     "ppt-open-presentation": {
-      "name": "プレゼンテーションを開く",
-      "description": "既存のプレゼンテーションを開きます"
+      "name": "فتح عرض تقديمي",
+      "description": "فتح عرض تقديمي موجود"
     },
     "ppt-save-presentation": {
-      "name": "プレゼンテーションを保存",
-      "description": "プレゼンテーションを保存します"
+      "name": "حفظ العرض التقديمي",
+      "description": "حفظ العرض التقديمي"
     },
     "ppt-save-as": {
-      "name": "名前を付けて保存",
-      "description": "プレゼンテーションを別名で保存します"
+      "name": "حفظ باسم",
+      "description": "حفظ العرض التقديمي باسم مختلف"
     },
     "ppt-print": {
       "name": "طباعة",
-      "description": "プレゼンテーションを印刷します"
+      "description": "طباعة العرض التقديمي"
     },
     "ppt-close-presentation": {
-      "name": "プレゼンテーションを閉じる",
-      "description": "現在のプレゼンテーションを閉じます"
+      "name": "إغلاق العرض التقديمي",
+      "description": "إغلاق العرض التقديمي الحالي"
     },
     "ppt-exit-powerpoint": {
-      "name": "PowerPointを終了",
-      "description": "PowerPointを終了します"
+      "name": "إنهاء PowerPoint",
+      "description": "إنهاء PowerPoint"
     },
     "ppt-undo": {
       "name": "تراجع",
@@ -702,7 +702,7 @@
     },
     "ppt-redo": {
       "name": "إعادة",
-      "description": "إعادة الإجراء الذي تم التراجع عنه"
+      "description": "إعادة الإجراء المتراجع عنه"
     },
     "ppt-cut": {
       "name": "قص",
@@ -725,100 +725,100 @@
       "description": "البحث عن نص"
     },
     "ppt-replace": {
-      "name": "置換",
-      "description": "テキストを検索して置換します"
+      "name": "استبدال",
+      "description": "البحث عن نص واستبداله"
     },
     "ppt-delete": {
       "name": "حذف",
-      "description": "選択した項目を削除します"
+      "description": "حذف العنصر المحدد"
     },
     "ppt-duplicate-slide-copy": {
-      "name": "スライド複製",
-      "description": "現在のスライドを複製します"
+      "name": "تكرار الشريحة",
+      "description": "تكرار الشريحة الحالية"
     },
     "ppt-move-slide-up": {
-      "name": "スライドを上に移動",
-      "description": "選択したスライドを上に移動します"
+      "name": "نقل الشريحة لأعلى",
+      "description": "نقل الشريحة المحددة لأعلى"
     },
     "ppt-move-slide-down": {
-      "name": "スライドを下に移動",
-      "description": "選択したスライドを下に移動します"
+      "name": "نقل الشريحة لأسفل",
+      "description": "نقل الشريحة المحددة لأسفل"
     },
     "ppt-zoom-in": {
-      "name": "ズームイン",
-      "description": "表示を拡大します"
+      "name": "تكبير",
+      "description": "تكبير العرض"
     },
     "ppt-zoom-out": {
-      "name": "ズームアウト",
-      "description": "表示を縮小します"
+      "name": "تصغير",
+      "description": "تصغير العرض"
     },
     "ppt-fit-to-window": {
-      "name": "ウィンドウに合わせる",
-      "description": "スライドをウィンドウに合わせて表示します"
+      "name": "ملاءمة للنافذة",
+      "description": "ملاءمة الشريحة للنافذة"
     },
     "ppt-normal-view": {
-      "name": "標準表示",
-      "description": "標準表示に切り替えます"
+      "name": "عرض عادي",
+      "description": "التبديل إلى العرض العادي"
     },
     "ppt-slide-sorter-view": {
-      "name": "スライド一覧表示",
-      "description": "スライド一覧表示に切り替えます"
+      "name": "عرض فارز الشرائح",
+      "description": "التبديل إلى عرض فارز الشرائح"
     },
     "ppt-notes-view": {
-      "name": "ノート表示",
-      "description": "ノート表示に切り替えます"
+      "name": "عرض الملاحظات",
+      "description": "التبديل إلى عرض الملاحظات"
     },
     "ppt-master-view": {
-      "name": "マスター表示",
-      "description": "マスター表示に切り替えます"
+      "name": "عرض الشريحة الرئيسية",
+      "description": "التبديل إلى عرض الشريحة الرئيسية"
     },
     "ppt-ruler": {
-      "name": "ルーラー",
-      "description": "ルーラーを表示/非表示にします"
+      "name": "المسطرة",
+      "description": "إظهار أو إخفاء المسطرة"
     },
     "ppt-grid": {
-      "name": "グリッド",
-      "description": "グリッドを表示/非表示にします"
+      "name": "الشبكة",
+      "description": "إظهار أو إخفاء الشبكة"
     },
     "ppt-guides": {
-      "name": "ガイド",
-      "description": "ガイドを表示/非表示にします"
+      "name": "الأدلة",
+      "description": "إظهار أو إخفاء الأدلة"
     },
     "ppt-slide-master": {
-      "name": "スライドマスター",
-      "description": "スライドマスターを開きます"
+      "name": "الشريحة الرئيسية",
+      "description": "فتح الشريحة الرئيسية"
     },
     "ppt-handout-master": {
-      "name": "配布資料マスター",
-      "description": "配布資料マスターを開きます"
+      "name": "النشرات الرئيسية",
+      "description": "فتح النشرات الرئيسية"
     },
     "ppt-notes-master": {
-      "name": "ノートマスター",
-      "description": "ノートマスターを開きます"
+      "name": "الملاحظات الرئيسية",
+      "description": "فتح الملاحظات الرئيسية"
     },
     "docs-bold": {
-      "name": "太字",
-      "description": "選択したテキストを太字にします"
+      "name": "غامق",
+      "description": "جعل النص المحدد غامقاً"
     },
     "docs-italic": {
-      "name": "斜体",
-      "description": "選択したテキストを斜体にします"
+      "name": "مائل",
+      "description": "جعل النص المحدد مائلاً"
     },
     "docs-underline": {
-      "name": "下線",
-      "description": "選択したテキストに下線を引きます"
+      "name": "تسطير",
+      "description": "وضع خط تحت النص المحدد"
     },
     "docs-copy": {
       "name": "نسخ",
-      "description": "選択したテキストをコピーします"
+      "description": "نسخ النص المحدد"
     },
     "docs-paste": {
       "name": "لصق",
-      "description": "コピーしたテキストを貼り付けます"
+      "description": "لصق النص المنسوخ"
     },
     "docs-cut": {
       "name": "قص",
-      "description": "選択したテキストを切り取ります"
+      "description": "قص النص المحدد"
     },
     "docs-undo": {
       "name": "تراجع",
@@ -826,115 +826,115 @@
     },
     "docs-redo": {
       "name": "إعادة",
-      "description": "إعادة الإجراء الذي تم التراجع عنه"
+      "description": "إعادة الإجراء المتراجع عنه"
     },
     "docs-find": {
       "name": "بحث",
-      "description": "文書内でテキストを検索します"
+      "description": "البحث عن نص في المستند"
     },
     "docs-replace": {
-      "name": "置換",
-      "description": "テキストを検索して置換します"
+      "name": "استبدال",
+      "description": "البحث عن نص واستبداله"
     },
     "docs-select-all": {
       "name": "تحديد الكل",
-      "description": "文書全体を選択します"
+      "description": "تحديد المستند بالكامل"
     },
     "docs-save": {
       "name": "حفظ",
-      "description": "文書を保存します"
+      "description": "حفظ المستند"
     },
     "docs-new": {
-      "name": "新規文書",
-      "description": "新しい文書を作成します"
+      "name": "مستند جديد",
+      "description": "إنشاء مستند جديد"
     },
     "docs-open": {
       "name": "فتح",
-      "description": "既存の文書を開きます"
+      "description": "فتح مستند موجود"
     },
     "docs-print": {
       "name": "طباعة",
-      "description": "文書を印刷します"
+      "description": "طباعة المستند"
     },
     "docs-insert-link": {
-      "name": "リンク挿入",
-      "description": "ハイパーリンクを挿入します"
+      "name": "إدراج رابط",
+      "description": "إدراج ارتباط تشعبي"
     },
     "docs-insert-comment": {
-      "name": "コメント挿入",
-      "description": "コメントを挿入します"
+      "name": "إدراج تعليق",
+      "description": "إدراج تعليق"
     },
     "docs-insert-table": {
-      "name": "表挿入",
-      "description": "表を挿入します"
+      "name": "إدراج جدول",
+      "description": "إدراج جدول"
     },
     "docs-insert-image": {
-      "name": "画像挿入",
-      "description": "画像を挿入します"
+      "name": "إدراج صورة",
+      "description": "إدراج صورة"
     },
     "docs-align-left": {
-      "name": "左揃え",
-      "description": "テキストを左揃えにします"
+      "name": "محاذاة لليسار",
+      "description": "محاذاة النص لليسار"
     },
     "docs-align-center": {
-      "name": "中央揃え",
-      "description": "テキストを中央揃えにします"
+      "name": "محاذاة للوسط",
+      "description": "محاذاة النص للوسط"
     },
     "docs-align-right": {
-      "name": "右揃え",
-      "description": "テキストを右揃えにします"
+      "name": "محاذاة لليمين",
+      "description": "محاذاة النص لليمين"
     },
     "docs-justify": {
-      "name": "両端揃え",
-      "description": "テキストを両端揃えにします"
+      "name": "ضبط",
+      "description": "ضبط النص"
     },
     "docs-bullet-list": {
-      "name": "箇条書き",
-      "description": "箇条書きリストを作成します"
+      "name": "قائمة نقطية",
+      "description": "إنشاء قائمة نقطية"
     },
     "docs-numbered-list": {
-      "name": "番号付きリスト",
-      "description": "番号付きリストを作成します"
+      "name": "قائمة مرقمة",
+      "description": "إنشاء قائمة مرقمة"
     },
     "docs-heading-1": {
-      "name": "見出し1",
-      "description": "見出し1スタイルを適用します"
+      "name": "عنوان 1",
+      "description": "تطبيق نمط عنوان 1"
     },
     "docs-heading-2": {
-      "name": "見出し2",
-      "description": "見出し2スタイルを適用します"
+      "name": "عنوان 2",
+      "description": "تطبيق نمط عنوان 2"
     },
     "docs-heading-3": {
-      "name": "見出し3",
-      "description": "見出し3スタイルを適用します"
+      "name": "عنوان 3",
+      "description": "تطبيق نمط عنوان 3"
     },
     "docs-normal-text": {
-      "name": "標準テキスト",
-      "description": "標準テキストスタイルを適用します"
+      "name": "نص عادي",
+      "description": "تطبيق نمط النص العادي"
     },
     "sheets-bold": {
-      "name": "太字",
-      "description": "選択したセルを太字にします"
+      "name": "غامق",
+      "description": "جعل الخلايا المحددة غامقة"
     },
     "sheets-italic": {
-      "name": "斜体",
-      "description": "選択したセルを斜体にします"
+      "name": "مائل",
+      "description": "جعل الخلايا المحددة مائلة"
     },
     "sheets-underline": {
-      "name": "下線",
-      "description": "選択したセルに下線を引きます"
+      "name": "تسطير",
+      "description": "وضع خط تحت الخلايا المحددة"
     },
     "sheets-copy": {
       "name": "نسخ",
-      "description": "選択したセルをコピーします"
+      "description": "نسخ الخلايا المحددة"
     },
     "sheets-paste": {
       "name": "لصق",
-      "description": "コピーしたセルを貼り付けます"
+      "description": "لصق الخلايا المنسوخة"
     },
     "sheets-cut": {
       "name": "قص",
-      "description": "選択したセルを切り取ります"
+      "description": "قص الخلايا المحددة"
     },
     "sheets-undo": {
       "name": "تراجع",
@@ -942,131 +942,131 @@
     },
     "sheets-redo": {
       "name": "إعادة",
-      "description": "إعادة الإجراء الذي تم التراجع عنه"
+      "description": "إعادة الإجراء المتراجع عنه"
     },
     "sheets-find": {
       "name": "بحث",
-      "description": "スプレッドシート内でテキストを検索します"
+      "description": "البحث عن نص في جدول البيانات"
     },
     "sheets-replace": {
-      "name": "置換",
-      "description": "テキストを検索して置換します"
+      "name": "استبدال",
+      "description": "البحث عن نص واستبداله"
     },
     "sheets-select-all": {
       "name": "تحديد الكل",
-      "description": "スプレッドシート全体を選択します"
+      "description": "تحديد جدول البيانات بالكامل"
     },
     "sheets-save": {
       "name": "حفظ",
-      "description": "スプレッドシートを保存します"
+      "description": "حفظ جدول البيانات"
     },
     "sheets-new": {
-      "name": "新規スプレッドシート",
-      "description": "新しいスプレッドシートを作成します"
+      "name": "جدول بيانات جديد",
+      "description": "إنشاء جدول بيانات جديد"
     },
     "sheets-open": {
       "name": "فتح",
-      "description": "既存のスプレッドシートを開きます"
+      "description": "فتح جدول بيانات موجود"
     },
     "sheets-print": {
       "name": "طباعة",
-      "description": "スプレッドシートを印刷します"
+      "description": "طباعة جدول البيانات"
     },
     "sheets-insert-row": {
-      "name": "行挿入",
-      "description": "選択した行の上に行を挿入します"
+      "name": "إدراج صف",
+      "description": "إدراج صف فوق الصف المحدد"
     },
     "sheets-insert-column": {
-      "name": "列挿入",
-      "description": "選択した列の左に列を挿入します"
+      "name": "إدراج عمود",
+      "description": "إدراج عمود على يسار العمود المحدد"
     },
     "sheets-delete-row": {
-      "name": "行削除",
-      "description": "選択した行を削除します"
+      "name": "حذف صف",
+      "description": "حذف الصف المحدد"
     },
     "sheets-delete-column": {
-      "name": "列削除",
-      "description": "選択した列を削除します"
+      "name": "حذف عمود",
+      "description": "حذف العمود المحدد"
     },
     "sheets-insert-function": {
-      "name": "関数挿入",
-      "description": "関数を挿入します"
+      "name": "إدراج دالة",
+      "description": "إدراج دالة"
     },
     "sheets-autosum": {
-      "name": "オートSUM",
-      "description": "選択した範囲の合計を自動計算します"
+      "name": "جمع تلقائي",
+      "description": "حساب مجموع النطاق المحدد تلقائياً"
     },
     "sheets-fill-down": {
-      "name": "下方向にコピー",
-      "description": "選択したセルの内容を下方向にコピーします"
+      "name": "ملء لأسفل",
+      "description": "نسخ محتوى الخلية المحددة لأسفل"
     },
     "sheets-fill-right": {
-      "name": "右方向にコピー",
-      "description": "選択したセルの内容を右方向にコピーします"
+      "name": "ملء لليمين",
+      "description": "نسخ محتوى الخلية المحددة لليمين"
     },
     "sheets-format-cells": {
-      "name": "セルの書式設定",
-      "description": "セルの書式設定ダイアログを開きます"
+      "name": "تنسيق الخلايا",
+      "description": "فتح مربع حوار تنسيق الخلايا"
     },
     "sheets-align-left": {
-      "name": "左揃え",
-      "description": "セルの内容を左揃えにします"
+      "name": "محاذاة لليسار",
+      "description": "محاذاة محتوى الخلية لليسار"
     },
     "sheets-align-center": {
-      "name": "中央揃え",
-      "description": "セルの内容を中央揃えにします"
+      "name": "محاذاة للوسط",
+      "description": "محاذاة محتوى الخلية للوسط"
     },
     "sheets-align-right": {
-      "name": "右揃え",
-      "description": "セルの内容を右揃えにします"
+      "name": "محاذاة لليمين",
+      "description": "محاذاة محتوى الخلية لليمين"
     },
     "sheets-sort-ascending": {
-      "name": "昇順ソート",
-      "description": "選択した範囲を昇順でソートします"
+      "name": "ترتيب تصاعدي",
+      "description": "ترتيب النطاق المحدد تصاعدياً"
     },
     "sheets-sort-descending": {
-      "name": "降順ソート",
-      "description": "選択した範囲を降順でソートします"
+      "name": "ترتيب تنازلي",
+      "description": "ترتيب النطاق المحدد تنازلياً"
     },
     "sheets-filter": {
-      "name": "フィルター",
-      "description": "フィルターを作成または削除します"
+      "name": "تصفية",
+      "description": "إنشاء أو إزالة التصفية"
     },
     "sheets-chart": {
-      "name": "グラフ挿入",
-      "description": "グラフを挿入します"
+      "name": "إدراج مخطط",
+      "description": "إدراج مخطط"
     },
     "sheets-freeze-rows": {
-      "name": "行を固定",
-      "description": "選択した行を固定します"
+      "name": "تجميد الصفوف",
+      "description": "تجميد الصفوف المحددة"
     },
     "sheets-freeze-columns": {
-      "name": "列を固定",
-      "description": "選択した列を固定します"
+      "name": "تجميد الأعمدة",
+      "description": "تجميد الأعمدة المحددة"
     },
     "slides-bold": {
-      "name": "太字",
-      "description": "選択したテキストを太字にします"
+      "name": "غامق",
+      "description": "جعل النص المحدد غامقاً"
     },
     "slides-italic": {
-      "name": "斜体",
-      "description": "選択したテキストを斜体にします"
+      "name": "مائل",
+      "description": "جعل النص المحدد مائلاً"
     },
     "slides-underline": {
-      "name": "下線",
-      "description": "選択したテキストに下線を引きます"
+      "name": "تسطير",
+      "description": "وضع خط تحت النص المحدد"
     },
     "slides-copy": {
       "name": "نسخ",
-      "description": "選択したオブジェクトをコピーします"
+      "description": "نسخ الكائن المحدد"
     },
     "slides-paste": {
       "name": "لصق",
-      "description": "コピーしたオブジェクトを貼り付けます"
+      "description": "لصق الكائن المنسوخ"
     },
     "slides-cut": {
       "name": "قص",
-      "description": "選択したオブジェクトを切り取ります"
+      "description": "قص الكائن المحدد"
     },
     "slides-undo": {
       "name": "تراجع",
@@ -1074,103 +1074,103 @@
     },
     "slides-redo": {
       "name": "إعادة",
-      "description": "إعادة الإجراء الذي تم التراجع عنه"
+      "description": "إعادة الإجراء المتراجع عنه"
     },
     "slides-new-slide": {
-      "name": "新しいスライド",
-      "description": "新しいスライドを挿入します"
+      "name": "شريحة جديدة",
+      "description": "إدراج شريحة جديدة"
     },
     "slides-duplicate-slide": {
-      "name": "スライドを複製",
-      "description": "選択したスライドを複製します"
+      "name": "تكرار الشريحة",
+      "description": "تكرار الشريحة المحددة"
     },
     "slides-delete-slide": {
-      "name": "スライドを削除",
-      "description": "選択したスライドを削除します"
+      "name": "حذف الشريحة",
+      "description": "حذف الشريحة المحددة"
     },
     "slides-insert-text": {
-      "name": "テキストボックス挿入",
-      "description": "テキストボックスを挿入します"
+      "name": "إدراج مربع نص",
+      "description": "إدراج مربع نص"
     },
     "slides-insert-image": {
-      "name": "画像挿入",
-      "description": "画像を挿入します"
+      "name": "إدراج صورة",
+      "description": "إدراج صورة"
     },
     "slides-insert-shape": {
-      "name": "図形挿入",
-      "description": "図形を挿入します"
+      "name": "إدراج شكل",
+      "description": "إدراج شكل"
     },
     "slides-insert-table": {
-      "name": "表挿入",
-      "description": "表を挿入します"
+      "name": "إدراج جدول",
+      "description": "إدراج جدول"
     },
     "slides-insert-chart": {
-      "name": "グラフ挿入",
-      "description": "グラフを挿入します"
+      "name": "إدراج مخطط",
+      "description": "إدراج مخطط"
     },
     "slides-align-left": {
-      "name": "左揃え",
-      "description": "選択したオブジェクトを左揃えにします"
+      "name": "محاذاة لليسار",
+      "description": "محاذاة الكائن المحدد لليسار"
     },
     "slides-align-center": {
-      "name": "中央揃え",
-      "description": "選択したオブジェクトを中央揃えにします"
+      "name": "محاذاة للوسط",
+      "description": "محاذاة الكائن المحدد للوسط"
     },
     "slides-align-right": {
-      "name": "右揃え",
-      "description": "選択したオブジェクトを右揃えにします"
+      "name": "محاذاة لليمين",
+      "description": "محاذاة الكائن المحدد لليمين"
     },
     "slides-present": {
-      "name": "プレゼンテーション開始",
-      "description": "プレゼンテーションを開始します"
+      "name": "بدء العرض التقديمي",
+      "description": "بدء العرض التقديمي"
     },
     "slides-present-from-start": {
-      "name": "最初からプレゼンテーション",
-      "description": "最初のスライドからプレゼンテーションを開始します"
+      "name": "العرض من البداية",
+      "description": "بدء العرض التقديمي من الشريحة الأولى"
     },
     "slides-next-slide": {
-      "name": "次のスライド",
-      "description": "次のスライドに移動します"
+      "name": "الشريحة التالية",
+      "description": "الانتقال إلى الشريحة التالية"
     },
     "slides-previous-slide": {
-      "name": "前のスライド",
-      "description": "前のスライドに移動します"
+      "name": "الشريحة السابقة",
+      "description": "الانتقال إلى الشريحة السابقة"
     },
     "slides-first-slide": {
-      "name": "最初のスライド",
-      "description": "最初のスライドに移動します"
+      "name": "الشريحة الأولى",
+      "description": "الانتقال إلى الشريحة الأولى"
     },
     "slides-last-slide": {
-      "name": "最後のスライド",
-      "description": "最後のスライドに移動します"
+      "name": "الشريحة الأخيرة",
+      "description": "الانتقال إلى الشريحة الأخيرة"
     },
     "slides-zoom-in": {
-      "name": "ズームイン",
-      "description": "スライドを拡大表示します"
+      "name": "تكبير",
+      "description": "تكبير عرض الشريحة"
     },
     "slides-zoom-out": {
-      "name": "ズームアウト",
-      "description": "スライドを縮小表示します"
+      "name": "تصغير",
+      "description": "تصغير عرض الشريحة"
     },
     "slides-fit-to-screen": {
-      "name": "画面に合わせる",
-      "description": "スライドを画面サイズに合わせて表示します"
+      "name": "ملاءمة للشاشة",
+      "description": "ملاءمة الشريحة لحجم الشاشة"
     },
     "slides-save": {
       "name": "حفظ",
-      "description": "プレゼンテーションを保存します"
+      "description": "حفظ العرض التقديمي"
     },
     "slides-new": {
-      "name": "新規プレゼンテーション",
-      "description": "新しいプレゼンテーションを作成します"
+      "name": "عرض تقديمي جديد",
+      "description": "إنشاء عرض تقديمي جديد"
     },
     "slides-open": {
       "name": "فتح",
-      "description": "既存のプレゼンテーションを開きます"
+      "description": "فتح عرض تقديمي موجود"
     },
     "slides-print": {
       "name": "طباعة",
-      "description": "プレゼンテーションを印刷します"
+      "description": "طباعة العرض التقديمي"
     },
     "chrome-new-tab": {
       "name": "علامة تبويب جديدة",
@@ -1181,80 +1181,80 @@
       "description": "إغلاق علامة التبويب الحالية"
     },
     "chrome-reopen-tab": {
-      "name": "閉じたタブを再開",
-      "description": "最近閉じたタブを再開します"
+      "name": "إعادة فتح علامة تبويب مغلقة",
+      "description": "إعادة فتح علامة التبويب المغلقة مؤخراً"
     },
     "chrome-new-window": {
-      "name": "新しいウィンドウ",
-      "description": "新しいウィンドウを開きます"
+      "name": "نافذة جديدة",
+      "description": "فتح نافذة جديدة"
     },
     "chrome-new-incognito": {
-      "name": "シークレットウィンドウ",
-      "description": "シークレットウィンドウを開きます"
+      "name": "نافذة خفية",
+      "description": "فتح نافذة خفية"
     },
     "chrome-bookmarks": {
-      "name": "ブックマーク",
-      "description": "ブックマークマネージャーを開きます"
+      "name": "الإشارات المرجعية",
+      "description": "فتح مدير الإشارات المرجعية"
     },
     "chrome-bookmark-page": {
-      "name": "ページをブックマーク",
-      "description": "現在のページをブックマークします"
+      "name": "وضع إشارة مرجعية للصفحة",
+      "description": "وضع إشارة مرجعية للصفحة الحالية"
     },
     "chrome-history": {
-      "name": "履歴",
-      "description": "履歴ページを開きます"
+      "name": "السجل",
+      "description": "فتح صفحة السجل"
     },
     "chrome-downloads": {
-      "name": "ダウンロード",
-      "description": "ダウンロードページを開きます"
+      "name": "التنزيلات",
+      "description": "فتح صفحة التنزيلات"
     },
     "chrome-address-bar": {
-      "name": "アドレスバーにフォーカス",
-      "description": "アドレスバーにフォーカスを移動します"
+      "name": "التركيز على شريط العنوان",
+      "description": "نقل التركيز إلى شريط العنوان"
     },
     "chrome-search": {
       "name": "بحث",
-      "description": "ページ内でテキストを検索します"
+      "description": "البحث عن نص في الصفحة"
     },
     "chrome-refresh": {
-      "name": "更新",
+      "name": "تحديث",
       "description": "تحديث الصفحة"
     },
     "chrome-force-refresh": {
-      "name": "強制更新",
-      "description": "キャッシュを無視してページを更新します"
+      "name": "تحديث قسري",
+      "description": "تحديث الصفحة متجاهلاً ذاكرة التخزين المؤقت"
     },
     "chrome-back": {
-      "name": "戻る",
-      "description": "前のページに戻ります"
+      "name": "رجوع",
+      "description": "الانتقال إلى الصفحة السابقة"
     },
     "chrome-forward": {
-      "name": "進む",
-      "description": "次のページに進みます"
+      "name": "تقدم",
+      "description": "الانتقال إلى الصفحة التالية"
     },
     "chrome-home": {
-      "name": "ホーム",
-      "description": "ホームページに移動します"
+      "name": "الصفحة الرئيسية",
+      "description": "الانتقال إلى الصفحة الرئيسية"
     },
     "chrome-zoom-in": {
-      "name": "ズームイン",
-      "description": "ページを拡大表示します"
+      "name": "تكبير",
+      "description": "تكبير عرض الصفحة"
     },
     "chrome-zoom-out": {
-      "name": "ズームアウト",
-      "description": "ページを縮小表示します"
+      "name": "تصغير",
+      "description": "تصغير عرض الصفحة"
     },
     "chrome-reset-zoom": {
-      "name": "ズームリセット",
-      "description": "ズームを100%にリセットします"
+      "name": "إعادة تعيين التكبير",
+      "description": "إعادة تعيين التكبير إلى 100%"
     },
     "chrome-devtools": {
-      "name": "開発者ツール",
-      "description": "開発者ツールを開きます"
+      "name": "أدوات المطور",
+      "description": "فتح أدوات المطور"
     },
     "chrome-task-manager": {
-      "name": "タスクマネージャー",
-      "description": "ブラウザのタスクマネージャーを開きます"
+      "name": "مدير المهام",
+      "description": "فتح مدير مهام المتصفح"
     },
     "safari-new-tab": {
       "name": "علامة تبويب جديدة",
@@ -1265,72 +1265,72 @@
       "description": "إغلاق علامة التبويب الحالية"
     },
     "safari-reopen-tab": {
-      "name": "閉じたタブを再開",
-      "description": "最近閉じたタブを再開します"
+      "name": "إعادة فتح علامة تبويب مغلقة",
+      "description": "إعادة فتح علامة التبويب المغلقة مؤخراً"
     },
     "safari-new-window": {
-      "name": "新しいウィンドウ",
-      "description": "新しいウィンドウを開きます"
+      "name": "نافذة جديدة",
+      "description": "فتح نافذة جديدة"
     },
     "safari-new-private": {
-      "name": "プライベートブラウジング",
-      "description": "プライベートブラウジングウィンドウを開きます"
+      "name": "تصفح خاص",
+      "description": "فتح نافذة تصفح خاص"
     },
     "safari-bookmarks": {
-      "name": "ブックマーク",
-      "description": "ブックマークを表示します"
+      "name": "الإشارات المرجعية",
+      "description": "إظهار الإشارات المرجعية"
     },
     "safari-bookmark-page": {
-      "name": "ページをブックマーク",
-      "description": "現在のページをブックマークします"
+      "name": "وضع إشارة مرجعية للصفحة",
+      "description": "وضع إشارة مرجعية للصفحة الحالية"
     },
     "safari-history": {
-      "name": "履歴",
-      "description": "履歴を表示します"
+      "name": "السجل",
+      "description": "إظهار السجل"
     },
     "safari-downloads": {
-      "name": "ダウンロード",
-      "description": "ダウンロードを表示します"
+      "name": "التنزيلات",
+      "description": "إظهار التنزيلات"
     },
     "safari-address-bar": {
-      "name": "アドレスバーにフォーカス",
-      "description": "アドレスバーにフォーカスを移動します"
+      "name": "التركيز على شريط العنوان",
+      "description": "نقل التركيز إلى شريط العنوان"
     },
     "safari-search": {
       "name": "بحث",
-      "description": "ページ内でテキストを検索します"
+      "description": "البحث عن نص في الصفحة"
     },
     "safari-refresh": {
-      "name": "更新",
+      "name": "تحديث",
       "description": "تحديث الصفحة"
     },
     "safari-back": {
-      "name": "戻る",
-      "description": "前のページに戻ります"
+      "name": "رجوع",
+      "description": "الانتقال إلى الصفحة السابقة"
     },
     "safari-forward": {
-      "name": "進む",
-      "description": "次のページに進みます"
+      "name": "تقدم",
+      "description": "الانتقال إلى الصفحة التالية"
     },
     "safari-home": {
-      "name": "ホーム",
-      "description": "ホームページに移動します"
+      "name": "الصفحة الرئيسية",
+      "description": "الانتقال إلى الصفحة الرئيسية"
     },
     "safari-zoom-in": {
-      "name": "ズームイン",
-      "description": "ページを拡大表示します"
+      "name": "تكبير",
+      "description": "تكبير عرض الصفحة"
     },
     "safari-zoom-out": {
-      "name": "ズームアウト",
-      "description": "ページを縮小表示します"
+      "name": "تصغير",
+      "description": "تصغير عرض الصفحة"
     },
     "safari-reset-zoom": {
-      "name": "ズームリセット",
-      "description": "ズームを100%にリセットします"
+      "name": "إعادة تعيين التكبير",
+      "description": "إعادة تعيين التكبير إلى 100%"
     },
     "safari-web-inspector": {
-      "name": "Webインスペクタ",
-      "description": "Webインスペクタを開きます"
+      "name": "مفتش الويب",
+      "description": "فتح مفتش الويب"
     },
     "edge-new-tab": {
       "name": "علامة تبويب جديدة",
@@ -1341,88 +1341,88 @@
       "description": "إغلاق علامة التبويب الحالية"
     },
     "edge-reopen-tab": {
-      "name": "閉じたタブを再開",
-      "description": "最近閉じたタブを再開します"
+      "name": "إعادة فتح علامة تبويب مغلقة",
+      "description": "إعادة فتح علامة التبويب المغلقة مؤخراً"
     },
     "edge-new-window": {
-      "name": "新しいウィンドウ",
-      "description": "新しいウィンドウを開きます"
+      "name": "نافذة جديدة",
+      "description": "فتح نافذة جديدة"
     },
     "edge-new-incognito": {
-      "name": "InPrivateウィンドウ",
-      "description": "InPrivateウィンドウを開きます"
+      "name": "نافذة InPrivate",
+      "description": "فتح نافذة InPrivate"
     },
     "edge-favorites": {
-      "name": "お気に入り",
-      "description": "お気に入りを表示します"
+      "name": "المفضلة",
+      "description": "إظهار المفضلة"
     },
     "edge-add-favorite": {
-      "name": "お気に入りに追加",
-      "description": "現在のページをお気に入りに追加します"
+      "name": "إضافة إلى المفضلة",
+      "description": "إضافة الصفحة الحالية إلى المفضلة"
     },
     "edge-history": {
-      "name": "履歴",
-      "description": "履歴を表示します"
+      "name": "السجل",
+      "description": "إظهار السجل"
     },
     "edge-downloads": {
-      "name": "ダウンロード",
-      "description": "ダウンロードを表示します"
+      "name": "التنزيلات",
+      "description": "إظهار التنزيلات"
     },
     "edge-address-bar": {
-      "name": "アドレスバーにフォーカス",
-      "description": "アドレスバーにフォーカスを移動します"
+      "name": "التركيز على شريط العنوان",
+      "description": "نقل التركيز إلى شريط العنوان"
     },
     "edge-search": {
       "name": "بحث",
-      "description": "ページ内でテキストを検索します"
+      "description": "البحث عن نص في الصفحة"
     },
     "edge-refresh": {
-      "name": "更新",
+      "name": "تحديث",
       "description": "تحديث الصفحة"
     },
     "edge-back": {
-      "name": "戻る",
-      "description": "前のページに戻ります"
+      "name": "رجوع",
+      "description": "الانتقال إلى الصفحة السابقة"
     },
     "edge-forward": {
-      "name": "進む",
-      "description": "次のページに進みます"
+      "name": "تقدم",
+      "description": "الانتقال إلى الصفحة التالية"
     },
     "edge-home": {
-      "name": "ホーム",
-      "description": "ホームページに移動します"
+      "name": "الصفحة الرئيسية",
+      "description": "الانتقال إلى الصفحة الرئيسية"
     },
     "edge-zoom-in": {
-      "name": "ズームイン",
-      "description": "ページを拡大表示します"
+      "name": "تكبير",
+      "description": "تكبير عرض الصفحة"
     },
     "edge-zoom-out": {
-      "name": "ズームアウト",
-      "description": "ページを縮小表示します"
+      "name": "تصغير",
+      "description": "تصغير عرض الصفحة"
     },
     "edge-reset-zoom": {
-      "name": "ズームリセット",
-      "description": "ズームを100%にリセットします"
+      "name": "إعادة تعيين التكبير",
+      "description": "إعادة تعيين التكبير إلى 100%"
     },
     "edge-devtools": {
-      "name": "開発者ツール",
-      "description": "開発者ツールを開きます"
+      "name": "أدوات المطور",
+      "description": "فتح أدوات المطور"
     },
     "photoshop-new": {
-      "name": "新規ドキュメント",
-      "description": "新しいドキュメントを作成します"
+      "name": "مستند جديد",
+      "description": "إنشاء مستند جديد"
     },
     "photoshop-open": {
       "name": "فتح",
-      "description": "既存のファイルを開きます"
+      "description": "فتح ملف موجود"
     },
     "photoshop-save": {
       "name": "حفظ",
-      "description": "ファイルを保存します"
+      "description": "حفظ الملف"
     },
     "photoshop-save-as": {
-      "name": "別名で保存",
-      "description": "ファイルを別名で保存します"
+      "name": "حفظ باسم",
+      "description": "حفظ الملف باسم مختلف"
     },
     "photoshop-undo": {
       "name": "تراجع",
@@ -1430,147 +1430,147 @@
     },
     "photoshop-redo": {
       "name": "إعادة",
-      "description": "إعادة الإجراء الذي تم التراجع عنه"
+      "description": "إعادة الإجراء المتراجع عنه"
     },
     "photoshop-copy": {
       "name": "نسخ",
-      "description": "選択した領域をコピーします"
+      "description": "نسخ المنطقة المحددة"
     },
     "photoshop-paste": {
       "name": "لصق",
-      "description": "コピーした内容を貼り付けます"
+      "description": "لصق المحتوى المنسوخ"
     },
     "photoshop-cut": {
       "name": "قص",
-      "description": "選択した領域を切り取ります"
+      "description": "قص المنطقة المحددة"
     },
     "photoshop-select-all": {
       "name": "تحديد الكل",
-      "description": "レイヤー全体を選択します"
+      "description": "تحديد الطبقة بالكامل"
     },
     "photoshop-deselect": {
-      "name": "選択解除",
-      "description": "選択を解除します"
+      "name": "إلغاء التحديد",
+      "description": "إلغاء التحديد"
     },
     "photoshop-free-transform": {
-      "name": "自由変形",
-      "description": "自由変形ツールを起動します"
+      "name": "تحويل حر",
+      "description": "بدء أداة التحويل الحر"
     },
     "photoshop-zoom-in": {
-      "name": "ズームイン",
-      "description": "画像を拡大表示します"
+      "name": "تكبير",
+      "description": "تكبير عرض الصورة"
     },
     "photoshop-zoom-out": {
-      "name": "ズームアウト",
-      "description": "画像を縮小表示します"
+      "name": "تصغير",
+      "description": "تصغير عرض الصورة"
     },
     "photoshop-fit-to-screen": {
-      "name": "画面に合わせる",
-      "description": "画像を画面サイズに合わせて表示します"
+      "name": "ملاءمة للشاشة",
+      "description": "ملاءمة الصورة لحجم الشاشة"
     },
     "photoshop-actual-size": {
-      "name": "実際のサイズ",
-      "description": "画像を実際のサイズで表示します"
+      "name": "الحجم الفعلي",
+      "description": "عرض الصورة بالحجم الفعلي"
     },
     "photoshop-new-layer": {
-      "name": "新しいレイヤー",
-      "description": "新しいレイヤーを作成します"
+      "name": "طبقة جديدة",
+      "description": "إنشاء طبقة جديدة"
     },
     "photoshop-duplicate-layer": {
-      "name": "レイヤーを複製",
-      "description": "選択したレイヤーを複製します"
+      "name": "تكرار الطبقة",
+      "description": "تكرار الطبقة المحددة"
     },
     "photoshop-merge-layers": {
-      "name": "レイヤーを統合",
-      "description": "選択したレイヤーを統合します"
+      "name": "دمج الطبقات",
+      "description": "دمج الطبقات المحددة"
     },
     "photoshop-flatten-image": {
-      "name": "画像を統合",
-      "description": "すべてのレイヤーを統合します"
+      "name": "تسطيح الصورة",
+      "description": "دمج جميع الطبقات"
     },
     "photoshop-brush-tool": {
-      "name": "ブラシツール",
-      "description": "ブラシツールを選択します"
+      "name": "أداة الفرشاة",
+      "description": "تحديد أداة الفرشاة"
     },
     "photoshop-eraser-tool": {
-      "name": "消しゴムツール",
-      "description": "消しゴムツールを選択します"
+      "name": "أداة الممحاة",
+      "description": "تحديد أداة الممحاة"
     },
     "photoshop-move-tool": {
-      "name": "移動ツール",
-      "description": "移動ツールを選択します"
+      "name": "أداة النقل",
+      "description": "تحديد أداة النقل"
     },
     "photoshop-marquee-tool": {
-      "name": "選択ツール",
-      "description": "選択ツールを選択します"
+      "name": "أداة التحديد",
+      "description": "تحديد أداة التحديد"
     },
     "photoshop-lasso-tool": {
-      "name": "なげなわツール",
-      "description": "なげなわツールを選択します"
+      "name": "أداة اللاسو",
+      "description": "تحديد أداة اللاسو"
     },
     "photoshop-magic-wand": {
-      "name": "自動選択ツール",
-      "description": "自動選択ツールを選択します"
+      "name": "أداة العصا السحرية",
+      "description": "تحديد أداة العصا السحرية"
     },
     "photoshop-crop-tool": {
-      "name": "切り抜きツール",
-      "description": "切り抜きツールを選択します"
+      "name": "أداة القص",
+      "description": "تحديد أداة القص"
     },
     "photoshop-healing-brush": {
-      "name": "修復ブラシツール",
-      "description": "修復ブラシツールを選択します"
+      "name": "فرشاة الإصلاح",
+      "description": "تحديد أداة فرشاة الإصلاح"
     },
     "photoshop-clone-stamp": {
-      "name": "スタンプツール",
-      "description": "スタンプツールを選択します"
+      "name": "أداة الختم",
+      "description": "تحديد أداة الختم"
     },
     "photoshop-gradient-tool": {
-      "name": "グラデーションツール",
-      "description": "グラデーションツールを選択します"
+      "name": "أداة التدرج",
+      "description": "تحديد أداة التدرج"
     },
     "photoshop-paint-bucket": {
-      "name": "ペイントバケツツール",
-      "description": "ペイントバケツツールを選択します"
+      "name": "أداة دلو الطلاء",
+      "description": "تحديد أداة دلو الطلاء"
     },
     "photoshop-text-tool": {
-      "name": "テキストツール",
-      "description": "テキストツールを選択します"
+      "name": "أداة النص",
+      "description": "تحديد أداة النص"
     },
     "photoshop-pen-tool": {
-      "name": "ペンツール",
-      "description": "ペンツールを選択します"
+      "name": "أداة القلم",
+      "description": "تحديد أداة القلم"
     },
     "photoshop-shape-tool": {
-      "name": "図形ツール",
-      "description": "図形ツールを選択します"
+      "name": "أداة الشكل",
+      "description": "تحديد أداة الشكل"
     },
     "photoshop-eye-dropper": {
-      "name": "スポイトツール",
-      "description": "スポイトツールを選択します"
+      "name": "أداة القطارة",
+      "description": "تحديد أداة القطارة"
     },
     "photoshop-hand-tool": {
-      "name": "手のひらツール",
-      "description": "手のひらツールを選択します"
+      "name": "أداة اليد",
+      "description": "تحديد أداة اليد"
     },
     "photoshop-zoom-tool": {
-      "name": "ズームツール",
-      "description": "ズームツールを選択します"
+      "name": "أداة التكبير",
+      "description": "تحديد أداة التكبير"
     },
     "illustrator-new": {
-      "name": "新規ドキュメント",
-      "description": "新しいドキュメントを作成します"
+      "name": "مستند جديد",
+      "description": "إنشاء مستند جديد"
     },
     "illustrator-open": {
       "name": "فتح",
-      "description": "既存のファイルを開きます"
+      "description": "فتح ملف موجود"
     },
     "illustrator-save": {
       "name": "حفظ",
-      "description": "ファイルを保存します"
+      "description": "حفظ الملف"
     },
     "illustrator-save-as": {
-      "name": "別名で保存",
-      "description": "ファイルを別名で保存します"
+      "name": "حفظ باسم",
+      "description": "حفظ الملف باسم مختلف"
     },
     "illustrator-undo": {
       "name": "تراجع",
@@ -1578,315 +1578,315 @@
     },
     "illustrator-redo": {
       "name": "إعادة",
-      "description": "إعادة الإجراء الذي تم التراجع عنه"
+      "description": "إعادة الإجراء المتراجع عنه"
     },
     "illustrator-copy": {
       "name": "نسخ",
-      "description": "選択したオブジェクトをコピーします"
+      "description": "نسخ الكائن المحدد"
     },
     "illustrator-paste": {
       "name": "لصق",
-      "description": "コピーしたオブジェクトを貼り付けます"
+      "description": "لصق الكائن المنسوخ"
     },
     "illustrator-cut": {
       "name": "قص",
-      "description": "選択したオブジェクトを切り取ります"
+      "description": "قص الكائن المحدد"
     },
     "illustrator-select-all": {
       "name": "تحديد الكل",
-      "description": "すべてのオブジェクトを選択します"
+      "description": "تحديد جميع الكائنات"
     },
     "illustrator-deselect": {
-      "name": "選択解除",
-      "description": "選択を解除します"
+      "name": "إلغاء التحديد",
+      "description": "إلغاء التحديد"
     },
     "illustrator-free-transform": {
-      "name": "自由変形",
-      "description": "自由変形ツールを起動します"
+      "name": "تحويل حر",
+      "description": "بدء أداة التحويل الحر"
     },
     "illustrator-zoom-in": {
-      "name": "ズームイン",
-      "description": "アートボードを拡大表示します"
+      "name": "تكبير",
+      "description": "تكبير عرض لوحة الرسم"
     },
     "illustrator-zoom-out": {
-      "name": "ズームアウト",
-      "description": "アートボードを縮小表示します"
+      "name": "تصغير",
+      "description": "تصغير عرض لوحة الرسم"
     },
     "illustrator-fit-to-screen": {
-      "name": "画面に合わせる",
-      "description": "アートボードを画面サイズに合わせて表示します"
+      "name": "ملاءمة للشاشة",
+      "description": "ملاءمة لوحة الرسم لحجم الشاشة"
     },
     "illustrator-actual-size": {
-      "name": "実際のサイズ",
-      "description": "アートボードを実際のサイズで表示します"
+      "name": "الحجم الفعلي",
+      "description": "عرض لوحة الرسم بالحجم الفعلي"
     },
     "illustrator-selection-tool": {
-      "name": "選択ツール",
-      "description": "選択ツールを選択します"
+      "name": "أداة التحديد",
+      "description": "تحديد أداة التحديد"
     },
     "illustrator-direct-selection": {
-      "name": "ダイレクト選択ツール",
-      "description": "ダイレクト選択ツールを選択します"
+      "name": "أداة التحديد المباشر",
+      "description": "تحديد أداة التحديد المباشر"
     },
     "illustrator-pen-tool": {
-      "name": "ペンツール",
-      "description": "ペンツールを選択します"
+      "name": "أداة القلم",
+      "description": "تحديد أداة القلم"
     },
     "illustrator-type-tool": {
-      "name": "文字ツール",
-      "description": "文字ツールを選択します"
+      "name": "أداة الكتابة",
+      "description": "تحديد أداة الكتابة"
     },
     "illustrator-line-tool": {
-      "name": "直線ツール",
-      "description": "直線ツールを選択します"
+      "name": "أداة الخط",
+      "description": "تحديد أداة الخط"
     },
     "illustrator-rectangle-tool": {
-      "name": "長方形ツール",
-      "description": "長方形ツールを選択します"
+      "name": "أداة المستطيل",
+      "description": "تحديد أداة المستطيل"
     },
     "illustrator-ellipse-tool": {
-      "name": "楕円形ツール",
-      "description": "楕円形ツールを選択します"
+      "name": "أداة القطع الناقص",
+      "description": "تحديد أداة القطع الناقص"
     },
     "illustrator-polygon-tool": {
-      "name": "多角形ツール",
-      "description": "多角形ツールを選択します"
+      "name": "أداة المضلع",
+      "description": "تحديد أداة المضلع"
     },
     "illustrator-star-tool": {
-      "name": "星形ツール",
-      "description": "星形ツールを選択します"
+      "name": "أداة النجمة",
+      "description": "تحديد أداة النجمة"
     },
     "illustrator-paintbrush-tool": {
-      "name": "ブラシツール",
-      "description": "ブラシツールを選択します"
+      "name": "أداة الفرشاة",
+      "description": "تحديد أداة الفرشاة"
     },
     "illustrator-pencil-tool": {
-      "name": "鉛筆ツール",
-      "description": "鉛筆ツールを選択します"
+      "name": "أداة القلم الرصاص",
+      "description": "تحديد أداة القلم الرصاص"
     },
     "illustrator-eraser-tool": {
-      "name": "消しゴムツール",
-      "description": "消しゴムツールを選択します"
+      "name": "أداة الممحاة",
+      "description": "تحديد أداة الممحاة"
     },
     "illustrator-scissors-tool": {
-      "name": "はさみツール",
-      "description": "はさみツールを選択します"
+      "name": "أداة المقص",
+      "description": "تحديد أداة المقص"
     },
     "illustrator-rotate-tool": {
-      "name": "回転ツール",
-      "description": "回転ツールを選択します"
+      "name": "أداة التدوير",
+      "description": "تحديد أداة التدوير"
     },
     "illustrator-reflect-tool": {
-      "name": "リフレクトツール",
-      "description": "リフレクトツールを選択します"
+      "name": "أداة الانعكاس",
+      "description": "تحديد أداة الانعكاس"
     },
     "illustrator-scale-tool": {
-      "name": "拡大・縮小ツール",
-      "description": "拡大・縮小ツールを選択します"
+      "name": "أداة القياس",
+      "description": "تحديد أداة القياس"
     },
     "illustrator-shear-tool": {
-      "name": "シアーツール",
-      "description": "シアーツールを選択します"
+      "name": "أداة القص",
+      "description": "تحديد أداة القص"
     },
     "illustrator-reshape-tool": {
-      "name": "リシェイプツール",
-      "description": "リシェイプツールを選択します"
+      "name": "أداة إعادة التشكيل",
+      "description": "تحديد أداة إعادة التشكيل"
     },
     "illustrator-gradient-tool": {
-      "name": "グラデーションツール",
-      "description": "グラデーションツールを選択します"
+      "name": "أداة التدرج",
+      "description": "تحديد أداة التدرج"
     },
     "illustrator-mesh-tool": {
-      "name": "メッシュツール",
-      "description": "メッシュツールを選択します"
+      "name": "أداة الشبكة",
+      "description": "تحديد أداة الشبكة"
     },
     "illustrator-eye-dropper": {
-      "name": "スポイトツール",
-      "description": "スポイトツールを選択します"
+      "name": "أداة القطارة",
+      "description": "تحديد أداة القطارة"
     },
     "illustrator-hand-tool": {
-      "name": "手のひらツール",
-      "description": "手のひらツールを選択します"
+      "name": "أداة اليد",
+      "description": "تحديد أداة اليد"
     },
     "illustrator-zoom-tool": {
-      "name": "ズームツール",
-      "description": "ズームツールを選択します"
+      "name": "أداة التكبير",
+      "description": "تحديد أداة التكبير"
     },
     "slack-quick-switcher": {
-      "name": "クイックスイッチャー",
-      "description": "チャンネルやDMを素早く切り替えます"
+      "name": "التبديل السريع",
+      "description": "التبديل السريع بين القنوات أو الرسائل المباشرة"
     },
     "slack-channel-browser": {
-      "name": "チャンネルブラウザ",
-      "description": "チャンネルブラウザを開きます"
+      "name": "متصفح القنوات",
+      "description": "فتح متصفح القنوات"
     },
     "slack-direct-messages": {
-      "name": "ダイレクトメッセージ",
-      "description": "ダイレクトメッセージリストを開きます"
+      "name": "الرسائل المباشرة",
+      "description": "فتح قائمة الرسائل المباشرة"
     },
     "slack-mentions": {
-      "name": "メンション",
-      "description": "メンションされたメッセージを表示します"
+      "name": "الإشارات",
+      "description": "إظهار الرسائل المشار إليها"
     },
     "slack-starred-items": {
-      "name": "スター付きアイテム",
-      "description": "スター付きアイテムを表示します"
+      "name": "العناصر المميزة بنجمة",
+      "description": "إظهار العناصر المميزة بنجمة"
     },
     "slack-threads": {
-      "name": "スレッド",
-      "description": "スレッドを表示します"
+      "name": "المحادثات",
+      "description": "إظهار المحادثات"
     },
     "slack-all-unreads": {
-      "name": "未読メッセージ",
-      "description": "すべての未読メッセージを表示します"
+      "name": "جميع غير المقروءة",
+      "description": "إظهار جميع الرسائل غير المقروءة"
     },
     "slack-search": {
       "name": "بحث",
-      "description": "メッセージを検索します"
+      "description": "البحث في الرسائل"
     },
     "slack-emoji-picker": {
-      "name": "絵文字ピッカー",
-      "description": "絵文字ピッカーを開きます"
+      "name": "منتقي الرموز التعبيرية",
+      "description": "فتح منتقي الرموز التعبيرية"
     },
     "slack-mark-as-read": {
-      "name": "既読にする",
-      "description": "チャンネルを既読にマークします"
+      "name": "وضع علامة كمقروء",
+      "description": "وضع علامة على القناة كمقروءة"
     },
     "slack-previous-channel": {
-      "name": "前のチャンネル",
-      "description": "前のチャンネルに移動します"
+      "name": "القناة السابقة",
+      "description": "الانتقال إلى القناة السابقة"
     },
     "slack-next-channel": {
-      "name": "次のチャンネル",
-      "description": "次のチャンネルに移動します"
+      "name": "القناة التالية",
+      "description": "الانتقال إلى القناة التالية"
     },
     "slack-previous-unread": {
-      "name": "前の未読チャンネル",
-      "description": "前の未読チャンネルに移動します"
+      "name": "القناة غير المقروءة السابقة",
+      "description": "الانتقال إلى القناة غير المقروءة السابقة"
     },
     "slack-next-unread": {
-      "name": "次の未読チャンネル",
-      "description": "次の未読チャンネルに移動します"
+      "name": "القناة غير المقروءة التالية",
+      "description": "الانتقال إلى القناة غير المقروءة التالية"
     },
     "slack-toggle-sidebar": {
-      "name": "サイドバーの表示/非表示",
-      "description": "サイドバーの表示/非表示を切り替えます"
+      "name": "إظهار/إخفاء الشريط الجانبي",
+      "description": "إظهار أو إخفاء الشريط الجانبي"
     },
     "slack-toggle-member-list": {
-      "name": "メンバーリストの表示/非表示",
-      "description": "メンバーリストの表示/非表示を切り替えます"
+      "name": "إظهار/إخفاء قائمة الأعضاء",
+      "description": "إظهار أو إخفاء قائمة الأعضاء"
     },
     "slack-preferences": {
-      "name": "設定",
-      "description": "設定を開きます"
+      "name": "التفضيلات",
+      "description": "فتح التفضيلات"
     },
     "slack-help": {
-      "name": "ヘルプ",
-      "description": "ヘルプを開きます"
+      "name": "مساعدة",
+      "description": "فتح المساعدة"
     },
     "slack-keyboard-shortcuts": {
-      "name": "キーボードショートカット",
-      "description": "キーボードショートカットを表示します"
+      "name": "اختصارات لوحة المفاتيح",
+      "description": "إظهار اختصارات لوحة المفاتيح"
     },
     "slack-mark-channel-read": {
-      "name": "チャンネルを既読にする",
-      "description": "現在のチャンネルを既読にマークします"
+      "name": "وضع علامة على القناة كمقروءة",
+      "description": "وضع علامة على القناة الحالية كمقروءة"
     },
     "discord-server-list": {
-      "name": "サーバーリスト",
-      "description": "サーバーリストにフォーカスします"
+      "name": "قائمة الخوادم",
+      "description": "التركيز على قائمة الخوادم"
     },
     "discord-channel-list": {
-      "name": "チャンネルリスト",
-      "description": "チャンネルリストにフォーカスします"
+      "name": "قائمة القنوات",
+      "description": "التركيز على قائمة القنوات"
     },
     "discord-quick-switcher": {
-      "name": "クイックスイッチャー",
-      "description": "クイックスイッチャーを開きます"
+      "name": "التبديل السريع",
+      "description": "فتح التبديل السريع"
     },
     "discord-mentions": {
-      "name": "メンション",
-      "description": "メンションされたメッセージを表示します"
+      "name": "الإشارات",
+      "description": "إظهار الرسائل المشار إليها"
     },
     "discord-pinned-messages": {
-      "name": "ピン留めメッセージ",
-      "description": "ピン留めされたメッセージを表示します"
+      "name": "الرسائل المثبتة",
+      "description": "إظهار الرسائل المثبتة"
     },
     "discord-search": {
       "name": "بحث",
-      "description": "メッセージを検索します"
+      "description": "البحث في الرسائل"
     },
     "discord-emoji-picker": {
-      "name": "絵文字ピッカー",
-      "description": "絵文字ピッカーを開きます"
+      "name": "منتقي الرموز التعبيرية",
+      "description": "فتح منتقي الرموز التعبيرية"
     },
     "discord-gif-picker": {
-      "name": "GIFピッカー",
-      "description": "GIFピッカーを開きます"
+      "name": "منتقي GIF",
+      "description": "فتح منتقي GIF"
     },
     "discord-sticker-picker": {
-      "name": "ステッカーピッカー",
-      "description": "ステッカーピッカーを開きます"
+      "name": "منتقي الملصقات",
+      "description": "فتح منتقي الملصقات"
     },
     "discord-mark-as-read": {
-      "name": "既読にする",
-      "description": "チャンネルを既読にマークします"
+      "name": "وضع علامة كمقروء",
+      "description": "وضع علامة على القناة كمقروءة"
     },
     "discord-previous-channel": {
-      "name": "前のチャンネル",
-      "description": "前のチャンネルに移動します"
+      "name": "القناة السابقة",
+      "description": "الانتقال إلى القناة السابقة"
     },
     "discord-next-channel": {
-      "name": "次のチャンネル",
-      "description": "次のチャンネルに移動します"
+      "name": "القناة التالية",
+      "description": "الانتقال إلى القناة التالية"
     },
     "discord-previous-unread": {
-      "name": "前の未読チャンネル",
-      "description": "前の未読チャンネルに移動します"
+      "name": "القناة غير المقروءة السابقة",
+      "description": "الانتقال إلى القناة غير المقروءة السابقة"
     },
     "discord-next-unread": {
-      "name": "次の未読チャンネル",
-      "description": "次の未読チャンネルに移動します"
+      "name": "القناة غير المقروءة التالية",
+      "description": "الانتقال إلى القناة غير المقروءة التالية"
     },
     "discord-toggle-member-list": {
-      "name": "メンバーリストの表示/非表示",
-      "description": "メンバーリストの表示/非表示を切り替えます"
+      "name": "إظهار/إخفاء قائمة الأعضاء",
+      "description": "إظهار أو إخفاء قائمة الأعضاء"
     },
     "discord-toggle-server-list": {
-      "name": "サーバーリストの表示/非表示",
-      "description": "サーバーリストの表示/非表示を切り替えます"
+      "name": "إظهار/إخفاء قائمة الخوادم",
+      "description": "إظهار أو إخفاء قائمة الخوادم"
     },
     "discord-preferences": {
-      "name": "設定",
-      "description": "設定を開きます"
+      "name": "الإعدادات",
+      "description": "فتح الإعدادات"
     },
     "discord-help": {
-      "name": "ヘルプ",
-      "description": "ヘルプを開きます"
+      "name": "مساعدة",
+      "description": "فتح المساعدة"
     },
     "discord-keyboard-shortcuts": {
-      "name": "キーボードショートカット",
-      "description": "キーボードショートカットを表示します"
+      "name": "اختصارات لوحة المفاتيح",
+      "description": "إظهار اختصارات لوحة المفاتيح"
     },
     "discord-mark-server-read": {
-      "name": "サーバーを既読にする",
-      "description": "現在のサーバーを既読にマークします"
+      "name": "وضع علامة على الخادم كمقروء",
+      "description": "وضع علامة على الخادم الحالي كمقروء"
     },
     "discord-toggle-mute": {
-      "name": "ミュートの切り替え",
-      "description": "ミュートの切り替えを行います"
+      "name": "تبديل كتم الصوت",
+      "description": "تبديل كتم الصوت"
     },
     "discord-toggle-deafen": {
-      "name": "デフンの切り替え",
-      "description": "デフンの切り替えを行います"
+      "name": "تبديل تعطيل الصوت",
+      "description": "تبديل تعطيل الصوت"
     },
     "discord-toggle-overlay": {
-      "name": "オーバーレイの切り替え",
-      "description": "オーバーレイの表示/非表示を切り替えます"
+      "name": "تبديل التراكب",
+      "description": "تبديل إظهار/إخفاء التراكب"
     },
     "discord-streamer-mode": {
-      "name": "ストリーマーモード",
-      "description": "ストリーマーモードの切り替えを行います"
+      "name": "وضع البث",
+      "description": "تبديل وضع البث"
     }
   }
 }

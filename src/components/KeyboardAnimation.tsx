@@ -2,6 +2,7 @@
 
 import { Shortcut } from '@/types/shortcuts';
 import Image from 'next/image';
+import { useLocaleContext } from '@/contexts/LocaleContext';
 
 interface KeyboardAnimationProps {
   shortcut: Shortcut;
@@ -18,6 +19,8 @@ interface KeyPosition {
 }
 
 const KeyboardAnimation = ({ platform, shortcutText }: KeyboardAnimationProps) => {
+  const { dictionary } = useLocaleContext();
+  const t = dictionary.shortcutDetail;
   // 단축키 텍스트를 파싱하여 키 배열로 변환
   const parseShortcutKeys = (shortcutText: string): string[] => {
     return shortcutText
@@ -212,7 +215,7 @@ const KeyboardAnimation = ({ platform, shortcutText }: KeyboardAnimationProps) =
 
       {/* 키 설명 */}
       <div className="bg-white border border-gray-200 rounded-lg p-6">
-        <h3 className="font-semibold text-gray-900 mb-4">押すキー</h3>
+        <h3 className="font-semibold text-gray-900 mb-4">{t.keysToPress}</h3>
         <div className="space-y-3">
           {keys.map((key, index) => (
             <div 
@@ -224,12 +227,12 @@ const KeyboardAnimation = ({ platform, shortcutText }: KeyboardAnimationProps) =
               </div>
               <div className="flex-1">
                 <div className="font-medium text-gray-900">
-                  {key} キー
+                  {key} {t.key}
                 </div>
                 <div className="text-sm text-gray-600">
-                  {index === 0 ? '最初のキーを押し下げます' : 
-                   index === keys.length - 1 ? '最後のキーを押してショートカットを完了します' :
-                   'キーを押したまま次のキーに進みます'}
+                  {index === 0 ? t.firstKey : 
+                   index === keys.length - 1 ? t.lastKey :
+                   t.holdKey}
                 </div>
               </div>
             </div>

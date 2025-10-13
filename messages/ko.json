@@ -144,6 +144,22 @@
     "shortcuts": "단축키",
     "categories": "카테고리"
   },
+  "searchPlaceholder": {
+    "excel": "예: 복사, 붙여넣기, 굵게, 셀 병합...",
+    "word": "예: 복사, 붙여넣기, 굵게, 가운데 정렬...",
+    "powerpoint": "예: 복사, 붙여넣기, 굵게, 슬라이드 복제...",
+    "system": "예: 복사, 붙여넣기, 잘라내기, 앱 전환...",
+    "docs": "예: 복사, 붙여넣기, 굵게, 제목...",
+    "sheets": "예: 복사, 붙여넣기, 굵게, 함수 삽입...",
+    "slides": "예: 복사, 붙여넣기, 굵게, 슬라이드 삽입...",
+    "chrome": "예: 새 탭, 북마크, 검색, 개발자 도구...",
+    "safari": "예: 새 탭, 북마크, 검색, 웹 검사기...",
+    "edge": "예: 새 탭, 즐겨찾기, 검색, 개발자 도구...",
+    "photoshop": "예: 복사, 붙여넣기, 브러시 도구, 레이어...",
+    "illustrator": "예: 복사, 붙여넣기, 펜 도구, 도형...",
+    "slack": "예: 빠른 전환, 멘션, 검색, 이모티콘...",
+    "discord": "예: 빠른 전환, 멘션, 검색, 이모티콘..."
+  },
   "categories": {
     "os": {
       "title": "OS 단축키",
@@ -162,27 +178,37 @@
       "title": "Google Workspace 단축키",
       "description": "Google Docs, Sheets, Slides의 효율적인 단축키",
       "docs": "Google Docs 단축키",
+      "docsDesc": "Google Docs의 유용한 단축키를 학습하세요",
       "sheets": "Google Sheets 단축키",
-      "slides": "Google Slides 단축키"
+      "sheetsDesc": "Google Sheets의 유용한 단축키를 학습하세요",
+      "slides": "Google Slides 단축키",
+      "slidesDesc": "Google Slides의 유용한 단축키를 학습하세요"
     },
     "browser": {
       "title": "브라우저 단축키",
       "description": "Chrome, Safari, Edge의 유용한 단축키",
       "chrome": "Chrome 단축키",
+      "chromeDesc": "Google Chrome의 유용한 단축키를 학습하세요",
       "safari": "Safari 단축키",
-      "edge": "Edge 단축키"
+      "safariDesc": "Safari의 유용한 단축키를 학습하세요",
+      "edge": "Edge 단축키",
+      "edgeDesc": "Microsoft Edge의 유용한 단축키를 학습하세요"
     },
     "adobe": {
       "title": "Adobe 단축키",
       "description": "Photoshop, Illustrator 크리에이티브 작업 단축키",
       "photoshop": "Photoshop 단축키",
-      "illustrator": "Illustrator 단축키"
+      "photoshopDesc": "Adobe Photoshop의 유용한 단축키를 학습하세요",
+      "illustrator": "Illustrator 단축키",
+      "illustratorDesc": "Adobe Illustrator의 유용한 단축키를 학습하세요"
     },
     "others": {
       "title": "기타 소프트웨어 단축키",
       "description": "Slack, Discord 등 커뮤니케이션 도구 단축키",
       "slack": "Slack 단축키",
-      "discord": "Discord 단축키"
+      "slackDesc": "Slack의 유용한 단축키를 학습하세요",
+      "discord": "Discord 단축키",
+      "discordDesc": "Discord의 유용한 단축키를 학습하세요"
     }
   },
   "categoryPage": {
@@ -229,7 +255,24 @@
     "keyboardVisual": "키보드 비주얼",
     "keyboardVisualDesc": "단축키의 위치를 키보드에서 확인할 수 있습니다.",
     "relatedShortcuts": "관련 단축키",
-    "viewDetail": "클릭하여 상세보기 →"
+    "viewDetail": "클릭하여 상세보기 →",
+    "pressKey": "키를 누르세요",
+    "firstKey": "첫 번째 키를 누르세요",
+    "lastKey": "마지막 키를 눌러 단축키를 완료하세요",
+    "holdKey": "키를 누른 상태에서 다음 키로 진행하세요",
+    "ctrlDesc": "컨트롤 키 - 다른 키와 조합하여 단축키 실행",
+    "cmdDesc": "커맨드 키 - Mac에서 다른 키와 조합하여 단축키 실행",
+    "altDesc": "알트 키 - 다른 키와 조합하여 기능 실행",
+    "shiftDesc": "시프트 키 - 대문자 입력 또는 다른 키와 조합",
+    "tabDesc": "탭 키 - 포커스 이동 또는 들여쓰기",
+    "enterDesc": "엔터 키 - 줄바꿈 또는 실행",
+    "escDesc": "이스케이프 키 - 취소 또는 닫기",
+    "spaceDesc": "스페이스 키 - 공백 입력",
+    "delDesc": "삭제 키 - 선택한 항목 삭제",
+    "homeDesc": "홈 키 - 줄의 시작으로 이동",
+    "endDesc": "엔드 키 - 줄의 끝으로 이동",
+    "keysToPress": "누를 키",
+    "key": "키"
   },
   "guide": {
     "hero": {

@@ -35,8 +35,9 @@ const Key = ({ keyName, isPressed, onClick, className = '' }: KeyProps) => (
 );
 
 const InteractiveKeyboard = ({ shortcut, shortcutText }: InteractiveKeyboardProps) => {
-  const { locale } = useLocaleContext();
+  const { locale, dictionary } = useLocaleContext();
   const translated = getShortcutTranslation(shortcut, locale);
+  const t = dictionary.shortcutDetail;
   const [pressedKeys, setPressedKeys] = useState<string[]>([]);
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
 
@@ -62,36 +63,22 @@ const InteractiveKeyboard = ({ shortcut, shortcutText }: InteractiveKeyboardProp
 
   const getKeyDescription = (keyName: string): string => {
     const keyDescriptions: { [key: string]: string } = {
-      'Ctrl': 'コントロールキー - 他のキーと組み合わせてショートカットを実行',
-      '⌘': 'コマンドキー - Macで他のキーと組み合わせてショートカットを実行',
-      'Alt': 'オルトキー - 他のキーと組み合わせて機能を実行',
-      'Option': 'オプションキー - Macで他のキーと組み合わせて機能を実行',
-      'Shift': 'シフトキー - 大文字入力や他のキーと組み合わせて機能を実行',
-      'Space': 'スペースキー - 空白を入力',
-      'Enter': 'エンターキー - 改行や確定',
-      'Tab': 'タブキー - インデントやフォーカス移動',
-      'Esc': 'エスケープキー - キャンセルや終了',
-      'Delete': 'デリートキー - 文字を削除',
-      'Backspace': 'バックスペースキー - 前の文字を削除',
-      'Home': 'ホームキー - 行の先頭に移動',
-      'End': 'エンドキー - 行の末尾に移動',
-      'Page Up': 'ページアップキー - 前のページに移動',
-      'Page Down': 'ページダウンキー - 次のページに移動',
-      'F1': 'F1キー - ヘルプ機能',
-      'F2': 'F2キー - 名前の変更',
-      'F3': 'F3キー - 検索機能',
-      'F4': 'F4キー - アドレスバーの表示',
-      'F5': 'F5キー - 更新',
-      'F6': 'F6キー - パネル間の移動',
-      'F7': 'F7キー - スペルチェック',
-      'F8': 'F8キー - 選択モード',
-      'F9': 'F9キー - 計算の実行',
-      'F10': 'F10キー - メニューバーの表示',
-      'F11': 'F11キー - 全画面表示',
-      'F12': 'F12キー - 開発者ツール',
+      'Ctrl': t.ctrlDesc,
+      '⌘': t.cmdDesc,
+      'Alt': t.altDesc,
+      'Option': t.altDesc,
+      'Shift': t.shiftDesc,
+      'Space': t.spaceDesc,
+      'Enter': t.enterDesc,
+      'Tab': t.tabDesc,
+      'Esc': t.escDesc,
+      'Delete': t.delDesc,
+      'Backspace': t.delDesc,
+      'Home': t.homeDesc,
+      'End': t.endDesc,
     };
 
-    return keyDescriptions[keyName] || `${keyName}キー - このキーの機能`;
+    return keyDescriptions[keyName] || `${keyName}`;
   };
 
   return (

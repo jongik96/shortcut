@@ -144,6 +144,22 @@
     "shortcuts": "ショートカット",
     "categories": "カテゴリ"
   },
+  "searchPlaceholder": {
+    "excel": "例: コピー, 貼り付け, 太字, セル結合...",
+    "word": "例: コピー, 貼り付け, 太字, 中央揃え...",
+    "powerpoint": "例: コピー, 貼り付け, 太字, スライド複製...",
+    "system": "例: コピー, 貼り付け, 切り取り, アプリ切り替え...",
+    "docs": "例: コピー, 貼り付け, 太字, 見出し...",
+    "sheets": "例: コピー, 貼り付け, 太字, 関数挿入...",
+    "slides": "例: コピー, 貼り付け, 太字, スライド挿入...",
+    "chrome": "例: 新しいタブ, ブックマーク, 検索, 開発者ツール...",
+    "safari": "例: 新しいタブ, ブックマーク, 検索, Webインスペクタ...",
+    "edge": "例: 新しいタブ, お気に入り, 検索, 開発者ツール...",
+    "photoshop": "例: コピー, 貼り付け, ブラシツール, レイヤー...",
+    "illustrator": "例: コピー, 貼り付け, ペンツール, 図形...",
+    "slack": "例: クイックスイッチャー, メンション, 検索, 絵文字...",
+    "discord": "例: クイックスイッチャー, メンション, 検索, 絵文字..."
+  },
   "categories": {
     "os": {
       "title": "OSショートカット",
@@ -162,27 +178,37 @@
       "title": "Google Workspace ショートカット",
       "description": "Google Docs, Sheets, Slides の効率的なショートカット",
       "docs": "Google Docs ショートカット",
+      "docsDesc": "Google Docsの便利なショートカットキーを学びましょう",
       "sheets": "Google Sheets ショートカット",
-      "slides": "Google Slides ショートカット"
+      "sheetsDesc": "Google Sheetsの便利なショートカットキーを学びましょう",
+      "slides": "Google Slides ショートカット",
+      "slidesDesc": "Google Slidesの便利なショートカットキーを学びましょう"
     },
     "browser": {
       "title": "ブラウザショートカット",
       "description": "Chrome, Safari, Edge の便利なショートカット",
       "chrome": "Chrome ショートカット",
+      "chromeDesc": "Google Chromeの便利なショートカットキーを学びましょう",
       "safari": "Safari ショートカット",
-      "edge": "Edge ショートカット"
+      "safariDesc": "Safariの便利なショートカットキーを学びましょう",
+      "edge": "Edge ショートカット",
+      "edgeDesc": "Microsoft Edgeの便利なショートカットキーを学びましょう"
     },
     "adobe": {
       "title": "Adobe ショートカット",
       "description": "Photoshop, Illustrator のクリエイティブワークショートカット",
       "photoshop": "Photoshop ショートカット",
-      "illustrator": "Illustrator ショートカット"
+      "photoshopDesc": "Adobe Photoshopの便利なショートカットキーを学びましょう",
+      "illustrator": "Illustrator ショートカット",
+      "illustratorDesc": "Adobe Illustratorの便利なショートカットキーを学びましょう"
     },
     "others": {
       "title": "その他ソフトウェアショートカット",
       "description": "Slack, Discord などのコミュニケーションツールショートカット",
       "slack": "Slack ショートカット",
-      "discord": "Discord ショートカット"
+      "slackDesc": "Slackの便利なショートカットキーを学びましょう",
+      "discord": "Discord ショートカット",
+      "discordDesc": "Discordの便利なショートカットキーを学びましょう"
     }
   },
   "categoryPage": {
@@ -229,7 +255,24 @@
     "keyboardVisual": "キーボードビジュアル",
     "keyboardVisualDesc": "ショートカットキーの位置をキーボード上で確認できます。",
     "relatedShortcuts": "関連ショートカット",
-    "viewDetail": "クリックして詳細を見る →"
+    "viewDetail": "クリックして詳細を見る →",
+    "pressKey": "キーを押す",
+    "firstKey": "最初のキーを押し下げます",
+    "lastKey": "最後のキーを押してショートカットを完了します",
+    "holdKey": "キーを押したまま次のキーに進みます",
+    "ctrlDesc": "コントロールキー - 他のキーと組み合わせてショートカットを実行",
+    "cmdDesc": "コマンドキー - Macで他のキーと組み合わせてショートカットを実行",
+    "altDesc": "オルトキー - 他のキーと組み合わせて機能を実行",
+    "shiftDesc": "シフトキー - 大文字入力または他のキーと組み合わせ",
+    "tabDesc": "タブキー - フォーカス移動またはインデント",
+    "enterDesc": "エンターキー - 改行または実行",
+    "escDesc": "エスケープキー - キャンセルまたは閉じる",
+    "spaceDesc": "スペースキー - 空白入力",
+    "delDesc": "デリートキー - 選択した項目を削除",
+    "homeDesc": "ホームキー - 行の先頭に移動",
+    "endDesc": "エンドキー - 行の末尾に移動",
+    "keysToPress": "押すキー",
+    "key": "キー"
   },
   "guide": {
     "hero": {

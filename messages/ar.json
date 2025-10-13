@@ -144,6 +144,22 @@
     "shortcuts": "الاختصارات",
     "categories": "الفئات"
   },
+  "searchPlaceholder": {
+    "excel": "مثال: نسخ، لصق، غامق، دمج الخلايا...",
+    "word": "مثال: نسخ، لصق، غامق، محاذاة للوسط...",
+    "powerpoint": "مثال: نسخ، لصق، غامق، نسخ شريحة...",
+    "system": "مثال: نسخ، لصق، قص، تبديل التطبيقات...",
+    "docs": "مثال: نسخ، لصق، غامق، عنوان...",
+    "sheets": "مثال: نسخ، لصق، غامق، إدراج دالة...",
+    "slides": "مثال: نسخ، لصق، غامق، إدراج شريحة...",
+    "chrome": "مثال: علامة تبويب جديدة، إشارة مرجعية، بحث، أدوات المطور...",
+    "safari": "مثال: علامة تبويب جديدة، إشارة مرجعية، بحث، مفتش الويب...",
+    "edge": "مثال: علامة تبويب جديدة، المفضلة، بحث، أدوات المطور...",
+    "photoshop": "مثال: نسخ، لصق، أداة الفرشاة، طبقة...",
+    "illustrator": "مثال: نسخ، لصق، أداة القلم، شكل...",
+    "slack": "مثال: التبديل السريع، ذكر، بحث، رموز تعبيرية...",
+    "discord": "مثال: التبديل السريع، ذكر، بحث، رموز تعبيرية..."
+  },
   "categories": {
     "os": {
       "title": "اختصارات نظام التشغيل",
@@ -162,27 +178,37 @@
       "title": "اختصارات Google Workspace",
       "description": "اختصارات فعالة لـ Google Docs و Sheets و Slides",
       "docs": "اختصارات Google Docs",
+      "docsDesc": "تعلم اختصارات لوحة المفاتيح المفيدة لـ Google Docs",
       "sheets": "اختصارات Google Sheets",
-      "slides": "اختصارات Google Slides"
+      "sheetsDesc": "تعلم اختصارات لوحة المفاتيح المفيدة لـ Google Sheets",
+      "slides": "اختصارات Google Slides",
+      "slidesDesc": "تعلم اختصارات لوحة المفاتيح المفيدة لـ Google Slides"
     },
     "browser": {
       "title": "اختصارات المتصفح",
       "description": "اختصارات مفيدة لـ Chrome و Safari و Edge",
       "chrome": "اختصارات Chrome",
+      "chromeDesc": "تعلم اختصارات لوحة المفاتيح المفيدة لـ Google Chrome",
       "safari": "اختصارات Safari",
-      "edge": "اختصارات Edge"
+      "safariDesc": "تعلم اختصارات لوحة المفاتيح المفيدة لـ Safari",
+      "edge": "اختصارات Edge",
+      "edgeDesc": "تعلم اختصارات لوحة المفاتيح المفيدة لـ Microsoft Edge"
     },
     "adobe": {
       "title": "اختصارات Adobe",
       "description": "اختصارات العمل الإبداعي لـ Photoshop و Illustrator",
       "photoshop": "اختصارات Photoshop",
-      "illustrator": "اختصارات Illustrator"
+      "photoshopDesc": "تعلم اختصارات لوحة المفاتيح المفيدة لـ Adobe Photoshop",
+      "illustrator": "اختصارات Illustrator",
+      "illustratorDesc": "تعلم اختصارات لوحة المفاتيح المفيدة لـ Adobe Illustrator"
     },
     "others": {
       "title": "اختصارات البرامج الأخرى",
       "description": "اختصارات أدوات الاتصال مثل Slack و Discord",
       "slack": "اختصارات Slack",
-      "discord": "اختصارات Discord"
+      "slackDesc": "تعلم اختصارات لوحة المفاتيح المفيدة لـ Slack",
+      "discord": "اختصارات Discord",
+      "discordDesc": "تعلم اختصارات لوحة المفاتيح المفيدة لـ Discord"
     }
   },
   "categoryPage": {
@@ -229,7 +255,24 @@
     "keyboardVisual": "عرض لوحة المفاتيح",
     "keyboardVisualDesc": "شاهد مواضع مفاتيح الاختصار على لوحة المفاتيح.",
     "relatedShortcuts": "اختصارات ذات صلة",
-    "viewDetail": "انقر لعرض التفاصيل ←"
+    "viewDetail": "انقر لعرض التفاصيل ←",
+    "pressKey": "اضغط على المفتاح",
+    "firstKey": "اضغط على المفتاح الأول",
+    "lastKey": "اضغط على المفتاح الأخير لإكمال الاختصار",
+    "holdKey": "اضغط باستمرار على المفتاح وانتقل إلى المفتاح التالي",
+    "ctrlDesc": "مفتاح التحكم - تنفيذ الاختصارات مع مفاتيح أخرى",
+    "cmdDesc": "مفتاح الأوامر - تنفيذ الاختصارات مع مفاتيح أخرى على Mac",
+    "altDesc": "مفتاح Alt - تنفيذ الوظائف مع مفاتيح أخرى",
+    "shiftDesc": "مفتاح Shift - كتابة الأحرف الكبيرة أو الدمج مع مفاتيح أخرى",
+    "tabDesc": "مفتاح Tab - نقل التركيز أو المسافة البادئة",
+    "enterDesc": "مفتاح Enter - سطر جديد أو تنفيذ",
+    "escDesc": "مفتاح Escape - إلغاء أو إغلاق",
+    "spaceDesc": "مفتاح المسافة - إدخال مسافة",
+    "delDesc": "مفتاح الحذف - حذف العنصر المحدد",
+    "homeDesc": "مفتاح Home - الانتقال إلى بداية السطر",
+    "endDesc": "مفتاح End - الانتقال إلى نهاية السطر",
+    "keysToPress": "المفاتيح للضغط",
+    "key": "مفتاح"
   },
   "guide": {
     "hero": {

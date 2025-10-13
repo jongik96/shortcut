@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Shortcut } from '@/types/shortcuts';
+import { useLocaleContext } from '@/contexts/LocaleContext';
 
 interface ShortcutAnimationProps {
   shortcut: Shortcut;
@@ -37,6 +38,8 @@ const AnimatedKey = ({ keyName, isActive, delay, className = '' }: AnimatedKeyPr
 );
 
 const ShortcutAnimation = ({ platform, shortcutText }: ShortcutAnimationProps) => {
+  const { dictionary } = useLocaleContext();
+  const t = dictionary.shortcutDetail;
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
 
@@ -142,12 +145,12 @@ const ShortcutAnimation = ({ platform, shortcutText }: ShortcutAnimationProps) =
               </div>
               <div className="flex-1">
                 <div className="font-medium text-gray-900">
-                  {key} キーを押す
+                  {key} {t.pressKey}
                 </div>
                 <div className="text-sm text-gray-600">
-                  {index === 0 ? '最初のキーを押し下げます' : 
-                   index === keys.length - 1 ? '最後のキーを押してショートカットを完了します' :
-                   'キーを押したまま次のキーに進みます'}
+                  {index === 0 ? t.firstKey : 
+                   index === keys.length - 1 ? t.lastKey :
+                   t.holdKey}
                 </div>
               </div>
               {currentStep > index && (

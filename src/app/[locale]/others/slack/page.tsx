@@ -11,6 +11,7 @@ import { useLocaleContext } from '@/contexts/LocaleContext';
 export default function SlackPage() {
   const { dictionary } = useLocaleContext();
   const tCommon = dictionary.common;
+  const t = dictionary.categories.others;
   
   const [searchQuery, setSearchQuery] = useState('');
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');
@@ -72,8 +73,8 @@ export default function SlackPage() {
           {/* Main Content */}
           <div className="lg:col-span-3">
             <div className="mb-8">
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">Slack</h1>
-              <p className="text-gray-600">Slackの便利なショートカットキーを学びましょう</p>
+              <h1 className="text-3xl font-bold text-gray-900 mb-2">{t.slack}</h1>
+              <p className="text-gray-600">{t.slackDesc}</p>
             </div>
 
             {/* Platform Tabs */}

@@ -2,6 +2,7 @@
 
 import { Search, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useLocaleContext } from '@/contexts/LocaleContext';
 
 interface SearchBarProps {
   value: string;
@@ -12,40 +13,11 @@ interface SearchBarProps {
 }
 
 const SearchBar = ({ value, onChange, placeholder, className, category = 'excel' }: SearchBarProps) => {
+  const { dictionary } = useLocaleContext();
+  
   // 카테고리별 placeholder
   const getPlaceholder = (category: string) => {
-    switch (category) {
-      case 'excel':
-        return '例: コピー, 貼り付け, 太字, セル結合...';
-      case 'word':
-        return '例: コピー, 貼り付け, 太字, 中央揃え...';
-      case 'powerpoint':
-        return '例: コピー, 貼り付け, 太字, スライド複製...';
-      case 'system':
-        return '例: コピー, 貼り付け, 切り取り, アプリ切り替え...';
-      case 'docs':
-        return '例: コピー, 貼り付け, 太字, 見出し...';
-      case 'sheets':
-        return '例: コピー, 貼り付け, 太字, 関数挿入...';
-      case 'slides':
-        return '例: コピー, 貼り付け, 太字, スライド挿入...';
-      case 'chrome':
-        return '例: 新しいタブ, ブックマーク, 検索, 開発者ツール...';
-      case 'safari':
-        return '例: 新しいタブ, ブックマーク, 検索, Webインスペクタ...';
-      case 'edge':
-        return '例: 新しいタブ, お気に入り, 検索, 開発者ツール...';
-      case 'photoshop':
-        return '例: コピー, 貼り付け, ブラシツール, レイヤー...';
-      case 'illustrator':
-        return '例: コピー, 貼り付け, ペンツール, 図形...';
-      case 'slack':
-        return '例: クイックスイッチャー, メンション, 検索, 絵文字...';
-      case 'discord':
-        return '例: クイックスイッチャー, メンション, 検索, 絵文字...';
-      default:
-        return '例: コピー, 貼り付け, 太字, セル結合...';
-    }
+    return dictionary.searchPlaceholder?.[category as keyof typeof dictionary.searchPlaceholder] || dictionary.common.searchPlaceholder;
   };
 
   const finalPlaceholder = placeholder || getPlaceholder(category);

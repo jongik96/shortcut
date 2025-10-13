@@ -11,6 +11,7 @@ import { useLocaleContext } from '@/contexts/LocaleContext';
 export default function SafariPage() {
   const { dictionary } = useLocaleContext();
   const tCommon = dictionary.common;
+  const t = dictionary.categories.browser;
   
   const [searchQuery, setSearchQuery] = useState('');
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');
@@ -73,8 +74,8 @@ export default function SafariPage() {
           {/* Main Content */}
           <div className="lg:col-span-3">
             <div className="mb-8">
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">Safari</h1>
-              <p className="text-gray-600">Safariの便利なショートカットキーを学びましょう</p>
+              <h1 className="text-3xl font-bold text-gray-900 mb-2">{t.safari}</h1>
+              <p className="text-gray-600">{t.safariDesc}</p>
             </div>
 
             {/* Platform Tabs */}

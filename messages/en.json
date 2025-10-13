@@ -144,6 +144,22 @@
     "shortcuts": "Shortcuts",
     "categories": "Categories"
   },
+  "searchPlaceholder": {
+    "excel": "e.g., Copy, Paste, Bold, Merge cells...",
+    "word": "e.g., Copy, Paste, Bold, Center align...",
+    "powerpoint": "e.g., Copy, Paste, Bold, Duplicate slide...",
+    "system": "e.g., Copy, Paste, Cut, Switch apps...",
+    "docs": "e.g., Copy, Paste, Bold, Heading...",
+    "sheets": "e.g., Copy, Paste, Bold, Insert function...",
+    "slides": "e.g., Copy, Paste, Bold, Insert slide...",
+    "chrome": "e.g., New tab, Bookmark, Search, Developer tools...",
+    "safari": "e.g., New tab, Bookmark, Search, Web inspector...",
+    "edge": "e.g., New tab, Favorites, Search, Developer tools...",
+    "photoshop": "e.g., Copy, Paste, Brush tool, Layer...",
+    "illustrator": "e.g., Copy, Paste, Pen tool, Shape...",
+    "slack": "e.g., Quick switcher, Mention, Search, Emoji...",
+    "discord": "e.g., Quick switcher, Mention, Search, Emoji..."
+  },
   "categories": {
     "os": {
       "title": "OS Shortcuts",
@@ -162,27 +178,37 @@
       "title": "Google Workspace Shortcuts",
       "description": "Efficient shortcuts for Google Docs, Sheets, Slides",
       "docs": "Google Docs Shortcuts",
+      "docsDesc": "Learn useful keyboard shortcuts for Google Docs",
       "sheets": "Google Sheets Shortcuts",
-      "slides": "Google Slides Shortcuts"
+      "sheetsDesc": "Learn useful keyboard shortcuts for Google Sheets",
+      "slides": "Google Slides Shortcuts",
+      "slidesDesc": "Learn useful keyboard shortcuts for Google Slides"
     },
     "browser": {
       "title": "Browser Shortcuts",
       "description": "Useful shortcuts for Chrome, Safari, Edge",
       "chrome": "Chrome Shortcuts",
+      "chromeDesc": "Learn useful keyboard shortcuts for Google Chrome",
       "safari": "Safari Shortcuts",
-      "edge": "Edge Shortcuts"
+      "safariDesc": "Learn useful keyboard shortcuts for Safari",
+      "edge": "Edge Shortcuts",
+      "edgeDesc": "Learn useful keyboard shortcuts for Microsoft Edge"
     },
     "adobe": {
       "title": "Adobe Shortcuts",
       "description": "Creative work shortcuts for Photoshop, Illustrator",
       "photoshop": "Photoshop Shortcuts",
-      "illustrator": "Illustrator Shortcuts"
+      "photoshopDesc": "Learn useful keyboard shortcuts for Adobe Photoshop",
+      "illustrator": "Illustrator Shortcuts",
+      "illustratorDesc": "Learn useful keyboard shortcuts for Adobe Illustrator"
     },
     "others": {
       "title": "Other Software Shortcuts",
       "description": "Communication tools shortcuts like Slack, Discord",
       "slack": "Slack Shortcuts",
-      "discord": "Discord Shortcuts"
+      "slackDesc": "Learn useful keyboard shortcuts for Slack",
+      "discord": "Discord Shortcuts",
+      "discordDesc": "Learn useful keyboard shortcuts for Discord"
     }
   },
   "categoryPage": {
@@ -229,7 +255,24 @@
     "keyboardVisual": "Keyboard Visual",
     "keyboardVisualDesc": "See the shortcut key positions on the keyboard.",
     "relatedShortcuts": "Related Shortcuts",
-    "viewDetail": "Click to view details →"
+    "viewDetail": "Click to view details →",
+    "pressKey": "Press key",
+    "firstKey": "Press the first key down",
+    "lastKey": "Press the last key to complete the shortcut",
+    "holdKey": "Hold the key and proceed to the next key",
+    "ctrlDesc": "Control key - Execute shortcuts in combination with other keys",
+    "cmdDesc": "Command key - Execute shortcuts in combination with other keys on Mac",
+    "altDesc": "Alt key - Execute functions in combination with other keys",
+    "shiftDesc": "Shift key - Type uppercase or combine with other keys",
+    "tabDesc": "Tab key - Move focus or indent",
+    "enterDesc": "Enter key - New line or execute",
+    "escDesc": "Escape key - Cancel or close",
+    "spaceDesc": "Space key - Enter space",
+    "delDesc": "Delete key - Delete selected item",
+    "homeDesc": "Home key - Move to beginning of line",
+    "endDesc": "End key - Move to end of line",
+    "keysToPress": "Keys to Press",
+    "key": "Key"
   },
   "guide": {
     "hero": {

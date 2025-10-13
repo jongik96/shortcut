@@ -11,6 +11,7 @@ import { useLocaleContext } from '@/contexts/LocaleContext';
 export default function IllustratorPage() {
   const { dictionary } = useLocaleContext();
   const tCommon = dictionary.common;
+  const t = dictionary.categories.adobe;
   
   const [searchQuery, setSearchQuery] = useState('');
   const [platform, setPlatform] = useState<'windows' | 'mac'>('windows');
@@ -74,8 +75,8 @@ export default function IllustratorPage() {
           {/* Main Content */}
           <div className="lg:col-span-3">
             <div className="mb-8">
-              <h1 className="text-3xl font-bold text-gray-900 mb-2">Adobe Illustrator</h1>
-              <p className="text-gray-600">Adobe Illustratorの便利なショートカットキーを学びましょう</p>
+              <h1 className="text-3xl font-bold text-gray-900 mb-2">{t.illustrator}</h1>
+              <p className="text-gray-600">{t.illustratorDesc}</p>
             </div>
 
             {/* Platform Tabs */}
