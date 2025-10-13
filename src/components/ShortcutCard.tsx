@@ -116,7 +116,7 @@ const ShortcutCard = ({
                 handleCopy();
               }}
               className="p-1 text-gray-400 hover:text-gray-600 transition-colors"
-              title="コピー"
+              title={dictionary.common.copy}
             >
               <Copy size={16} />
             </button>
@@ -128,7 +128,7 @@ const ShortcutCard = ({
                   ? 'text-yellow-500 hover:text-yellow-600' 
                   : 'text-gray-400 hover:text-yellow-500'
               )}
-              title={isCurrentlyFavorite ? 'お気に入りから削除' : 'お気に入りに追加'}
+              title={isCurrentlyFavorite ? dictionary.bookmark.title : dictionary.bookmark.title}
             >
               <Star size={16} fill={isCurrentlyFavorite ? 'currentColor' : 'none'} />
             </button>
@@ -143,7 +143,7 @@ const ShortcutCard = ({
         />
         
         <div className="mt-3 text-xs text-gray-500 group-hover:text-blue-600 transition-colors">
-          クリックして詳細を見る →
+          {dictionary.shortcutDetail.viewDetail}
         </div>
       </div>
     </Link>

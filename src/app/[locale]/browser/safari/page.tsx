@@ -144,7 +144,7 @@ export default function SafariPage() {
 
             {filteredShortcuts.length === 0 && (
               <div className="text-center py-12">
-                <p className="text-gray-500">該当するショートカットが見つかりませんでした。</p>
+                <p className="text-gray-500">{tCommon.noResults}</p>
               </div>
             )}
           </div>

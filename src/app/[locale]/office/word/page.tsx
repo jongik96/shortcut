@@ -80,7 +80,6 @@ export default function WordPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.word}</h2>
               <p className="text-lg text-gray-600 mb-6">
                 {t.description}
-                テキスト編集、書式設定、テーブル操作など、文書作成のすべての作業を素早く行えます。
               </p>
             </div>
 

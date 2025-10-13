@@ -80,7 +80,6 @@ export default function PowerPointPage() {
               <h2 className="text-3xl font-bold text-gray-900 mb-4">{t.powerpoint}</h2>
               <p className="text-lg text-gray-600 mb-6">
                 {t.description}
-                スライド編集、アニメーション設定、プレゼンテーション実行など、すべての作業を素早く行えます。
               </p>
             </div>
 
