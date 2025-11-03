@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     ],
   },
   metadataBase: new URL("https://learnshortcuts.dev"),
+  verification: {
+    google: '01Tf9rOb2NUTGyNDa-0VQGS2onOdoW5LIOtfBuTZwa0',
+  },
 };
 
 export default function RootLayout({
