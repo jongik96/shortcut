@@ -4,23 +4,61 @@ import { locales, defaultLocale } from './i18n/config';
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
+  const url = request.nextUrl.clone();
+
+  // Handle legacy routes without locale that don't exist
+  const legacyRoutes: Record<string, string> = {
+    '/mac': '/os',
+    '/windows': '/os',
+    '/word': '/office/word',
+    '/excel': '/office/excel',
+    '/powerpoint': '/office/powerpoint',
+  };
+
+  // Check if pathname is a legacy route
+  if (legacyRoutes[pathname]) {
+    const locale = getLocale(request) || defaultLocale;
+    const redirectPath = `/${locale}${legacyRoutes[pathname]}/`;
+    const redirectUrl = new URL(redirectPath, request.url);
+    // Preserve query parameters
+    redirectUrl.search = request.nextUrl.search;
+    return NextResponse.redirect(redirectUrl, { status: 301 });
+  }
 
   // Check if there is any supported locale in the pathname
   const pathnameIsMissingLocale = locales.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}` && pathname !== `/${locale}/`
   );
 
-  // Redirect if there is no locale
+  // Redirect if there is no locale (301 permanent redirect for SEO)
   if (pathnameIsMissingLocale) {
     // Get locale from Accept-Language header or use default
     const locale = getLocale(request) || defaultLocale;
 
-    // e.g. incoming request is /products
-    // The new URL is now /en/products
-    return NextResponse.redirect(
-      new URL(`/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`, request.url)
-    );
+    // Ensure trailing slash for consistency
+    const newPath = `/${locale}${pathname === '/' ? '' : pathname}${pathname.endsWith('/') || pathname === '/' ? '' : '/'}`;
+    
+    const redirectUrl = new URL(newPath, request.url);
+    // Preserve query parameters
+    redirectUrl.search = request.nextUrl.search;
+    return NextResponse.redirect(redirectUrl, { status: 301 });
   }
+
+  // Ensure trailing slash for all locale routes (except root)
+  const currentLocale = getLocale(request) || defaultLocale;
+  if (pathname.startsWith(`/${currentLocale}/`)) {
+    // Don't redirect if it's the root locale path or already has trailing slash
+    if (pathname !== `/${currentLocale}` && 
+        pathname !== `/${currentLocale}/` &&
+        !pathname.endsWith('/')) {
+      const redirectUrl = new URL(`${pathname}/`, request.url);
+      // Preserve query parameters
+      redirectUrl.search = request.nextUrl.search;
+      return NextResponse.redirect(redirectUrl, { status: 301 });
+    }
+  }
+
+  return NextResponse.next();
 }
 
 function getLocale(request: NextRequest): string | undefined {

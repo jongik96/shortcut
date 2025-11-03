@@ -50,10 +50,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     keywords: keywordList,
+    alternates: {
+      canonical: `https://learnshortcuts.dev/${locale}/office/excel/`,
+      languages: {
+        'ja': `https://learnshortcuts.dev/ja/office/excel/`,
+        'en': `https://learnshortcuts.dev/en/office/excel/`,
+        'ko': `https://learnshortcuts.dev/ko/office/excel/`,
+        'ar': `https://learnshortcuts.dev/ar/office/excel/`,
+      },
+    },
     openGraph: {
       title,
       description,
-      url: `https://learnshortcuts.dev/${locale}/office/excel`,
+      url: `https://learnshortcuts.dev/${locale}/office/excel/`,
       siteName: "LearnShortcuts.dev",
       type: "website",
       locale: locale === 'ja' ? 'ja_JP' : locale === 'en' ? 'en_US' : locale === 'ko' ? 'ko_KR' : 'ar_AR',

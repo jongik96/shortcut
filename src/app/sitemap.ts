@@ -38,7 +38,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const sitemapEntries: MetadataRoute.Sitemap = routes.flatMap((route) => {
     // 각 언어별 URL과 대체 언어 링크 생성
     return locales.map((locale) => {
-      const url = `${baseUrl}/${locale}${route}`;
+      // trailing slash 추가 (root는 제외)
+      const path = route === '' ? '' : `${route}/`;
+      const url = `${baseUrl}/${locale}${path}`;
       
       // 우선순위 결정
       let priority = 0.8;
@@ -58,10 +60,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified,
         changeFrequency,
         priority,
-        // 대체 언어 링크 (hreflang)
+        // 대체 언어 링크 (hreflang) - trailing slash 포함
         alternates: {
           languages: Object.fromEntries(
-            locales.map((l) => [l, `${baseUrl}/${l}${route}`])
+            locales.map((l) => {
+              const altPath = route === '' ? '' : `${route}/`;
+              return [l, `${baseUrl}/${l}${altPath}`];
+            })
           ),
         },
       };

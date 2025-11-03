@@ -50,10 +50,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     keywords: keywordList,
+    alternates: {
+      canonical: `https://learnshortcuts.dev/${locale}/google/`,
+      languages: {
+        'ja': `https://learnshortcuts.dev/ja/google/`,
+        'en': `https://learnshortcuts.dev/en/google/`,
+        'ko': `https://learnshortcuts.dev/ko/google/`,
+        'ar': `https://learnshortcuts.dev/ar/google/`,
+      },
+    },
     openGraph: {
       title,
       description,
-      url: `https://learnshortcuts.dev/${locale}/google`,
+      url: `https://learnshortcuts.dev/${locale}/google/`,
       siteName: "LearnShortcuts.dev",
       type: "website",
       locale: locale === 'ja' ? 'ja_JP' : locale === 'en' ? 'en_US' : locale === 'ko' ? 'ko_KR' : 'ar_AR',
